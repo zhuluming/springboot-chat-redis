@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.laywerspringboot.edition.dao.NewspaperDao">
+
+    <resultMap type="com.laywerspringboot.edition.entity.Newspaper" id="NewspaperMap">
+        <result property="pId" column="p_id" jdbcType="INTEGER"/>
+        <result property="region" column="region" jdbcType="VARCHAR"/>
+        <result property="place" column="place" jdbcType="VARCHAR"/>
+        <result property="page" column="page" jdbcType="VARCHAR"/>
+        <result property="state" column="state" jdbcType="VARCHAR"/>
+        <result property="detail" column="detail" jdbcType="VARCHAR"/>
+        <result property="address" column="address" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="NewspaperMap">
+        select
+          p_id, region, place, page, state, detail, address
+        from myrhythm.newspaper
+        where p_id = #{pId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="NewspaperMap">
+        select
+          p_id, region, place, page, state, detail, address
+        from myrhythm.newspaper
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="NewspaperMap">
+        select
+        p_id, region, place, page, state, detail, address
+        from myrhythm.newspaper
+        <where>
+            <if test="pId != null">
+                and p_id = #{pId}
+            </if>
+            <if test="region != null and region != ''">
+                and region = #{region}
+            </if>
+            <if test="place != null and place != ''">
+                and place = #{place}
+            </if>
+            <if test="page != null and page != ''">
+                and page = #{page}
+            </if>
+            <if test="state != null and state != ''">
+                and state = #{state}
+            </if>
+            <if test="detail != null and detail != ''">
+                and detail = #{detail}
+            </if>
+            <if test="address != null and address != ''">
+                and address = #{address}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="pId" useGeneratedKeys="true">
+        insert into myrhythm.newspaper(region, place, page, state, detail, address)
+        values (#{region}, #{place}, #{page}, #{state}, #{detail}, #{address})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="pId" useGeneratedKeys="true">
+        insert into myrhythm.newspaper(region, place, page, state, detail, address)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.region}, #{entity.place}, #{entity.page}, #{entity.state}, #{entity.detail}, #{entity.address})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="pId" useGeneratedKeys="true">
+        insert into myrhythm.newspaper(region, place, page, state, detail, address)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.region}, #{entity.place}, #{entity.page}, #{entity.state}, #{entity.detail}, #{entity.address})
+        </foreach>
+        on duplicate key update
+        region = values(region) , place = values(place) , page = values(page) , state = values(state) , detail =
+        values(detail) , address = values(address)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update myrhythm.newspaper
+        <set>
+            <if test="region != null and region != ''">
+                region = #{region},
+            </if>
+            <if test="place != null and place != ''">
+                place = #{place},
+            </if>
+            <if test="page != null and page != ''">
+                page = #{page},
+            </if>
+            <if test="state != null and state != ''">
+                state = #{state},
+            </if>
+            <if test="detail != null and detail != ''">
+                detail = #{detail},
+            </if>
+            <if test="address != null and address != ''">
+                address = #{address},
+            </if>
+        </set>
+        where p_id = #{pId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from myrhythm.newspaper where p_id = #{pId}
+    </delete>
+
+</mapper>

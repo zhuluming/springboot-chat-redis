@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.laywerspringboot.edition.dao.UserDao">
+
+    <resultMap type="com.laywerspringboot.edition.entity.User" id="UserMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="username" column="username" jdbcType="VARCHAR"/>
+        <result property="password" column="password" jdbcType="VARCHAR"/>
+        <result property="realname" column="realname" jdbcType="VARCHAR"/>
+        <result property="phoneid" column="phoneid" jdbcType="VARCHAR"/>
+        <result property="idcard" column="idcard" jdbcType="VARCHAR"/>
+        <result property="photoaddress" column="photoaddress" jdbcType="VARCHAR"/>
+        <result property="altertime" column="altertime" jdbcType="TIMESTAMP"/>
+        <result property="uuid" column="uuid" jdbcType="VARCHAR"/>
+        <result property="salt" column="salt" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="UserMap">
+        select
+          id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt
+        from myrhythm.user
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="UserMap">
+        select
+          id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt
+        from myrhythm.user
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="UserMap">
+        select
+        id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt
+        from myrhythm.user
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="username != null and username != ''">
+                and username = #{username}
+            </if>
+            <if test="password != null and password != ''">
+                and password = #{password}
+            </if>
+            <if test="realname != null and realname != ''">
+                and realname = #{realname}
+            </if>
+            <if test="phoneid != null and phoneid != ''">
+                and phoneid = #{phoneid}
+            </if>
+            <if test="idcard != null and idcard != ''">
+                and idcard = #{idcard}
+            </if>
+            <if test="photoaddress != null and photoaddress != ''">
+                and photoaddress = #{photoaddress}
+            </if>
+            <if test="altertime != null">
+                and altertime = #{altertime}
+            </if>
+            <if test="uuid != null and uuid != ''">
+                and uuid = #{uuid}
+            </if>
+            <if test="salt != null and salt != ''">
+                and salt = #{salt}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into myrhythm.user(username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt)
+        values (#{username}, #{password}, #{realname}, #{phoneid}, #{idcard}, #{photoaddress}, #{altertime}, #{uuid}, #{salt})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into myrhythm.user(username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.username}, #{entity.password}, #{entity.realname}, #{entity.phoneid}, #{entity.idcard},
+            #{entity.photoaddress}, #{entity.altertime}, #{entity.uuid}, #{entity.salt})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into myrhythm.user(username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.username}, #{entity.password}, #{entity.realname}, #{entity.phoneid}, #{entity.idcard},
+            #{entity.photoaddress}, #{entity.altertime}, #{entity.uuid}, #{entity.salt})
+        </foreach>
+        on duplicate key update
+        username = values(username) , password = values(password) , realname = values(realname) , phoneid =
+        values(phoneid) , idcard = values(idcard) , photoaddress = values(photoaddress) , altertime = values(altertime)
+        , uuid = values(uuid) , salt = values(salt)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update myrhythm.user
+        <set>
+            <if test="username != null and username != ''">
+                username = #{username},
+            </if>
+            <if test="password != null and password != ''">
+                password = #{password},
+            </if>
+            <if test="realname != null and realname != ''">
+                realname = #{realname},
+            </if>
+            <if test="phoneid != null and phoneid != ''">
+                phoneid = #{phoneid},
+            </if>
+            <if test="idcard != null and idcard != ''">
+                idcard = #{idcard},
+            </if>
+            <if test="photoaddress != null and photoaddress != ''">
+                photoaddress = #{photoaddress},
+            </if>
+            <if test="altertime != null">
+                altertime = #{altertime},
+            </if>
+            <if test="uuid != null and uuid != ''">
+                uuid = #{uuid},
+            </if>
+            <if test="salt != null and salt != ''">
+                salt = #{salt},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from myrhythm.user where id = #{id}
+    </delete>
+
+</mapper>

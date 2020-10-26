@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.laywerspringboot.edition.dao.PermissionroleDao">
+
+    <resultMap type="com.laywerspringboot.edition.entity.Permissionrole" id="PermissionroleMap">
+        <result property="rId" column="r_id" jdbcType="INTEGER"/>
+        <result property="jId" column="j_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="PermissionroleMap">
+        select
+          r_id, j_id
+        from myrhythm.permissionrole
+        where r_id = #{rId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="PermissionroleMap">
+        select
+          r_id, j_id
+        from myrhythm.permissionrole
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="PermissionroleMap">
+        select
+        r_id, j_id
+        from myrhythm.permissionrole
+        <where>
+            <if test="rId != null">
+                and r_id = #{rId}
+            </if>
+            <if test="jId != null">
+                and j_id = #{jId}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="rId" useGeneratedKeys="true">
+        insert into myrhythm.permissionrole(j_id)
+        values (#{jId})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="rId" useGeneratedKeys="true">
+        insert into myrhythm.permissionrole(j_id)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.jId})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="rId" useGeneratedKeys="true">
+        insert into myrhythm.permissionrole(j_id)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.jId})
+        </foreach>
+        on duplicate key update
+        j_id = values(j_id)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update myrhythm.permissionrole
+        <set>
+            <if test="jId != null">
+                j_id = #{jId},
+            </if>
+        </set>
+        where r_id = #{rId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from myrhythm.permissionrole where r_id = #{rId}
+    </delete>
+
+</mapper>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.laywerspringboot.edition.dao.JurisdictionDao">
+
+    <resultMap type="com.laywerspringboot.edition.entity.Jurisdiction" id="JurisdictionMap">
+        <result property="jId" column="j_id" jdbcType="INTEGER"/>
+        <result property="sysUpload" column="sys_upload" jdbcType="VARCHAR"/>
+        <result property="sysExhibition" column="sys_exhibition" jdbcType="VARCHAR"/>
+        <result property="sysModify" column="sys_modify" jdbcType="VARCHAR"/>
+        <result property="sysDelete" column="sys_delete" jdbcType="VARCHAR"/>
+        <result property="jStatus" column="j_status" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="JurisdictionMap">
+        select
+          j_id, sys_upload, sys_exhibition, sys_modify, sys_delete, j_status
+        from myrhythm.jurisdiction
+        where j_id = #{jId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="JurisdictionMap">
+        select
+          j_id, sys_upload, sys_exhibition, sys_modify, sys_delete, j_status
+        from myrhythm.jurisdiction
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="JurisdictionMap">
+        select
+        j_id, sys_upload, sys_exhibition, sys_modify, sys_delete, j_status
+        from myrhythm.jurisdiction
+        <where>
+            <if test="jId != null">
+                and j_id = #{jId}
+            </if>
+            <if test="sysUpload != null and sysUpload != ''">
+                and sys_upload = #{sysUpload}
+            </if>
+            <if test="sysExhibition != null and sysExhibition != ''">
+                and sys_exhibition = #{sysExhibition}
+            </if>
+            <if test="sysModify != null and sysModify != ''">
+                and sys_modify = #{sysModify}
+            </if>
+            <if test="sysDelete != null and sysDelete != ''">
+                and sys_delete = #{sysDelete}
+            </if>
+            <if test="jStatus != null">
+                and j_status = #{jStatus}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="jId" useGeneratedKeys="true">
+        insert into myrhythm.jurisdiction(sys_upload, sys_exhibition, sys_modify, sys_delete, j_status)
+        values (#{sysUpload}, #{sysExhibition}, #{sysModify}, #{sysDelete}, #{jStatus})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="jId" useGeneratedKeys="true">
+        insert into myrhythm.jurisdiction(sys_upload, sys_exhibition, sys_modify, sys_delete, j_status)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.sysUpload}, #{entity.sysExhibition}, #{entity.sysModify}, #{entity.sysDelete}, #{entity.jStatus})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="jId" useGeneratedKeys="true">
+        insert into myrhythm.jurisdiction(sys_upload, sys_exhibition, sys_modify, sys_delete, j_status)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.sysUpload}, #{entity.sysExhibition}, #{entity.sysModify}, #{entity.sysDelete}, #{entity.jStatus})
+        </foreach>
+        on duplicate key update
+        sys_upload = values(sys_upload) , sys_exhibition = values(sys_exhibition) , sys_modify = values(sys_modify) ,
+        sys_delete = values(sys_delete) , j_status = values(j_status)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update myrhythm.jurisdiction
+        <set>
+            <if test="sysUpload != null and sysUpload != ''">
+                sys_upload = #{sysUpload},
+            </if>
+            <if test="sysExhibition != null and sysExhibition != ''">
+                sys_exhibition = #{sysExhibition},
+            </if>
+            <if test="sysModify != null and sysModify != ''">
+                sys_modify = #{sysModify},
+            </if>
+            <if test="sysDelete != null and sysDelete != ''">
+                sys_delete = #{sysDelete},
+            </if>
+            <if test="jStatus != null">
+                j_status = #{jStatus},
+            </if>
+        </set>
+        where j_id = #{jId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from myrhythm.jurisdiction where j_id = #{jId}
+    </delete>
+
+</mapper>

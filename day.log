@@ -1,0 +1,61 @@
+2020-10-26 07:51:54.341  INFO 30736 --- [main] com.laywerspringboot.edition.UserTest    : Starting UserTest on DESKTOP-N26M15P with PID 30736 (started by User in G:\laywer-springboot\edition)
+2020-10-26 07:51:54.348  INFO 30736 --- [main] com.laywerspringboot.edition.UserTest    : No active profile set, falling back to default profiles: default
+2020-10-26 07:51:55.169  WARN 30736 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+2020-10-26 07:51:56.018  INFO 30736 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-26 07:52:02.362  INFO 30736 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-26 07:52:03.867  INFO 30736 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-26 07:52:04.328  INFO 30736 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-26 07:52:04.861  INFO 30736 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-26 07:52:04.912  INFO 30736 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-26 07:52:04.991  INFO 30736 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-26 07:52:05.416  INFO 30736 --- [main] com.laywerspringboot.edition.UserTest    : Started UserTest in 11.486 seconds (JVM running for 12.739)
+2020-10-26 07:52:05.732  INFO 30736 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-26 07:52:05.748  INFO 30736 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-26 08:09:58.376  INFO 33232 --- [main] com.laywerspringboot.edition.UserTest    : Starting UserTest on DESKTOP-N26M15P with PID 33232 (started by User in G:\laywer-springboot\edition)
+2020-10-26 08:09:58.379  INFO 33232 --- [main] com.laywerspringboot.edition.UserTest    : No active profile set, falling back to default profiles: default
+2020-10-26 08:09:59.172  WARN 33232 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+2020-10-26 08:09:59.957  INFO 33232 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-26 08:10:00.402  INFO 33232 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-26 08:10:01.368  INFO 33232 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-26 08:10:01.661  INFO 33232 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-26 08:10:02.093  INFO 33232 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-26 08:10:02.119  INFO 33232 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-26 08:10:02.159  INFO 33232 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-26 08:10:02.473  INFO 33232 --- [main] com.laywerspringboot.edition.UserTest    : Started UserTest in 4.473 seconds (JVM running for 5.68)
+2020-10-26 08:10:02.797  INFO 33232 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-26 08:10:02.810  INFO 33232 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-26 08:59:51.068  INFO 32968 --- [main] com.laywerspringboot.edition.UserTest    : Starting UserTest on DESKTOP-N26M15P with PID 32968 (started by User in G:\laywer-springboot\edition)
+2020-10-26 08:59:51.069  INFO 32968 --- [main] com.laywerspringboot.edition.UserTest    : No active profile set, falling back to default profiles: default
+2020-10-26 08:59:51.923  WARN 32968 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+2020-10-26 08:59:52.839  INFO 32968 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-26 08:59:53.284  INFO 32968 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-26 08:59:54.537  INFO 32968 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-26 08:59:54.919  INFO 32968 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-26 08:59:55.441  INFO 32968 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-26 08:59:55.473  INFO 32968 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-26 08:59:55.524  INFO 32968 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-26 08:59:55.860  INFO 32968 --- [main] com.laywerspringboot.edition.UserTest    : Started UserTest in 5.135 seconds (JVM running for 6.296)
+2020-10-26 08:59:56.248  INFO 32968 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-26 08:59:56.262  INFO 32968 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-26 09:00:06.206  INFO 29076 --- [main] c.l.edition.EditionApplication           : Starting EditionApplication on DESKTOP-N26M15P with PID 29076 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+2020-10-26 09:00:06.210  INFO 29076 --- [main] c.l.edition.EditionApplication           : No active profile set, falling back to default profiles: default
+2020-10-26 09:00:08.165  INFO 29076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-10-26 09:00:08.181  INFO 29076 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-26 09:00:08.181  INFO 29076 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-10-26 09:00:08.337  INFO 29076 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-26 09:00:08.338  INFO 29076 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2037 ms
+2020-10-26 09:00:08.553  INFO 29076 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-26 09:00:09.002  INFO 29076 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-26 09:00:09.756  INFO 29076 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-26 09:00:09.860  INFO 29076 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-26 09:00:10.161  INFO 29076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-10-26 09:00:10.162  INFO 29076 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-26 09:00:10.180  INFO 29076 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-26 09:00:10.227  INFO 29076 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-26 09:00:10.510  INFO 29076 --- [main] c.l.edition.EditionApplication           : Started EditionApplication in 4.955 seconds (JVM running for 11.645)
+2020-10-26 09:01:49.089  INFO 29076 --- [http-nio-0.0.0.0-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-26 09:01:49.089  INFO 29076 --- [http-nio-0.0.0.0-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-26 09:01:49.099  INFO 29076 --- [http-nio-0.0.0.0-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-10-26 09:10:43.009 DEBUG 29076 --- [http-nio-0.0.0.0-80-exec-9] c.l.edition.dao.UserDao.queryAll         : ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt from myrhythm.user WHERE username = ? and password = ? and realname = ? and phoneid = ? and idcard = ? 
+2020-10-26 09:10:43.057 DEBUG 29076 --- [http-nio-0.0.0.0-80-exec-9] c.l.edition.dao.UserDao.queryAll         : ==> Parameters: 三七/siqi(String), asda(String), 思琦(String), adasda(String), sdasda(String)
+2020-10-26 09:10:43.098 DEBUG 29076 --- [http-nio-0.0.0.0-80-exec-9] c.l.edition.dao.UserDao.queryAll         : <==      Total: 0

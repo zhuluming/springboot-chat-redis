@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.laywerspringboot.edition.dao.UuidnumDao">
+
+    <resultMap type="com.laywerspringboot.edition.entity.Uuidnum" id="UuidnumMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="phoneid" column="phoneid" jdbcType="VARCHAR"/>
+        <result property="num" column="num" jdbcType="INTEGER"/>
+        <result property="time" column="time" jdbcType="INTEGER"/>
+        <result property="endtime" column="endtime" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="UuidnumMap">
+        select
+          id, phoneid, num, time, endtime
+        from myrhythm.uuidnum
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="UuidnumMap">
+        select
+          id, phoneid, num, time, endtime
+        from myrhythm.uuidnum
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="UuidnumMap">
+        select
+        id, phoneid, num, time, endtime
+        from myrhythm.uuidnum
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="phoneid != null and phoneid != ''">
+                and phoneid = #{phoneid}
+            </if>
+            <if test="num != null">
+                and num = #{num}
+            </if>
+            <if test="time != null">
+                and time = #{time}
+            </if>
+            <if test="endtime != null">
+                and endtime = #{endtime}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into myrhythm.uuidnum(phoneid, num, time, endtime)
+        values (#{phoneid}, #{num}, #{time}, #{endtime})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into myrhythm.uuidnum(phoneid, num, time, endtime)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.phoneid}, #{entity.num}, #{entity.time}, #{entity.endtime})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into myrhythm.uuidnum(phoneid, num, time, endtime)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.phoneid}, #{entity.num}, #{entity.time}, #{entity.endtime})
+        </foreach>
+        on duplicate key update
+        phoneid = values(phoneid) , num = values(num) , time = values(time) , endtime = values(endtime)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update myrhythm.uuidnum
+        <set>
+            <if test="phoneid != null and phoneid != ''">
+                phoneid = #{phoneid},
+            </if>
+            <if test="num != null">
+                num = #{num},
+            </if>
+            <if test="time != null">
+                time = #{time},
+            </if>
+            <if test="endtime != null">
+                endtime = #{endtime},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from myrhythm.uuidnum where id = #{id}
+    </delete>
+
+</mapper>

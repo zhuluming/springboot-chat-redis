@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.laywerspringboot.edition.dao.RoleDao">
+
+    <resultMap type="com.laywerspringboot.edition.entity.Role" id="RoleMap">
+        <result property="rId" column="r_id" jdbcType="INTEGER"/>
+        <result property="rolename" column="rolename" jdbcType="VARCHAR"/>
+        <result property="status" column="status" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="RoleMap">
+        select
+          r_id, rolename, status
+        from myrhythm.role
+        where r_id = #{rId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="RoleMap">
+        select
+          r_id, rolename, status
+        from myrhythm.role
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="RoleMap">
+        select
+        r_id, rolename, status
+        from myrhythm.role
+        <where>
+            <if test="rId != null">
+                and r_id = #{rId}
+            </if>
+            <if test="rolename != null and rolename != ''">
+                and rolename = #{rolename}
+            </if>
+            <if test="status != null and status != ''">
+                and status = #{status}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="rId" useGeneratedKeys="true">
+        insert into myrhythm.role(rolename, status)
+        values (#{rolename}, #{status})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="rId" useGeneratedKeys="true">
+        insert into myrhythm.role(rolename, status)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.rolename}, #{entity.status})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="rId" useGeneratedKeys="true">
+        insert into myrhythm.role(rolename, status)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.rolename}, #{entity.status})
+        </foreach>
+        on duplicate key update
+        rolename = values(rolename) , status = values(status)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update myrhythm.role
+        <set>
+            <if test="rolename != null and rolename != ''">
+                rolename = #{rolename},
+            </if>
+            <if test="status != null and status != ''">
+                status = #{status},
+            </if>
+        </set>
+        where r_id = #{rId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from myrhythm.role where r_id = #{rId}
+    </delete>
+
+</mapper>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.laywerspringboot.edition.dao.UserroleDao">
+
+    <resultMap type="com.laywerspringboot.edition.entity.Userrole" id="UserroleMap">
+        <result property="uId" column="u_id" jdbcType="INTEGER"/>
+        <result property="rId" column="r_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="UserroleMap">
+        select
+          u_id, r_id
+        from myrhythm.userrole
+        where u_id = #{uId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="UserroleMap">
+        select
+          u_id, r_id
+        from myrhythm.userrole
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="UserroleMap">
+        select
+        u_id, r_id
+        from myrhythm.userrole
+        <where>
+            <if test="uId != null">
+                and u_id = #{uId}
+            </if>
+            <if test="rId != null">
+                and r_id = #{rId}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="uId" useGeneratedKeys="true">
+        insert into myrhythm.userrole(r_id)
+        values (#{rId})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="uId" useGeneratedKeys="true">
+        insert into myrhythm.userrole(r_id)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.rId})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="uId" useGeneratedKeys="true">
+        insert into myrhythm.userrole(r_id)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.rId})
+        </foreach>
+        on duplicate key update
+        r_id = values(r_id)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update myrhythm.userrole
+        <set>
+            <if test="rId != null">
+                r_id = #{rId},
+            </if>
+        </set>
+        where u_id = #{uId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from myrhythm.userrole where u_id = #{uId}
+    </delete>
+
+</mapper>

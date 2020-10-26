@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.laywerspringboot.edition.dao.PricesDao">
+
+    <resultMap type="com.laywerspringboot.edition.entity.Prices" id="PricesMap">
+        <result property="price" column="price" jdbcType="NUMERIC"/>
+        <result property="page" column="page" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="PricesMap">
+        select
+          price, page
+        from myrhythm.prices
+        where page = #{page}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="PricesMap">
+        select
+          price, page
+        from myrhythm.prices
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="PricesMap">
+        select
+        price, page
+        from myrhythm.prices
+        <where>
+            <if test="price != null">
+                and price = #{price}
+            </if>
+            <if test="page != null and page != ''">
+                and page = #{page}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="page" useGeneratedKeys="true">
+        insert into myrhythm.prices(price)
+        values (#{price})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="page" useGeneratedKeys="true">
+        insert into myrhythm.prices(price)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.price})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="page" useGeneratedKeys="true">
+        insert into myrhythm.prices(price)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.price})
+        </foreach>
+        on duplicate key update
+        price = values(price)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update myrhythm.prices
+        <set>
+            <if test="price != null">
+                price = #{price},
+            </if>
+        </set>
+        where page = #{page}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from myrhythm.prices where page = #{page}
+    </delete>
+
+</mapper>
