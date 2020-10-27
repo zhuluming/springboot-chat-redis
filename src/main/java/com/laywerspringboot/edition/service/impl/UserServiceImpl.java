@@ -3,9 +3,13 @@ package com.laywerspringboot.edition.service.impl;
 import com.laywerspringboot.edition.Utils.JWTUtils;
 import com.laywerspringboot.edition.Utils.ObjectUtils;
 import com.laywerspringboot.edition.Utils.R;
+import com.laywerspringboot.edition.dao.RoleDao;
 import com.laywerspringboot.edition.dao.UserDao;
+import com.laywerspringboot.edition.dao.UserroleDao;
 import com.laywerspringboot.edition.dao.UuidnumDao;
+import com.laywerspringboot.edition.entity.Role;
 import com.laywerspringboot.edition.entity.User;
+import com.laywerspringboot.edition.entity.Userrole;
 import com.laywerspringboot.edition.entity.Uuidnum;
 import com.laywerspringboot.edition.entity.dto.RegisterUser;
 import com.laywerspringboot.edition.exception.SendMessageException;
@@ -32,7 +36,10 @@ public class UserServiceImpl implements UserService {
     private UserDao userDao;
     @Resource
     private UuidnumDao uuidnumDao;
-
+    @Resource
+    private RoleDao roleDao;
+    @Resource
+    private UserroleDao userroleDao;
     /**
      * 通过ID查询单条数据
      *
@@ -252,7 +259,7 @@ public class UserServiceImpl implements UserService {
     public String isPasswordTrue( RegisterUser registerUser, User user) {
         if (!user.getPassword().equals(registerUser.getPassword())) {
             //次数+1
-            AtomicInteger atomicInteger = new AtomicInteger(0);
+            AtomicInteger atomicInteger = new AtomicInteger(user.getCount());
             int count = atomicInteger.addAndGet(1);
             Date date = new Date(System.currentTimeMillis());
             user.setAltertime(date);
@@ -263,10 +270,14 @@ public class UserServiceImpl implements UserService {
         //将count置空
         user.setCount(0);
         this.update(user);
+        Userrole userrole = userroleDao.queryByUId(user.getId());
+        Role role = roleDao.queryById(userrole.getRId());
         //id username 用户头像名，生成token
+        //还需要加入用户的角色
         HashMap<String, String> payload = new HashMap<>();
         payload.put("id",user.getId().toString());
         payload.put("username",user.getUsername());
+        payload.put("rolename",role.getRolename());
         String token = JWTUtils.getToken(payload);
 
         return token;

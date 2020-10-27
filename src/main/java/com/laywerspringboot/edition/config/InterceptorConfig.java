@@ -13,9 +13,14 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class InterceptorConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
+        String[] patterns = new String[]{"/error", "/userInfo/**","/userInfo/userLogin","/userInfo/phoneLogin",
+                "/swagger-resources/**","/webjars/**","/v2/**","/swagger-ui.html/**"};
+
         registry.addInterceptor(new JWTInterceptor())
-                .excludePathPatterns("/userInfo/**","/userInfo/userLogin","/userInfo/phoneLogin")//放行的请求
-                .addPathPatterns("/**") ;        //其他接口token验证
+                .addPathPatterns("/**")  //其他接口token验证
+                .excludePathPatterns(patterns);//放行的请求
+
 
     }
+
 }

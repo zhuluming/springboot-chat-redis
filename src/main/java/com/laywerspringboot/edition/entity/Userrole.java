@@ -19,6 +19,11 @@ import java.io.Serializable;
 public class Userrole implements Serializable {
     private static final long serialVersionUID = -35410727512602177L;
     /**
+     * 主键id
+     */
+    @ApiModelProperty(name="Id",example = "1")
+    private Integer Id;
+    /**
      * 用户id
      */
     @ApiModelProperty(name="uId",example = "1")

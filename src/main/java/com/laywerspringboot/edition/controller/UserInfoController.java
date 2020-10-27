@@ -1,3 +1,5 @@
+package com.laywerspringboot.edition.controller;
+
 import com.laywerspringboot.edition.Utils.*;
 import com.laywerspringboot.edition.entity.Role;
 import com.laywerspringboot.edition.entity.User;
@@ -120,7 +122,7 @@ public class UserInfoController  {
             updateTime(transferUser);
             insertUser = userService.insert(transferUser);
             role = roleService.insertRole(user);
-            userrole = new Userrole(insertUser.getId(),role.getRId());
+            userrole = new Userrole(0,insertUser.getId(),role.getRId());
             userroleService.insert(userrole);
             if (insertUser != null && role != null && userrole != null ){
                 //注册成功把根据用户身份把对应的头像地址返回
@@ -176,6 +178,11 @@ public class UserInfoController  {
 
     }
 
+    @ApiOperation(value = "手机登录功能")
+    @PostMapping("/phoneLogin")
+    public R phoneLogin(@ApiParam(value = "手机登录对象")@RequestBody RegisterUser registerUser){
+        return null;
+    }
 
 
 
