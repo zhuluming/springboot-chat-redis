@@ -71,7 +71,10 @@ public class User implements Serializable {
      */
     @ApiModelProperty(name="salt",example = "46456")
     private String salt;
-
+    /**
+     * 失败次数
+     */
+    private int count;
     public User(String username, String password, String realname, String phoneid,
                 String idcard, String photoaddress, Date altertime, String uuid, String salt) {
         this.username = username;

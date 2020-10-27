@@ -6,14 +6,20 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 
-
 /**
  * (User)表数据库访问层
  *
  * @author makejava
- * @since 2020-10-24 11:05:26
+ * @since 2020-10-26 23:09:27
  */
 public interface UserDao {
+
+    /**
+     * 根据用户名查询
+     * @param username
+     * @return
+     */
+    User queryByUsername(String username);
 
     /**
      * 通过ID查询单条数据
@@ -48,7 +54,6 @@ public interface UserDao {
      * @return 影响行数
      */
     int insert(User user);
-
 
     /**
      * 批量新增数据（MyBatis原生foreach方法）

@@ -43,6 +43,16 @@ public class R extends HashMap<String ,Object> implements Serializable {
     }
 
     /**
+     * 可以登录返回
+     * @param msg
+     * @return
+     */
+    public static R loginOk(String msg){
+        return isOk(1,msg);
+    }
+
+
+    /**
      * 可以注册返回1
      * @param msg
      * @return

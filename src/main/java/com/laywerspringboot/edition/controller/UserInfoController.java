@@ -1,5 +1,3 @@
-package com.laywerspringboot.edition.controller;
-
 import com.laywerspringboot.edition.Utils.*;
 import com.laywerspringboot.edition.entity.Role;
 import com.laywerspringboot.edition.entity.User;
@@ -12,9 +10,12 @@ import com.laywerspringboot.edition.service.UserroleService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -25,6 +26,7 @@ import java.util.List;
 @RestController()
 @RequestMapping("userInfo")
 @CrossOrigin()
+@Slf4j
 @Api(description = "用户信息api",value = "注册登录")
 public class UserInfoController  {
     @Resource
@@ -51,7 +53,7 @@ public class UserInfoController  {
      * @param realname
      * @return
      */
-     @ApiOperation(value = "验证真实姓名")
+    @ApiOperation(value = "验证真实姓名")
     @GetMapping("/register/isRealName/{realname}")
     public R isRealNameEmpty(@ApiParam(value = "真实姓名")@PathVariable("realname")String realname){
         boolean flag = userService.queryByMsg(1, realname);
@@ -83,7 +85,7 @@ public class UserInfoController  {
             return R.registerError("手机号已被注册，请直接登录");
         }*/
         //String uuid = YunPianMsgUtils.sendMsg(phoneid);
-        String uuid = TecentMsgUtils.sendMsg(phoneid);
+        String uuid = TecentUtils.sendMsg(phoneid);
         Long currentTime = System.currentTimeMillis();
         return  userService.insertAndUpdateUUid(phoneid, uuid, currentTime);
 
@@ -99,13 +101,14 @@ public class UserInfoController  {
         User insertUser = new User();
         Role role = new Role();
         Userrole userrole = new Userrole();
-        isUsername(user.getUsername(), "用户名为空");
-        isUsername(user.getPassword(), "密码为空");
-        isUsername(user.getRealname(), "真实姓名为空");
-        isUsername(user.getReplynewpassword(), "确认密码为空");
-        isUsername(user.getPhoneid(), "手机号为空");
-        isUsername(user.getIdcard(), "身份证为空");
-        if (user.getPassword().equals(user.getReplynewpassword())){
+        isUserTrue(user.getUsername(), "用户名为空");
+        isUserTrue(user.getPassword(), "密码为空");
+        isUserTrue(user.getRealname(), "真实姓名为空");
+        isUserTrue(user.getReplynewpassword(), "确认密码为空");
+        isUserTrue(user.getPhoneid(), "手机号为空");
+        isUserTrue(user.getIdcard(), "身份证为空");
+        isUserTrue(user.getPhotoaddress(), "图片上传有问题，请重新上传");
+        if (!user.getPassword().equals(user.getReplynewpassword())){
             throw new UserInfoException("两次密码不一致");
         }
         //dto转换成user
@@ -114,19 +117,76 @@ public class UserInfoController  {
         List<User> users = userService.queryByUser(transferUser);
         if (ObjectUtils.isEmpty(users)){
             //代表可以注册
-            for (User user1 : users) {
-                insertUser = userService.insert(user1);
-                role = roleService.insertRole(user);
-                userrole = new Userrole(insertUser.getId(),role.getRId());
-                userroleService.insert(userrole);
-            }
+            updateTime(transferUser);
+            insertUser = userService.insert(transferUser);
+            role = roleService.insertRole(user);
+            userrole = new Userrole(insertUser.getId(),role.getRId());
+            userroleService.insert(userrole);
             if (insertUser != null && role != null && userrole != null ){
+                //注册成功把根据用户身份把对应的头像地址返回
                 return R.registerOk("欢迎来到律动");
             }
-
         }
-        throw new UserInfoException("注册失败哦，请联系管理员");
+        throw new UserInfoException("用户已存在，请直接登录");
 
+    }
+
+
+
+    @ApiOperation(value = "用户登录功能")
+    @PostMapping("/userLogin")
+    public R userLogin(@ApiParam(value = "登录用户对象")@RequestBody RegisterUser registerUser){
+        isUserTrue(registerUser.getUsername(), "用户名为空");
+        isUserTrue(registerUser.getPassword(), "密码为空");
+        User transferUser = DtoTransfer.transferUser(registerUser);
+        User user = userService.isUsernameExist(transferUser);
+        if (user == null){
+            throw new UserInfoException("用户名不存在");
+        }
+        //一次错误操作都没有
+        //可以成功登录
+        if (user.getCount() <= 5){
+            String token = userService.isPasswordTrue(registerUser, user);
+            return R.loginOk("欢迎进入律动").put("token", token).put("jstatus", 0);
+        }
+        //传入状态的时间
+        long millis = System.currentTimeMillis();
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(user.getAltertime());
+        long timeInMillis = calendar.getTimeInMillis();
+        long time = millis - timeInMillis;
+        if (user.getCount() > 5 && user.getCount() < 7){
+            if (time < 900000 ){
+                return R.error("请于"+user.getAltertime()+"后的15分钟后尝试").put("jstatus", 1);
+            }else {
+                String token = userService.isPasswordTrue(registerUser, user);
+                return R.loginOk("欢迎进入律动").put("token", token);
+            }
+        }
+        if (user.getCount()>=7 && user.getCount() < 8 ){
+            if (time < 1800000  ){
+                return R.error("请于"+user.getAltertime()+"后的30分钟后尝试").put("jstatus", 1);
+            }else {
+                String token = userService.isPasswordTrue(registerUser, user);
+                return R.loginOk("欢迎进入律动").put("token", token);
+            }
+        }
+
+        return R.error("请选择手机登录").put("jstatus", -1);
+
+    }
+
+
+
+
+    /**
+     * 修改时间
+     * @param transferUser
+     */
+    private void updateTime(User transferUser) {
+        //插入date,数据库配置设为上海时间
+        Date date = new Date(System.currentTimeMillis());
+        transferUser.setAltertime(date);
     }
 
 
@@ -135,7 +195,7 @@ public class UserInfoController  {
      * @param username
      * @param msg
      */
-    private void isUsername(String username, String msg) {
+    private void isUserTrue(String username, String msg) {
         if (StringUtils.isEmpty(username)) {
             throw new UserInfoException(msg);
         }

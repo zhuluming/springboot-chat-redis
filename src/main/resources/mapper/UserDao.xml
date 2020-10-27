@@ -13,20 +13,29 @@
         <result property="altertime" column="altertime" jdbcType="TIMESTAMP"/>
         <result property="uuid" column="uuid" jdbcType="VARCHAR"/>
         <result property="salt" column="salt" jdbcType="VARCHAR"/>
+        <result property="count" column="count" jdbcType="INTEGER"/>
     </resultMap>
 
     <!--查询单个-->
     <select id="queryById" resultMap="UserMap">
         select
-          id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt
+          id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count
         from myrhythm.user
         where id = #{id}
     </select>
+    <!--查询单个-->
+    <select id="queryByUsername" resultMap="UserMap">
+        select
+          id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count
+        from myrhythm.user
+        where username = #{username}
+    </select>
+
 
     <!--查询指定行数据-->
     <select id="queryAllByLimit" resultMap="UserMap">
         select
-          id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt
+          id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count
         from myrhythm.user
         limit #{offset}, #{limit}
     </select>
@@ -34,7 +43,7 @@
     <!--通过实体作为筛选条件查询-->
     <select id="queryAll" resultMap="UserMap">
         select
-        id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt
+        id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count
         from myrhythm.user
         <where>
             <if test="id != null">
@@ -67,35 +76,40 @@
             <if test="salt != null and salt != ''">
                 and salt = #{salt}
             </if>
+            <if test="count != null">
+                and count = #{count}
+            </if>
         </where>
     </select>
 
     <!--新增所有列-->
     <insert id="insert" keyProperty="id" useGeneratedKeys="true">
-        insert into myrhythm.user(username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt)
-        values (#{username}, #{password}, #{realname}, #{phoneid}, #{idcard}, #{photoaddress}, #{altertime}, #{uuid}, #{salt})
+        insert into myrhythm.user(username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count)
+        values (#{username}, #{password}, #{realname}, #{phoneid}, #{idcard}, #{photoaddress}, #{altertime}, #{uuid}, #{salt}, #{count})
     </insert>
 
     <insert id="insertBatch" keyProperty="id" useGeneratedKeys="true">
-        insert into myrhythm.user(username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt)
+        insert into myrhythm.user(username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt,
+        count)
         values
         <foreach collection="entities" item="entity" separator=",">
             (#{entity.username}, #{entity.password}, #{entity.realname}, #{entity.phoneid}, #{entity.idcard},
-            #{entity.photoaddress}, #{entity.altertime}, #{entity.uuid}, #{entity.salt})
+            #{entity.photoaddress}, #{entity.altertime}, #{entity.uuid}, #{entity.salt}, #{entity.count})
         </foreach>
     </insert>
 
     <insert id="insertOrUpdateBatch" keyProperty="id" useGeneratedKeys="true">
-        insert into myrhythm.user(username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt)
+        insert into myrhythm.user(username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt,
+        count)
         values
         <foreach collection="entities" item="entity" separator=",">
             (#{entity.username}, #{entity.password}, #{entity.realname}, #{entity.phoneid}, #{entity.idcard},
-            #{entity.photoaddress}, #{entity.altertime}, #{entity.uuid}, #{entity.salt})
+            #{entity.photoaddress}, #{entity.altertime}, #{entity.uuid}, #{entity.salt}, #{entity.count})
         </foreach>
         on duplicate key update
         username = values(username) , password = values(password) , realname = values(realname) , phoneid =
         values(phoneid) , idcard = values(idcard) , photoaddress = values(photoaddress) , altertime = values(altertime)
-        , uuid = values(uuid) , salt = values(salt)
+        , uuid = values(uuid) , salt = values(salt) , count = values(count)
     </insert>
 
     <!--通过主键修改数据-->
@@ -128,6 +142,9 @@
             </if>
             <if test="salt != null and salt != ''">
                 salt = #{salt},
+            </if>
+            <if test="count != null">
+                count = #{count},
             </if>
         </set>
         where id = #{id}

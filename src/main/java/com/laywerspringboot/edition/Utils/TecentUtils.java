@@ -17,7 +17,7 @@ import com.tencentcloudapi.sms.v20190711.models.SendSmsResponse;
  * @createTime:2020-10-25-13-19
  */
 
-public class TecentMsgUtils {
+public class TecentUtils {
     private static String uuid;
 
         public static String sendMsg(String phoneId) {

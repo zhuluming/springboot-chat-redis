@@ -2,9 +2,9 @@ package com.laywerspringboot.edition.service;
 
 import com.laywerspringboot.edition.Utils.R;
 import com.laywerspringboot.edition.entity.User;
+import com.laywerspringboot.edition.entity.dto.RegisterUser;
 
 import java.util.List;
-
 
 
 /**
@@ -81,5 +81,9 @@ public interface UserService {
      * @return 是否成功
      */
     boolean deleteById(Integer id);
+
+    User isUsernameExist(User user);
+
+    String isPasswordTrue(RegisterUser registerUser, User user);
 
 }

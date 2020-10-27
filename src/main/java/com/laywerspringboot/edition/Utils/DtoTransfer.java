@@ -20,6 +20,7 @@ public class DtoTransfer {
         user.setRealname(registerUser.getRealname());
         user.setPhoneid(registerUser.getPhoneid());
         user.setIdcard(registerUser.getIdcard());
+        user.setPhotoaddress(registerUser.getPhotoaddress());
         return user;
     }
 }

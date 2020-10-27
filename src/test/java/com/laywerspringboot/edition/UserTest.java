@@ -1,6 +1,5 @@
 package com.laywerspringboot.edition;
 
-import com.laywerspringboot.edition.dao.UserDao;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mybatis.spring.annotation.MapperScan;
