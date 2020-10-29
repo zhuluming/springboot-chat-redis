@@ -11,6 +11,27 @@ public class R extends HashMap<String ,Object> implements Serializable {
     public static final long serialVersionUid = 1L;
 
     /**
+     * 将用户id放进json
+     * @param phoneID
+     * @return
+     */
+    public static R findPhoneOK(String phoneID) {
+        R r = new R();
+        r.put("phoneID", phoneID);
+        return r;
+    }
+
+    /**
+     * 将查询用户名是否存在
+     * @param msg
+     * @return
+     */
+    public static R findOk(String msg) {
+        return isOk(1,msg);
+    }
+
+
+    /**
      * 往R中存放数据
      * @param key
      * @param value
@@ -51,6 +72,14 @@ public class R extends HashMap<String ,Object> implements Serializable {
         return isOk(1,msg);
     }
 
+    /**
+     * 修改成功
+     * @param msg
+     * @return
+     */
+    public static R updateOk(String msg) {
+        return isOk(1,msg);
+    }
 
     /**
      * 可以注册返回1

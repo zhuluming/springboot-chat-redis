@@ -20,7 +20,12 @@ public interface UserDao {
      * @return
      */
     User queryByUsername(String username);
-
+    /**
+     * 根据用户手机号查询
+     * @param phone
+     * @return
+     */
+    User queryByPhone(String phone);
     /**
      * 通过ID查询单条数据
      *

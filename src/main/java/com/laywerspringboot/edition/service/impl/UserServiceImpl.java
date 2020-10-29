@@ -247,9 +247,16 @@ public class UserServiceImpl implements UserService {
      * @return
      */
     @Override
-    public User isUsernameExist(User user) {
-        User user1 = userDao.queryByUsername(user.getUsername());
-        return user1;
+    public User isUserExist(User user) {
+        if (user.getUsername() != null){
+            User user1 = userDao.queryByUsername(user.getUsername());
+            return user1;
+        }
+        if (user.getPhoneid() != null){
+            User user1 = userDao.queryByPhone(user.getPhoneid());
+            return user1;
+        }
+        throw new UserInfoException("请联系管理员：775773552");
     }
     /**
      * 判断密码是否正确
@@ -272,15 +279,21 @@ public class UserServiceImpl implements UserService {
         this.update(user);
         Userrole userrole = userroleDao.queryByUId(user.getId());
         Role role = roleDao.queryById(userrole.getRId());
-        //id username 用户头像名，生成token
+        //id username 用户头像名,消息推送参数msgflag，生成token
         //还需要加入用户的角色
         HashMap<String, String> payload = new HashMap<>();
         payload.put("id",user.getId().toString());
         payload.put("username",user.getUsername());
         payload.put("rolename",role.getRolename());
+        payload.put("msgflag","0");
         String token = JWTUtils.getToken(payload);
 
         return token;
+    }
+
+    @Override
+    public User queryByPhone(String phone) {
+        return userDao.queryByPhone(phone);
     }
 }
 

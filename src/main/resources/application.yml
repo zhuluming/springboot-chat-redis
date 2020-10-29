@@ -5,9 +5,12 @@ spring:
   datasource:
     druid:
       #url: jdbc:mysql://49.235.115.228:3306/myrhythm?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
-      url: jdbc:mysql://127.0.0.1:3306/myrhythm?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+      url: jdbc:mysql://db10:3306/myrhythm?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+
+      #url: jdbc:mysql://127.0.0.1:3306/myrhythm?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
       username: root
       password: root
+      #password: QFedu123@
       #password: 4235499Huang!
       initial-size: 1
       min-idle: 1

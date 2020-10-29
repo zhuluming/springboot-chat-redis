@@ -13,7 +13,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class InterceptorConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        String[] patterns = new String[]{"/error", "/userInfo/**","/userInfo/userLogin","/userInfo/phoneLogin",
+        String[] patterns = new String[]{"/error", "/userInfo/register/**","/userInfo/userLogin","/userInfo/phoneLogin",
                 "/swagger-resources/**","/webjars/**","/v2/**","/swagger-ui.html/**"};
 
         registry.addInterceptor(new JWTInterceptor())

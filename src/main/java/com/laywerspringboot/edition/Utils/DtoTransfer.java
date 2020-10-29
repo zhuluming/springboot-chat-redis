@@ -23,4 +23,5 @@ public class DtoTransfer {
         user.setPhotoaddress(registerUser.getPhotoaddress());
         return user;
     }
+
 }

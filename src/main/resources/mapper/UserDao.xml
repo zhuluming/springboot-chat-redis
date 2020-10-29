@@ -30,7 +30,13 @@
         from myrhythm.user
         where username = #{username}
     </select>
-
+    <!--查询单个-->
+    <select id="queryByPhone" resultMap="UserMap">
+        select
+          id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count
+        from myrhythm.user
+        where phoneid = #{phoneid}
+    </select>
 
     <!--查询指定行数据-->
     <select id="queryAllByLimit" resultMap="UserMap">

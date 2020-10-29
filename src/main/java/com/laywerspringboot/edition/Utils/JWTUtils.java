@@ -5,6 +5,7 @@ import com.auth0.jwt.JWTCreator;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Calendar;
 import java.util.Map;
 
@@ -34,8 +35,8 @@ public class JWTUtils {
      * @param token
      * @return
      */
-    public static void verify(String token){
-        JWT.require(Algorithm.HMAC256(TOKEN)).build().verify(token);
+    public static DecodedJWT verify(String token){
+        return JWT.require(Algorithm.HMAC256(TOKEN)).build().verify(token);
     }
     /**
      * 获取token中payload
@@ -45,4 +46,20 @@ public class JWTUtils {
     public static DecodedJWT getToken(String token){
         return JWT.require(Algorithm.HMAC256(TOKEN)).build().verify(token);
     }
+    /**
+     * 获取token中的id
+     * @param request
+     * @return
+     */
+    public static Integer getTokenId(HttpServletRequest request) {
+        //从请求头中获取token
+        String token = request.getHeader("token");
+        //验证token
+        DecodedJWT decodedJWT = JWTUtils.verify(token);
+        //log.info("用户id: [{}]",decodedJWT.getClaim("id").asString());
+        //log.info("用户name: [{}]",decodedJWT.getClaim("name").asString());
+        String idStr = decodedJWT.getClaim("id").asString();
+        return Integer.valueOf(idStr);
+    }
+
 }

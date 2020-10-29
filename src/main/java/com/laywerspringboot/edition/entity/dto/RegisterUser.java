@@ -67,7 +67,7 @@ public class RegisterUser implements Serializable {
     /**
      * 用户验证码，每次验证完删除
      */
-    //private String uuid;
+    private String uuid;
 
 
 

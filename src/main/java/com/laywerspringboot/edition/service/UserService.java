@@ -81,9 +81,24 @@ public interface UserService {
      * @return 是否成功
      */
     boolean deleteById(Integer id);
-
-    User isUsernameExist(User user);
-
+    /**
+     * 判断登陆时用户名是否存在
+     *
+     * @param user
+     * @return
+     */
+    User isUserExist(User user);
+    /**
+     * 判断密码是否正确
+     * @param registerUser
+     * @param user
+     */
     String isPasswordTrue(RegisterUser registerUser, User user);
 
+    /**
+     * 判断用户手机号是否存在
+     * @param phone
+     * @return
+     */
+    User queryByPhone(String phone);
 }

@@ -1,5 +1,6 @@
 package com.laywerspringboot.edition.controller;
 
+import com.auth0.jwt.interfaces.DecodedJWT;
 import com.laywerspringboot.edition.Utils.*;
 import com.laywerspringboot.edition.entity.Role;
 import com.laywerspringboot.edition.entity.User;
@@ -16,8 +17,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -92,6 +95,7 @@ public class UserInfoController  {
         return  userService.insertAndUpdateUUid(phoneid, uuid, currentTime);
 
     }
+
     /**
      * 用户注册功能
      * @param user 前端传的数据对象
@@ -109,6 +113,7 @@ public class UserInfoController  {
         isUserTrue(user.getReplynewpassword(), "确认密码为空");
         isUserTrue(user.getPhoneid(), "手机号为空");
         isUserTrue(user.getIdcard(), "身份证为空");
+        isUserTrue(user.getUuid(), "验证码为空");
         isUserTrue(user.getPhotoaddress(), "图片上传有问题，请重新上传");
         if (!user.getPassword().equals(user.getReplynewpassword())){
             throw new UserInfoException("两次密码不一致");
@@ -134,21 +139,26 @@ public class UserInfoController  {
     }
 
 
+    /**
+     * 用户登录
 
+     * @param LoginUser
+     * @return
+     */
     @ApiOperation(value = "用户登录功能")
     @PostMapping("/userLogin")
-    public R userLogin(@ApiParam(value = "登录用户对象")@RequestBody RegisterUser registerUser){
-        isUserTrue(registerUser.getUsername(), "用户名为空");
-        isUserTrue(registerUser.getPassword(), "密码为空");
-        User transferUser = DtoTransfer.transferUser(registerUser);
-        User user = userService.isUsernameExist(transferUser);
+    public R userLogin(@ApiParam(value = "登录用户对象")@RequestBody RegisterUser LoginUser){
+        isUserTrue(LoginUser.getUsername(), "用户名为空");
+        isUserTrue(LoginUser.getPassword(), "密码为空");
+        User transferUser = DtoTransfer.transferUser(LoginUser);
+        User user = userService.isUserExist(transferUser);
         if (user == null){
             throw new UserInfoException("用户名不存在");
         }
         //一次错误操作都没有
         //可以成功登录
         if (user.getCount() <= 5){
-            String token = userService.isPasswordTrue(registerUser, user);
+            String token = userService.isPasswordTrue(LoginUser, user);
             return R.loginOk("欢迎进入律动").put("token", token).put("jstatus", 0);
         }
         //传入状态的时间
@@ -161,7 +171,7 @@ public class UserInfoController  {
             if (time < 900000 ){
                 return R.error("请于"+user.getAltertime()+"后的15分钟后尝试").put("jstatus", 1);
             }else {
-                String token = userService.isPasswordTrue(registerUser, user);
+                String token = userService.isPasswordTrue(LoginUser, user);
                 return R.loginOk("欢迎进入律动").put("token", token);
             }
         }
@@ -169,7 +179,7 @@ public class UserInfoController  {
             if (time < 1800000  ){
                 return R.error("请于"+user.getAltertime()+"后的30分钟后尝试").put("jstatus", 1);
             }else {
-                String token = userService.isPasswordTrue(registerUser, user);
+                String token = userService.isPasswordTrue(LoginUser, user);
                 return R.loginOk("欢迎进入律动").put("token", token);
             }
         }
@@ -178,11 +188,143 @@ public class UserInfoController  {
 
     }
 
+    /**
+     * 手机登录功能
+     * @param LoginUser
+     * @return
+     */
     @ApiOperation(value = "手机登录功能")
     @PostMapping("/phoneLogin")
-    public R phoneLogin(@ApiParam(value = "手机登录对象")@RequestBody RegisterUser registerUser){
-        return null;
+    public R phoneLogin(@ApiParam(value = "手机登录对象")@RequestBody RegisterUser LoginUser){
+        isUserTrue(LoginUser.getPhoneid(), "手机号为空");
+        isUserTrue(LoginUser.getUuid(), "验证码为空");
+        String uuid = TecentUtils.sendMsg(LoginUser.getPhoneid());
+        if (LoginUser.getUuid().equals(uuid)){
+            User transferUser = DtoTransfer.transferUser(LoginUser);
+            User user = userService.isUserExist(transferUser);
+            user.setCount(0);
+            userService.update(user);
+            String token = userService.isPasswordTrue(LoginUser, user);
+            return R.loginOk("欢迎进入律动");
+        }
+        return R.error("验证码有误");
     }
+
+    /**
+     * 重置密码
+     * @param updateUser
+     * @param request
+     * @return
+     */
+    @ApiOperation(value = "重置密码")
+    @PostMapping("/pwdReset")
+    public R pwdReset(@ApiParam(value = "重置密码对象")@RequestBody RegisterUser updateUser, HttpServletRequest request){
+        Integer id = JWTUtils.getTokenId(request);
+        User user = userService.queryById(id);
+        if (updateUser.getPhoneid().equals(user.getPhoneid())){
+            String uuid = TecentUtils.sendMsg(updateUser.getPhoneid());
+          if (updateUser.getUuid().equals(uuid)){
+              if (!updateUser.getPassword().equals(user.getPassword())){
+                if (updateUser.getPassword().equals(updateUser.getReplynewpassword())){
+                    return R.updateOk("修改成功");
+                }else {
+                    return R.error("两次密码不一致");
+                }
+              }else {
+                  return R.error("密码使用过");
+              }
+          }else {
+              return R.error("验证码有误");
+          }
+
+        }
+        return R.error("手机号有误");
+    }
+
+    /**
+     * 验证手机号和验证码
+     * @param request
+     * @return
+     */
+    @ApiOperation(value = "查询手机号并返回给前端，前端做模糊处理")
+    @GetMapping("/findPhone")
+    public R findPhone(HttpServletRequest request){
+        Integer tokenId = JWTUtils.getTokenId(request);
+        User user = userService.queryById(tokenId);
+        return R.findPhoneOK(user.getPhoneid());
+
+    }
+
+
+    /**
+     * 重置手机号
+     * @param updateUser
+     * @param request
+     * @return
+     */
+    @ApiOperation(value = "重置手机号")
+    @PostMapping("/phoneUpdate")
+    public R phoneUpdate(@ApiParam(value = "重置手机号对象")@RequestBody RegisterUser updateUser, HttpServletRequest request) {
+        Integer id = JWTUtils.getTokenId(request);
+        User user = userService.queryById(id);
+        if (updateUser.getPhoneid().equals(user.getPhoneid())){
+            String uuid = TecentUtils.sendMsg(updateUser.getPhoneid());
+            if (updateUser.getUuid().equals(uuid)){
+                return R.updateOk("修改成功");
+            }
+        }
+        return R.error("验证码有误");
+    }
+
+
+    /**
+     * 是否开启消息推送，0为不允许，1为允许
+     * @param request
+     * @return
+     */
+    @ApiOperation(value = "返回开启消息推送后的token")
+    @GetMapping("/InfoPush/{msgflag}")
+    public String InfoPush(@ApiParam(value = "是否允许推送，0为允许，1不允许")@PathVariable("msgflag") String msgflag,HttpServletRequest request){
+        DecodedJWT token = JWTUtils.verify(request.getHeader("token"));
+        HashMap<String, String> map = new HashMap<>();
+        map.put("id", token.getClaim("id").asString());
+        map.put("username",token.getClaim("username").asString());
+        map.put("rolename",token.getClaim("username").asString());
+        map.put("msgflag",msgflag);
+        return JWTUtils.getToken(map);
+    }
+
+    /**
+     * 查询用户名是否存在
+     * @param username
+     * @param request
+     * @return
+     */
+    @ApiOperation(value = "查询用户名是否存在")
+    @GetMapping("/userInfo/findName/{username}")
+    public R findName(@ApiParam(value = "用户填的原始用户名")@PathVariable("username") String username,HttpServletRequest request){
+        Integer id = JWTUtils.getTokenId(request);
+        User user = userService.queryById(id);
+        return user == null?R.error("用户名不存在"):R.findOk("用户名存在");
+    }
+
+    /**
+     * 修改用户名
+     * @param newUsername
+     * @param request
+     * @return
+     */
+    @ApiOperation(value = "查询用户名是否存在")
+    @GetMapping("/userInfo/nameUpdate/{newUsername}")
+    public R nameUpdate(@ApiParam(value = "用户填的新的用户名")@PathVariable("newUsername") String newUsername,HttpServletRequest request){
+        Integer id = JWTUtils.getTokenId(request);
+        User user = userService.queryById(id);
+        user.setUsername(newUsername);
+
+        return userService.update(user) == null?R.error("修改用户名失败"):R.updateOk("修改成功");
+    }
+
+
 
 
 
