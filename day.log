@@ -1,13 +1,276 @@
-2020-10-28 21:15:21.422  INFO 30840 --- [main] com.laywerspringboot.edition.UserTest    : Starting UserTest on DESKTOP-N26M15P with PID 30840 (started by User in G:\laywer-springboot\edition)
-2020-10-28 21:15:21.432  INFO 30840 --- [main] com.laywerspringboot.edition.UserTest    : No active profile set, falling back to default profiles: default
-2020-10-28 21:15:22.476  WARN 30840 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
-2020-10-28 21:15:23.344  INFO 30840 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2020-10-28 21:15:23.891  INFO 30840 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2020-10-28 21:15:24.989  INFO 30840 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-28 21:15:25.425  INFO 30840 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-28 21:15:25.909  INFO 30840 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-28 21:15:25.933  INFO 30840 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-28 21:15:25.970  INFO 30840 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-28 21:15:26.260  INFO 30840 --- [main] com.laywerspringboot.edition.UserTest    : Started UserTest in 5.417 seconds (JVM running for 7.314)
-2020-10-28 21:15:26.668  INFO 30840 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-28 21:15:26.687  INFO 30840 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-29 22:40:52.137  INFO 2056 --- [main] com.laywerspringboot.edition.UserTest    : Starting UserTest on DESKTOP-N26M15P with PID 2056 (started by User in G:\laywer-springboot\edition)
+2020-10-29 22:40:52.143  INFO 2056 --- [main] com.laywerspringboot.edition.UserTest    : No active profile set, falling back to default profiles: default
+2020-10-29 22:40:53.453  WARN 2056 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+2020-10-29 22:41:13.253  INFO 23560 --- [main] com.laywerspringboot.edition.UserTest    : Starting UserTest on DESKTOP-N26M15P with PID 23560 (started by User in G:\laywer-springboot\edition)
+2020-10-29 22:41:13.256  INFO 23560 --- [main] com.laywerspringboot.edition.UserTest    : No active profile set, falling back to default profiles: default
+2020-10-29 22:41:14.119  WARN 23560 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+2020-10-29 22:41:15.086  INFO 23560 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-29 22:41:15.623  INFO 23560 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-29 22:41:16.986  INFO 23560 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-29 22:41:17.464  INFO 23560 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-29 22:41:18.139  INFO 23560 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-29 22:41:18.183  INFO 23560 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-29 22:41:18.265  INFO 23560 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-29 22:41:18.835  INFO 23560 --- [main] com.laywerspringboot.edition.UserTest    : Started UserTest in 6.063 seconds (JVM running for 7.472)
+2020-10-29 22:41:19.277  INFO 23560 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-29 22:41:19.292  INFO 23560 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-29 22:41:33.594  INFO 10340 --- [main] c.l.edition.EditionApplication           : Starting EditionApplication on DESKTOP-N26M15P with PID 10340 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+2020-10-29 22:41:33.598  INFO 10340 --- [main] c.l.edition.EditionApplication           : No active profile set, falling back to default profiles: default
+2020-10-29 22:41:35.737  INFO 10340 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-10-29 22:41:35.755  INFO 10340 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-29 22:41:35.755  INFO 10340 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-10-29 22:41:35.926  INFO 10340 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-29 22:41:35.927  INFO 10340 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2237 ms
+2020-10-29 22:41:36.157  INFO 10340 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-29 22:41:36.658  INFO 10340 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-29 22:41:37.467  INFO 10340 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-29 22:41:37.580  INFO 10340 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-29 22:41:37.926  INFO 10340 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-10-29 22:41:37.928  INFO 10340 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-29 22:41:37.954  INFO 10340 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-29 22:41:38.008  INFO 10340 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-29 22:41:38.409  INFO 10340 --- [main] c.l.edition.EditionApplication           : Started EditionApplication in 5.618 seconds (JVM running for 14.819)
+2020-10-29 22:42:00.065  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-29 22:42:00.065  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-29 22:42:00.076  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-10-29 22:42:00.139 ERROR 10340 --- [http-nio-0.0.0.0-80-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: token无效!!] with root cause
+
+java.lang.RuntimeException: token无效!!
+	at com.laywerspringboot.edition.interceptors.JWTInterceptor.preHandle(JWTInterceptor.java:33) ~[classes/:na]
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:141) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1035) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.1.10.jar:1.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+
+2020-10-29 22:42:00.552 ERROR 10340 --- [http-nio-0.0.0.0-80-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: token无效!!] with root cause
+
+java.lang.RuntimeException: token无效!!
+	at com.laywerspringboot.edition.interceptors.JWTInterceptor.preHandle(JWTInterceptor.java:33) ~[classes/:na]
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:141) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1035) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:83) ~[druid-1.1.10.jar:1.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+
+2020-10-29 22:43:26.194  INFO 25576 --- [main] com.laywerspringboot.edition.UserTest    : Starting UserTest on DESKTOP-N26M15P with PID 25576 (started by User in G:\laywer-springboot\edition)
+2020-10-29 22:43:26.196  INFO 25576 --- [main] com.laywerspringboot.edition.UserTest    : No active profile set, falling back to default profiles: default
+2020-10-29 22:43:27.015  WARN 25576 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+2020-10-29 22:43:27.976  INFO 25576 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-29 22:43:28.506  INFO 25576 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-29 22:43:30.272  INFO 25576 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-29 22:43:31.255  INFO 25576 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-29 22:43:33.603  INFO 25576 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-29 22:43:33.745  INFO 25576 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-29 22:43:34.039  INFO 25576 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-29 22:43:35.335  INFO 25576 --- [main] com.laywerspringboot.edition.UserTest    : Started UserTest in 9.567 seconds (JVM running for 11.037)
+2020-10-29 22:43:36.320  INFO 25576 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-29 22:43:36.360  INFO 25576 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-29 22:44:02.384  WARN 10340 --- [http-nio-0.0.0.0-80-exec-3] ssPathScanningCandidateComponentProvider : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+2020-10-29 22:44:03.049  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-29 22:44:03.075  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorUsingGET_1
+2020-10-29 22:44:03.085  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorUsingHEAD_1
+2020-10-29 22:44:03.093  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorUsingPOST_1
+2020-10-29 22:44:03.101  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorUsingPUT_1
+2020-10-29 22:44:03.106  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorUsingPATCH_1
+2020-10-29 22:44:03.113  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorUsingDELETE_1
+2020-10-29 22:44:03.120  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorUsingOPTIONS_1
+2020-10-29 22:44:03.127  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorUsingTRACE_1
+2020-10-29 22:44:03.135  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorHtmlUsingGET_1
+2020-10-29 22:44:03.140  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorHtmlUsingHEAD_1
+2020-10-29 22:44:03.146  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorHtmlUsingPOST_1
+2020-10-29 22:44:03.153  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorHtmlUsingPUT_1
+2020-10-29 22:44:03.160  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorHtmlUsingPATCH_1
+2020-10-29 22:44:03.165  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorHtmlUsingDELETE_1
+2020-10-29 22:44:03.171  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorHtmlUsingOPTIONS_1
+2020-10-29 22:44:03.177  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorHtmlUsingTRACE_1
+2020-10-29 22:44:03.192  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InfoPushUsingGET_1
+2020-10-29 22:44:03.199  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findNameUsingGET_1
+2020-10-29 22:44:03.207  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findPhoneUsingGET_1
+2020-10-29 22:44:03.214  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: isIdCardEmptyUsingGET_1
+2020-10-29 22:44:03.222  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: isRealNameEmptyUsingGET_1
+2020-10-29 22:44:03.229  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: isUsernameEmptyUsingGET_1
+2020-10-29 22:44:03.236  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: isUuidUsingGET_1
+2020-10-29 22:44:03.243  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: nameUpdateUsingGET_1
+2020-10-29 22:44:03.251  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: phoneLoginUsingPOST_1
+2020-10-29 22:44:03.263  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: phoneUpdateUsingPOST_1
+2020-10-29 22:44:03.273  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: pwdResetUsingPOST_1
+2020-10-29 22:44:03.287  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: registerUsingPOST_1
+2020-10-29 22:44:03.297  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadImgToOSSUsingPOST_1
+2020-10-29 22:44:03.307  INFO 10340 --- [http-nio-0.0.0.0-80-exec-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: userLoginUsingPOST_1
+2020-10-29 22:45:24.160  WARN 10340 --- [http-nio-0.0.0.0-80-exec-1] ssPathScanningCandidateComponentProvider : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+2020-10-29 22:46:01.769  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-29 22:46:01.792  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorUsingGET_2
+2020-10-29 22:46:01.799  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorUsingHEAD_2
+2020-10-29 22:46:01.807  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorUsingPOST_2
+2020-10-29 22:46:01.814  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorUsingPUT_2
+2020-10-29 22:46:01.823  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorUsingPATCH_2
+2020-10-29 22:46:01.833  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorUsingDELETE_2
+2020-10-29 22:46:01.843  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorUsingOPTIONS_2
+2020-10-29 22:46:01.853  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorUsingTRACE_2
+2020-10-29 22:46:01.867  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorHtmlUsingGET_2
+2020-10-29 22:46:01.876  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorHtmlUsingHEAD_2
+2020-10-29 22:46:01.884  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorHtmlUsingPOST_2
+2020-10-29 22:46:01.888  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorHtmlUsingPUT_2
+2020-10-29 22:46:01.894  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorHtmlUsingPATCH_2
+2020-10-29 22:46:01.898  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorHtmlUsingDELETE_2
+2020-10-29 22:46:01.903  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorHtmlUsingOPTIONS_2
+2020-10-29 22:46:01.908  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: errorHtmlUsingTRACE_2
+2020-10-29 22:46:01.926  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: InfoPushUsingGET_2
+2020-10-29 22:46:01.938  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findNameUsingGET_2
+2020-10-29 22:46:01.950  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findPhoneUsingGET_2
+2020-10-29 22:46:01.966  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: isIdCardEmptyUsingGET_2
+2020-10-29 22:46:01.979  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: isRealNameEmptyUsingGET_2
+2020-10-29 22:46:01.994  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: isUsernameEmptyUsingGET_2
+2020-10-29 22:46:02.009  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: isUuidUsingGET_2
+2020-10-29 22:46:02.023  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: nameUpdateUsingGET_2
+2020-10-29 22:46:02.035  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: phoneLoginUsingPOST_2
+2020-10-29 22:46:02.049  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: phoneUpdateUsingPOST_2
+2020-10-29 22:46:02.061  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: pwdResetUsingPOST_2
+2020-10-29 22:46:02.068  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: registerUsingPOST_2
+2020-10-29 22:46:02.079  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadImgToOSSUsingPOST_2
+2020-10-29 22:46:02.086  INFO 10340 --- [http-nio-0.0.0.0-80-exec-3] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: userLoginUsingPOST_2
+2020-10-29 22:47:02.946  INFO 14592 --- [main] com.laywerspringboot.edition.UserTest    : Starting UserTest on DESKTOP-N26M15P with PID 14592 (started by User in G:\laywer-springboot\edition)
+2020-10-29 22:47:02.949  INFO 14592 --- [main] com.laywerspringboot.edition.UserTest    : No active profile set, falling back to default profiles: default
+2020-10-29 22:47:03.702  WARN 14592 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+2020-10-29 22:47:04.557  INFO 14592 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-29 22:47:05.050  INFO 14592 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-29 22:47:06.108  INFO 14592 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-29 22:47:06.418  INFO 14592 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-29 22:47:06.912  INFO 14592 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-29 22:47:06.948  INFO 14592 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-29 22:47:06.998  INFO 14592 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-29 22:47:07.366  INFO 14592 --- [main] com.laywerspringboot.edition.UserTest    : Started UserTest in 4.791 seconds (JVM running for 6.027)
+2020-10-29 22:47:07.660  INFO 14592 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-29 22:47:07.674  INFO 14592 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-29 22:47:13.081  INFO 24208 --- [main] c.l.edition.EditionApplication           : Starting EditionApplication on DESKTOP-N26M15P with PID 24208 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+2020-10-29 22:47:13.083  INFO 24208 --- [main] c.l.edition.EditionApplication           : No active profile set, falling back to default profiles: default
+2020-10-29 22:47:14.622  INFO 24208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-10-29 22:47:14.632  INFO 24208 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-29 22:47:14.633  INFO 24208 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-10-29 22:47:14.763  INFO 24208 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-29 22:47:14.763  INFO 24208 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1638 ms
+2020-10-29 22:47:14.971  INFO 24208 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-29 22:47:15.198  INFO 24208 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-29 22:47:15.718  INFO 24208 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-29 22:47:15.787  INFO 24208 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-29 22:47:16.000  INFO 24208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-10-29 22:47:16.001  INFO 24208 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-29 22:47:16.015  INFO 24208 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-29 22:47:16.046  INFO 24208 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-29 22:47:16.299  INFO 24208 --- [main] c.l.edition.EditionApplication           : Started EditionApplication in 3.627 seconds (JVM running for 6.526)
+2020-10-29 22:47:44.365  INFO 24208 --- [http-nio-0.0.0.0-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-29 22:47:44.366  INFO 24208 --- [http-nio-0.0.0.0-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-29 22:47:44.376  INFO 24208 --- [http-nio-0.0.0.0-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-10-29 23:18:42.700  INFO 17828 --- [main] com.laywerspringboot.edition.UserTest    : Starting UserTest on DESKTOP-N26M15P with PID 17828 (started by User in G:\laywer-springboot\edition)
+2020-10-29 23:18:42.702  INFO 17828 --- [main] com.laywerspringboot.edition.UserTest    : No active profile set, falling back to default profiles: default
+2020-10-29 23:18:43.458  WARN 17828 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+2020-10-29 23:18:44.298  INFO 17828 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-29 23:18:44.781  INFO 17828 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-29 23:18:45.842  INFO 17828 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-29 23:18:46.217  INFO 17828 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-29 23:18:46.752  INFO 17828 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-29 23:18:46.788  INFO 17828 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-29 23:18:46.845  INFO 17828 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-29 23:18:47.209  INFO 17828 --- [main] com.laywerspringboot.edition.UserTest    : Started UserTest in 4.936 seconds (JVM running for 6.301)
+2020-10-29 23:18:47.513  INFO 17828 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-29 23:18:47.526  INFO 17828 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-29 23:18:54.379  INFO 20308 --- [main] c.l.edition.EditionApplication           : Starting EditionApplication on DESKTOP-N26M15P with PID 20308 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+2020-10-29 23:18:54.382  INFO 20308 --- [main] c.l.edition.EditionApplication           : No active profile set, falling back to default profiles: default
+2020-10-29 23:18:55.955  INFO 20308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-10-29 23:18:55.965  INFO 20308 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-29 23:18:55.966  INFO 20308 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-10-29 23:18:56.092  INFO 20308 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-29 23:18:56.092  INFO 20308 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1670 ms
+2020-10-29 23:18:56.258  INFO 20308 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-29 23:18:56.495  INFO 20308 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-29 23:18:57.032  INFO 20308 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-29 23:18:57.103  INFO 20308 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-29 23:18:57.318  INFO 20308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-10-29 23:18:57.319  INFO 20308 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-29 23:18:57.332  INFO 20308 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-29 23:18:57.364  INFO 20308 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-29 23:18:57.626  INFO 20308 --- [main] c.l.edition.EditionApplication           : Started EditionApplication in 3.65 seconds (JVM running for 7.812)
+2020-10-29 23:19:02.708  INFO 20308 --- [http-nio-0.0.0.0-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-29 23:19:02.709  INFO 20308 --- [http-nio-0.0.0.0-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-29 23:19:02.717  INFO 20308 --- [http-nio-0.0.0.0-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms

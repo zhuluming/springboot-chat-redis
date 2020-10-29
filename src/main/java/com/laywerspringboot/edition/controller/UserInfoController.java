@@ -41,6 +41,8 @@ public class UserInfoController  {
     @Resource
     private UserroleService userroleService;
 
+
+
     /**
      * 验证用户名
      * @param username
