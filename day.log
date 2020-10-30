@@ -274,3 +274,16 @@ java.lang.RuntimeException: token无效!!
 2020-10-29 23:19:02.708  INFO 20308 --- [http-nio-0.0.0.0-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-10-29 23:19:02.709  INFO 20308 --- [http-nio-0.0.0.0-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-10-29 23:19:02.717  INFO 20308 --- [http-nio-0.0.0.0-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-10-29 23:27:18.133  INFO 18616 --- [main] com.laywerspringboot.edition.UserTest    : Starting UserTest on DESKTOP-N26M15P with PID 18616 (started by User in G:\laywer-springboot\edition)
+2020-10-29 23:27:18.135  INFO 18616 --- [main] com.laywerspringboot.edition.UserTest    : No active profile set, falling back to default profiles: default
+2020-10-29 23:27:18.932  WARN 18616 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+2020-10-29 23:27:19.799  INFO 18616 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-29 23:27:20.310  INFO 18616 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-29 23:27:21.585  INFO 18616 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-29 23:27:22.315  INFO 18616 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-29 23:27:22.772  INFO 18616 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-29 23:27:22.806  INFO 18616 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-29 23:27:22.858  INFO 18616 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-29 23:27:23.216  INFO 18616 --- [main] com.laywerspringboot.edition.UserTest    : Started UserTest in 5.54 seconds (JVM running for 6.912)
+2020-10-29 23:27:23.538  INFO 18616 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-29 23:27:23.555  INFO 18616 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

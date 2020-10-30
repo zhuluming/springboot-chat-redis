@@ -23,5 +23,16 @@ public class DtoTransfer {
         user.setPhotoaddress(registerUser.getPhotoaddress());
         return user;
     }
-
+    public static User transferLoginUser(RegisterUser registerUser){
+        User user = new User();
+        user.setUsername(registerUser.getUsername());
+        user.setPassword(registerUser.getPassword());
+        return user;
+    }
+    public static User transferPhoneLoginUser(RegisterUser registerUser){
+        User user = new User();
+        user.setPhoneid(registerUser.getPhoneid());
+        user.setUuid(registerUser.getUuid());
+        return user;
+    }
 }

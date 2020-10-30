@@ -103,7 +103,7 @@ public class UserInfoController  {
      * @param user 前端传的数据对象
      * @return 返回json给前端
      */
-    @ApiOperation(value = "用户注册功能")
+    @ApiOperation(value = "用户注册功能,并把图片上传ajax的地址一起传输")
     @PostMapping("/register")
     public R register(@ApiParam(value = "注册用户对象")@RequestBody RegisterUser user){
         User insertUser = new User();
@@ -116,7 +116,7 @@ public class UserInfoController  {
         isUserTrue(user.getPhoneid(), "手机号为空");
         isUserTrue(user.getIdcard(), "身份证为空");
         isUserTrue(user.getUuid(), "验证码为空");
-        isUserTrue(user.getPhotoaddress(), "图片上传有问题，请重新上传");
+        isUserTrue(user.getPhotoaddress(), "图片没上传成功");
         if (!user.getPassword().equals(user.getReplynewpassword())){
             throw new UserInfoException("两次密码不一致");
         }
@@ -152,8 +152,8 @@ public class UserInfoController  {
     public R userLogin(@ApiParam(value = "登录用户对象")@RequestBody RegisterUser LoginUser){
         isUserTrue(LoginUser.getUsername(), "用户名为空");
         isUserTrue(LoginUser.getPassword(), "密码为空");
-        User transferUser = DtoTransfer.transferUser(LoginUser);
-        User user = userService.isUserExist(transferUser);
+        User transferLoginUser = DtoTransfer.transferLoginUser(LoginUser);
+        User user = userService.isUserExist(transferLoginUser);
         if (user == null){
             throw new UserInfoException("用户名不存在");
         }
@@ -202,8 +202,8 @@ public class UserInfoController  {
         isUserTrue(LoginUser.getUuid(), "验证码为空");
         String uuid = TecentUtils.sendMsg(LoginUser.getPhoneid());
         if (LoginUser.getUuid().equals(uuid)){
-            User transferUser = DtoTransfer.transferUser(LoginUser);
-            User user = userService.isUserExist(transferUser);
+            User transferPhoneLoginUser = DtoTransfer.transferPhoneLoginUser(LoginUser);
+            User user = userService.isUserExist(transferPhoneLoginUser);
             user.setCount(0);
             userService.update(user);
             String token = userService.isPasswordTrue(LoginUser, user);
