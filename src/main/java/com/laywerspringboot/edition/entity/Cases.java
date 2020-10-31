@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 /**
- * (Case)实体类
+ * (Cases)实体类
  *
  * @author makejava
  * @since 2020-10-23 18:49:06
@@ -15,8 +15,12 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Case implements Serializable {
+public class Cases implements Serializable {
     private static final long serialVersionUID = 937638663269899873L;
+    /**
+     * 主键
+     */
+    private int cid;
     /**
      * 案号
      */

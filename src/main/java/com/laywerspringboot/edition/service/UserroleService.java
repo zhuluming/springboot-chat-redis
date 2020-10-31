@@ -23,6 +23,24 @@ public interface UserroleService {
     Userrole queryById(Integer uId);
 
 
+    /**
+     * 通过ID查询单条数据
+     *
+     * @param uId 用户id
+     * @return 实例对象
+     */
+    public Userrole queryByUId(Integer uId);
+
+    /**
+     * 通过ID查询单条数据
+     *
+     * @param rId 用户角色id
+     * @return 实例对象
+     */
+    public Userrole queryByRId(Integer rId);
+
+
+
 
     /**
      * 查询多条数据

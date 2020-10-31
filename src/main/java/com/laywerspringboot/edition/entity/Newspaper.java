@@ -34,7 +34,7 @@ public class Newspaper implements Serializable {
      */
     private String page;
     /**
-     * 状态
+     * 支付状态
      */
     private String state;
     /**

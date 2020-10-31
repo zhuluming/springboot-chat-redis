@@ -1,26 +1,26 @@
 package com.laywerspringboot.edition.dao;
 
-import com.laywerspringboot.edition.entity.Case;
+import com.laywerspringboot.edition.entity.Cases;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
 
 /**
- * (Case)表数据库访问层
+ * (Cases)表数据库访问层
  *
  * @author makejava
- * @since 2020-10-24 11:12:44
+ * @since 2020-10-31 17:20:10
  */
-public interface CaseDao {
+public interface CasesDao {
 
     /**
      * 通过ID查询单条数据
      *
-     * @param caseid 主键
+     * @param cid 主键
      * @return 实例对象
      */
-    Case queryById(String caseid);
+    Cases queryById(Integer cid);
 
     /**
      * 查询指定行数据
@@ -29,7 +29,7 @@ public interface CaseDao {
      * @param limit  查询条数
      * @return 对象列表
      */
-    List<Case> queryAllByLimit(@Param("offset") int offset, @Param("limit") int limit);
+    List<Cases> queryAllByLimit(@Param("offset") int offset, @Param("limit") int limit);
 
 
     /**
@@ -38,7 +38,7 @@ public interface CaseDao {
      * @param cases 实例对象
      * @return 对象列表
      */
-    List<Case> queryAll(Case cases);
+    List<Cases> queryAll(Cases cases);
 
     /**
      * 新增数据
@@ -46,23 +46,23 @@ public interface CaseDao {
      * @param cases 实例对象
      * @return 影响行数
      */
-    int insert(Case cases);
+    int insert(Cases cases);
 
     /**
      * 批量新增数据（MyBatis原生foreach方法）
      *
-     * @param entities List<Case> 实例对象列表
+     * @param entities List<Cases> 实例对象列表
      * @return 影响行数
      */
-    int insertBatch(@Param("entities") List<Case> entities);
+    int insertBatch(@Param("entities") List<Cases> entities);
 
     /**
      * 批量新增或按主键更新数据（MyBatis原生foreach方法）
      *
-     * @param entities List<Case> 实例对象列表
+     * @param entities List<Cases> 实例对象列表
      * @return 影响行数
      */
-    int insertOrUpdateBatch(@Param("entities") List<Case> entities);
+    int insertOrUpdateBatch(@Param("entities") List<Cases> entities);
 
     /**
      * 修改数据
@@ -70,14 +70,14 @@ public interface CaseDao {
      * @param cases 实例对象
      * @return 影响行数
      */
-    int update(Case cases);
+    int update(Cases cases);
 
     /**
      * 通过主键删除数据
      *
-     * @param caseid 主键
+     * @param cid 主键
      * @return 影响行数
      */
-    int deleteById(String caseid);
+    int deleteById(Integer cid);
 
 }

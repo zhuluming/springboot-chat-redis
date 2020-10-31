@@ -71,7 +71,14 @@ public class R extends HashMap<String ,Object> implements Serializable {
     public static R loginOk(String msg){
         return isOk(1,msg);
     }
-
+    /**
+     * 成功查询到
+     * @param msg
+     * @return
+     */
+    public static R searchOk(String msg){
+        return isOk(1,msg);
+    }
     /**
      * 修改成功
      * @param msg

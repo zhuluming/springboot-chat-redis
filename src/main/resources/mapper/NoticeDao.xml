@@ -10,13 +10,13 @@
         <result property="picture" column="picture" jdbcType="VARCHAR"/>
         <result property="category" column="category" jdbcType="VARCHAR"/>
         <result property="releasetime" column="releasetime" jdbcType="OTHER"/>
-        <result property="公告状态" column="公告状态" jdbcType="VARCHAR"/>
+        <result property="noticeStatus" column="noticeStatus" jdbcType="VARCHAR"/>
     </resultMap>
 
     <!--查询单个-->
     <select id="queryById" resultMap="NoticeMap">
         select
-          n_id, noticename, type, caseaddress, picture, category, releasetime, 公告状态
+          n_id, noticename, type, caseaddress, picture, category, releasetime, noticeStatus
         from myrhythm.notice
         where n_id = #{nId}
     </select>
@@ -24,7 +24,7 @@
     <!--查询指定行数据-->
     <select id="queryAllByLimit" resultMap="NoticeMap">
         select
-          n_id, noticename, type, caseaddress, picture, category, releasetime, 公告状态
+          n_id, noticename, type, caseaddress, picture, category, releasetime, noticeStatus
         from myrhythm.notice
         limit #{offset}, #{limit}
     </select>
@@ -32,7 +32,7 @@
     <!--通过实体作为筛选条件查询-->
     <select id="queryAll" resultMap="NoticeMap">
         select
-        n_id, noticename, type, caseaddress, picture, category, releasetime, 公告状态
+        n_id, noticename, type, caseaddress, picture, category, releasetime, noticeStatus
         from myrhythm.notice
         <where>
             <if test="nId != null">
@@ -64,29 +64,29 @@
 
     <!--新增所有列-->
     <insert id="insert" keyProperty="nId" useGeneratedKeys="true">
-        insert into myrhythm.notice(noticename, type, caseaddress, picture, category, releasetime, 公告状态)
-        values (#{noticename}, #{type}, #{caseaddress}, #{picture}, #{category}, #{releasetime}, #{公告状态})
+        insert into myrhythm.notice(noticename, type, caseaddress, picture, category, releasetime, noticeStatus)
+        values (#{noticename}, #{type}, #{caseaddress}, #{picture}, #{category}, #{releasetime}, #{noticeStatus})
     </insert>
 
     <insert id="insertBatch" keyProperty="nId" useGeneratedKeys="true">
-        insert into myrhythm.notice(noticename, type, caseaddress, picture, category, releasetime, 公告状态)
+        insert into myrhythm.notice(noticename, type, caseaddress, picture, category, releasetime, noticeStatus)
         values
         <foreach collection="entities" item="entity" separator=",">
             (#{entity.noticename}, #{entity.type}, #{entity.caseaddress}, #{entity.picture}, #{entity.category},
-            #{entity.releasetime}, #{entity.公告状态})
+            #{entity.releasetime}, #{entity.noticeStatus})
         </foreach>
     </insert>
 
     <insert id="insertOrUpdateBatch" keyProperty="nId" useGeneratedKeys="true">
-        insert into myrhythm.notice(noticename, type, caseaddress, picture, category, releasetime, 公告状态)
+        insert into myrhythm.notice(noticename, type, caseaddress, picture, category, releasetime, noticeStatus)
         values
         <foreach collection="entities" item="entity" separator=",">
             (#{entity.noticename}, #{entity.type}, #{entity.caseaddress}, #{entity.picture}, #{entity.category},
-            #{entity.releasetime}, #{entity.公告状态})
+            #{entity.releasetime}, #{entity.noticeStatus})
         </foreach>
         on duplicate key update
         noticename = values(noticename) , type = values(type) , caseaddress = values(caseaddress) , picture =
-        values(picture) , category = values(category) , releasetime = values(releasetime) , 公告状态 = values(公告状态)
+        values(picture) , category = values(category) , releasetime = values(releasetime) , noticeStatus = values(noticeStatus)
     </insert>
 
     <!--通过主键修改数据-->
@@ -112,7 +112,7 @@
                 releasetime = #{releasetime},
             </if>
             <if test="公告状态 != null and 公告状态 != ''">
-                公告状态 = #{公告状态},
+                noticeStatus = #{noticeStatus},
             </if>
         </set>
         where n_id = #{nId}

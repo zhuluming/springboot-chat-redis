@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.laywerspringboot.edition.dao.CaseDao">
+<mapper namespace="com.laywerspringboot.edition.dao.CasesDao">
 
-    <resultMap type="com.laywerspringboot.edition.entity.Case" id="CaseMap">
+    <resultMap type="com.laywerspringboot.edition.entity.Cases" id="CasesMap">
+        <result property="cid" column="cid" jdbcType="INTEGER"/>
         <result property="caseid" column="caseId" jdbcType="VARCHAR"/>
         <result property="party" column="party" jdbcType="VARCHAR"/>
         <result property="phone" column="phone" jdbcType="VARCHAR"/>
@@ -13,27 +14,30 @@
     </resultMap>
 
     <!--查询单个-->
-    <select id="queryById" resultMap="CaseMap">
+    <select id="queryById" resultMap="CasesMap">
         select
-          caseId, party, phone, court, region, lawyer, admin
-        from myrhythm.case
-        where caseId = #{caseid}
+          cid, caseId, party, phone, court, region, lawyer, admin
+        from myrhythm.cases
+        where cid = #{cid}
     </select>
 
     <!--查询指定行数据-->
-    <select id="queryAllByLimit" resultMap="CaseMap">
+    <select id="queryAllByLimit" resultMap="CasesMap">
         select
-          caseId, party, phone, court, region, lawyer, admin
-        from myrhythm.case
+          cid, caseId, party, phone, court, region, lawyer, admin
+        from myrhythm.cases
         limit #{offset}, #{limit}
     </select>
 
     <!--通过实体作为筛选条件查询-->
-    <select id="queryAll" resultMap="CaseMap">
+    <select id="queryAll" resultMap="CasesMap">
         select
-        caseId, party, phone, court, region, lawyer, admin
-        from myrhythm.case
+        cid, caseId, party, phone, court, region, lawyer, admin
+        from myrhythm.cases
         <where>
+            <if test="cid != null">
+                and cid = #{cid}
+            </if>
             <if test="caseid != null and caseid != ''">
                 and caseId = #{caseid}
             </if>
@@ -59,34 +63,39 @@
     </select>
 
     <!--新增所有列-->
-    <insert id="insert" keyProperty="caseid" useGeneratedKeys="true">
-        insert into myrhythm.case(party, phone, court, region, lawyer, admin)
-        values (#{party}, #{phone}, #{court}, #{region}, #{lawyer}, #{admin})
+    <insert id="insert" keyProperty="cid" useGeneratedKeys="true">
+        insert into myrhythm.cases(caseId, party, phone, court, region, lawyer, admin)
+        values (#{caseid}, #{party}, #{phone}, #{court}, #{region}, #{lawyer}, #{admin})
     </insert>
 
-    <insert id="insertBatch" keyProperty="caseid" useGeneratedKeys="true">
-        insert into myrhythm.case(party, phone, court, region, lawyer, admin)
+    <insert id="insertBatch" keyProperty="cid" useGeneratedKeys="true">
+        insert into myrhythm.cases(caseId, party, phone, court, region, lawyer, admin)
         values
         <foreach collection="entities" item="entity" separator=",">
-            (#{entity.party}, #{entity.phone}, #{entity.court}, #{entity.region}, #{entity.lawyer}, #{entity.admin})
+            (#{entity.caseid}, #{entity.party}, #{entity.phone}, #{entity.court}, #{entity.region}, #{entity.lawyer},
+            #{entity.admin})
         </foreach>
     </insert>
 
-    <insert id="insertOrUpdateBatch" keyProperty="caseid" useGeneratedKeys="true">
-        insert into myrhythm.case(party, phone, court, region, lawyer, admin)
+    <insert id="insertOrUpdateBatch" keyProperty="cid" useGeneratedKeys="true">
+        insert into myrhythm.cases(caseId, party, phone, court, region, lawyer, admin)
         values
         <foreach collection="entities" item="entity" separator=",">
-            (#{entity.party}, #{entity.phone}, #{entity.court}, #{entity.region}, #{entity.lawyer}, #{entity.admin})
+            (#{entity.caseid}, #{entity.party}, #{entity.phone}, #{entity.court}, #{entity.region}, #{entity.lawyer},
+            #{entity.admin})
         </foreach>
         on duplicate key update
-        party = values(party) , phone = values(phone) , court = values(court) , region = values(region) , lawyer =
-        values(lawyer) , admin = values(admin)
+        caseId = values(caseId) , party = values(party) , phone = values(phone) , court = values(court) , region =
+        values(region) , lawyer = values(lawyer) , admin = values(admin)
     </insert>
 
     <!--通过主键修改数据-->
     <update id="update">
-        update myrhythm.case
+        update myrhythm.cases
         <set>
+            <if test="caseid != null and caseid != ''">
+                caseId = #{caseid},
+            </if>
             <if test="party != null and party != ''">
                 party = #{party},
             </if>
@@ -106,12 +115,12 @@
                 admin = #{admin},
             </if>
         </set>
-        where caseId = #{caseid}
+        where cid = #{cid}
     </update>
 
     <!--通过主键删除-->
     <delete id="deleteById">
-        delete from myrhythm.case where caseId = #{caseid}
+        delete from myrhythm.cases where cid = #{cid}
     </delete>
 
 </mapper>

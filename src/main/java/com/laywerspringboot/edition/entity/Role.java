@@ -31,7 +31,7 @@ public class Role implements Serializable {
     @ApiModelProperty(name="rolename",example = "角色")
     private String rolename;
     /**
-     * 角色状态 1 代表正常 0 代表异常
+     * 角色状态
      */
      @ApiModelProperty(name="status",example = "1 代表正常 0 代表异常")
     private String status;

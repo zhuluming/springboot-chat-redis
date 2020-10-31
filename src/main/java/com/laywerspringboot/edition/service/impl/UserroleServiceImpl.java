@@ -24,13 +24,36 @@ public class UserroleServiceImpl implements UserroleService {
     /**
      * 通过ID查询单条数据
      *
-     * @param uId 主键
+     * @param Id 主键
      * @return 实例对象
      */
     @Override
-    public Userrole queryById(Integer uId) {
-        return this.userroleDao.queryById(uId);
+    public Userrole queryById(Integer Id) {
+        return this.userroleDao.queryById(Id);
     }
+
+    /**
+     * 通过ID查询单条数据
+     *
+     * @param uId 用户id
+     * @return 实例对象
+     */
+    @Override
+    public Userrole queryByUId(Integer uId) {
+        return this.userroleDao.queryByUId(uId);
+    }
+
+    /**
+     * 通过ID查询单条数据
+     *
+     * @param rId 用户角色id
+     * @return 实例对象
+     */
+    @Override
+    public Userrole queryByRId(Integer rId) {
+        return this.userroleDao.queryByRId(rId);
+    }
+
 
     /**
      * 查询多条数据

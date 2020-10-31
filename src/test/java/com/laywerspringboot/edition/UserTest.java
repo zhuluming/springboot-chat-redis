@@ -1,5 +1,6 @@
 package com.laywerspringboot.edition;
 
+import com.laywerspringboot.edition.dao.SearchDtoDao;
 import com.laywerspringboot.edition.dao.UserDao;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,6 +22,8 @@ import javax.annotation.Resource;
 public class UserTest  {
     @Resource
     private UserDao userDao;
+    @Resource
+    private SearchDtoDao searchDto;
     @Test
     public void testUserSelect(){
        /* Integer integer = 1;
@@ -30,5 +33,8 @@ public class UserTest  {
         user.setPhoneid("13657067872");
         userDao.insert(user);
         System.out.println(userDao.queryAll(user));*/
+     /*   System.out.println(searchDto.SearchByCaseID("asdas", "1"));
+        System.out.println(searchDto.SearchByLaywerName("asdas").size());
+        System.out.println(searchDto.SearchByParty("asdas", "dasd"));*/
     }
 }

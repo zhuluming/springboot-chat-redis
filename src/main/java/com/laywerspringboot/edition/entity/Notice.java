@@ -48,7 +48,7 @@ public class Notice implements Serializable {
     /**
      * 是否公告，-1为过期，1为公告
      */
-    private String 公告状态;
+    private String noticeStatus;
 
 
 
