@@ -4,8 +4,8 @@ import com.laywerspringboot.edition.Utils.ObjectUtils;
 import com.laywerspringboot.edition.Utils.RandomUtils;
 import com.laywerspringboot.edition.Utils.StringUtils;
 import com.laywerspringboot.edition.entity.User;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.springframework.util.Assert;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -26,7 +26,7 @@ public class UtilsTest extends UserTest {
     @Test
     public void testObjUtils(){
         List<User> users = new ArrayList<>();
-        Assert.assertTrue(ObjectUtils.isEmpty(users));
+        Assert.isTrue(ObjectUtils.isEmpty(users));
 
     }
     @Test

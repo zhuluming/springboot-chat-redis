@@ -2,12 +2,10 @@ package com.laywerspringboot.edition;
 
 import com.laywerspringboot.edition.dao.SearchDtoDao;
 import com.laywerspringboot.edition.dao.UserDao;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.stereotype.Repository;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
 
@@ -16,7 +14,7 @@ import javax.annotation.Resource;
  * @createTime:2020-10-23-22-07
  */
 
-@RunWith(SpringJUnit4ClassRunner.class)
+
 @SpringBootTest
 @MapperScan(annotationClass = Repository.class,basePackages = "com.laywerspringboot.edition.dao")
 public class UserTest  {

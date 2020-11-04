@@ -1,36 +1,6 @@
-server:
-  port: 8081
-  address: 0.0.0.0
 spring:
-  datasource:
-    druid:
-      #url: jdbc:mysql://49.235.115.228:3306/myrhythm?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
-      #url: jdbc:mysql://db10:3306/myrhythm?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
-
-      url: jdbc:mysql://127.0.0.1:3306/myrhythm?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
-      #url: jdbc:mysql://123.57.109.224:3306/myrhythm?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
-
-      username: root
-      #password: P@ssw0rd
-      password: root
-      #password: QFedu123@
-      #password: 4235499Huang!
-      initial-size: 1
-      min-idle: 1
-      max-active: 20
-      test-on-borrow: true
-      # MySQL 8.x: com.mysql.cj.jdbc.Driver
-      driver-class-name: com.mysql.cj.jdbc.Driver
-  redis:
-    host: 192.168.190.11
-    port: 6379
-    password: root
-    jedis:
-      pool:
-        max-active: 8
-        max-wait: -1
-        max-idle: 500
-        min-idle: 0
+  profiles:
+    active: dev
 
 
 #log
@@ -44,7 +14,7 @@ logging:
           controller: debug
   file:
     path: \G:\log
-    name: day.log
+    name: daylog
 #mybatis
 mybatis:
   mapper-locations: classpath:mapper/*.xml

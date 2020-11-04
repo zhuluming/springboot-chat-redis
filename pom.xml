@@ -34,6 +34,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <!-- 阿里巴巴连接池 -->
         <dependency>
@@ -56,12 +62,7 @@
             <artifactId>pagehelper-spring-boot-starter</artifactId>
             <version>1.2.5</version>
         </dependency>
-        <!--测试-->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <scope>test</scope>
-        </dependency>
+
         <!--云片-->
 <!--        <dependency>
             <groupId>com.yunpian.sdk</groupId>
@@ -111,6 +112,7 @@
             <version>1.1</version>
             <scope>provided</scope>
         </dependency>
+
     </dependencies>
 
     <build>
