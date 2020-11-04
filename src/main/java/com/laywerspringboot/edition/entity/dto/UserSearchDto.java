@@ -14,8 +14,8 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class SearchDto implements Serializable {
-    private static final long serialVersionUID = 937638654512173L;
+public class UserSearchDto implements Serializable {
+    private static final long serialVersionUID = 9376343454512173L;
     /**
      * 案号
      */
@@ -56,4 +56,9 @@ public class SearchDto implements Serializable {
      */
     @ApiModelProperty(name="finished",example = "登报状态 1已登，0未登")
     private String finished;
+    /**
+     * 付费状态 0 为未付费 1为付费
+     */
+    @ApiModelProperty(name="state",example = "付费状态状态0 为未付费 1为付费")
+    private String state;
 }

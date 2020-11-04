@@ -1,5 +1,6 @@
 package com.laywerspringboot.edition.entity.dto;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -18,88 +19,66 @@ public class SearchDetailDto implements Serializable {
     /**
      * 案号
      */
+    @ApiModelProperty(name="caseid",example = "案号")
     private String caseid;
     /**
      * 当事人
      */
+    @ApiModelProperty(name="party",example = "张三")
     private String party;
     /**
      * 手机号
      */
+    @ApiModelProperty(name="phone",example = "XXXX前端正则校验")
     private String phone;
+    /**
+     * 当事人身份证号
+     */
+    @ApiModelProperty(name="idcard",example = "XXXXXX")
+    private String idcard;
     /**
      * 所在法院
      */
+    @ApiModelProperty(name="court",example = "XXX法院")
     private String court;
     /**
      * 登报区域
      */
+    @ApiModelProperty(name="region",example = "XXX")
     private String region;
     /**
      * 法官处理人
      */
+    @ApiModelProperty(name="lawyer",example = "李四")
     private String lawyer;
-    /**
-     * 客服
-     */
-    private String admin;
 
     /**
-     * 公告id
+     * 公告剩余时间
      */
-    private Integer nId;
+    @ApiModelProperty(name="remainingTime",example = "单位小时")
+    private int remainingTime;
     /**
-     * 公告名
+     * 是否公告，-1为过期，0为待公告1为公告
      */
-    private String noticename;
-    /**
-     * 公告类型(开庭公告)
-     */
-    private String type;
-    /**
-     * 案号
-     */
-    private String caseaddress;
-    /**
-     * 公告图片
-     */
-    private String picture;
-    /**
-     * 公告类别
-     */
-    private String category;
-    /**
-     * 发布时间
-     */
-    private Object releasetime;
-    /**
-     * 是否公告，-1为过期，1为公告
-     */
+    @ApiModelProperty(name="noticeStatus",example = "-1为过期，0为待公告1为公告")
     private String noticeStatus;
-    /**
-     * 报纸id
-     */
-    private Integer pId;
+
 
     /**
-     * 报社
+     * 支付状态 1是已支付，0是未支付
      */
-    private String place;
-    /**
-     * 版面
-     */
-    private String page;
-    /**
-     * 支付状态
-     */
+    @ApiModelProperty(name="state",example = "0")
     private String state;
-    /**
-     * 发票明细
-     */
-    private String detail;
-    /**
-     * 寄送地址
-     */
-    private String address;
 
+    public SearchDetailDto(String caseid, String party, String phone, String idcard, String court, String region, String lawyer,  String noticeStatus, String state) {
+        this.caseid = caseid;
+        this.party = party;
+        this.phone = phone;
+        this.idcard = idcard;
+        this.court = court;
+        this.region = region;
+        this.lawyer = lawyer;
+        this.noticeStatus = noticeStatus;
+        this.state = state;
+    }
 }

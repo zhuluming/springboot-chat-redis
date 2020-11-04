@@ -30,6 +30,11 @@ public class CasesServiceImpl implements CasesService {
         return this.casesDao.queryById(cid);
     }
 
+    @Override
+    public Cases queryByCaseId(String CaseId) {
+        return this.casesDao.queryByCaseId(CaseId);
+    }
+
     /**
      * 查询多条数据
      *
@@ -75,5 +80,14 @@ public class CasesServiceImpl implements CasesService {
     @Override
     public boolean deleteById(Integer cid) {
         return this.casesDao.deleteById(cid) > 0;
+    }
+    /**
+     * 通过用户真名查询
+     * @param tokenRealName
+     * @return
+     */
+    @Override
+    public Cases queryByParty(String tokenRealName) {
+        return this.casesDao.queryByParty(tokenRealName);
     }
 }

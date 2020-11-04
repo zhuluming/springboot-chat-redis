@@ -57,23 +57,23 @@
 
     <!--新增所有列-->
     <insert id="insert" keyProperty="id" useGeneratedKeys="true">
-        insert into myrhythm.userrole(u_id, r_id)
-        values (#{uId}, #{rId})
+        insert into myrhythm.userrole(u_id, r_id,id)
+        values (#{uId}, #{rId},#{id})
     </insert>
 
     <insert id="insertBatch" keyProperty="id" useGeneratedKeys="true">
-        insert into myrhythm.userrole(u_id, r_id)
+        insert into myrhythm.userrole(u_id, r_id,id)
         values
         <foreach collection="entities" item="entity" separator=",">
-            (#{entity.uId}, #{entity.rId})
+            (#{entity.uId}, #{entity.rId},#{entity.Id})
         </foreach>
     </insert>
 
     <insert id="insertOrUpdateBatch" keyProperty="id" useGeneratedKeys="true">
-        insert into myrhythm.userrole(u_id, r_id)
+        insert into myrhythm.userrole(u_id, r_id,id)
         values
         <foreach collection="entities" item="entity" separator=",">
-            (#{entity.uId}, #{entity.rId})
+            (#{entity.uId}, #{entity.rId},#{entity.Id})
         </foreach>
         on duplicate key update
         u_id = values(u_id) , r_id = values(r_id)

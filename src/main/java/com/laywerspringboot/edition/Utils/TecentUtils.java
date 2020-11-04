@@ -25,8 +25,8 @@ public class TecentUtils {
             uuid = phoneUuid.toString();
             try{
 
-                Credential cred = new Credential("AKIDTiTxEE0SklVpvltYdAQQigbGfojkvs2E",
-                        "3pMgjVINCk12pLaey3wYu3xcwKVqeYFg");
+                Credential cred = new Credential("AKIDVjitnyOZpocIiscSuIPL2UfcIl6BYg39",
+                        "1lAQPDl46tRm0zpQlqhHdolW0ECxVq0u");
 
                 HttpProfile httpProfile = new HttpProfile();
                 httpProfile.setEndpoint("sms.tencentcloudapi.com");
@@ -35,13 +35,14 @@ public class TecentUtils {
                 clientProfile.setHttpProfile(httpProfile);
 
                 SmsClient client = new SmsClient(cred, "", clientProfile);
-
+                System.out.println(phoneId);
                 SendSmsRequest req = new SendSmsRequest();
                 String[] phoneNumberSet1 = {"+86"+phoneId};
                 req.setPhoneNumberSet(phoneNumberSet1);
 
 
                 String[] templateParamSet1 = {uuid};
+                System.out.println(123456);
                 req.setTemplateParamSet(templateParamSet1);
 
                 req.setTemplateID("754870");
@@ -49,12 +50,12 @@ public class TecentUtils {
                 req.setSign("黄思琦的个人生活");
 
                 SendSmsResponse resp = client.SendSms(req);
-
                 System.out.println(SendSmsResponse.toJsonString(resp));
+                return uuid;
             } catch (TencentCloudSDKException e) {
                 throw new SendMessageException();
             }
-            return uuid;
+
         }
 }
 

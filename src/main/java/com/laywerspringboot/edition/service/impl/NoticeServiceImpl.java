@@ -31,6 +31,11 @@ public class NoticeServiceImpl implements NoticeService {
         return this.noticeDao.queryById(nId);
     }
 
+    @Override
+    public Notice queryByCaseAddress(String caseaddress) {
+        return noticeDao.queryByCaseAddress(caseaddress);
+    }
+
     /**
      * 查询多条数据
      *

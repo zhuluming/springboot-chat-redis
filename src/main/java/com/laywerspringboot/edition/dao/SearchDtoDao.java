@@ -1,6 +1,7 @@
 package com.laywerspringboot.edition.dao;
 
 import com.laywerspringboot.edition.entity.dto.SearchDto;
+import com.laywerspringboot.edition.entity.dto.UserSearchDto;
 
 import java.util.List;
 
@@ -31,4 +32,16 @@ public interface SearchDtoDao {
      * @return
      */
     List<SearchDto> SearchByLaywerName(String layWer);
+    /**
+     * 通过用户真实姓名查
+     * @param tokenRealName
+     * @return
+     */
+    UserSearchDto SearchByPartyAndCaseID(String tokenRealName, String caseId);
+    /**
+     * 通过用户真实姓名查所有
+     * @param name
+     * @return
+     */
+    List<SearchDto> SearchByName(String name);
 }

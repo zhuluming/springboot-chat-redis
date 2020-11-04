@@ -62,4 +62,20 @@ public class JWTUtils {
         return Integer.valueOf(idStr);
     }
 
+    public static String getTokenRole(HttpServletRequest request) {
+        //从请求头中获取token
+        String token = request.getHeader("token");
+        //验证token
+        DecodedJWT decodedJWT = JWTUtils.verify(token);
+        String rolename = decodedJWT.getClaim("rolename").asString();
+        return rolename;
+    }
+    public static String getTokenRealName(HttpServletRequest request) {
+        //从请求头中获取token
+        String token = request.getHeader("token");
+        //验证token
+        DecodedJWT decodedJWT = JWTUtils.verify(token);
+        String realname = decodedJWT.getClaim("realname").asString();
+        return realname;
+    }
 }

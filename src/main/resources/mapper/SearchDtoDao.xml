@@ -3,18 +3,28 @@
 <mapper namespace="com.laywerspringboot.edition.dao.SearchDtoDao">
 
     <select id="SearchByCaseID" resultType="com.laywerspringboot.edition.entity.dto.SearchDto">
-    SELECT c.caseId,c.party,c.lawyer,n.noticename,n.type,n.noticeStatus
+    SELECT c.caseId,c.party,c.lawyer,n.noticename,n.type,n.noticeStatus,n.finished,n.category
     FROM cases AS c INNER JOIN notice AS n ON c.caseId = n.caseaddress
     WHERE c.caseId = #{caseId} and c.lawyer = #{lawyer};
     </select>
     <select id="SearchByParty" resultType="com.laywerspringboot.edition.entity.dto.SearchDto">
-    SELECT c.caseId,c.party,c.lawyer,n.noticename,n.type,n.noticeStatus
+    SELECT c.caseId,c.party,c.lawyer,n.noticename,n.type,n.noticeStatus,n.finished,n.category
     FROM cases AS c INNER JOIN notice AS n ON c.caseId = n.caseaddress
     WHERE c.party = #{party} and c.lawyer = #{lawyer};
     </select>
+    <select id="SearchByPartyAndCaseID" resultType="com.laywerspringboot.edition.entity.dto.UserSearchDto">
+    SELECT c.caseId,c.party,c.lawyer,n.noticename,n.type,n.noticeStatus,n.finished,n.category
+    FROM cases AS c INNER JOIN notice AS n ON c.caseId = n.caseaddress
+    WHERE c.party = #{party} and  c.caseId = #{caseId};
+    </select>
     <select id="SearchByLaywerName" resultType="com.laywerspringboot.edition.entity.dto.SearchDto">
-    SELECT c.caseId,c.party,c.lawyer,n.noticename,n.type,n.noticeStatus
+    SELECT c.caseId,c.party,c.lawyer,n.noticename,n.type,n.noticeStatus,n.finished,n.category
     FROM cases AS c INNER JOIN notice AS n ON c.caseId = n.caseaddress
     WHERE c.lawyer = #{lawyer};
+    </select>
+    <select id="SearchByName" resultType="com.laywerspringboot.edition.entity.dto.UserSearchDto">
+    SELECT c.caseId,c.party,c.lawyer,n.noticename,n.type,n.noticeStatus,n.finished,n.category
+    FROM cases AS c INNER JOIN notice AS n ON c.caseId = n.caseaddress
+    WHERE c.party = #{party};
     </select>
 </mapper>

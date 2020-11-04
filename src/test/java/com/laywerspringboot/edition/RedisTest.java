@@ -15,6 +15,7 @@ import java.io.Serializable;
  * @createTime:2020-10-31-14-19
  *//*
 
+
 @RunWith(SpringRunner.class)
 public class RedisTest extends UserTest{
     @Autowired
@@ -27,10 +28,9 @@ public class RedisTest extends UserTest{
         strRedisTemplate.opsForValue().set("strKey", "zwqh");
         System.out.println(strRedisTemplate.opsForValue().get("strKey"));
     }
-*/
-/*
 
-    @Test
+*/
+/*    @Test
     public void testSerializable() {
         User user=new User();
         user.setId(1);
@@ -39,8 +39,9 @@ public class RedisTest extends UserTest{
          RedisUtils.set("user1", user);
         User user1 = (User) RedisUtils.get("user1");
         System.out.println("user:"+user1.getId()+","+user1.getUsername());
-    }
-*//*
+    }*//*
+
+
 
 
 

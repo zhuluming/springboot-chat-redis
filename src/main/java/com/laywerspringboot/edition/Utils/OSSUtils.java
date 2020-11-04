@@ -189,7 +189,7 @@ public class OSSUtils {
      * @param file
      * @return
      */
-    public  static String uploadImg(MultipartFile file){
+    public static String uploadImg(MultipartFile file){
         String fileUrl = uploadImg2Oss(file);
         String str = getImgUrl(fileUrl);
         return str.trim();

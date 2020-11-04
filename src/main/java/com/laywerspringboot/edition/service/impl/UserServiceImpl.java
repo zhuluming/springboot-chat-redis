@@ -76,6 +76,7 @@ public class UserServiceImpl implements UserService {
         if (flag == 3) {
             user.setPhoneid(registerMsg);
         }
+        System.out.println(queryMsg(user));
         return ObjectUtils.isEmpty(queryMsg(user));
 
     }
@@ -96,22 +97,36 @@ public class UserServiceImpl implements UserService {
         user.setPhoneid(phoneid);
         Uuidnum uuidnum = new Uuidnum();
         uuidnum.setPhoneid(phoneid);
-        List<Uuidnum> uuidnums = uuidnumDao.queryAll(uuidnum);
-        if (ObjectUtils.isEmpty(uuidnums)) {
-            //当为空，代表要插入手机号
-            Integer flag = 0;
-            AtomicInteger atomicInteger = new AtomicInteger(flag);
-            atomicInteger.addAndGet(1);
-            uuidnum.setNum(flag);
-            try {
-                uuidnum.setTime(currentTime);
-                uuidnumDao.insert(uuidnum);
-                user.setUuid(uuid);
-                insert(user);
-                return R.registerOk(uuid);
-            } catch (Exception e) {
-                throw new UserInfoException("插入验证码次数失败");
+        List<User> users = queryByUser(user);
+        if (ObjectUtils.isEmpty(users)) {
+            List<Uuidnum> uuidnums = uuidnumDao.queryAll(uuidnum);
+            if (ObjectUtils.isEmpty(uuidnums)){
+                //当为空，代表要插入手机号
+                Integer flag = 0;
+                AtomicInteger atomicInteger = new AtomicInteger(flag);
+                atomicInteger.addAndGet(1);
+                uuidnum.setNum(flag);
+                try {
+                    uuidnum.setTime(currentTime);
+                    user.setUuid(uuid);
+                    uuidnumDao.insert(uuidnum);
+                    /// userDao.insert(user);
+                    return R.registerOk(uuid);
+                } catch (Exception e) {
+                    throw new UserInfoException("插入验证码次数失败");
+                }
+            }else{
+                Uuidnum uuidnum1 = uuidnums.get(0);
+                Long startTime = uuidnum1.getTime();
+                long time = currentTime - startTime;
+                //todo 当不是第一次用该手机号在注册时获取验证码
+                if (updatePhoneIdAndUUID(uuid, uuidnum1, time,  currentTime)) {
+                    return R.isUuid(uuid);
+                } else {
+                    throw new SendMessageException("不要重复接受验证码");
+                }
             }
+
         }
         //不为空时
         //先判断时间间隔
@@ -122,7 +137,7 @@ public class UserServiceImpl implements UserService {
         long time = currentTime - startTime;
         uuidnum1.setEndtime(currentTime);
         //根据手机号查询
-        List<User> users = queryByUser(user);
+
         User user2 = users.get(0);
         if (updatePhoneIdAndUUID(uuid, uuidnum1, time, user2, currentTime)) {
             return R.isUuid(uuid);
@@ -143,17 +158,30 @@ public class UserServiceImpl implements UserService {
      * @return
      */
     private boolean updatePhoneIdAndUUID(String uuid, Uuidnum uuidnum1, long time, User user2, Long endTime) {
-        if ((time >= 30000 || time > 0) && uuidnum1.getNum() <= 1) {
+        if ((time >= 30000 || time >= 0) && uuidnum1.getNum() <= 1) {
             return updatePhoneIdAndUUid(uuid, uuidnum1, user2, endTime);
         }
         if (time >= 3600000 && uuidnum1.getNum() <= 3) {
             return updatePhoneIdAndUUid(uuid, uuidnum1, user2, endTime);
         }
-        if (time >= 86400000 && uuidnum1.getNum() <= 3) {
+        if (time >= 86400000 && uuidnum1.getNum() <= 10) {
             return updatePhoneIdAndUUid(uuid, uuidnum1, user2, endTime);
         }
         return false;
     }
+    private boolean updatePhoneIdAndUUID(String uuid, Uuidnum uuidnum1, long time, Long endTime) {
+        if ((time >= 30000 || time >= 0) && uuidnum1.getNum() <= 1) {
+            return updatePhoneIdAndUUid(uuid, uuidnum1, endTime);
+        }
+        if (time >= 3600000 && uuidnum1.getNum() <= 3) {
+            return updatePhoneIdAndUUid(uuid, uuidnum1,  endTime);
+        }
+        if (time >= 86400000 && uuidnum1.getNum() <= 10) {
+            return updatePhoneIdAndUUid(uuid, uuidnum1,  endTime);
+        }
+        return false;
+    }
+
 
     /**
      * 修改手机号和验证码获取时间
@@ -175,7 +203,16 @@ public class UserServiceImpl implements UserService {
             throw new UserInfoException("插入验证码次数失败");
         }
     }
-
+    private boolean updatePhoneIdAndUUid(String uuid, Uuidnum uuidnum1, Long time) {
+        try {
+            AtomicInteger atomicInteger = new AtomicInteger(uuidnum1.getNum());
+            uuidnum1.setNum(atomicInteger.addAndGet(1));
+            uuidnumDao.update(uuidnum1);
+            return true;
+        } catch (Exception e) {
+            throw new UserInfoException("插入验证码次数失败");
+        }
+    }
 
     private List<User> queryMsg(User user) {
         return userDao.queryAll(user);
@@ -187,8 +224,9 @@ public class UserServiceImpl implements UserService {
      * @param user
      * @return
      */
+    //todo 注册的逻辑有问题，用户手机号会重复注册，没确定是手机号的问题还是注册的问题
     @Override
-    public List<User> queryByUser(User user) {
+    public List<User>  queryByUser(User user) {
         return userDao.queryAll(user);
     }
 
@@ -284,6 +322,7 @@ public class UserServiceImpl implements UserService {
         HashMap<String, String> payload = new HashMap<>();
         payload.put("id",user.getId().toString());
         payload.put("username",user.getUsername());
+        payload.put("realname",user.getRealname());
         payload.put("rolename",role.getRolename());
         payload.put("msgflag","0");
         String token = JWTUtils.getToken(payload);

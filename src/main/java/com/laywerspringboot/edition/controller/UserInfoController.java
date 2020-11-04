@@ -48,6 +48,7 @@ public class UserInfoController  {
      * @param username
      * @return
      */
+    @CrossOrigin()
     @ApiOperation(value = "验证用户名")
     @GetMapping("/register/isUsername/{username}")
     public R isUsernameEmpty(@ApiParam(value = "用户名")@PathVariable("username")String username){
@@ -60,6 +61,7 @@ public class UserInfoController  {
      * @param realname
      * @return
      */
+    @CrossOrigin()
     @ApiOperation(value = "验证真实姓名")
     @GetMapping("/register/isRealName/{realname}")
     public R isRealNameEmpty(@ApiParam(value = "真实姓名")@PathVariable("realname")String realname){
@@ -72,6 +74,7 @@ public class UserInfoController  {
      * @param idcard
      * @return
      */
+    @CrossOrigin()
     @ApiOperation(value = "验证身份证号")
     @GetMapping("/register/isIdCardEmpty/{idcard}")
     public R isIdCardEmpty(@ApiParam(value = "身份证号")@PathVariable("idcard")String idcard){
@@ -84,17 +87,21 @@ public class UserInfoController  {
      * @param phoneid
      * @return
      */
+    @CrossOrigin()
     @ApiOperation(value = "验证手机号和验证码")
     @GetMapping("/register/phone/{phoneid}")
     public R isUuid(@ApiParam(value = "手机号")@PathVariable("phoneid")String phoneid) {
-        boolean flag = userService.queryByMsg(3, phoneid);
-      /*  if (flag) {
+
+       boolean flag = userService.queryByMsg(3, phoneid);
+        if (!flag) {
             return R.registerError("手机号已被注册，请直接登录");
-        }*/
+        }
+        //todo 逻辑代验证
         //String uuid = YunPianMsgUtils.sendMsg(phoneid);
         String uuid = TecentUtils.sendMsg(phoneid);
+
         Long currentTime = System.currentTimeMillis();
-        return  userService.insertAndUpdateUUid(phoneid, uuid, currentTime);
+        return userService.insertAndUpdateUUid(phoneid, uuid, currentTime);
 
     }
 
@@ -103,6 +110,7 @@ public class UserInfoController  {
      * @param user 前端传的数据对象
      * @return 返回json给前端
      */
+    @CrossOrigin()
     @ApiOperation(value = "用户注册功能,并把图片上传ajax的地址一起传输")
     @PostMapping("/register")
     public R register(@ApiParam(value = "注册用户对象")@RequestBody RegisterUser user){
@@ -130,8 +138,9 @@ public class UserInfoController  {
             insertUser = userService.insert(transferUser);
             role = roleService.insertRole(user);
             userrole = new Userrole(0,insertUser.getId(),role.getRId());
-            userroleService.insert(userrole);
-            if (insertUser != null && role != null && userrole != null ){
+
+            Userrole insert = userroleService.insert(userrole);
+            if (insertUser != null && role != null && insert != null ){
                 //注册成功把根据用户身份把对应的头像地址返回
                 return R.registerOk("欢迎来到律动");
             }
@@ -147,6 +156,7 @@ public class UserInfoController  {
      * @param LoginUser
      * @return
      */
+    @CrossOrigin()
     @ApiOperation(value = "用户登录功能")
     @PostMapping("/userLogin")
     public R userLogin(@ApiParam(value = "登录用户对象")@RequestBody RegisterUser LoginUser){
@@ -195,6 +205,7 @@ public class UserInfoController  {
      * @param LoginUser
      * @return
      */
+    @CrossOrigin()
     @ApiOperation(value = "手机登录功能")
     @PostMapping("/phoneLogin")
     public R phoneLogin(@ApiParam(value = "手机登录对象")@RequestBody RegisterUser LoginUser){
@@ -218,6 +229,7 @@ public class UserInfoController  {
      * @param request
      * @return
      */
+    @CrossOrigin()
     @ApiOperation(value = "重置密码")
     @PostMapping("/pwdReset")
     public R pwdReset(@ApiParam(value = "重置密码对象")@RequestBody RegisterUser updateUser, HttpServletRequest request){
@@ -248,6 +260,7 @@ public class UserInfoController  {
      * @param request
      * @return
      */
+    @CrossOrigin()
     @ApiOperation(value = "查询手机号并返回给前端，前端做模糊处理")
     @GetMapping("/findPhone")
     public R findPhone(HttpServletRequest request){
@@ -264,6 +277,7 @@ public class UserInfoController  {
      * @param request
      * @return
      */
+    @CrossOrigin()
     @ApiOperation(value = "重置手机号")
     @PostMapping("/phoneUpdate")
     public R phoneUpdate(@ApiParam(value = "重置手机号对象")@RequestBody RegisterUser updateUser, HttpServletRequest request) {
@@ -284,6 +298,7 @@ public class UserInfoController  {
      * @param request
      * @return
      */
+    @CrossOrigin()
     @ApiOperation(value = "返回开启消息推送后的token")
     @GetMapping("/InfoPush/{msgflag}")
     public String InfoPush(@ApiParam(value = "是否允许推送，0为允许，1不允许")@PathVariable("msgflag") String msgflag,HttpServletRequest request){
@@ -302,8 +317,9 @@ public class UserInfoController  {
      * @param request
      * @return
      */
+    @CrossOrigin()
     @ApiOperation(value = "查询用户名是否存在")
-    @GetMapping("/userInfo/findName/{username}")
+    @GetMapping("/findName/{username}")
     public R findName(@ApiParam(value = "用户填的原始用户名")@PathVariable("username") String username,HttpServletRequest request){
         Integer id = JWTUtils.getTokenId(request);
         User user = userService.queryById(id);
@@ -316,8 +332,10 @@ public class UserInfoController  {
      * @param request
      * @return
      */
-    @ApiOperation(value = "查询用户名是否存在")
-    @GetMapping("/userInfo/nameUpdate/{newUsername}")
+
+    @CrossOrigin()
+    @ApiOperation(value = "修改用户名是否存在")
+    @GetMapping("/nameUpdate/{newUsername}")
     public R nameUpdate(@ApiParam(value = "用户填的新的用户名")@PathVariable("newUsername") String newUsername,HttpServletRequest request){
         Integer id = JWTUtils.getTokenId(request);
         User user = userService.queryById(id);

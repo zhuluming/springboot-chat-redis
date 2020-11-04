@@ -13,8 +13,8 @@ import org.springframework.web.multipart.MultipartFile;
  * @Author:小七
  * @createTime:2020-10-29-23-15
  */
-@RestController()
 @CrossOrigin()
+@RestController()
 @Slf4j
 @Api(description = "图片api",value = "上传下载")
 public class ImageController {
@@ -23,9 +23,12 @@ public class ImageController {
      * @param imgFile
      * @return
      */
+    @CrossOrigin()
     @ApiOperation(value = "上传图片到oss")
     @PostMapping(value="/uploadImgToOSS")
     public String uploadImgToOSS(MultipartFile imgFile) {
         return OSSUtils.uploadImg(imgFile);
     }
+
+
 }

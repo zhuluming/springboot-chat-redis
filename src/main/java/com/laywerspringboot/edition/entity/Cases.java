@@ -1,5 +1,6 @@
 package com.laywerspringboot.edition.entity;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -33,6 +34,11 @@ public class Cases implements Serializable {
      * 手机号
      */
     private String phone;
+    /**
+     * 身份证号，前端校验是否合法
+     */
+    @ApiModelProperty(name="idcard",example = "18656564545456")
+    private String idcard;
     /**
      * 所在法院
      */

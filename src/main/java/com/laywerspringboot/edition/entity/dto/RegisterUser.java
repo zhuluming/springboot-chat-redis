@@ -59,7 +59,7 @@ public class RegisterUser implements Serializable {
      * 当-1代表报社，0代表用户，1代表法官
      */
     @ApiModelProperty(name="status",example = "-1代表报社，0代表用户，1代表法官")
-    private int status;
+    private Integer status;
     /**
      * 修改时间
      */

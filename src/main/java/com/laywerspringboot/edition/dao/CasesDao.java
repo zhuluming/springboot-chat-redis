@@ -21,6 +21,14 @@ public interface CasesDao {
      * @return 实例对象
      */
     Cases queryById(Integer cid);
+    /**
+     * 通过caseID查询单条数据
+     *
+     * @param CaseId
+     * @return 实例对象
+     */
+    Cases queryByCaseId(String CaseId);
+
 
     /**
      * 查询指定行数据
@@ -79,5 +87,10 @@ public interface CasesDao {
      * @return 影响行数
      */
     int deleteById(Integer cid);
-
+    /**
+     * 通过用户真名查询
+     * @param tokenRealName
+     * @return
+     */
+    Cases queryByParty(String tokenRealName);
 }

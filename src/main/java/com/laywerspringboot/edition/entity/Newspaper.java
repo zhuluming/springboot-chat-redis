@@ -10,13 +10,13 @@ import java.io.Serializable;
  * (Newspaper)实体类
  *
  * @author makejava
- * @since 2020-10-23 18:49:12
+ * @since 2020-11-01 13:31:49
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class Newspaper implements Serializable {
-    private static final long serialVersionUID = -36732893728961730L;
+    private static final long serialVersionUID = 615949231800172033L;
     /**
      * 报纸id
      */
@@ -34,7 +34,7 @@ public class Newspaper implements Serializable {
      */
     private String page;
     /**
-     * 支付状态
+     * 付费状态  0 为未付费 1为付费
      */
     private String state;
     /**
@@ -45,7 +45,10 @@ public class Newspaper implements Serializable {
      * 寄送地址
      */
     private String address;
-
+    /**
+     * 公告天数
+     */
+    private Integer day;
 
 
 

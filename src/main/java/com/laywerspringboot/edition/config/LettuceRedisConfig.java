@@ -1,4 +1,3 @@
-/*
 package com.laywerspringboot.edition.config;
 
 import org.springframework.context.annotation.Bean;
@@ -10,11 +9,11 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 import java.io.Serializable;
 
-*/
-/**
+/*
+*
  * @Author:小七
  * @createTime:2020-10-31-14-34
- *//*
+*/
 
 
 @Configuration
@@ -28,4 +27,3 @@ public class LettuceRedisConfig {
         return redisTemplate;
     }
 }
-*/

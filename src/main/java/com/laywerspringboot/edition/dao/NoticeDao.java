@@ -24,6 +24,14 @@ public interface NoticeDao {
     Notice queryById(Integer nId);
 
     /**
+     * 通过caseID查询单条数据
+     *
+     * @param caseaddress
+     * @return 实例对象
+     */
+    Notice queryByCaseAddress(String caseaddress);
+
+    /**
      * 查询指定行数据
      *
      * @param offset 查询起始位置

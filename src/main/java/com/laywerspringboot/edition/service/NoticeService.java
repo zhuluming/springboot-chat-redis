@@ -23,6 +23,14 @@ public interface NoticeService {
     Notice queryById(Integer nId);
 
     /**
+     * 通过caseaddress查询单条数据
+     *
+     * @param caseaddress
+     * @return 实例对象
+     */
+    Notice queryByCaseAddress(String caseaddress);
+
+    /**
      * 查询多条数据
      *
      * @param offset 查询起始位置

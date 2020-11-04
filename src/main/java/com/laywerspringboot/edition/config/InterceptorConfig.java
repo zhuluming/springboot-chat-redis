@@ -18,8 +18,9 @@ public class InterceptorConfig implements WebMvcConfigurer {
                 "/jquery-1.8.0.min.js:3"};
 
         registry.addInterceptor(new JWTInterceptor())
-                .addPathPatterns("/**")  //其他接口token验证
-                .excludePathPatterns(patterns);//放行的请求
+                //.addPathPatterns("/**")  //其他接口token验证
+                //.excludePathPatterns(patterns);//放行的请求
+        .excludePathPatterns("/**");
 
 
     }

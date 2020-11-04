@@ -23,6 +23,14 @@ public interface CasesService {
     Cases queryById(Integer cid);
 
     /**
+     * 通过caseID查询单条数据
+     *
+     * @param CaseId 主键
+     * @return 实例对象
+     */
+    Cases queryByCaseId(String CaseId);
+
+    /**
      * 查询多条数据
      *
      * @param offset 查询起始位置
@@ -55,4 +63,10 @@ public interface CasesService {
      */
     boolean deleteById(Integer cid);
 
+    /**
+     * 通过用户真名查询
+     * @param tokenRealName
+     * @return
+     */
+    Cases queryByParty(String tokenRealName);
 }

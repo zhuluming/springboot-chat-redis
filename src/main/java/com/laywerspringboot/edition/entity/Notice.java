@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * (Notice)实体类
@@ -44,11 +45,17 @@ public class Notice implements Serializable {
     /**
      * 发布时间
      */
-    private Object releasetime;
+    private Date releasetime;
     /**
      * 是否公告，-1为过期，1为公告
      */
     private String noticeStatus;
+    /**
+     * 登报状态
+     * 登报状态 1已登，0未登
+     */
+    private String finished;
+
 
 
 

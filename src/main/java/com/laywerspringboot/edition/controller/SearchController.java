@@ -1,15 +1,19 @@
 package com.laywerspringboot.edition.controller;
 
+
+import com.laywerspringboot.edition.Utils.DtoTransfer;
 import com.laywerspringboot.edition.Utils.JWTUtils;
 import com.laywerspringboot.edition.Utils.R;
-import com.laywerspringboot.edition.entity.Role;
-import com.laywerspringboot.edition.entity.User;
-import com.laywerspringboot.edition.entity.Userrole;
+import com.laywerspringboot.edition.entity.Cases;
+import com.laywerspringboot.edition.entity.Newspaper;
+import com.laywerspringboot.edition.entity.Notice;
+import com.laywerspringboot.edition.entity.dto.SearchDetailDto;
 import com.laywerspringboot.edition.entity.dto.SearchDto;
-import com.laywerspringboot.edition.service.RoleService;
-import com.laywerspringboot.edition.service.UserService;
-import com.laywerspringboot.edition.service.UserroleService;
-import com.laywerspringboot.edition.service.impl.SearchDtoServiceImpl;
+import com.laywerspringboot.edition.entity.dto.UserSearchDto;
+import com.laywerspringboot.edition.service.CasesService;
+import com.laywerspringboot.edition.service.NewspaperService;
+import com.laywerspringboot.edition.service.NoticeService;
+import com.laywerspringboot.edition.service.SearchDtoService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -24,57 +28,53 @@ import java.util.List;
  * @Author:小七
  * @createTime:2020-10-31-10-25
  */
+@CrossOrigin()
 @RestController()
 @RequestMapping("searchInfo")
-@CrossOrigin()
 @Slf4j
 @Api(description = "搜索模块api",value = "搜索")
 public class SearchController {
     @Resource
-    private SearchDtoServiceImpl searchDtoService;
+    private SearchDtoService searchDtoService;
     @Resource
-    private UserroleService userroleService;
+    private CasesService casesService;
     @Resource
-    private RoleService roleService;
+    private NoticeService noticeService;
     @Resource
-    private UserService userService;
+    private NewspaperService newspaperService;
     /**
      * 先根据用户id，查询所能看的案号，通过案号搜索，返回案件信息
      * @param caseId
      * @param request
      * @return
      */
+    @CrossOrigin()
     @GetMapping("/byCaseId/{caseId}")
     @ApiOperation(value = "法官根据案号查询自身处理过的案子")
     public R searchByCaseId(@ApiParam("通过案号搜索") @PathVariable("caseId")String caseId, HttpServletRequest request){
-        Integer tokenId = JWTUtils.getTokenId(request);
-        User user = userService.queryById(tokenId);
-        Userrole userrole = userroleService.queryById(tokenId);
-        Role role = roleService.queryById(userrole.getRId());
+        String tokenRole = JWTUtils.getTokenRole(request);
+        String tokenRealName = JWTUtils.getTokenRealName(request);
+
         //如果是法官
-        if (role.getRolename().equals("法官")){
+        if (tokenRole.equals("法官")){
             //返回对应的案件粗略信息
-            //TODO redis中查
-            SearchDto searchDto = searchDtoService.SearchByLaywerNameAndCaseID(user.getRealname(),caseId);
+            SearchDto searchDto = searchDtoService.SearchByLaywerNameAndCaseID(tokenRealName,caseId);
          return searchDto == null? R.error("你无权查询次案件，请联系发布此案件的法官查询")
                  :R.searchOk("1").put("SearchDto",searchDto);
-
         }
-
         return R.error("你无权查询次案件，请联系发布此案件的法官查询");
     }
-    @RequestMapping("/byRealname/{party}")
+    @CrossOrigin()
+    @GetMapping("/byRealname/{party}")
     @ApiOperation(value = "法官根据当事人姓名查询自身处理过的案子")
     public R searchByParty(@ApiParam("通过当事人姓名搜索") @PathVariable("party")String party, HttpServletRequest request) {
-        Integer tokenId = JWTUtils.getTokenId(request);
-        User user = userService.queryById(tokenId);
-        Userrole userrole = userroleService.queryById(tokenId);
-        Role role = roleService.queryById(userrole.getRId());
+        String tokenRole = JWTUtils.getTokenRole(request);
+        String tokenRealName = JWTUtils.getTokenRealName(request);
+
         //如果是法官
-        if (role.getRolename().equals("法官")){
+        if (tokenRole.equals("法官")){
             //返回对应的案件粗略信息
-            //TODO redis中查
-            SearchDto searchDto = searchDtoService.SearchByLaywerNameAndParty(user.getRealname(),party);
+            SearchDto searchDto = searchDtoService.SearchByLaywerNameAndParty(tokenRealName,party);
             return searchDto == null? R.error("你无权查询次案件，请联系发布此案件的法官查询")
                     :R.searchOk("1").put("SearchDto",searchDto);
         }
@@ -82,33 +82,94 @@ public class SearchController {
         return R.error("你无权查询次案件，请联系发布此案件的法官查询");
     }
 
-    @RequestMapping("/ByLawyer/{layWer}")
-    @ApiOperation(value = "法官根据当事人姓名查询自身处理过的所有案子")
-    public R searchByLaywer(@ApiParam("通过法官姓名搜索") @PathVariable("layWer")String layWer, HttpServletRequest request) {
-        Integer tokenId = JWTUtils.getTokenId(request);
-        User user = userService.queryById(tokenId);
-        Userrole userrole = userroleService.queryById(tokenId);
-        Role role = roleService.queryById(userrole.getRId());
-        if (!layWer.equals(user.getRealname()) ){
+    @CrossOrigin()
+    @GetMapping("/ByLawyer/{name}")
+    @ApiOperation(value = "法官根据当事人姓名查询自身处理过的所有案子或者是当事人查询自身案件的详细信息")
+    public R searchByLaywer(@ApiParam("通过法官或者当事人姓名搜索") @PathVariable("name")String name, HttpServletRequest request) {
+        String tokenRole = JWTUtils.getTokenRole(request);
+        String tokenRealName = JWTUtils.getTokenRealName(request);
+        if (!name.equals(tokenRealName) ){
             return R.error("你的真实姓名输入有误");
         }
+        //String tokenRole = "法官";
         //如果是法官
-        if (role.getRolename().equals("法官")){
+        if (tokenRole.equals("法官")){
             //返回对应的案件粗略信息
-            //TODO redis中查
-            List<SearchDto> searchDtos = searchDtoService.SearchByLaywerName(layWer);
+
+            List<SearchDto> searchDtos = searchDtoService.SearchByLaywerName(name);
             return searchDtos.size() == 0? R.error("未处理任何案件哦，加油")
                     :R.searchOk("1").put("SearchDto",searchDtos);
 
+        }
+        if (tokenRole.equals("用户")){
+            List<SearchDto> searchDtos = searchDtoService.SearchByParty(name);
+            return searchDtos.size() == 0? R.error("未碰见任何案件哦，很棒")
+                    :R.searchOk("1").put("SearchDto",searchDtos);
         }
 
         return R.error("你无权访问哦");
     }
 
-    @RequestMapping("/showDetail")
-    @ApiOperation(value = "法官展示案件详情")
-    public R searchShowDetail( HttpServletRequest request) {
-        return null;
+    @CrossOrigin()
+    @GetMapping("/showDetail/{caseId}")
+    @ApiOperation(value = "法官展示案件详情或者用户展示案件详情")
+    public R searchShowDetail(@PathVariable("caseId")String caseId, HttpServletRequest request) {
+        String tokenRole = JWTUtils.getTokenRole(request);
+        String tokenRealName = JWTUtils.getTokenRealName(request);
+        //String tokenRole = "法官";
+        //如果是法官
+        if (tokenRole.equals("法官")||tokenRole.equals("用户")){
+            //返回对应的案件详细信息
+            Cases cases = casesService.queryByCaseId(caseId);
+            Notice notice = noticeService.queryByCaseAddress(caseId);
+            Newspaper newspaper =  newspaperService.queryById(notice.getNId());
+            SearchDetailDto searchDetailDto = DtoTransfer.transferToSearchDetailDto(cases, notice, newspaper);
+            long currentTimeMillis = System.currentTimeMillis();
+            long time = notice.getReleasetime().getTime();
+            long add = newspaper.getDay() * 24 * 86400000;
+            int res = (int) ((time + add - currentTimeMillis) / 3600000);
+            searchDetailDto.setRemainingTime(res);
+            return R.searchOk("以下是详细信息").put("SearchDetai", searchDetailDto);
+        }
+
+        return R.error("你无权访问哦");
     }
+
+    @CrossOrigin()
+    @GetMapping("/byCaseIdAndName/{caseId}")
+    @ApiOperation(value = "法官根据案号查询自身处理过的案子")
+    public R searchByCaseIdAndName(@ApiParam("通过案号搜索") @PathVariable("caseId")String caseId, HttpServletRequest request){
+
+        String tokenRealName = JWTUtils.getTokenRealName(request);
+        Cases cases = casesService.queryByCaseId(caseId);
+
+        //如果是本人
+        if (cases.getParty().equals(tokenRealName)){
+            //返回对应的案件粗略信息
+            UserSearchDto searchDto = searchDtoService.SearchByPartyAndCaseID(tokenRealName,caseId);
+            return searchDto == null? R.error("你无权查询次案件，请联系案件当事人查询")
+                    :R.searchOk("1").put("SearchDto",searchDto);
+        }
+        return R.error("你无权查询次案件，请联系案件当事人查询");
+    }
+
+    @CrossOrigin()
+    @GetMapping("/byParty/{party}")
+    @ApiOperation(value = "法官根据案号查询自身处理过的案子")
+    public R searchByUserParty( @ApiParam("通过当事人真实姓名搜索") @PathVariable("party")String party,HttpServletRequest request){
+
+        String tokenRealName = JWTUtils.getTokenRealName(request);
+        Cases cases = casesService.queryByParty(tokenRealName);
+
+        //如果是本人
+        if (cases.getParty().equals(tokenRealName)){
+            //返回对应的案件粗略信息
+            UserSearchDto searchDto = searchDtoService.SearchByPartyAndCaseID(tokenRealName,cases.getCaseid());
+            return searchDto == null? R.error("你无权查询次案件，请联系案件当事人查询")
+                    :R.searchOk("1").put("SearchDto",searchDto);
+        }
+        return R.error("你无权查询次案件，请联系案件当事人查询");
+    }
+
 
 }
