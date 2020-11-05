@@ -208,7 +208,7 @@ public class UserInfoController  {
     @CrossOrigin()
     @ApiOperation(value = "手机登录功能")
     @PostMapping("/phoneLogin")
-    public R phoneLogin(@ApiParam(value = "手机登录对象")@RequestBody RegisterUser LoginUser){
+    public R phoneLogin( @ApiParam(value = "手机登录对象")@RequestBody RegisterUser LoginUser){
         isUserTrue(LoginUser.getPhoneid(), "手机号为空");
         isUserTrue(LoginUser.getUuid(), "验证码为空");
         String uuid = TecentUtils.sendMsg(LoginUser.getPhoneid());

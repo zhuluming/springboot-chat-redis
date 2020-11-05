@@ -5,7 +5,6 @@ server:
   address: 0.0.0.0
 spring:
   datasource:
-    druid:
       url: jdbc:mysql://127.0.0.1:3306/myrhythm?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
 
       username: root
@@ -16,6 +15,7 @@ spring:
       test-on-borrow: true
       # MySQL 8.x: com.mysql.cj.jdbc.Driver
       driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
   redis:
     host: 192.168.190.11
     port: 6379

@@ -12,6 +12,7 @@ logging:
         edition:
           dao: debug
           controller: debug
+
   file:
     path: \G:\log
     name: daylog
