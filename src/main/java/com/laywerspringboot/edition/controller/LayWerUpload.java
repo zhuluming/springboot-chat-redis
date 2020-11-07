@@ -64,6 +64,7 @@ public class LayWerUpload {
             //最后用notice的主键插入newspaper
             Newspaper newspaper = DtoTransfer.transferUpDtoToNewspaper(upDto);
             newspaper.setPId(notice.getNId());
+            //System.out.println(newspaper.getPId());
            return newspaperService.insert(newspaper) == null? R.error("请重试"):R.updateOk("成功上传") ;
         }
         return R.error("你的身份有误");

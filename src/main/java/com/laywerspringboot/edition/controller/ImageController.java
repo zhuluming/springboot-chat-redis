@@ -4,6 +4,7 @@ import com.laywerspringboot.edition.Utils.OSSUtils;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,6 +19,8 @@ import org.springframework.web.multipart.MultipartFile;
 @Slf4j
 @Api(description = "图片api",value = "上传下载")
 public class ImageController {
+    @Autowired
+    private OSSUtils ossUtils;
     /**
      * 上传图片到 oss
      * @param imgFile
@@ -27,7 +30,7 @@ public class ImageController {
     @ApiOperation(value = "上传图片到oss")
     @PostMapping(value="/uploadImgToOSS")
     public String uploadImgToOSS(MultipartFile imgFile) {
-        return OSSUtils.uploadImg(imgFile);
+        return ossUtils.uploadImg(imgFile);
     }
 
 

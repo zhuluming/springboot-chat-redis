@@ -1,0 +1,1271 @@
+19:13:01.679 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryByUsername:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where username = ? 
+19:13:01.699 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryByUsername:159] - ==> Parameters: chengxiangyi(String)
+19:13:01.721 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryByUsername:159] - <==      Total: 1
+19:13:01.737 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+19:13:01.739 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - ==> Parameters: chengxiangyi(String), qqqqqq(String), 思琦(String), 184465656(String), 37345344(String), 5343(String), 2020-11-03 22:08:13.0(Timestamp), 7485(String), 0(Integer), 38(Integer)
+19:13:01.749 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - <==    Updates: 1
+19:13:01.750 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+19:13:01.750 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - ==> Parameters: 38(Integer)
+19:13:01.752 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - <==      Total: 1
+19:13:01.753 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryByUId:159] - ==>  Preparing: select u_id, r_id, id from myrhythm.userrole where u_id = ? 
+19:13:01.754 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryByUId:159] - ==> Parameters: 38(Integer)
+19:13:01.757 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryByUId:159] - <==      Total: 1
+19:13:01.758 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.R.queryById:159] - ==>  Preparing: select r_id, rolename, status from myrhythm.role where r_id = ? 
+19:13:01.759 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.R.queryById:159] - ==> Parameters: 7(Integer)
+19:13:01.763 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.R.queryById:159] - <==      Total: 1
+19:13:39.903 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.C.queryByCaseId:159] - ==>  Preparing: select cid, caseId, party, phone, idcard, court, region, lawyer, admin from myrhythm.cases where CaseId = ? 
+19:13:39.905 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.C.queryByCaseId:159] - ==> Parameters: 1234(String)
+19:13:39.908 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.C.queryByCaseId:159] - <==      Total: 0
+19:13:44.534 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.C.queryByCaseId:159] - ==>  Preparing: select cid, caseId, party, phone, idcard, court, region, lawyer, admin from myrhythm.cases where CaseId = ? 
+19:13:44.535 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.C.queryByCaseId:159] - ==> Parameters: 1234(String)
+19:13:44.537 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.C.queryByCaseId:159] - <==      Total: 0
+19:14:39.392 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.C.queryByCaseId:159] - ==>  Preparing: select cid, caseId, party, phone, idcard, court, region, lawyer, admin from myrhythm.cases where CaseId = ? 
+19:14:39.393 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.C.queryByCaseId:159] - ==> Parameters: 1234(String)
+19:14:39.394 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.C.queryByCaseId:159] - <==      Total: 0
+19:14:43.915 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.C.insert:159] - ==>  Preparing: insert into myrhythm.cases(caseId, party, phone, idcard, court, region, lawyer, admin) values (?, ?, ?, ?, ?, ?, ?, ?) 
+19:14:43.916 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.C.insert:159] - ==> Parameters: 7(String), 6(String), null, 4(String), 2(String), 3(String), 思琦(String), null
+19:14:43.921 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.C.insert:159] - <==    Updates: 1
+19:14:43.923 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.N.insert:159] - ==>  Preparing: insert into myrhythm.notice(noticename, type, caseaddress, picture, category, releasetime) values (?, ?, ?, ?, ?, ?) 
+19:14:43.924 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.N.insert:159] - ==> Parameters: null, null, 7(String), http://laywertest.oss-accelerate.aliyuncs.com/image/1604574887187.jpg?Expires=1919934883&OSSAccessKeyId=LTAI4G2Na3UUSWsFwELHTLVw&Signature=qwhWvVHWQWT2vzz2NeIMr2lPDuY%3D(String), null, 2020-11-05 19:14:43.923(Timestamp)
+19:18:26.620 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.C.insert:159] - ==>  Preparing: insert into myrhythm.cases(caseId, party, phone, idcard, court, region, lawyer, admin) values (?, ?, ?, ?, ?, ?, ?, ?) 
+19:18:26.621 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.C.insert:159] - ==> Parameters: 7(String), 6(String), null, 4(String), 2(String), 3(String), 思琦(String), null
+19:18:26.625 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.C.insert:159] - <==    Updates: 1
+19:18:26.626 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.N.insert:159] - ==>  Preparing: insert into myrhythm.notice(noticename, type, caseaddress, picture, category, releasetime) values (?, ?, ?, ?, ?, ?) 
+19:18:26.627 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.N.insert:159] - ==> Parameters: null, null, 7(String), http://laywertest.oss-accelerate.aliyuncs.com/image/1604574887187.jpg?Expires=1919934883&OSSAccessKeyId=LTAI4G2Na3UUSWsFwELHTLVw&Signature=qwhWvVHWQWT2vzz2NeIMr2lPDuY%3D(String), null, 2020-11-05 19:18:26.626(Timestamp)
+19:19:27.391 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.C.queryByCaseId:159] - ==>  Preparing: select cid, caseId, party, phone, idcard, court, region, lawyer, admin from myrhythm.cases where CaseId = ? 
+19:19:27.392 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.C.queryByCaseId:159] - ==> Parameters: 1234(String)
+19:19:27.393 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.C.queryByCaseId:159] - <==      Total: 0
+19:19:27.402 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.C.insert:159] - ==>  Preparing: insert into myrhythm.cases(caseId, party, phone, idcard, court, region, lawyer, admin) values (?, ?, ?, ?, ?, ?, ?, ?) 
+19:19:27.403 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.C.insert:159] - ==> Parameters: 777(String), 666(String), null, 444(String), 222(String), 333(String), 思琦(String), null
+19:19:27.406 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.C.insert:159] - <==    Updates: 1
+19:19:27.408 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.N.insert:159] - ==>  Preparing: insert into myrhythm.notice(noticename, type, caseaddress, picture, category, releasetime) values (?, ?, ?, ?, ?, ?) 
+19:19:27.408 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.N.insert:159] - ==> Parameters: null, null, 777(String), http://laywertest.oss-accelerate.aliyuncs.com/image/1604574887187.jpg?Expires=1919934883&OSSAccessKeyId=LTAI4G2Na3UUSWsFwELHTLVw&Signature=qwhWvVHWQWT2vzz2NeIMr2lPDuY%3D(String), null, 2020-11-05 19:19:27.407(Timestamp)
+19:22:03.934 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.C.queryByCaseId:159] - ==>  Preparing: select cid, caseId, party, phone, idcard, court, region, lawyer, admin from myrhythm.cases where CaseId = ? 
+19:22:03.935 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.C.queryByCaseId:159] - ==> Parameters: 1234(String)
+19:22:03.937 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.C.queryByCaseId:159] - <==      Total: 0
+19:22:09.374 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.C.insert:159] - ==>  Preparing: insert into myrhythm.cases(caseId, party, phone, idcard, court, region, lawyer, admin) values (?, ?, ?, ?, ?, ?, ?, ?) 
+19:22:09.375 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.C.insert:159] - ==> Parameters: 123000(String), fsdfs(String), null, aasdfsa(String), fasdf(String), fsad(String), 思琦(String), null
+19:22:09.378 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.C.insert:159] - <==    Updates: 1
+19:22:09.379 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.N.insert:159] - ==>  Preparing: insert into myrhythm.notice(noticename, type, caseaddress, picture, category, releasetime) values (?, ?, ?, ?, ?, ?) 
+19:22:09.380 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.N.insert:159] - ==> Parameters: null, null, 123000(String), http://laywertest.oss-accelerate.aliyuncs.com/image/1604575333354.jpg?Expires=1919935328&OSSAccessKeyId=LTAI4G2Na3UUSWsFwELHTLVw&Signature=zr6YiOkYGbrmcPtzoaQ4iWiJJTg%3D(String), null, 2020-11-05 19:22:09.379(Timestamp)
+19:22:09.386 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.N.insert:159] - <==    Updates: 1
+19:22:09.387 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.N.insert:159] - ==>  Preparing: insert into myrhythm.newspaper(region, place, page, state, detail, address, day) values (?, ?, ?, ?, ?, ?, ?) 
+19:22:09.388 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.N.insert:159] - ==> Parameters: fsad(String), null, null, 0(String), null, null, 0(Integer)
+19:22:12.127 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.C.insert:159] - ==>  Preparing: insert into myrhythm.cases(caseId, party, phone, idcard, court, region, lawyer, admin) values (?, ?, ?, ?, ?, ?, ?, ?) 
+19:22:12.128 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.C.insert:159] - ==> Parameters: 123000(String), fsdfs(String), null, aasdfsa(String), fasdf(String), fsad(String), 思琦(String), null
+19:22:12.131 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.C.insert:159] - <==    Updates: 1
+19:22:12.132 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.N.insert:159] - ==>  Preparing: insert into myrhythm.notice(noticename, type, caseaddress, picture, category, releasetime) values (?, ?, ?, ?, ?, ?) 
+19:22:12.133 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.N.insert:159] - ==> Parameters: null, null, 123000(String), http://laywertest.oss-accelerate.aliyuncs.com/image/1604575333354.jpg?Expires=1919935328&OSSAccessKeyId=LTAI4G2Na3UUSWsFwELHTLVw&Signature=zr6YiOkYGbrmcPtzoaQ4iWiJJTg%3D(String), null, 2020-11-05 19:22:12.132(Timestamp)
+19:22:12.136 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.N.insert:159] - <==    Updates: 1
+19:22:12.137 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.N.insert:159] - ==>  Preparing: insert into myrhythm.newspaper(region, place, page, state, detail, address, day) values (?, ?, ?, ?, ?, ?, ?) 
+19:22:12.138 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.N.insert:159] - ==> Parameters: fsad(String), null, null, 0(String), null, null, 0(Integer)
+19:27:04.940 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.C.queryByCaseId:159] - ==>  Preparing: select cid, caseId, party, phone, idcard, court, region, lawyer, admin from myrhythm.cases where CaseId = ? 
+19:27:04.941 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.C.queryByCaseId:159] - ==> Parameters: 1234(String)
+19:27:04.945 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.C.insert:159] - ==>  Preparing: insert into myrhythm.cases(caseId, party, phone, idcard, court, region, lawyer, admin) values (?, ?, ?, ?, ?, ?, ?, ?) 
+19:27:04.947 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.C.queryByCaseId:159] - <==      Total: 0
+19:27:04.947 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.C.insert:159] - ==> Parameters: 154785(String), 发顺丰(String), null, 4105204151522(String), 车工(String), 法撒旦(String), 思琦(String), null
+19:27:04.953 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.C.insert:159] - <==    Updates: 1
+19:27:04.954 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.N.insert:159] - ==>  Preparing: insert into myrhythm.notice(noticename, type, caseaddress, picture, category, releasetime) values (?, ?, ?, ?, ?, ?) 
+19:27:04.956 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.N.insert:159] - ==> Parameters: null, null, 154785(String), http://laywertest.oss-accelerate.aliyuncs.com/image/1604575333354.jpg?Expires=1919935328&OSSAccessKeyId=LTAI4G2Na3UUSWsFwELHTLVw&Signature=zr6YiOkYGbrmcPtzoaQ4iWiJJTg%3D(String), null, 2020-11-05 19:27:04.954(Timestamp)
+19:27:04.961 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.N.insert:159] - <==    Updates: 1
+19:27:04.963 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.N.insert:159] - ==>  Preparing: insert into myrhythm.newspaper(region, place, page, state, detail, address, day) values (?, ?, ?, ?, ?, ?, ?) 
+19:27:04.964 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.N.insert:159] - ==> Parameters: 法撒旦(String), null, null, 0(String), null, null, 0(Integer)
+19:28:57.709 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.C.queryByCaseId:159] - ==>  Preparing: select cid, caseId, party, phone, idcard, court, region, lawyer, admin from myrhythm.cases where CaseId = ? 
+19:28:57.752 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.C.queryByCaseId:159] - ==> Parameters: 1234(String)
+19:28:57.783 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.C.queryByCaseId:159] - <==      Total: 0
+19:29:01.117 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.C.insert:159] - ==>  Preparing: insert into myrhythm.cases(caseId, party, phone, idcard, court, region, lawyer, admin) values (?, ?, ?, ?, ?, ?, ?, ?) 
+19:29:01.119 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.C.insert:159] - ==> Parameters: 5874962(String), 发生的事(String), null, 4105204159875(String), 法撒旦(String), 刻录机(String), 思琦(String), null
+19:29:01.122 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.C.insert:159] - <==    Updates: 1
+19:29:01.125 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.N.insert:159] - ==>  Preparing: insert into myrhythm.notice(noticename, type, caseaddress, picture, category, releasetime) values (?, ?, ?, ?, ?, ?) 
+19:29:01.128 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.N.insert:159] - ==> Parameters: null, null, 5874962(String), http://laywertest.oss-accelerate.aliyuncs.com/image/1604575333354.jpg?Expires=1919935328&OSSAccessKeyId=LTAI4G2Na3UUSWsFwELHTLVw&Signature=zr6YiOkYGbrmcPtzoaQ4iWiJJTg%3D(String), null, 2020-11-05 19:29:01.124(Timestamp)
+19:29:01.134 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.N.insert:159] - <==    Updates: 1
+19:29:01.135 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.N.insert:159] - ==>  Preparing: insert into myrhythm.newspaper(region, place, page, state, detail, address, day) values (?, ?, ?, ?, ?, ?, ?) 
+19:29:01.136 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.N.insert:159] - ==> Parameters: 刻录机(String), null, null, 0(String), null, null, 0(Integer)
+19:32:54.350 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.C.queryByCaseId:159] - ==>  Preparing: select cid, caseId, party, phone, idcard, court, region, lawyer, admin from myrhythm.cases where CaseId = ? 
+19:32:54.353 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.C.insert:159] - ==>  Preparing: insert into myrhythm.cases(caseId, party, phone, idcard, court, region, lawyer, admin) values (?, ?, ?, ?, ?, ?, ?, ?) 
+19:32:54.375 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.C.queryByCaseId:159] - ==> Parameters: 1234(String)
+19:32:54.375 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.C.insert:159] - ==> Parameters: 368715(String), 辅助你(String), null, 515616516(String), 刻录机(String), 哦i你(String), 思琦(String), null
+19:32:54.386 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.C.insert:159] - <==    Updates: 1
+19:32:54.396 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.N.insert:159] - ==>  Preparing: insert into myrhythm.notice(noticename, type, caseaddress, picture, category, releasetime) values (?, ?, ?, ?, ?, ?) 
+19:32:54.398 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.N.insert:159] - ==> Parameters: null, null, 368715(String), http://laywertest.oss-accelerate.aliyuncs.com/image/1604575333354.jpg?Expires=1919935328&OSSAccessKeyId=LTAI4G2Na3UUSWsFwELHTLVw&Signature=zr6YiOkYGbrmcPtzoaQ4iWiJJTg%3D(String), null, 2020-11-05 19:32:54.395(Timestamp)
+19:32:54.399 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.C.queryByCaseId:159] - <==      Total: 0
+19:32:54.404 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.N.insert:159] - <==    Updates: 1
+19:32:54.405 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.N.insert:159] - ==>  Preparing: insert into myrhythm.newspaper(p_id,region, place, page, state, detail, address, day) values (?,?, ?, ?, ?, ?, ?, ?) 
+19:32:54.408 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.N.insert:159] - ==> Parameters: 6(Integer), 哦i你(String), null, null, 0(String), null, null, 0(Integer)
+19:32:54.411 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.N.insert:159] - <==    Updates: 1
+19:34:16.377 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.C.queryByCaseId:159] - ==>  Preparing: select cid, caseId, party, phone, idcard, court, region, lawyer, admin from myrhythm.cases where CaseId = ? 
+19:34:16.377 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.C.queryByCaseId:159] - ==> Parameters: 1234(String)
+19:34:16.379 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.C.queryByCaseId:159] - <==      Total: 0
+19:34:23.102 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.C.insert:159] - ==>  Preparing: insert into myrhythm.cases(caseId, party, phone, idcard, court, region, lawyer, admin) values (?, ?, ?, ?, ?, ?, ?, ?) 
+19:34:23.104 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.C.insert:159] - ==> Parameters: 87451556(String), 有茂名(String), null, 666666666666666666(String), 兆兆(String), 北京(String), 思琦(String), null
+19:34:23.108 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.C.insert:159] - <==    Updates: 1
+19:34:23.109 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.N.insert:159] - ==>  Preparing: insert into myrhythm.notice(noticename, type, caseaddress, picture, category, releasetime) values (?, ?, ?, ?, ?, ?) 
+19:34:23.110 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.N.insert:159] - ==> Parameters: null, null, 87451556(String), http://laywertest.oss-accelerate.aliyuncs.com/image/1604576064985.jpg?Expires=1919936060&OSSAccessKeyId=LTAI4G2Na3UUSWsFwELHTLVw&Signature=LpaGtdBrAnjoAiUnNP9PmJ%2B9TrM%3D(String), null, 2020-11-05 19:34:23.109(Timestamp)
+19:34:23.113 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.N.insert:159] - <==    Updates: 1
+19:34:23.115 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.N.insert:159] - ==>  Preparing: insert into myrhythm.newspaper(p_id,region, place, page, state, detail, address, day) values (?,?, ?, ?, ?, ?, ?, ?) 
+19:34:23.116 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.N.insert:159] - ==> Parameters: 7(Integer), 北京(String), null, null, 0(String), null, null, 0(Integer)
+19:34:23.120 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.N.insert:159] - <==    Updates: 1
+19:47:05.460 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryByUsername:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where username = ? 
+19:47:05.496 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryByUsername:159] - ==> Parameters: 123456(String)
+19:47:05.518 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryByUsername:159] - <==      Total: 1
+19:47:05.535 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, phoneid = ?, count = ? where id = ? 
+19:47:05.536 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.update:159] - ==> Parameters: 123456(String), 123456(String), 16622812535(String), 0(Integer), 42(Integer)
+19:47:05.542 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.update:159] - <==    Updates: 1
+19:47:05.544 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+19:47:05.545 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - ==> Parameters: 42(Integer)
+19:47:05.547 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - <==      Total: 1
+19:47:05.548 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryByUId:159] - ==>  Preparing: select u_id, r_id, id from myrhythm.userrole where u_id = ? 
+19:47:05.549 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryByUId:159] - ==> Parameters: 42(Integer)
+19:47:05.554 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryByUId:159] - <==      Total: 0
+19:59:34.615 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+19:59:34.617 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+19:59:34.622 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 1
+19:59:34.626 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+19:59:34.628 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+19:59:34.631 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:00:21.531 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:00:21.533 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+20:00:21.537 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:00:21.542 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:00:21.545 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+20:00:21.549 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:00:26.266 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:00:26.267 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+20:00:26.270 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:00:26.274 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+20:00:26.276 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String)
+20:00:26.280 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:00:26.283 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ? where id = ? 
+20:00:26.285 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - ==> Parameters: 16622812535(String), 1(Integer), 1604411475060(Long), 18(Integer)
+20:00:26.328 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - <==    Updates: 1
+20:03:09.785 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:03:09.786 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+20:03:09.788 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:03:09.790 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:03:09.791 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+20:03:09.793 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:03:10.095 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:03:10.097 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+20:03:10.101 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:03:10.104 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+20:03:10.106 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String)
+20:03:10.111 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:03:10.115 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ? where id = ? 
+20:03:10.119 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - ==> Parameters: 16622812535(String), 2(Integer), 1604411475060(Long), 18(Integer)
+20:03:10.139 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - <==    Updates: 1
+20:06:34.253 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:06:34.256 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+20:06:34.261 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:06:34.263 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:06:34.264 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+20:06:34.267 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:06:34.624 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:06:34.625 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+20:06:34.629 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:06:34.632 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+20:06:34.634 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String)
+20:06:34.637 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:06:34.639 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ? where id = ? 
+20:06:34.640 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==> Parameters: 16622812535(String), 3(Integer), 1604411475060(Long), 18(Integer)
+20:06:34.647 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - <==    Updates: 1
+20:06:53.579 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE username = ? and password = ? and realname = ? and phoneid = ? and idcard = ? and photoaddress = ? and count = ? 
+20:06:53.584 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 123(String), 12345678(String), dadadad(String), 16622812535(String), 484651651651651561(String), dadadad(String), 0(Integer)
+20:06:53.589 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:06:53.593 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.insert:159] - ==>  Preparing: insert into myrhythm.user(username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+20:06:53.606 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.insert:159] - ==> Parameters: 123(String), 12345678(String), dadadad(String), 16622812535(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:53.592(Timestamp), null, null, 0(Integer)
+20:06:53.652 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.insert:159] - <==    Updates: 1
+20:06:53.657 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.R.insert:159] - ==>  Preparing: insert into myrhythm.role(rolename, status) values (?, ?) 
+20:06:53.659 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.R.insert:159] - ==> Parameters: 法官(String), 1(String)
+20:06:53.666 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.R.insert:159] - <==    Updates: 1
+20:06:53.668 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.insert:159] - ==>  Preparing: insert into myrhythm.userrole(u_id, r_id,id) values (?, ?,?) 
+20:06:53.670 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.insert:159] - ==> Parameters: 43(Integer), 10(Integer), 0(Integer)
+20:06:53.674 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.insert:159] - <==    Updates: 1
+20:07:16.791 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUsername:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where username = ? 
+20:07:16.793 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUsername:159] - ==> Parameters: 123(String)
+20:07:16.798 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUsername:159] - <==      Total: 1
+20:07:16.800 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, count = ? where id = ? 
+20:07:16.803 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==> Parameters: 123(String), 12345678(String), dadadad(String), 16622812535(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 0(Integer), 43(Integer)
+20:07:16.849 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - <==    Updates: 1
+20:07:16.850 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:07:16.851 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:07:16.854 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:07:16.856 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUId:159] - ==>  Preparing: select u_id, r_id, id from myrhythm.userrole where u_id = ? 
+20:07:16.858 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUId:159] - ==> Parameters: 43(Integer)
+20:07:16.860 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUId:159] - <==      Total: 1
+20:07:16.862 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.R.queryById:159] - ==>  Preparing: select r_id, rolename, status from myrhythm.role where r_id = ? 
+20:07:16.863 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.R.queryById:159] - ==> Parameters: 10(Integer)
+20:07:16.865 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.R.queryById:159] - <==      Total: 1
+20:07:54.031 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:07:54.033 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String), 0(Integer)
+20:07:54.036 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:07:54.040 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:07:54.041 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String), 0(Integer)
+20:07:54.044 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:07:54.365 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:07:54.367 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String), 0(Integer)
+20:07:54.371 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:07:54.374 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+20:07:54.377 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String)
+20:07:54.380 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:07:54.384 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.insert:159] - ==>  Preparing: insert into myrhythm.uuidnum(phoneid, num, time, endtime) values (?, ?, ?, ?) 
+20:07:54.386 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.insert:159] - ==> Parameters: 166 2281 2535(String), 0(Integer), 1604578074363(Long), null
+20:07:54.431 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.insert:159] - <==    Updates: 1
+20:08:09.136 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:08:09.137 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:08:09.139 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:08:43.562 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:08:43.564 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:08:43.570 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:08:43.574 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, count = ? where id = ? 
+20:08:43.577 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==> Parameters: sefan(String), 12345678(String), dadadad(String), 16622812535(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 0(Integer), 43(Integer)
+20:08:43.623 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - <==    Updates: 1
+20:08:43.625 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:08:43.627 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:08:43.632 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:08:55.153 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryByUsername:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where username = ? 
+20:08:55.154 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryByUsername:159] - ==> Parameters: sefan(String)
+20:08:55.157 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryByUsername:159] - <==      Total: 1
+20:08:55.160 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, count = ? where id = ? 
+20:08:55.161 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.update:159] - ==> Parameters: sefan(String), 12345678(String), dadadad(String), 16622812535(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 0(Integer), 43(Integer)
+20:08:55.175 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.update:159] - <==    Updates: 1
+20:08:55.176 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:08:55.176 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:08:55.180 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:08:55.181 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryByUId:159] - ==>  Preparing: select u_id, r_id, id from myrhythm.userrole where u_id = ? 
+20:08:55.182 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryByUId:159] - ==> Parameters: 43(Integer)
+20:08:55.185 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryByUId:159] - <==      Total: 1
+20:08:55.186 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.R.queryById:159] - ==>  Preparing: select r_id, rolename, status from myrhythm.role where r_id = ? 
+20:08:55.187 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.R.queryById:159] - ==> Parameters: 10(Integer)
+20:08:55.189 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.R.queryById:159] - <==      Total: 1
+20:09:09.597 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:09:09.599 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String), 0(Integer)
+20:09:09.601 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:09:09.605 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:09:09.607 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String), 0(Integer)
+20:09:09.609 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:09:09.936 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:09:09.938 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String), 0(Integer)
+20:09:09.940 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:09:09.943 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+20:09:09.943 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String)
+20:09:09.946 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:09:09.948 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ? where id = ? 
+20:09:09.950 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.update:159] - ==> Parameters: 166 2281 2535(String), 1(Integer), 1604578074363(Long), 21(Integer)
+20:09:09.954 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.update:159] - <==    Updates: 1
+20:09:59.146 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:09:59.148 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String), 0(Integer)
+20:09:59.149 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:09:59.150 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:09:59.151 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String), 0(Integer)
+20:09:59.152 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:09:59.285 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:09:59.286 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String), 0(Integer)
+20:09:59.287 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:09:59.289 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+20:09:59.289 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String)
+20:09:59.292 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:09:59.294 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ? where id = ? 
+20:09:59.296 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - ==> Parameters: 166 2281 2535(String), 2(Integer), 1604578074363(Long), 21(Integer)
+20:09:59.299 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - <==    Updates: 1
+20:11:23.416 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:11:23.417 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String), 0(Integer)
+20:11:23.420 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:11:23.422 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:11:23.423 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String), 0(Integer)
+20:11:23.424 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:11:23.652 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:11:23.653 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String), 0(Integer)
+20:11:23.655 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:11:23.657 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+20:11:23.657 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String)
+20:11:23.659 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:11:48.866 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:11:48.866 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String), 0(Integer)
+20:11:48.868 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:11:48.869 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:11:48.870 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String), 0(Integer)
+20:11:48.871 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:11:49.118 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:11:49.120 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String), 0(Integer)
+20:11:49.121 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:11:49.122 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+20:11:49.122 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String)
+20:11:49.123 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:12:32.484 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:12:32.485 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String), 0(Integer)
+20:12:32.487 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:12:32.490 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:12:32.491 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String), 0(Integer)
+20:12:32.493 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:12:32.625 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:12:32.626 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String), 0(Integer)
+20:12:32.627 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:12:32.628 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+20:12:32.629 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String)
+20:12:32.631 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:13:25.728 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:13:25.729 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==> Parameters: 152 5412 9697(String), 0(Integer)
+20:13:25.730 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:13:25.732 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:13:25.733 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==> Parameters: 152 5412 9697(String), 0(Integer)
+20:13:25.734 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:13:25.891 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:13:25.892 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==> Parameters: 152 5412 9697(String), 0(Integer)
+20:13:25.894 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:13:25.895 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+20:13:25.896 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==> Parameters: 152 5412 9697(String)
+20:13:25.897 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:13:25.899 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.insert:159] - ==>  Preparing: insert into myrhythm.uuidnum(phoneid, num, time, endtime) values (?, ?, ?, ?) 
+20:13:25.900 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.insert:159] - ==> Parameters: 152 5412 9697(String), 0(Integer), 1604578405890(Long), null
+20:13:25.915 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.insert:159] - <==    Updates: 1
+20:14:22.854 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:14:22.855 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==> Parameters: 152 5412 9697(String), 0(Integer)
+20:14:22.858 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:14:22.861 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:14:22.863 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==> Parameters: 152 5412 9697(String), 0(Integer)
+20:14:22.865 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:14:23.054 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:14:23.055 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==> Parameters: 152 5412 9697(String), 0(Integer)
+20:14:23.056 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:14:23.058 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+20:14:23.059 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==> Parameters: 152 5412 9697(String)
+20:14:23.061 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:14:23.062 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ? where id = ? 
+20:14:23.063 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.update:159] - ==> Parameters: 152 5412 9697(String), 1(Integer), 1604578405890(Long), 22(Integer)
+20:14:23.106 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.update:159] - <==    Updates: 1
+20:14:37.952 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:14:37.954 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:14:37.957 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:15:27.570 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUsername:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where username = ? 
+20:15:27.572 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUsername:159] - ==> Parameters: sefan(String)
+20:15:27.574 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUsername:159] - <==      Total: 1
+20:15:27.576 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, count = ? where id = ? 
+20:15:27.577 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==> Parameters: sefan(String), 12345678(String), dadadad(String), 15254129697(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 0(Integer), 43(Integer)
+20:15:27.580 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - <==    Updates: 1
+20:15:27.581 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:15:27.582 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:15:27.584 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:15:27.585 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUId:159] - ==>  Preparing: select u_id, r_id, id from myrhythm.userrole where u_id = ? 
+20:15:27.586 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUId:159] - ==> Parameters: 43(Integer)
+20:15:27.588 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUId:159] - <==      Total: 1
+20:15:27.590 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.R.queryById:159] - ==>  Preparing: select r_id, rolename, status from myrhythm.role where r_id = ? 
+20:15:27.590 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.R.queryById:159] - ==> Parameters: 10(Integer)
+20:15:27.592 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.R.queryById:159] - <==      Total: 1
+20:19:19.282 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:19:19.283 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 152 5412 9697(String), 0(Integer)
+20:19:19.285 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:19:19.286 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:19:19.287 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 152 5412 9697(String), 0(Integer)
+20:19:19.288 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:19:19.672 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:19:19.674 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 152 5412 9697(String), 0(Integer)
+20:19:19.677 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:19:19.679 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+20:19:19.680 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 152 5412 9697(String)
+20:19:19.684 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:19:19.687 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ? where id = ? 
+20:19:19.688 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.update:159] - ==> Parameters: 152 5412 9697(String), 2(Integer), 1604578405890(Long), 22(Integer)
+20:19:19.731 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.update:159] - <==    Updates: 1
+20:19:34.600 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:19:34.604 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:19:34.608 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:21:08.600 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:21:08.602 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==> Parameters: 15254129697(String), 0(Integer)
+20:21:08.605 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:21:08.606 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:21:08.607 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==> Parameters: 15254129697(String), 0(Integer)
+20:21:08.609 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:27:27.140 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:27:27.164 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 15254129697(String), 0(Integer)
+20:27:27.188 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:27:27.190 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:27:27.191 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 15254129697(String), 0(Integer)
+20:27:27.193 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:27:30.000 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:27:30.002 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 15254129697(String), 0(Integer)
+20:27:30.006 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:27:30.008 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+20:27:30.009 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 15254129697(String)
+20:27:30.011 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 0
+20:31:12.946 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:31:12.950 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==> Parameters: 15254129697(String), 0(Integer)
+20:31:12.954 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:31:12.958 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:31:12.960 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==> Parameters: 15254129697(String), 0(Integer)
+20:31:12.964 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:31:13.286 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:31:13.287 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==> Parameters: 15254129697(String), 0(Integer)
+20:31:13.290 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:31:13.292 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+20:31:13.293 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==> Parameters: 15254129697(String)
+20:31:13.296 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:32:15.815 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:32:15.816 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+20:32:15.819 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:32:15.820 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:32:15.821 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+20:32:15.825 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:32:16.150 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:32:16.153 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+20:32:16.157 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:32:16.159 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+20:32:16.161 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String)
+20:32:16.164 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryAll:159] - <==      Total: 2
+20:32:16.168 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+20:32:16.175 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.update:159] - ==> Parameters: sefan(String), 12345678(String), dadadad(String), 18070153192(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 1208(String), 0(Integer), 43(Integer)
+20:32:16.181 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.update:159] - <==    Updates: 1
+20:32:16.183 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:32:16.184 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:32:16.187 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:32:16.191 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ?, endtime = ? where id = ? 
+20:32:16.193 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.update:159] - ==> Parameters: 18070153192(String), 5(Integer), 1604411474999(Long), 1604579536149(Long), 17(Integer)
+20:32:16.197 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.update:159] - <==    Updates: 1
+20:32:32.145 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:32:32.146 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:32:32.148 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:33:22.601 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:33:22.603 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:33:22.606 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:36:38.286 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:36:38.288 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+20:36:38.295 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:36:38.299 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:36:38.301 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+20:36:38.305 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:36:38.647 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:36:38.649 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+20:36:38.651 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:36:38.654 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+20:36:38.654 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String)
+20:36:38.655 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 2
+20:36:38.659 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+20:36:38.659 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==> Parameters: sefan(String), 12345678(String), dadadad(String), 18070153192(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 9262(String), 0(Integer), 43(Integer)
+20:36:38.703 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - <==    Updates: 1
+20:36:38.704 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:36:38.704 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:36:38.710 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:36:38.712 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ?, endtime = ? where id = ? 
+20:36:38.713 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==> Parameters: 18070153192(String), 6(Integer), 1604411474999(Long), 1604579798646(Long), 17(Integer)
+20:36:38.716 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - <==    Updates: 1
+20:37:12.975 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:37:12.978 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:37:12.983 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:41:06.817 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:41:06.843 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+20:41:06.866 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:41:06.870 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:41:06.871 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+20:41:06.873 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:41:09.601 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:41:09.603 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+20:41:09.605 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:41:09.607 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+20:41:09.608 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String)
+20:41:09.615 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 2
+20:41:09.617 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+20:41:09.621 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==> Parameters: sefan(String), 12345678(String), dadadad(String), 18070153192(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 4424(String), 0(Integer), 43(Integer)
+20:41:09.663 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - <==    Updates: 1
+20:41:09.664 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:41:09.666 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:41:09.669 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:41:09.671 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ?, endtime = ? where id = ? 
+20:41:09.673 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==> Parameters: 18070153192(String), 7(Integer), 1604411474999(Long), 1604580069600(Long), 17(Integer)
+20:41:09.676 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - <==    Updates: 1
+20:41:28.778 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:41:28.779 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:41:28.782 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:41:42.570 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:41:42.571 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:41:42.577 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:44:18.957 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:44:18.957 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+20:44:18.961 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:44:18.963 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:44:18.964 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+20:44:18.966 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:44:19.244 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:44:19.245 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+20:44:19.247 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:44:19.249 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+20:44:19.250 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String)
+20:44:19.252 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - <==      Total: 2
+20:44:19.254 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+20:44:19.254 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.update:159] - ==> Parameters: sefan(String), 12345678(String), dadadad(String), 18070153192(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 5248(String), 0(Integer), 43(Integer)
+20:44:19.268 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.update:159] - <==    Updates: 1
+20:44:19.270 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:44:19.271 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:44:19.274 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:44:19.278 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ?, endtime = ? where id = ? 
+20:44:19.279 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.update:159] - ==> Parameters: 18070153192(String), 8(Integer), 1604411474999(Long), 1604580259243(Long), 17(Integer)
+20:44:19.285 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.update:159] - <==    Updates: 1
+20:44:36.268 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:44:36.272 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:44:36.276 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:48:55.301 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:48:55.302 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+20:48:55.304 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:48:55.305 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:48:55.306 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+20:48:55.308 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:48:55.580 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:48:55.581 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+20:48:55.585 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:48:55.587 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+20:48:55.588 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String)
+20:48:55.591 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - <==      Total: 2
+20:48:55.592 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+20:48:55.594 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.update:159] - ==> Parameters: sefan(String), 12345678(String), dadadad(String), 18070153192(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 1623(String), 0(Integer), 43(Integer)
+20:48:55.633 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.update:159] - <==    Updates: 1
+20:48:55.635 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:48:55.636 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:48:55.638 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:48:55.640 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ?, endtime = ? where id = ? 
+20:48:55.641 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.update:159] - ==> Parameters: 18070153192(String), 9(Integer), 1604411474999(Long), 1604580535579(Long), 17(Integer)
+20:48:55.644 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.update:159] - <==    Updates: 1
+20:50:24.339 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryByUsername:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where username = ? 
+20:50:24.342 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryByUsername:159] - ==> Parameters: sefan(String)
+20:50:24.346 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryByUsername:159] - <==      Total: 1
+20:50:24.348 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+20:50:24.350 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - ==> Parameters: sefan(String), 12345678(String), dadadad(String), 18070153192(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 1623(String), 0(Integer), 43(Integer)
+20:50:24.365 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - <==    Updates: 1
+20:50:24.367 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:50:24.368 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:50:24.370 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:50:24.373 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryByUId:159] - ==>  Preparing: select u_id, r_id, id from myrhythm.userrole where u_id = ? 
+20:50:24.374 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryByUId:159] - ==> Parameters: 43(Integer)
+20:50:24.377 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryByUId:159] - <==      Total: 1
+20:50:24.378 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.R.queryById:159] - ==>  Preparing: select r_id, rolename, status from myrhythm.role where r_id = ? 
+20:50:24.379 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.R.queryById:159] - ==> Parameters: 10(Integer)
+20:50:24.382 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.R.queryById:159] - <==      Total: 1
+20:50:40.148 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:50:40.150 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+20:50:40.152 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:50:40.153 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:50:40.154 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+20:50:40.156 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:50:40.404 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:50:40.404 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+20:50:40.406 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:50:40.407 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+20:50:40.408 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String)
+20:50:40.409 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 2
+20:50:40.410 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+20:50:40.411 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - ==> Parameters: sefan(String), 12345678(String), dadadad(String), 18070153192(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 4054(String), 0(Integer), 43(Integer)
+20:50:40.453 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - <==    Updates: 1
+20:50:40.454 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:50:40.455 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:50:40.458 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:50:40.459 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ?, endtime = ? where id = ? 
+20:50:40.461 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - ==> Parameters: 18070153192(String), 10(Integer), 1604411474999(Long), 1604580640403(Long), 17(Integer)
+20:50:40.465 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - <==    Updates: 1
+20:50:57.132 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:50:57.132 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:50:57.133 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:51:16.135 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:51:16.137 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:51:16.140 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:52:25.923 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:52:25.947 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:52:25.973 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:58:29.283 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:58:29.286 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+20:58:29.290 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:58:29.293 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:58:29.294 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+20:58:29.296 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:58:29.790 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+20:58:29.791 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+20:58:29.794 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 1
+20:58:29.797 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+20:58:29.798 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String)
+20:58:29.801 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 2
+20:58:29.802 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+20:58:29.806 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - ==> Parameters: sefan(String), 12345678(String), dadadad(String), 18070153192(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 6723(String), 0(Integer), 43(Integer)
+20:58:29.848 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - <==    Updates: 1
+20:58:29.849 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:58:29.850 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:58:29.852 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryById:159] - <==      Total: 1
+20:58:29.853 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ?, endtime = ? where id = ? 
+20:58:29.855 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - ==> Parameters: 18070153192(String), 11(Integer), 1604411474999(Long), 1604581109789(Long), 17(Integer)
+20:58:29.859 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - <==    Updates: 1
+20:58:47.782 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+20:58:47.783 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+20:58:47.786 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:00:17.931 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:00:17.932 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+21:00:17.937 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:00:17.939 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:00:17.940 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+21:00:17.943 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:00:18.210 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:00:18.212 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+21:00:18.216 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:00:18.218 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+21:00:18.219 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String)
+21:00:18.221 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 2
+21:00:40.718 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:00:40.721 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+21:00:40.726 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:00:40.727 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:00:40.729 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+21:00:40.731 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:00:40.878 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:00:40.880 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String), 0(Integer)
+21:00:40.881 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:00:40.885 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+21:00:40.886 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==> Parameters: 18070153192(String)
+21:00:40.888 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - <==      Total: 2
+21:01:36.257 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:01:36.259 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:01:36.267 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:01:53.736 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:01:53.737 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18637566291(String), 0(Integer)
+21:01:53.741 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:01:53.742 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:01:53.743 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18637566291(String), 0(Integer)
+21:01:53.746 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:01:54.139 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:01:54.140 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18637566291(String), 0(Integer)
+21:01:54.143 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:01:54.145 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+21:01:54.146 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18637566291(String)
+21:01:54.148 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:01:54.151 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+21:01:54.152 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==> Parameters: sefan(String), 12345678(String), dadadad(String), 18637566291(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 4350(String), 0(Integer), 43(Integer)
+21:01:54.164 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - <==    Updates: 1
+21:01:54.165 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:01:54.167 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:01:54.174 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:01:54.176 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ?, endtime = ? where id = ? 
+21:01:54.177 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==> Parameters: 18637566291(String), 1(Integer), 1604578405890(Long), 1604581314138(Long), 22(Integer)
+21:01:54.181 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - <==    Updates: 1
+21:02:11.027 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:02:11.029 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:02:11.034 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:04:46.129 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:04:46.130 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==> Parameters: 18637566291(String), 0(Integer)
+21:04:46.133 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:04:46.135 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:04:46.137 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==> Parameters: 18637566291(String), 0(Integer)
+21:04:46.139 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:04:46.483 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:04:46.485 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==> Parameters: 18637566291(String), 0(Integer)
+21:04:46.489 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:04:46.492 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+21:04:46.492 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==> Parameters: 18637566291(String)
+21:04:46.496 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:04:46.499 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+21:04:46.502 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - ==> Parameters: sefan(String), 12345678(String), dadadad(String), 18637566291(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 7680(String), 0(Integer), 43(Integer)
+21:04:46.547 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - <==    Updates: 1
+21:04:46.548 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:04:46.549 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:04:46.551 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:04:46.552 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ?, endtime = ? where id = ? 
+21:04:46.553 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - ==> Parameters: 18637566291(String), 2(Integer), 1604578405890(Long), 1604581486482(Long), 22(Integer)
+21:04:46.556 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - <==    Updates: 1
+21:05:01.862 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:05:01.864 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:05:01.867 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:07:12.490 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:07:12.492 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 18637522691(String), 0(Integer)
+21:07:12.494 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:07:12.496 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:07:12.497 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 18637522691(String), 0(Integer)
+21:07:12.500 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:07:12.775 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:07:12.776 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 18637522691(String), 0(Integer)
+21:07:12.778 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:07:12.779 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+21:07:12.780 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 18637522691(String)
+21:07:12.785 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:07:12.786 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.insert:159] - ==>  Preparing: insert into myrhythm.uuidnum(phoneid, num, time, endtime) values (?, ?, ?, ?) 
+21:07:12.787 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.insert:159] - ==> Parameters: 18637522691(String), 0(Integer), 1604581632775(Long), null
+21:07:12.829 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.insert:159] - <==    Updates: 1
+21:07:28.943 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:07:28.945 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:07:28.948 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:07:49.216 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:07:49.218 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==> Parameters: 18637566291(String), 0(Integer)
+21:07:49.220 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:07:49.224 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:07:49.225 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==> Parameters: 18637566291(String), 0(Integer)
+21:07:49.229 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:07:49.440 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:07:49.440 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==> Parameters: 18637566291(String), 0(Integer)
+21:07:49.443 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:07:49.444 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+21:07:49.444 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==> Parameters: 18637566291(String)
+21:07:49.446 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:08:36.244 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:08:36.245 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+21:08:36.248 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:08:36.250 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:08:36.251 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+21:08:36.253 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:08:36.487 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:08:36.487 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+21:08:36.489 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:08:36.490 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+21:08:36.490 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String)
+21:08:36.492 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryAll:159] - <==      Total: 2
+21:08:36.493 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+21:08:36.494 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - ==> Parameters: sefan(String), 12345678(String), dadadad(String), 18279444776(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 9802(String), 0(Integer), 43(Integer)
+21:08:36.499 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - <==    Updates: 1
+21:08:36.500 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:08:36.501 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:08:36.503 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:08:36.504 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ?, endtime = ? where id = ? 
+21:08:36.505 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - ==> Parameters: 18279444776(String), 3(Integer), 1604452184948(Long), 1604581716486(Long), 20(Integer)
+21:08:36.508 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - <==    Updates: 1
+21:08:54.266 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:08:54.267 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:08:54.269 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:08:54.270 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+21:08:54.271 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - ==> Parameters: sefan(String), 18279444776(String), dadadad(String), 18279444776(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 9802(String), 0(Integer), 43(Integer)
+21:08:54.283 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - <==    Updates: 1
+21:08:54.284 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:08:54.285 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:08:54.286 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:16:15.064 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:16:15.064 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:16:15.071 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:16:15.072 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+21:16:15.073 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.update:159] - ==> Parameters: sefan(String), 123456789(String), dadadad(String), 18279444776(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 9802(String), 0(Integer), 43(Integer)
+21:16:15.077 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.update:159] - <==    Updates: 1
+21:16:15.078 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:16:15.078 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:16:15.079 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:16:46.571 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:16:46.574 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String), 0(Integer)
+21:16:46.575 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:16:46.578 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:16:46.579 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String), 0(Integer)
+21:16:46.580 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:16:46.852 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:16:46.852 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String), 0(Integer)
+21:16:46.854 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:16:46.855 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+21:16:46.855 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 166 2281 2535(String)
+21:16:46.863 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:16:46.864 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.insert:159] - ==>  Preparing: insert into myrhythm.uuidnum(phoneid, num, time, endtime) values (?, ?, ?, ?) 
+21:16:46.865 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.insert:159] - ==> Parameters: 166 2281 2535(String), 0(Integer), 1604582206851(Long), null
+21:16:46.868 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.insert:159] - <==    Updates: 1
+21:17:29.363 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:17:29.364 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+21:17:29.365 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:17:29.367 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:17:29.367 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+21:17:29.368 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:17:29.536 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:17:29.537 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+21:17:29.537 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:17:29.538 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+21:17:29.538 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String)
+21:17:29.540 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 2
+21:17:29.541 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ? where id = ? 
+21:17:29.541 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - ==> Parameters: 16622812535(String), 4(Integer), 1604411475060(Long), 18(Integer)
+21:17:29.545 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - <==    Updates: 1
+21:17:33.893 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:17:33.893 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:17:33.894 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:19:42.979 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:19:42.980 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+21:19:42.983 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:19:42.984 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:19:42.984 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+21:19:42.986 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:19:43.206 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:19:43.207 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+21:19:43.208 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:19:43.209 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+21:19:43.209 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String)
+21:19:43.214 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 2
+21:19:43.215 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ? where id = ? 
+21:19:43.216 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.update:159] - ==> Parameters: 16622812535(String), 5(Integer), 1604411475060(Long), 18(Integer)
+21:19:43.219 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.update:159] - <==    Updates: 1
+21:19:48.407 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:19:48.409 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:19:48.410 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:23:11.228 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUsername:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where username = ? 
+21:23:11.229 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUsername:159] - ==> Parameters: sefan(String)
+21:23:11.233 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUsername:159] - <==      Total: 1
+21:23:11.235 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+21:23:11.236 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==> Parameters: sefan(String), 123456789(String), dadadad(String), 18279444776(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 9802(String), 0(Integer), 43(Integer)
+21:23:11.239 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - <==    Updates: 1
+21:23:11.240 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:23:11.241 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:23:11.243 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:23:11.244 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUId:159] - ==>  Preparing: select u_id, r_id, id from myrhythm.userrole where u_id = ? 
+21:23:11.245 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUId:159] - ==> Parameters: 43(Integer)
+21:23:11.251 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUId:159] - <==      Total: 1
+21:23:11.252 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.R.queryById:159] - ==>  Preparing: select r_id, rolename, status from myrhythm.role where r_id = ? 
+21:23:11.253 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.R.queryById:159] - ==> Parameters: 10(Integer)
+21:23:11.259 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.R.queryById:159] - <==      Total: 1
+21:23:21.908 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:23:21.910 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+21:23:21.911 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:23:21.912 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:23:21.913 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+21:23:21.914 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:23:22.079 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:23:22.081 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+21:23:22.084 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:23:22.086 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+21:23:22.087 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String)
+21:23:22.094 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 2
+21:23:22.096 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ? where id = ? 
+21:23:22.097 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.update:159] - ==> Parameters: 16622812535(String), 6(Integer), 1604411475060(Long), 18(Integer)
+21:23:22.100 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.update:159] - <==    Updates: 1
+21:23:26.856 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:23:26.857 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:23:26.858 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:25:50.544 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:25:50.545 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:25:50.547 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:28:25.466 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:28:25.468 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+21:28:25.470 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:28:25.472 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:28:25.472 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+21:28:25.474 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:28:25.698 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:28:25.698 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+21:28:25.699 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:28:25.701 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+21:28:25.702 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String)
+21:28:25.703 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - <==      Total: 2
+21:28:25.704 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ? where id = ? 
+21:28:25.704 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.update:159] - ==> Parameters: 16622812535(String), 7(Integer), 1604411475060(Long), 18(Integer)
+21:28:25.707 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.update:159] - <==    Updates: 1
+21:28:30.092 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:28:30.092 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:28:30.093 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:28:48.595 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:28:48.596 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:28:48.597 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:28:48.599 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+21:28:48.601 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.update:159] - ==> Parameters: sefan(String), 123456789(String), dadadad(String), 16622812535(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 9802(String), 0(Integer), 43(Integer)
+21:28:48.605 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.update:159] - <==    Updates: 1
+21:28:48.605 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:28:48.606 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:28:48.607 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:29:50.918 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:29:50.918 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+21:29:50.919 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:29:50.921 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:29:50.921 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+21:29:50.922 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:29:51.132 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:29:51.133 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+21:29:51.134 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:29:51.135 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+21:29:51.135 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String)
+21:29:51.137 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 2
+21:29:51.137 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+21:29:51.138 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - ==> Parameters: sefan(String), 123456789(String), dadadad(String), 16622812535(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 4296(String), 0(Integer), 43(Integer)
+21:29:51.141 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - <==    Updates: 1
+21:29:51.141 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:29:51.142 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:29:51.143 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:29:51.143 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ?, endtime = ? where id = ? 
+21:29:51.144 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - ==> Parameters: 16622812535(String), 8(Integer), 1604411475060(Long), 1604582991132(Long), 18(Integer)
+21:29:51.147 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - <==    Updates: 1
+21:30:11.924 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:30:11.926 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+21:30:11.928 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:30:11.929 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:30:11.931 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+21:30:11.932 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:30:12.150 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:30:12.151 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+21:30:12.151 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:30:12.152 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+21:30:12.152 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String)
+21:30:12.153 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 2
+21:30:12.154 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ?, endtime = ? where id = ? 
+21:30:12.155 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - ==> Parameters: 18279444776(String), 4(Integer), 1604452184948(Long), 1604581716486(Long), 20(Integer)
+21:30:12.158 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - <==    Updates: 1
+21:30:16.845 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:30:16.846 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:30:16.847 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:31:06.033 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:31:06.033 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+21:31:06.034 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:31:06.035 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:31:06.035 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+21:31:06.036 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:31:06.200 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:31:06.201 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+21:31:06.202 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:31:06.202 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+21:31:06.202 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String)
+21:31:06.204 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 2
+21:31:06.204 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ?, endtime = ? where id = ? 
+21:31:06.205 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==> Parameters: 18279444776(String), 5(Integer), 1604452184948(Long), 1604581716486(Long), 20(Integer)
+21:31:06.207 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - <==    Updates: 1
+21:31:11.075 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:31:11.076 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:31:11.077 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:35:58.389 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:35:58.417 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+21:35:58.441 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:35:58.444 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:35:58.445 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+21:35:58.447 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:36:23.667 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:36:23.669 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+21:36:23.672 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:36:23.675 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:36:23.678 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:36:23.679 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+21:36:23.680 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+21:36:23.682 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:36:23.689 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:36:25.213 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+21:36:25.217 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String)
+21:36:25.227 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryAll:159] - <==      Total: 2
+21:36:29.542 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:36:29.543 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+21:36:29.545 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 0
+21:36:29.545 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ?, endtime = ? where id = ? 
+21:36:29.547 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+21:36:29.548 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String)
+21:36:29.550 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryAll:159] - <==      Total: 2
+21:36:29.551 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ?, endtime = ? where id = ? 
+21:36:29.552 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.update:159] - ==> Parameters: 18279444776(String), 6(Integer), 1604452184948(Long), 1604581716486(Long), 20(Integer)
+21:36:29.552 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.update:159] - ==> Parameters: 18279444776(String), 6(Integer), 1604452184948(Long), 1604581716486(Long), 20(Integer)
+21:36:29.556 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.update:159] - <==    Updates: 1
+21:36:29.559 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.update:159] - <==    Updates: 1
+21:47:43.640 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:47:43.669 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+21:47:43.699 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:47:43.702 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:47:43.702 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+21:47:43.705 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:47:46.009 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:47:46.010 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+21:47:46.011 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:47:46.013 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+21:47:46.013 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String)
+21:47:46.015 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 2
+21:47:46.016 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+21:47:46.019 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - ==> Parameters: sefan(String), 123456789(String), dadadad(String), 16622812535(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 9238(String), 0(Integer), 43(Integer)
+21:47:46.022 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - <==    Updates: 1
+21:47:46.022 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:47:46.023 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:47:46.025 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:47:46.027 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ?, endtime = ? where id = ? 
+21:47:46.028 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - ==> Parameters: 16622812535(String), 9(Integer), 1604411475060(Long), 1604584066008(Long), 18(Integer)
+21:47:46.031 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - <==    Updates: 1
+21:47:51.911 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:47:51.912 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:47:51.915 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:47:51.919 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+21:47:51.921 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - ==> Parameters: sefan(String), 123456789(String), dadadad(String), 18279444776(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 9238(String), 0(Integer), 43(Integer)
+21:47:51.925 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - <==    Updates: 1
+21:47:51.926 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:47:51.927 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:47:51.931 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:52:40.603 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUsername:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where username = ? 
+21:52:40.626 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUsername:159] - ==> Parameters: sefan(String)
+21:52:40.647 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUsername:159] - <==      Total: 1
+21:52:40.663 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+21:52:40.666 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==> Parameters: sefan(String), 123456789(String), dadadad(String), 18279444776(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 9238(String), 0(Integer), 43(Integer)
+21:52:40.670 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - <==    Updates: 1
+21:52:40.671 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:52:40.672 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:52:40.674 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:52:40.675 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUId:159] - ==>  Preparing: select u_id, r_id, id from myrhythm.userrole where u_id = ? 
+21:52:40.676 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUId:159] - ==> Parameters: 43(Integer)
+21:52:40.677 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryByUId:159] - <==      Total: 1
+21:52:40.678 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.R.queryById:159] - ==>  Preparing: select r_id, rolename, status from myrhythm.role where r_id = ? 
+21:52:40.678 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.R.queryById:159] - ==> Parameters: 10(Integer)
+21:52:40.680 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.R.queryById:159] - <==      Total: 1
+21:53:01.354 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:53:01.355 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:53:01.356 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:53:01.358 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+21:53:01.359 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.update:159] - ==> Parameters: aaaaa(String), 123456789(String), dadadad(String), 18279444776(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 9238(String), 0(Integer), 43(Integer)
+21:53:01.362 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.update:159] - <==    Updates: 1
+21:53:01.363 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:53:01.364 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:53:01.365 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:54:18.741 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryByUsername:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where username = ? 
+21:54:18.742 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryByUsername:159] - ==> Parameters: aaaaa(String)
+21:54:18.745 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryByUsername:159] - <==      Total: 1
+21:54:18.747 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+21:54:18.749 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - ==> Parameters: aaaaa(String), 123456789(String), dadadad(String), 18279444776(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 9238(String), 0(Integer), 43(Integer)
+21:54:18.753 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.update:159] - <==    Updates: 1
+21:54:18.754 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:54:18.754 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:54:18.756 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:54:18.757 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryByUId:159] - ==>  Preparing: select u_id, r_id, id from myrhythm.userrole where u_id = ? 
+21:54:18.758 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryByUId:159] - ==> Parameters: 43(Integer)
+21:54:18.759 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryByUId:159] - <==      Total: 1
+21:54:18.760 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.R.queryById:159] - ==>  Preparing: select r_id, rolename, status from myrhythm.role where r_id = ? 
+21:54:18.761 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.R.queryById:159] - ==> Parameters: 10(Integer)
+21:54:18.763 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.R.queryById:159] - <==      Total: 1
+21:54:39.572 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:54:39.572 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+21:54:39.574 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:54:39.576 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:54:39.577 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+21:54:39.578 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:54:39.983 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+21:54:39.984 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+21:54:39.986 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - <==      Total: 1
+21:54:39.988 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+21:54:39.989 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String)
+21:54:39.990 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryAll:159] - <==      Total: 2
+21:54:39.991 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+21:54:39.992 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.update:159] - ==> Parameters: aaaaa(String), 123456789(String), dadadad(String), 18279444776(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 2865(String), 0(Integer), 43(Integer)
+21:54:39.995 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.update:159] - <==    Updates: 1
+21:54:39.996 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:54:39.996 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:54:39.998 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:54:39.999 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ?, endtime = ? where id = ? 
+21:54:40.000 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.update:159] - ==> Parameters: 18279444776(String), 7(Integer), 1604452184948(Long), 1604584479982(Long), 20(Integer)
+21:54:40.003 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.update:159] - <==    Updates: 1
+21:55:19.441 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:55:19.442 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:55:19.445 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - <==      Total: 1
+21:55:19.449 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+21:55:19.451 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - ==> Parameters: aaaaa(String), 12345678(String), dadadad(String), 18279444776(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 2865(String), 0(Integer), 43(Integer)
+21:55:19.454 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - <==    Updates: 1
+21:55:19.455 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+21:55:19.456 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+21:55:19.458 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:01:28.086 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+22:01:28.087 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+22:01:28.089 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 1
+22:01:28.090 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+22:01:28.091 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+22:01:28.092 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 1
+22:01:28.415 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+22:01:28.416 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+22:01:28.418 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 1
+22:01:28.419 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+22:01:28.420 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String)
+22:01:28.421 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 2
+22:01:28.423 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+22:01:28.423 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==> Parameters: aaaaa(String), 123456789(String), dadadad(String), 18279444776(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 7321(String), 0(Integer), 43(Integer)
+22:01:28.427 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - <==    Updates: 1
+22:01:28.428 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:01:28.429 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:01:28.430 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:01:28.432 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ?, endtime = ? where id = ? 
+22:01:28.433 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==> Parameters: 18279444776(String), 8(Integer), 1604452184948(Long), 1604584888414(Long), 20(Integer)
+22:01:28.436 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - <==    Updates: 1
+22:01:46.324 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:01:46.325 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:01:46.327 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:01:46.328 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+22:01:46.329 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.update:159] - ==> Parameters: aaaaa(String), 12345678(String), dadadad(String), 18279444776(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 7321(String), 0(Integer), 43(Integer)
+22:01:46.332 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.update:159] - <==    Updates: 1
+22:01:46.333 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:01:46.333 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:01:46.335 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:06:07.247 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+22:06:07.248 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+22:06:07.250 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 1
+22:06:07.251 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+22:06:07.252 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+22:06:07.253 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 1
+22:06:07.695 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+22:06:07.695 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+22:06:07.697 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 1
+22:06:07.698 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+22:06:07.699 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String)
+22:06:07.700 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryAll:159] - <==      Total: 2
+22:06:07.702 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+22:06:07.702 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==> Parameters: aaaaa(String), 12345678(String), dadadad(String), 18279444776(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 6724(String), 0(Integer), 43(Integer)
+22:06:07.706 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - <==    Updates: 1
+22:06:07.707 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:06:07.708 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:06:07.709 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:06:07.710 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ?, endtime = ? where id = ? 
+22:06:07.710 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==> Parameters: 18279444776(String), 9(Integer), 1604452184948(Long), 1604585167694(Long), 20(Integer)
+22:06:07.713 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - <==    Updates: 1
+22:06:23.089 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:06:23.089 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:06:23.091 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:07:28.024 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+22:07:28.025 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+22:07:28.027 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - <==      Total: 1
+22:07:28.029 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+22:07:28.030 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+22:07:28.033 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - <==      Total: 1
+22:07:28.310 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+22:07:28.311 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+22:07:28.313 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - <==      Total: 1
+22:07:28.315 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+22:07:28.316 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String)
+22:07:28.318 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - <==      Total: 2
+22:07:28.319 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+22:07:28.321 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.update:159] - ==> Parameters: aaaaa(String), 12345678(String), dadadad(String), 18279444776(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 3164(String), 0(Integer), 43(Integer)
+22:07:28.324 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.update:159] - <==    Updates: 1
+22:07:28.325 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:07:28.325 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:07:28.327 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:07:28.328 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ?, endtime = ? where id = ? 
+22:07:28.329 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.update:159] - ==> Parameters: 18279444776(String), 10(Integer), 1604452184948(Long), 1604585248310(Long), 20(Integer)
+22:07:28.332 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.update:159] - <==    Updates: 1
+22:08:43.309 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:08:43.310 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:08:43.313 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:08:43.314 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+22:08:43.314 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - ==> Parameters: aaaaa(String), 123456789(String), dadadad(String), 18279444776(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 3164(String), 0(Integer), 43(Integer)
+22:08:43.317 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.update:159] - <==    Updates: 1
+22:08:43.318 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:08:43.319 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:08:43.320 DEBUG [http-nio-0.0.0.0-8080-exec-3:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:10:36.832 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:10:36.864 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:10:36.891 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:11:20.392 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:11:20.393 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:11:20.395 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:13:00.985 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:13:00.986 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:13:00.988 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:13:25.326 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+22:13:25.336 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.update:159] - ==> Parameters: aaaaa(String), 12345678(String), dadadad(String), 18279444776(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 3164(String), 0(Integer), 43(Integer)
+22:13:25.343 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.update:159] - <==    Updates: 1
+22:13:25.347 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:13:25.349 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:13:25.356 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:14:37.913 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:14:37.940 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:14:37.963 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:16:19.601 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:16:19.644 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:16:19.684 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:16:34.295 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:16:34.295 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:16:34.298 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:16:54.717 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:16:54.718 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:16:54.721 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:17:48.499 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+22:17:48.537 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+22:17:48.572 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 1
+22:17:48.575 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+22:17:48.577 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+22:17:48.578 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 1
+22:17:51.299 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+22:17:51.299 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+22:17:51.302 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 1
+22:17:51.303 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+22:17:51.304 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String)
+22:17:51.307 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryAll:159] - <==      Total: 2
+22:17:51.308 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+22:17:51.310 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - ==> Parameters: aaaaa(String), 123456789(String), dadadad(String), 18279444776(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 3036(String), 0(Integer), 43(Integer)
+22:17:51.314 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - <==    Updates: 1
+22:17:51.315 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:17:51.315 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:17:51.317 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:17:51.318 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ?, endtime = ? where id = ? 
+22:17:51.319 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - ==> Parameters: 18279444776(String), 11(Integer), 1604452184948(Long), 1604585871298(Long), 20(Integer)
+22:17:51.322 DEBUG [http-nio-0.0.0.0-8080-exec-2:c.l.e.d.U.update:159] - <==    Updates: 1
+22:18:12.561 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:18:12.562 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:18:12.564 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:18:29.031 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:18:29.032 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:18:29.034 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:18:29.035 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+22:18:29.036 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.update:159] - ==> Parameters: aaaaa(String), 12345678(String), dadadad(String), 18279444776(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 3036(String), 0(Integer), 43(Integer)
+22:18:29.040 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.update:159] - <==    Updates: 1
+22:18:29.041 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:18:29.042 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:18:29.044 DEBUG [http-nio-0.0.0.0-8080-exec-1:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:18:47.424 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:18:47.425 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:18:47.426 DEBUG [http-nio-0.0.0.0-8080-exec-6:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:19:05.787 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:19:05.787 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:19:05.789 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:19:57.467 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+22:19:57.469 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+22:19:57.470 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - <==      Total: 1
+22:19:57.472 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+22:19:57.473 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+22:19:57.475 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - <==      Total: 1
+22:19:57.790 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+22:19:57.791 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String), 0(Integer)
+22:19:57.793 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - <==      Total: 1
+22:19:57.795 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+22:19:57.795 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - ==> Parameters: 18279444776(String)
+22:19:57.797 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryAll:159] - <==      Total: 2
+22:20:12.143 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:20:12.144 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:20:12.145 DEBUG [http-nio-0.0.0.0-8080-exec-5:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:20:27.498 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:20:27.498 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:20:27.500 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:21:20.697 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+22:21:20.699 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+22:21:20.702 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 0
+22:21:20.704 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+22:21:20.705 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+22:21:20.707 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 0
+22:21:20.958 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+22:21:20.959 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+22:21:20.960 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 0
+22:21:20.961 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+22:21:20.962 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String)
+22:21:20.964 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.queryAll:159] - <==      Total: 2
+22:21:20.966 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ?, endtime = ? where id = ? 
+22:21:20.967 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - ==> Parameters: 16622812535(String), 10(Integer), 1604411475060(Long), 1604584066008(Long), 18(Integer)
+22:21:20.970 DEBUG [http-nio-0.0.0.0-8080-exec-9:c.l.e.d.U.update:159] - <==    Updates: 1
+22:21:25.409 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:21:25.409 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:21:25.411 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:21:48.148 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:21:48.149 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:21:48.152 DEBUG [http-nio-0.0.0.0-8080-exec-4:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:21:57.303 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+22:21:57.305 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+22:21:57.309 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - <==      Total: 1
+22:21:57.311 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+22:21:57.312 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+22:21:57.314 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - <==      Total: 1
+22:21:57.439 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user WHERE phoneid = ? and count = ? 
+22:21:57.440 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String), 0(Integer)
+22:21:57.442 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - <==      Total: 1
+22:21:57.443 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==>  Preparing: select id, phoneid, num, time, endtime from myrhythm.uuidnum WHERE phoneid = ? 
+22:21:57.443 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - ==> Parameters: 16622812535(String)
+22:21:57.446 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryAll:159] - <==      Total: 2
+22:21:57.447 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+22:21:57.448 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.update:159] - ==> Parameters: aaaaa(String), 12345678(String), dadadad(String), 16622812535(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 2109(String), 0(Integer), 43(Integer)
+22:21:57.452 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.update:159] - <==    Updates: 1
+22:21:57.453 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:21:57.453 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:21:57.454 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:21:57.455 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.uuidnum SET phoneid = ?, num = ?, time = ?, endtime = ? where id = ? 
+22:21:57.456 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.update:159] - ==> Parameters: 16622812535(String), 11(Integer), 1604411475060(Long), 1604586117439(Long), 18(Integer)
+22:21:57.459 DEBUG [http-nio-0.0.0.0-8080-exec-8:c.l.e.d.U.update:159] - <==    Updates: 1
+22:22:03.008 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:22:03.008 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:22:03.010 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:22:03.011 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+22:22:03.013 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.update:159] - ==> Parameters: aaaaa(String), 12345678(String), dadadad(String), 18479444776(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 2109(String), 0(Integer), 43(Integer)
+22:22:03.016 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.update:159] - <==    Updates: 1
+22:22:03.017 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:22:03.018 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:22:03.019 DEBUG [http-nio-0.0.0.0-8080-exec-10:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:22:40.010 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryByUsername:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where username = ? 
+22:22:40.010 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryByUsername:159] - ==> Parameters: aaaaa(String)
+22:22:40.012 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryByUsername:159] - <==      Total: 1
+22:22:40.014 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.update:159] - ==>  Preparing: update myrhythm.user SET username = ?, password = ?, realname = ?, phoneid = ?, idcard = ?, photoaddress = ?, altertime = ?, uuid = ?, count = ? where id = ? 
+22:22:40.015 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.update:159] - ==> Parameters: aaaaa(String), 12345678(String), dadadad(String), 18479444776(String), 484651651651651561(String), dadadad(String), 2020-11-05 20:06:54.0(Timestamp), 2109(String), 0(Integer), 43(Integer)
+22:22:40.019 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.update:159] - <==    Updates: 1
+22:22:40.019 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - ==>  Preparing: select id, username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count from myrhythm.user where id = ? 
+22:22:40.019 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - ==> Parameters: 43(Integer)
+22:22:40.020 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryById:159] - <==      Total: 1
+22:22:40.021 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryByUId:159] - ==>  Preparing: select u_id, r_id, id from myrhythm.userrole where u_id = ? 
+22:22:40.022 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryByUId:159] - ==> Parameters: 43(Integer)
+22:22:40.024 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.U.queryByUId:159] - <==      Total: 1
+22:22:40.025 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.R.queryById:159] - ==>  Preparing: select r_id, rolename, status from myrhythm.role where r_id = ? 
+22:22:40.025 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.R.queryById:159] - ==> Parameters: 10(Integer)
+22:22:40.027 DEBUG [http-nio-0.0.0.0-8080-exec-7:c.l.e.d.R.queryById:159] - <==      Total: 1

@@ -21,7 +21,7 @@
 //         YunpianClient clnt = new YunpianClient("ec25476854026e1867ea17123f335888").init();
 //        YunpianClient clnt = new YunpianClient("e864a2a3bb00b4b426435f85d75ebccd").init();
 //        //定义验证码
-//        Integer phoneUuid = RandomUtils.getPhoneUuid();
+//       Integer phoneUuid = RandomUtils.getPhoneUuid();
 //        //发送短信API
 //        Map<String, String> param = clnt.newParam(2);
 //        param.put(YunpianClient.MOBILE, phoneid);

@@ -64,28 +64,28 @@
 
     <!--新增所有列-->
     <insert id="insert" keyProperty="pId" useGeneratedKeys="true">
-        insert into myrhythm.newspaper(region, place, page, state, detail, address, day)
-        values (#{region}, #{place}, #{page}, #{state}, #{detail}, #{address}, #{day})
+        insert into myrhythm.newspaper(p_id,region, place, page, state, detail, address, day)
+        values (#{PId},#{region}, #{place}, #{page}, #{state}, #{detail}, #{address}, #{day})
     </insert>
 
     <insert id="insertBatch" keyProperty="pId" useGeneratedKeys="true">
-        insert into myrhythm.newspaper(region, place, page, state, detail, address, day)
+        insert into myrhythm.newspaper(p_id,region, place, page, state, detail, address, day)
         values
         <foreach collection="entities" item="entity" separator=",">
-            (#{entity.region}, #{entity.place}, #{entity.page}, #{entity.state}, #{entity.detail}, #{entity.address},
+            (#{entity.PId},#{entity.region}, #{entity.place}, #{entity.page}, #{entity.state}, #{entity.detail}, #{entity.address},
             #{entity.day})
         </foreach>
     </insert>
 
     <insert id="insertOrUpdateBatch" keyProperty="pId" useGeneratedKeys="true">
-        insert into myrhythm.newspaper(region, place, page, state, detail, address, day)
+        insert into myrhythm.newspaper(p_id,region, place, page, state, detail, address, day)
         values
         <foreach collection="entities" item="entity" separator=",">
-            (#{entity.region}, #{entity.place}, #{entity.page}, #{entity.state}, #{entity.detail}, #{entity.address},
+            (#{entity.PId},#{entity.region}, #{entity.place}, #{entity.page}, #{entity.state}, #{entity.detail}, #{entity.address},
             #{entity.day})
         </foreach>
         on duplicate key update
-        region = values(region) , place = values(place) , page = values(page) , state = values(state) , detail =
+        p_id =values(p_id) ,region = values(region) , place = values(place) , page = values(page) , state = values(state) , detail =
         values(detail) , address = values(address) , day = values(day)
     </insert>
 

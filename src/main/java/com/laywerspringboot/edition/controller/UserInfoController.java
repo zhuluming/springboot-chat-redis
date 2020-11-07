@@ -14,6 +14,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -40,7 +41,8 @@ public class UserInfoController  {
     private RoleService roleService;
     @Resource
     private UserroleService userroleService;
-
+    @Autowired
+    private TecentUtils tecentUtils;
 
 
     /**
@@ -92,13 +94,34 @@ public class UserInfoController  {
     @GetMapping("/register/phone/{phoneid}")
     public R isUuid(@ApiParam(value = "手机号")@PathVariable("phoneid")String phoneid) {
 
-       boolean flag = userService.queryByMsg(3, phoneid);
+        boolean flag = userService.queryByMsg(3, phoneid);
         if (!flag) {
             return R.registerError("手机号已被注册，请直接登录");
         }
         //todo 逻辑代验证
         //String uuid = YunPianMsgUtils.sendMsg(phoneid);
-        String uuid = TecentUtils.sendMsg(phoneid);
+        String uuid = tecentUtils.sendMsg(phoneid);
+
+        Long currentTime = System.currentTimeMillis();
+        return userService.insertAndUpdateUUid(phoneid, uuid, currentTime);
+
+    }
+
+    /**
+     * 重置密码时候验证手机号和验证码
+     * @param phoneid
+     * @return
+     */
+    @CrossOrigin()
+    @ApiOperation(value = "修改时验证手机号和验证码")
+    @GetMapping("/register/resetPwd/{phoneid}")
+    public R isUuid1(@ApiParam(value = "手机号")@PathVariable("phoneid")String phoneid) {
+
+        boolean flag = userService.queryByMsg(3, phoneid);
+
+        //todo 逻辑代验证
+        //String uuid = YunPianMsgUtils.sendMsg(phoneid);
+        String uuid = tecentUtils.sendMsg(phoneid);
 
         Long currentTime = System.currentTimeMillis();
         return userService.insertAndUpdateUUid(phoneid, uuid, currentTime);
@@ -211,7 +234,7 @@ public class UserInfoController  {
     public R phoneLogin( @ApiParam(value = "手机登录对象")@RequestBody RegisterUser LoginUser){
         isUserTrue(LoginUser.getPhoneid(), "手机号为空");
         isUserTrue(LoginUser.getUuid(), "验证码为空");
-        String uuid = TecentUtils.sendMsg(LoginUser.getPhoneid());
+        String uuid = tecentUtils.sendMsg(LoginUser.getPhoneid());
         if (LoginUser.getUuid().equals(uuid)){
             User transferPhoneLoginUser = DtoTransfer.transferPhoneLoginUser(LoginUser);
             User user = userService.isUserExist(transferPhoneLoginUser);
@@ -236,16 +259,23 @@ public class UserInfoController  {
         Integer id = JWTUtils.getTokenId(request);
         User user = userService.queryById(id);
         if (updateUser.getPhoneid().equals(user.getPhoneid())){
-            String uuid = TecentUtils.sendMsg(updateUser.getPhoneid());
-          if (updateUser.getUuid().equals(uuid)){
-              if (!updateUser.getPassword().equals(user.getPassword())){
-                if (updateUser.getPassword().equals(updateUser.getReplynewpassword())){
+            //String uuid = TecentUtils.sendMsg(updateUser.getPhoneid());
+          if (updateUser.getUuid().equals(user.getUuid())){
+              //新密码和旧密码不等 就应该可以修改 false
+              // 新密码和旧密码相等，应该不能修改
+              //12345678 123456789 12345678
+              System.out.println(user.getPassword());
+              System.out.println(updateUser.getPassword());
+              if (updateUser.getPassword().equals(user.getPassword())){
+                if (!updateUser.getPassword().equals(updateUser.getReplynewpassword())){
+                    user.setPassword(updateUser.getReplynewpassword());
+                    userService.update(user);
                     return R.updateOk("修改成功");
                 }else {
                     return R.error("两次密码不一致");
                 }
               }else {
-                  return R.error("密码使用过");
+                  return R.error("原密码不对");
               }
           }else {
               return R.error("验证码有误");
@@ -284,12 +314,21 @@ public class UserInfoController  {
         Integer id = JWTUtils.getTokenId(request);
         User user = userService.queryById(id);
         if (updateUser.getPhoneid().equals(user.getPhoneid())){
-            String uuid = TecentUtils.sendMsg(updateUser.getPhoneid());
-            if (updateUser.getUuid().equals(uuid)){
+            //如果相等才能修改
+            //String uuid = TecentUtils.sendMsg(updateUser.getPhoneid());
+            System.out.println(updateUser.getUuid());
+            System.out.println(user.getUuid());
+            if (updateUser.getUuid().equals(user.getUuid())){
+                user.setPhoneid(updateUser.getNewPhoneid());
+                userService.update(user);
                 return R.updateOk("修改成功");
+            }else {
+                return R.updateOk("验证码不对");
             }
         }
-        return R.error("验证码有误");
+        System.out.println(user.getPhoneid());
+        System.out.println(updateUser.getPhoneid());
+        return R.error("不是原手机号");
     }
 
 

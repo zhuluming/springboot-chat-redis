@@ -3,8 +3,11 @@ package com.laywerspringboot.edition.Utils;
 import com.aliyun.oss.OSSClient;
 import com.aliyun.oss.model.ObjectMetadata;
 import com.aliyun.oss.model.PutObjectResult;
+import com.laywerspringboot.edition.entity.properties.OSS;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
@@ -14,21 +17,12 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
-
+@Component
 public class OSSUtils {
 
     protected static final Logger log = LoggerFactory.getLogger(OSSUtils.class);
-
-
-    private static String endpoint = "oss-accelerate.aliyuncs.com";
-
-    private static String accessKeyId = "LTAI4G2Na3UUSWsFwELHTLVw";
-
-    private static String accessKeySecret = "POoMOcqWfB4YgyLGAXcIRFveJycQ9j";
-
-    private static String bucketName = "laywertest";
-
-    private static String filedir = "image/";
+    @Autowired
+    private OSS oss;
 
     /**
      *
@@ -36,7 +30,7 @@ public class OSSUtils {
      * @param file
      * @return
      */
-    public static String uploadImg2Oss(MultipartFile file) {
+    public  String uploadImg2Oss(MultipartFile file) {
         if (file.getSize() > 1024 * 1024 *20) {
             //RestResultGenerator.createErrorResult(ResponseEnum.PHOTO_TOO_MAX);
             return "图片太大";
@@ -62,7 +56,7 @@ public class OSSUtils {
      * @param fileName
      * @return
      */
-    public static String uploadFile2OSS(InputStream instream, String fileName) {
+    public  String uploadFile2OSS(InputStream instream, String fileName) {
         String ret = "";
         try {
             //创建上传Object的Metadata
@@ -74,8 +68,8 @@ public class OSSUtils {
             objectMetadata.setContentDisposition("inline;filename=" + fileName);
             //上传文件
 
-            OSSClient ossClient = new OSSClient(endpoint, accessKeyId, accessKeySecret);
-            PutObjectResult putResult = ossClient.putObject(bucketName, filedir + fileName, instream, objectMetadata);
+            OSSClient ossClient = new OSSClient(oss.getEndpoint(), oss.getAccessKeyId(), oss.getAccessKeySecret());
+            PutObjectResult putResult = ossClient.putObject(oss.getBucketName(), oss.getFiledir() + fileName, instream, objectMetadata);
             ret = putResult.getETag();
         } catch (IOException e) {
             log.error(e.getMessage(), e);
@@ -91,7 +85,7 @@ public class OSSUtils {
         return ret;
     }
 
-    public static String getcontentType(String FilenameExtension) {
+    public  String getcontentType(String FilenameExtension) {
         if (FilenameExtension.equalsIgnoreCase(".bmp")) {
             return "image/bmp";
         }
@@ -135,10 +129,10 @@ public class OSSUtils {
      * @param fileUrl
      * @return
      */
-    public static String getImgUrl(String fileUrl) {
+    public  String getImgUrl(String fileUrl) {
         if (fileUrl!=null) {
             String[] split = fileUrl.split("/");
-            String url =  getUrl(filedir + split[split.length - 1]);
+            String url =  getUrl(oss.getFiledir() + split[split.length - 1]);
             return url;
         }
         return null;
@@ -150,12 +144,12 @@ public class OSSUtils {
      * @param key
      * @return
      */
-    public  static String getUrl(String key) {
+    public   String getUrl(String key) {
         // 设置URL过期时间为10年  3600l* 1000*24*365*10
         Date expiration = new Date(new Date().getTime() + 3600l * 1000 * 24 * 365 * 10);
         // 生成URL
-        OSSClient ossClient = new OSSClient(endpoint, accessKeyId, accessKeySecret);
-        URL url = ossClient.generatePresignedUrl(bucketName, key, expiration);
+        OSSClient ossClient = new OSSClient(oss.getEndpoint(), oss.getAccessKeyId(),oss.getAccessKeySecret());
+        URL url = ossClient.generatePresignedUrl(oss.getBucketName(), key, expiration);
         if (url != null) {
             return url.toString();
         }
@@ -168,7 +162,7 @@ public class OSSUtils {
      * @param fileList
      * @return
      */
-    public static String checkList(List<MultipartFile> fileList) {
+    public  String checkList(List<MultipartFile> fileList) {
         String  fileUrl = "";
         String  str = "";
         String  photoUrl = "";
@@ -189,7 +183,7 @@ public class OSSUtils {
      * @param file
      * @return
      */
-    public static String uploadImg(MultipartFile file){
+    public  String uploadImg(MultipartFile file){
         String fileUrl = uploadImg2Oss(file);
         String str = getImgUrl(fileUrl);
         return str.trim();

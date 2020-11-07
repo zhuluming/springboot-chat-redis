@@ -1,124 +1,209 @@
-2020-11-05 10:33:59.539  INFO 32576 --- [main] com.laywerspringboot.edition.UserTest    : Starting UserTest on DESKTOP-N26M15P with PID 32576 (started by User in G:\laywer-springboot\edition)
-2020-11-05 10:33:59.543  INFO 32576 --- [main] com.laywerspringboot.edition.UserTest    : The following profiles are active: dev
-2020-11-05 10:34:00.785  WARN 32576 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
-2020-11-05 10:34:01.154  INFO 32576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-05 10:34:01.158  INFO 32576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-11-05 10:34:01.233  INFO 32576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44ms. Found 0 Redis repository interfaces.
-2020-11-05 10:34:02.540  INFO 32576 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2020-11-05 10:34:02.803  INFO 32576 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2020-11-05 10:34:04.746  INFO 32576 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-05 10:34:05.187  INFO 32576 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-05 10:34:05.941  INFO 32576 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-05 10:34:05.991  INFO 32576 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-05 10:34:06.040  INFO 32576 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-05 10:34:06.317  INFO 32576 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchShowDetailUsingGET_1
-2020-11-05 10:34:06.407  INFO 32576 --- [main] com.laywerspringboot.edition.UserTest    : Started UserTest in 7.702 seconds (JVM running for 9.296)
-2020-11-05 10:34:06.705  INFO 32576 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.laywerspringboot.edition.UtilsTest], using SpringBootContextLoader
-2020-11-05 10:34:06.706  INFO 32576 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.laywerspringboot.edition.UtilsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2020-11-05 10:34:06.707  INFO 32576 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.laywerspringboot.edition.UtilsTest]: UtilsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2020-11-05 10:34:06.709  INFO 32576 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.laywerspringboot.edition.EditionApplication for test class com.laywerspringboot.edition.UtilsTest
-2020-11-05 10:34:06.712  INFO 32576 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2020-11-05 10:34:06.714  INFO 32576 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3d132bb6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@60ae7cf2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@225e09f0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@bc8d68b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2fa212df, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3cf8a235, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6e3b2dd3, org.springframework.test.context.event.EventPublishingTestExecutionListener@238ad211, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1c011855, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6591f8ea, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5273143e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@279c4e3b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@334b392d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@59f7c106]
-2020-11-05 10:34:06.829  INFO 32576 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-05 10:34:06.877  INFO 32576 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2020-11-05 10:34:15.947  INFO 31988 --- [restartedMain] c.l.edition.EditionApplication           : Starting EditionApplication on DESKTOP-N26M15P with PID 31988 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
-2020-11-05 10:34:15.950  INFO 31988 --- [restartedMain] c.l.edition.EditionApplication           : The following profiles are active: dev
-2020-11-05 10:34:16.001  INFO 31988 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-05 10:34:16.002  INFO 31988 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-05 10:34:17.124  INFO 31988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-05 10:34:17.127  INFO 31988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-11-05 10:34:17.168  INFO 31988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 Redis repository interfaces.
-2020-11-05 10:34:17.813  INFO 31988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-05 10:34:17.823  INFO 31988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-05 10:34:17.824  INFO 31988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-11-05 10:34:17.957  INFO 31988 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-05 10:34:17.958  INFO 31988 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1956 ms
-2020-11-05 10:34:18.146  INFO 31988 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2020-11-05 10:34:18.369  INFO 31988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2020-11-05 10:34:19.207  INFO 31988 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-05 10:34:19.310  INFO 31988 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-05 10:34:19.353  INFO 31988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-05 10:34:19.680  INFO 31988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-05 10:34:19.682  INFO 31988 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-05 10:34:19.697  INFO 31988 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-05 10:34:19.732  INFO 31988 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-05 10:34:19.964  INFO 31988 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchShowDetailUsingGET_1
-2020-11-05 10:34:20.061  INFO 31988 --- [restartedMain] c.l.edition.EditionApplication           : Started EditionApplication in 4.582 seconds (JVM running for 8.07)
-2020-11-05 11:30:43.839  INFO 30368 --- [main] com.laywerspringboot.edition.UserTest    : Starting UserTest on DESKTOP-N26M15P with PID 30368 (started by User in G:\laywer-springboot\edition)
-2020-11-05 11:30:43.895  INFO 30368 --- [main] com.laywerspringboot.edition.UserTest    : The following profiles are active: dev
-2020-11-05 11:30:45.557  WARN 30368 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
-2020-11-05 11:30:46.014  INFO 30368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-05 11:30:46.021  INFO 30368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-11-05 11:30:46.092  INFO 30368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43ms. Found 0 Redis repository interfaces.
-2020-11-05 11:30:49.721  INFO 30368 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2020-11-05 11:30:50.079  INFO 30368 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2020-11-05 11:30:52.866  INFO 30368 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-05 11:30:53.607  INFO 30368 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-05 11:30:54.732  INFO 30368 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-05 11:30:54.772  INFO 30368 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-05 11:30:54.819  INFO 30368 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-05 11:30:55.187  INFO 30368 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchShowDetailUsingGET_1
-2020-11-05 11:30:55.260  INFO 30368 --- [main] com.laywerspringboot.edition.UserTest    : Started UserTest in 12.325 seconds (JVM running for 13.984)
-2020-11-05 11:30:55.651  INFO 30368 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.laywerspringboot.edition.UtilsTest], using SpringBootContextLoader
-2020-11-05 11:30:55.652  INFO 30368 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.laywerspringboot.edition.UtilsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2020-11-05 11:30:55.653  INFO 30368 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.laywerspringboot.edition.UtilsTest]: UtilsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2020-11-05 11:30:55.655  INFO 30368 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.laywerspringboot.edition.EditionApplication for test class com.laywerspringboot.edition.UtilsTest
-2020-11-05 11:30:55.663  INFO 30368 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2020-11-05 11:30:55.664  INFO 30368 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@59f76e56, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@566f4659, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1328f482, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7b8b07ae, org.springframework.test.context.support.DirtiesContextTestExecutionListener@19ec5357, org.springframework.test.context.transaction.TransactionalTestExecutionListener@351d93bd, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@61c5fd78, org.springframework.test.context.event.EventPublishingTestExecutionListener@42503099, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@39dda56f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@60844992, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2ee456c7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6df37f7a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@39514976, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7bdb4f17]
-2020-11-05 11:30:55.764  INFO 30368 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-05 11:30:55.804  INFO 30368 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2020-11-05 11:31:06.520  INFO 27328 --- [restartedMain] c.l.edition.EditionApplication           : Starting EditionApplication on DESKTOP-N26M15P with PID 27328 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
-2020-11-05 11:31:06.523  INFO 27328 --- [restartedMain] c.l.edition.EditionApplication           : The following profiles are active: dev
-2020-11-05 11:31:06.566  INFO 27328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-05 11:31:06.567  INFO 27328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-05 11:31:07.788  INFO 27328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-05 11:31:07.791  INFO 27328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-11-05 11:31:07.841  INFO 27328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
-2020-11-05 11:31:08.840  INFO 27328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-05 11:31:08.851  INFO 27328 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-05 11:31:08.852  INFO 27328 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-11-05 11:31:08.995  INFO 27328 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-05 11:31:08.995  INFO 27328 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2427 ms
-2020-11-05 11:31:09.208  INFO 27328 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2020-11-05 11:31:09.407  INFO 27328 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2020-11-05 11:31:10.268  INFO 27328 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-05 11:31:10.377  INFO 27328 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-05 11:31:10.425  INFO 27328 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-05 11:31:10.774  INFO 27328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-05 11:31:10.776  INFO 27328 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-05 11:31:10.798  INFO 27328 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-05 11:31:10.834  INFO 27328 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-05 11:31:11.028  INFO 27328 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchShowDetailUsingGET_1
-2020-11-05 11:31:11.073  INFO 27328 --- [restartedMain] c.l.edition.EditionApplication           : Started EditionApplication in 5.084 seconds (JVM running for 8.411)
-2020-11-05 11:31:39.755  INFO 27328 --- [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-05 11:31:39.756  INFO 27328 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-05 11:31:39.768  INFO 27328 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2020-11-05 11:39:26.380  INFO 27328 --- [Thread-200] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-05 11:39:26.411  INFO 27328 --- [Thread-200] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2020-11-05 11:39:26.791  INFO 27328 --- [restartedMain] c.l.edition.EditionApplication           : Starting EditionApplication on DESKTOP-N26M15P with PID 27328 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
-2020-11-05 11:39:26.792  INFO 27328 --- [restartedMain] c.l.edition.EditionApplication           : The following profiles are active: dev
-2020-11-05 11:39:27.659  WARN 27328 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
-2020-11-05 11:39:27.754  WARN 27328 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition]' package. Please check your configuration.
-2020-11-05 11:39:27.791  WARN 27328 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition]' package. Please check your configuration.
-2020-11-05 11:39:27.835  INFO 27328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-05 11:39:27.836  INFO 27328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-11-05 11:39:27.843  INFO 27328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 Redis repository interfaces.
-2020-11-05 11:39:28.341  INFO 27328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-05 11:39:28.343  INFO 27328 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-05 11:39:28.344  INFO 27328 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-11-05 11:39:28.409  INFO 27328 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-05 11:39:28.410  INFO 27328 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1613 ms
-2020-11-05 11:39:28.574  INFO 27328 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-05 11:39:28.677  INFO 27328 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2020-11-05 11:39:28.700  INFO 27328 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
-2020-11-05 11:39:28.769  WARN 27328 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.laywerspringboot.edition.entity.Cases'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.laywerspringboot.edition.entity.Cases
-2020-11-05 11:39:28.770  INFO 27328 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
-2020-11-05 11:39:28.771  INFO 27328 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-05 11:39:28.772  INFO 27328 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2020-11-05 11:39:28.838  INFO 27328 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+2020-11-06 12:30:01.436  INFO 27412 --- [Thread-596] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-06 12:30:01.485  INFO 27412 --- [Thread-596] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} closed
+2020-11-06 12:30:01.857 ERROR 27412 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to load property source from 'file:/G:/laywer-springboot/edition/target/classes/application.yml' (classpath:/application.yml)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:554)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadForFileExtension(ConfigFileApplicationListener.java:499)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:469)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$null$7(ConfigFileApplicationListener.java:448)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$load$8(ConfigFileApplicationListener.java:448)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:445)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$load$0(ConfigFileApplicationListener.java:348)
+	at org.springframework.boot.context.config.FilteredPropertySource.apply(FilteredPropertySource.java:54)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:336)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:226)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:210)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:200)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:188)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:80)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.laywerspringboot.edition.EditionApplication.main(EditionApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.yaml.snakeyaml.parser.ParserException: while parsing a block mapping
+ in 'reader', line 30, column 3:
+      endpoint: "oss-accelerate.aliyun ... 
+      ^
+expected <block end>, but found '<scalar>'
+ in 'reader', line 30, column 42:
+     ... t: "oss-accelerate.aliyuncs.com";
+                                         ^
+
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:572)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:235)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:162)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:257)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:248)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:236)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:162)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:95)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:134)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:494)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:160)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:134)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:75)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadDocuments(ConfigFileApplicationListener.java:608)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:524)
+	... 30 common frames omitted
+
+2020-11-06 12:30:07.205 ERROR 27412 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to load property source from 'file:/G:/laywer-springboot/edition/target/classes/application.yml' (classpath:/application.yml)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:554)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadForFileExtension(ConfigFileApplicationListener.java:499)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:469)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$null$7(ConfigFileApplicationListener.java:448)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$load$8(ConfigFileApplicationListener.java:448)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:445)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$load$0(ConfigFileApplicationListener.java:348)
+	at org.springframework.boot.context.config.FilteredPropertySource.apply(FilteredPropertySource.java:54)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:336)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:226)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:210)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:200)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:188)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:80)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.laywerspringboot.edition.EditionApplication.main(EditionApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.yaml.snakeyaml.parser.ParserException: while parsing a block mapping
+ in 'reader', line 30, column 3:
+      endpoint: "oss-accelerate.aliyun ... 
+      ^
+expected <block end>, but found '<scalar>'
+ in 'reader', line 30, column 42:
+     ... t: "oss-accelerate.aliyuncs.com";
+                                         ^
+
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:572)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:235)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:162)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:257)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:248)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:236)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:162)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:95)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:134)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:494)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:160)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:134)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:75)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadDocuments(ConfigFileApplicationListener.java:608)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:524)
+	... 30 common frames omitted
+
+2020-11-06 12:32:28.059  INFO 29248 --- [main] com.laywerspringboot.edition.UserTest    : Starting UserTest on DESKTOP-N26M15P with PID 29248 (started by User in G:\laywer-springboot\edition)
+2020-11-06 12:32:28.061  INFO 29248 --- [main] com.laywerspringboot.edition.UserTest    : The following profiles are active: dev
+2020-11-06 12:32:29.402  WARN 29248 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+2020-11-06 12:32:29.853  INFO 29248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-06 12:32:29.858  INFO 29248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-06 12:32:29.940  INFO 29248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46ms. Found 0 Redis repository interfaces.
+2020-11-06 12:32:31.117  INFO 29248 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-11-06 12:32:31.371  INFO 29248 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-11-06 12:32:33.274  INFO 29248 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-06 12:32:33.765  INFO 29248 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-06 12:32:34.401  INFO 29248 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-06 12:32:34.446  INFO 29248 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-06 12:32:34.575  INFO 29248 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-06 12:32:34.935  INFO 29248 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchShowDetailUsingGET_1
+2020-11-06 12:32:35.044  INFO 29248 --- [main] com.laywerspringboot.edition.UserTest    : Started UserTest in 7.746 seconds (JVM running for 8.945)
+2020-11-06 12:32:35.353  INFO 29248 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.laywerspringboot.edition.UtilsTest], using SpringBootContextLoader
+2020-11-06 12:32:35.354  INFO 29248 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.laywerspringboot.edition.UtilsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-11-06 12:32:35.355  INFO 29248 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.laywerspringboot.edition.UtilsTest]: UtilsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-11-06 12:32:35.359  INFO 29248 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.laywerspringboot.edition.EditionApplication for test class com.laywerspringboot.edition.UtilsTest
+2020-11-06 12:32:35.361  INFO 29248 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-11-06 12:32:35.363  INFO 29248 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@429f0ca8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6b030101, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@60a4e619, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2bb3f39e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@11f3400c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@628b503a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2558f65c, org.springframework.test.context.event.EventPublishingTestExecutionListener@11c3ce6a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1a3b1f7e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@22899683, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@40017e98, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4fbe486c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@dbc7e0a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@636fccb0]
+2020-11-06 12:32:35.464  INFO 29248 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-06 12:32:35.502  INFO 29248 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-11-06 12:32:44.129  INFO 4896 --- [restartedMain] c.l.edition.EditionApplication           : Starting EditionApplication on DESKTOP-N26M15P with PID 4896 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+2020-11-06 12:32:44.132  INFO 4896 --- [restartedMain] c.l.edition.EditionApplication           : The following profiles are active: dev
+2020-11-06 12:32:44.190  INFO 4896 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-06 12:32:44.191  INFO 4896 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-06 12:32:45.448  INFO 4896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-06 12:32:45.452  INFO 4896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-06 12:32:45.498  INFO 4896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
+2020-11-06 12:32:46.118  INFO 4896 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-06 12:32:46.127  INFO 4896 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-06 12:32:46.128  INFO 4896 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-11-06 12:32:46.247  INFO 4896 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-06 12:32:46.247  INFO 4896 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2055 ms
+2020-11-06 12:32:46.425  INFO 4896 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-11-06 12:32:46.585  INFO 4896 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-11-06 12:32:47.325  INFO 4896 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-06 12:32:47.436  INFO 4896 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-06 12:32:47.474  INFO 4896 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-06 12:32:47.767  INFO 4896 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-06 12:32:47.768  INFO 4896 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-06 12:32:47.784  INFO 4896 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-06 12:32:47.813  INFO 4896 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-06 12:32:47.989  INFO 4896 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchShowDetailUsingGET_1
+2020-11-06 12:32:48.034  INFO 4896 --- [restartedMain] c.l.edition.EditionApplication           : Started EditionApplication in 4.392 seconds (JVM running for 8.228)
+2020-11-06 12:33:52.364  INFO 4896 --- [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-06 12:33:52.364  INFO 4896 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-06 12:33:52.375  INFO 4896 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-11-06 12:34:17.019  WARN 4896 --- [http-nio-0.0.0.0-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.aliyun.oss.common.auth.InvalidCredentialsException: Access key id should not be null or empty.]
+2020-11-06 12:34:31.458  WARN 4896 --- [http-nio-0.0.0.0-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.aliyun.oss.common.auth.InvalidCredentialsException: Access key id should not be null or empty.]
+2020-11-06 13:49:09.375  WARN 4896 --- [http-nio-0.0.0.0-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.aliyun.oss.common.auth.InvalidCredentialsException: Access key id should not be null or empty.]
+2020-11-06 13:49:53.831  INFO 4896 --- [Thread-199] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-06 13:49:53.854  INFO 4896 --- [Thread-199] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-11-06 13:49:54.153  INFO 4896 --- [restartedMain] c.l.edition.EditionApplication           : Starting EditionApplication on DESKTOP-N26M15P with PID 4896 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+2020-11-06 13:49:54.154  INFO 4896 --- [restartedMain] c.l.edition.EditionApplication           : The following profiles are active: dev
+2020-11-06 13:49:54.498  WARN 4896 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+2020-11-06 13:49:54.557  WARN 4896 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition]' package. Please check your configuration.
+2020-11-06 13:49:54.565  WARN 4896 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition]' package. Please check your configuration.
+2020-11-06 13:49:54.585  INFO 4896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-06 13:49:54.586  INFO 4896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-06 13:49:54.591  INFO 4896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+2020-11-06 13:49:54.927  INFO 4896 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-06 13:49:54.928  INFO 4896 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-06 13:49:54.928  INFO 4896 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-11-06 13:49:54.981  INFO 4896 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-06 13:49:54.982  INFO 4896 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 821 ms
+2020-11-06 13:49:55.084  INFO 4896 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-06 13:49:55.158  INFO 4896 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-11-06 13:49:55.180  INFO 4896 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2020-11-06 13:49:55.228  WARN 4896 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.laywerspringboot.edition.entity.Cases'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.laywerspringboot.edition.entity.Cases
+2020-11-06 13:49:55.229  INFO 4896 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2020-11-06 13:49:55.230  INFO 4896 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-06 13:49:55.231  INFO 4896 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-11-06 13:49:55.240  INFO 4896 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-11-05 11:39:28.857 ERROR 27328 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+2020-11-06 13:49:55.255 ERROR 4896 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.laywerspringboot.edition.entity.Cases'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.laywerspringboot.edition.entity.Cases
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
@@ -141,7 +226,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at com.laywerspringboot.edition.EditionApplication.main(EditionApplication.java:13)
+	at com.laywerspringboot.edition.EditionApplication.main(EditionApplication.java:15)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -156,11 +241,11 @@ Caused by: org.springframework.core.NestedIOException: Failed to parse mapping r
 	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380)
 	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:547)
 	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration.sqlSessionFactory(MapperAutoConfiguration.java:155)
-	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$99e146df.CGLIB$sqlSessionFactory$1(<generated>)
-	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$99e146df$$FastClassBySpringCGLIB$$8e2b7115.invoke(<generated>)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$273e33ba.CGLIB$sqlSessionFactory$1(<generated>)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$273e33ba$$FastClassBySpringCGLIB$$fac0b7bb.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
-	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$99e146df.sqlSessionFactory(<generated>)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$273e33ba.sqlSessionFactory(<generated>)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -191,7 +276,7 @@ Caused by: java.lang.ClassNotFoundException: Cannot find class: com.laywerspring
 	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
 	... 47 common frames omitted
 
-2020-11-05 11:39:28.887  WARN 27328 --- [restartedMain] o.s.boot.SpringApplication               : Unable to close ApplicationContext
+2020-11-06 13:49:55.261  WARN 4896 --- [restartedMain] o.s.boot.SpringApplication               : Unable to close ApplicationContext
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
@@ -222,7 +307,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at com.laywerspringboot.edition.EditionApplication.main(EditionApplication.java:13)
+	at com.laywerspringboot.edition.EditionApplication.main(EditionApplication.java:15)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -265,487 +350,229 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No b
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
 	... 56 common frames omitted
 
-2020-11-05 11:39:32.263  INFO 27328 --- [restartedMain] c.l.edition.EditionApplication           : Starting EditionApplication on DESKTOP-N26M15P with PID 27328 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
-2020-11-05 11:39:32.264  INFO 27328 --- [restartedMain] c.l.edition.EditionApplication           : The following profiles are active: dev
-2020-11-05 11:39:32.737  INFO 27328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-05 11:39:32.738  INFO 27328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-11-05 11:39:32.753  INFO 27328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
-2020-11-05 11:39:33.019  INFO 27328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-05 11:39:33.021  INFO 27328 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-05 11:39:33.022  INFO 27328 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-11-05 11:39:33.059  INFO 27328 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2020-11-05 11:39:33.059  INFO 27328 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 792 ms
-2020-11-05 11:39:33.107  INFO 27328 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2020-11-05 11:39:33.145  INFO 27328 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
-2020-11-05 11:39:33.549  INFO 27328 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-05 11:39:33.604  INFO 27328 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-05 11:39:33.615  INFO 27328 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-05 11:39:33.773  INFO 27328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-05 11:39:33.775  INFO 27328 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-05 11:39:33.776  INFO 27328 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-05 11:39:33.782  INFO 27328 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-05 11:39:33.848  INFO 27328 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchShowDetailUsingGET_1
-2020-11-05 11:39:33.886  INFO 27328 --- [restartedMain] c.l.edition.EditionApplication           : Started EditionApplication in 1.688 seconds (JVM running for 511.223)
-2020-11-05 11:39:33.889  INFO 27328 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-11-05 11:39:36.946  INFO 24636 --- [main] com.laywerspringboot.edition.UserTest    : Starting UserTest on DESKTOP-N26M15P with PID 24636 (started by User in G:\laywer-springboot\edition)
-2020-11-05 11:39:36.948  INFO 24636 --- [main] com.laywerspringboot.edition.UserTest    : The following profiles are active: dev
-2020-11-05 11:39:37.873  WARN 24636 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
-2020-11-05 11:39:38.198  INFO 24636 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-05 11:39:38.204  INFO 24636 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-11-05 11:39:38.259  INFO 24636 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33ms. Found 0 Redis repository interfaces.
-2020-11-05 11:39:40.192  INFO 24636 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2020-11-05 11:39:40.558  INFO 24636 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2020-11-05 11:39:42.691  INFO 24636 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-05 11:39:43.223  INFO 24636 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-05 11:39:44.057  INFO 24636 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-05 11:39:44.112  INFO 24636 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-05 11:39:44.149  INFO 24636 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-05 11:39:44.417  INFO 24636 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchShowDetailUsingGET_1
-2020-11-05 11:39:44.477  INFO 24636 --- [main] com.laywerspringboot.edition.UserTest    : Started UserTest in 8.278 seconds (JVM running for 9.674)
-2020-11-05 11:39:44.873  INFO 24636 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.laywerspringboot.edition.UtilsTest], using SpringBootContextLoader
-2020-11-05 11:39:44.874  INFO 24636 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.laywerspringboot.edition.UtilsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2020-11-05 11:39:44.874  INFO 24636 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.laywerspringboot.edition.UtilsTest]: UtilsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2020-11-05 11:39:44.877  INFO 24636 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.laywerspringboot.edition.EditionApplication for test class com.laywerspringboot.edition.UtilsTest
-2020-11-05 11:39:44.880  INFO 24636 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2020-11-05 11:39:44.881  INFO 24636 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@59f76e56, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@566f4659, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1328f482, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7b8b07ae, org.springframework.test.context.support.DirtiesContextTestExecutionListener@19ec5357, org.springframework.test.context.transaction.TransactionalTestExecutionListener@351d93bd, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@61c5fd78, org.springframework.test.context.event.EventPublishingTestExecutionListener@42503099, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@39dda56f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@60844992, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2ee456c7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6df37f7a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@39514976, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7bdb4f17]
-2020-11-05 11:39:44.980  INFO 24636 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-05 11:39:45.019  INFO 24636 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2020-11-05 11:39:56.450  INFO 27328 --- [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-05 11:39:56.453  INFO 27328 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-05 11:39:56.458  INFO 27328 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2020-11-05 11:41:02.032 ERROR 27328 --- [http-nio-0.0.0.0-8080-exec-3] o.a.c.c.C.[.[.[/].[statViewServlet]      : Servlet.service() for servlet [statViewServlet] in context with path [] threw exception
-
-java.lang.NullPointerException: null
-	at com.alibaba.druid.support.http.ResourceServlet.service(ResourceServlet.java:206)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:83)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-
-2020-11-05 11:41:06.548 ERROR 27328 --- [http-nio-0.0.0.0-8080-exec-7] o.a.c.c.C.[.[.[/].[statViewServlet]      : Servlet.service() for servlet [statViewServlet] in context with path [] threw exception
-
-java.lang.NullPointerException: null
-	at com.alibaba.druid.support.http.ResourceServlet.service(ResourceServlet.java:206)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:83)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-
-2020-11-05 11:41:22.942 ERROR 27328 --- [http-nio-0.0.0.0-8080-exec-5] o.a.c.c.C.[.[.[/].[statViewServlet]      : Servlet.service() for servlet [statViewServlet] in context with path [] threw exception
-
-java.lang.NullPointerException: null
-	at com.alibaba.druid.support.http.ResourceServlet.service(ResourceServlet.java:206)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:83)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-
-2020-11-05 11:42:11.458  INFO 27328 --- [Thread-209] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-05 11:42:11.464  INFO 27328 --- [Thread-209] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
-2020-11-05 11:42:12.113  INFO 27328 --- [restartedMain] c.l.edition.EditionApplication           : Starting EditionApplication on DESKTOP-N26M15P with PID 27328 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
-2020-11-05 11:42:12.115  INFO 27328 --- [restartedMain] c.l.edition.EditionApplication           : The following profiles are active: dev
-2020-11-05 11:42:12.457  WARN 27328 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
-2020-11-05 11:42:12.506  WARN 27328 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition]' package. Please check your configuration.
-2020-11-05 11:42:12.512  WARN 27328 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition]' package. Please check your configuration.
-2020-11-05 11:42:12.526  INFO 27328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-05 11:42:12.527  INFO 27328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-11-05 11:42:12.530  INFO 27328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
-2020-11-05 11:42:12.747  INFO 27328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-05 11:42:12.748  INFO 27328 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-05 11:42:12.748  INFO 27328 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-11-05 11:42:12.798  INFO 27328 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2020-11-05 11:42:12.799  INFO 27328 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 679 ms
-2020-11-05 11:42:12.896  INFO 27328 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-05 11:42:12.961  INFO 27328 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2020-11-05 11:42:12.978  INFO 27328 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} inited
-2020-11-05 11:42:13.029  WARN 27328 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.laywerspringboot.edition.entity.Cases'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.laywerspringboot.edition.entity.Cases
-2020-11-05 11:42:13.030  INFO 27328 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} closed
-2020-11-05 11:42:13.030  INFO 27328 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-05 11:42:13.031  INFO 27328 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2020-11-05 11:42:13.037  INFO 27328 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-11-05 11:42:13.039 ERROR 27328 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.laywerspringboot.edition.entity.Cases'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.laywerspringboot.edition.entity.Cases
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:895)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at com.laywerspringboot.edition.EditionApplication.main(EditionApplication.java:13)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.laywerspringboot.edition.entity.Cases'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.laywerspringboot.edition.entity.Cases
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
-	... 25 common frames omitted
-Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.laywerspringboot.edition.entity.Cases'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.laywerspringboot.edition.entity.Cases
-	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:523)
-	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380)
-	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:547)
-	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration.sqlSessionFactory(MapperAutoConfiguration.java:155)
-	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$99e146df.CGLIB$sqlSessionFactory$1(<generated>)
-	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$99e146df$$FastClassBySpringCGLIB$$8e2b7115.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
-	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$99e146df.sqlSessionFactory(<generated>)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
-	... 26 common frames omitted
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.laywerspringboot.edition.entity.Cases'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.laywerspringboot.edition.entity.Cases
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
-	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:521)
-	... 39 common frames omitted
-Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.laywerspringboot.edition.entity.Cases'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.laywerspringboot.edition.entity.Cases
-	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:265)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:252)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:244)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:116)
-	... 41 common frames omitted
-Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.laywerspringboot.edition.entity.Cases'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.laywerspringboot.edition.entity.Cases
-	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
-	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
-	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
-	... 45 common frames omitted
-Caused by: java.lang.ClassNotFoundException: Cannot find class: com.laywerspringboot.edition.entity.Cases
-	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
-	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
-	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
-	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
-	... 47 common frames omitted
-
-2020-11-05 11:42:13.041  WARN 27328 --- [restartedMain] o.s.boot.SpringApplication               : Unable to close ApplicationContext
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
-	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:245)
-	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:197)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:134)
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
-	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:81)
-	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:67)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:167)
-	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978)
-	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:814)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at com.laywerspringboot.edition.EditionApplication.main(EditionApplication.java:13)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
-	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
-	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
-	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:94)
-	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:76)
-	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:347)
-	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:299)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
-	... 33 common frames omitted
-Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:814)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1282)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:297)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor.postProcessBeforeInitialization(ConfigurationClassPostProcessor.java:456)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:416)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
-	... 56 common frames omitted
-
-2020-11-05 11:42:16.824  INFO 27328 --- [restartedMain] c.l.edition.EditionApplication           : Starting EditionApplication on DESKTOP-N26M15P with PID 27328 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
-2020-11-05 11:42:16.824  INFO 27328 --- [restartedMain] c.l.edition.EditionApplication           : The following profiles are active: dev
-2020-11-05 11:42:17.268  INFO 27328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-05 11:42:17.269  INFO 27328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-11-05 11:42:17.280  INFO 27328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
-2020-11-05 11:42:17.483  INFO 27328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-05 11:42:17.484  INFO 27328 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-05 11:42:17.485  INFO 27328 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-11-05 11:42:17.529  INFO 27328 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2020-11-05 11:42:17.530  INFO 27328 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 702 ms
-2020-11-05 11:42:17.628  INFO 27328 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2020-11-05 11:42:17.679  INFO 27328 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} inited
-2020-11-05 11:42:17.973  INFO 27328 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-05 11:42:18.032  INFO 27328 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-05 11:42:18.044  INFO 27328 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-05 11:42:18.230  INFO 27328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-05 11:42:18.231  INFO 27328 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-05 11:42:18.232  INFO 27328 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-05 11:42:18.243  INFO 27328 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-05 11:42:18.302  INFO 27328 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchShowDetailUsingGET_1
-2020-11-05 11:42:18.345  INFO 27328 --- [restartedMain] c.l.edition.EditionApplication           : Started EditionApplication in 1.564 seconds (JVM running for 675.683)
-2020-11-05 11:42:18.349  INFO 27328 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-11-05 11:42:20.612  INFO 20348 --- [main] com.laywerspringboot.edition.UserTest    : Starting UserTest on DESKTOP-N26M15P with PID 20348 (started by User in G:\laywer-springboot\edition)
-2020-11-05 11:42:20.615  INFO 20348 --- [main] com.laywerspringboot.edition.UserTest    : The following profiles are active: dev
-2020-11-05 11:42:21.810  WARN 20348 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
-2020-11-05 11:42:22.093  INFO 20348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-05 11:42:22.098  INFO 20348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-11-05 11:42:22.147  INFO 20348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
-2020-11-05 11:42:23.246  INFO 20348 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2020-11-05 11:42:23.526  INFO 20348 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2020-11-05 11:42:25.734  INFO 20348 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-05 11:42:26.323  INFO 20348 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-05 11:42:27.101  INFO 20348 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-05 11:42:27.143  INFO 20348 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-05 11:42:27.188  INFO 20348 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-05 11:42:27.494  INFO 20348 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchShowDetailUsingGET_1
-2020-11-05 11:42:27.552  INFO 20348 --- [main] com.laywerspringboot.edition.UserTest    : Started UserTest in 7.621 seconds (JVM running for 9.094)
-2020-11-05 11:42:28.016  INFO 20348 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.laywerspringboot.edition.UtilsTest], using SpringBootContextLoader
-2020-11-05 11:42:28.018  INFO 20348 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.laywerspringboot.edition.UtilsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2020-11-05 11:42:28.019  INFO 20348 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.laywerspringboot.edition.UtilsTest]: UtilsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2020-11-05 11:42:28.024  INFO 20348 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.laywerspringboot.edition.EditionApplication for test class com.laywerspringboot.edition.UtilsTest
-2020-11-05 11:42:28.027  INFO 20348 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2020-11-05 11:42:28.030  INFO 20348 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2b4829aa, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@794d28a3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@a55e82a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@70ee9d31, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1a01ffff, org.springframework.test.context.transaction.TransactionalTestExecutionListener@a99c42c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2fa879ed, org.springframework.test.context.event.EventPublishingTestExecutionListener@2b2b7e3c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3ec082a1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7a3c99f1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@16b7e04a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@661db63e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5cf2f5d6, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@429f0ca8]
-2020-11-05 11:42:28.176  INFO 20348 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-05 11:42:28.209  INFO 20348 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2020-11-05 11:43:48.334 ERROR 27328 --- [http-nio-0.0.0.0-8080-exec-5] o.a.c.c.C.[.[.[/].[statViewServlet]      : Servlet.service() for servlet [statViewServlet] in context with path [] threw exception
-
-java.lang.NullPointerException: null
-	at com.alibaba.druid.support.http.ResourceServlet.service(ResourceServlet.java:206)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:83)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:83)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-
-2020-11-05 11:43:48.338  INFO 27328 --- [http-nio-0.0.0.0-8080-exec-5] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-05 11:43:48.339  INFO 27328 --- [http-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-05 11:43:48.345  INFO 27328 --- [http-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2020-11-05 11:44:01.549 ERROR 27328 --- [http-nio-0.0.0.0-8080-exec-2] o.a.c.c.C.[.[.[/].[statViewServlet]      : Servlet.service() for servlet [statViewServlet] in context with path [] threw exception
-
-java.lang.NullPointerException: null
-	at com.alibaba.druid.support.http.ResourceServlet.service(ResourceServlet.java:206)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:83)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:83)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-
+2020-11-06 13:49:57.651  INFO 4896 --- [restartedMain] c.l.edition.EditionApplication           : Starting EditionApplication on DESKTOP-N26M15P with PID 4896 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+2020-11-06 13:49:57.652  INFO 4896 --- [restartedMain] c.l.edition.EditionApplication           : The following profiles are active: dev
+2020-11-06 13:49:58.222  INFO 4896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-06 13:49:58.223  INFO 4896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-06 13:49:58.236  INFO 4896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2020-11-06 13:49:58.517  INFO 4896 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-06 13:49:58.518  INFO 4896 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-06 13:49:58.519  INFO 4896 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-11-06 13:49:58.565  INFO 4896 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-11-06 13:49:58.565  INFO 4896 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 908 ms
+2020-11-06 13:49:58.627  INFO 4896 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-11-06 13:49:58.661  INFO 4896 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2020-11-06 13:49:59.017  INFO 4896 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-06 13:49:59.054  INFO 4896 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-06 13:49:59.066  INFO 4896 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-06 13:49:59.203  INFO 4896 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-06 13:49:59.204  INFO 4896 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-06 13:49:59.205  INFO 4896 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-06 13:49:59.209  INFO 4896 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-06 13:49:59.256  INFO 4896 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchShowDetailUsingGET_1
+2020-11-06 13:49:59.286  INFO 4896 --- [restartedMain] c.l.edition.EditionApplication           : Started EditionApplication in 1.73 seconds (JVM running for 4639.48)
+2020-11-06 13:49:59.288  INFO 4896 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-06 13:50:15.807  INFO 4896 --- [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-06 13:50:15.810  INFO 4896 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-06 13:50:15.814  INFO 4896 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2020-11-06 13:50:30.586  WARN 4896 --- [http-nio-0.0.0.0-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.aliyun.oss.common.auth.InvalidCredentialsException: Access key id should not be null or empty.]
+2020-11-06 13:52:02.019  INFO 16556 --- [main] com.laywerspringboot.edition.UserTest    : Starting UserTest on DESKTOP-N26M15P with PID 16556 (started by User in G:\laywer-springboot\edition)
+2020-11-06 13:52:02.022  INFO 16556 --- [main] com.laywerspringboot.edition.UserTest    : The following profiles are active: dev
+2020-11-06 13:52:02.973  WARN 16556 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+2020-11-06 13:52:03.212  INFO 16556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-06 13:52:03.216  INFO 16556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-06 13:52:03.256  INFO 16556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
+2020-11-06 13:52:04.210  INFO 16556 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-11-06 13:52:04.421  INFO 16556 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-11-06 13:52:06.097  INFO 16556 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-06 13:52:06.681  INFO 16556 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-06 13:52:07.338  INFO 16556 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-06 13:52:07.375  INFO 16556 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-06 13:52:07.417  INFO 16556 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-06 13:52:07.681  INFO 16556 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchShowDetailUsingGET_1
+2020-11-06 13:52:07.750  INFO 16556 --- [main] com.laywerspringboot.edition.UserTest    : Started UserTest in 6.328 seconds (JVM running for 7.546)
+2020-11-06 13:52:07.995  INFO 16556 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.laywerspringboot.edition.UtilsTest], using SpringBootContextLoader
+2020-11-06 13:52:07.996  INFO 16556 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.laywerspringboot.edition.UtilsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-11-06 13:52:07.997  INFO 16556 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.laywerspringboot.edition.UtilsTest]: UtilsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-11-06 13:52:08.000  INFO 16556 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.laywerspringboot.edition.EditionApplication for test class com.laywerspringboot.edition.UtilsTest
+2020-11-06 13:52:08.002  INFO 16556 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-11-06 13:52:08.004  INFO 16556 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@429f0ca8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6b030101, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@60a4e619, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2bb3f39e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@11f3400c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@628b503a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2558f65c, org.springframework.test.context.event.EventPublishingTestExecutionListener@11c3ce6a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1a3b1f7e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@22899683, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@40017e98, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4fbe486c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@dbc7e0a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@636fccb0]
+2020-11-06 13:52:08.122  INFO 16556 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-06 13:52:08.149  INFO 16556 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-11-06 13:52:14.869  INFO 24356 --- [restartedMain] c.l.edition.EditionApplication           : Starting EditionApplication on DESKTOP-N26M15P with PID 24356 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+2020-11-06 13:52:14.874  INFO 24356 --- [restartedMain] c.l.edition.EditionApplication           : The following profiles are active: dev
+2020-11-06 13:52:14.953  INFO 24356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-06 13:52:14.953  INFO 24356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-06 13:52:16.379  INFO 24356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-06 13:52:16.384  INFO 24356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-06 13:52:16.434  INFO 24356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2020-11-06 13:52:17.145  INFO 24356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-06 13:52:17.157  INFO 24356 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-06 13:52:17.157  INFO 24356 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-11-06 13:52:17.272  INFO 24356 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-06 13:52:17.272  INFO 24356 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2318 ms
+2020-11-06 13:52:17.500  INFO 24356 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-11-06 13:52:17.724  INFO 24356 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-11-06 13:52:18.637  INFO 24356 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-06 13:52:18.761  INFO 24356 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-06 13:52:18.818  INFO 24356 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-06 13:52:19.184  INFO 24356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-06 13:52:19.185  INFO 24356 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-06 13:52:19.204  INFO 24356 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-06 13:52:19.240  INFO 24356 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-06 13:52:19.446  INFO 24356 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchShowDetailUsingGET_1
+2020-11-06 13:52:19.494  INFO 24356 --- [restartedMain] c.l.edition.EditionApplication           : Started EditionApplication in 5.305 seconds (JVM running for 9.044)
+2020-11-06 13:52:33.182  INFO 24356 --- [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-06 13:52:33.182  INFO 24356 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-06 13:52:33.193  INFO 24356 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-11-06 13:54:21.469  INFO 38596 --- [main] com.laywerspringboot.edition.UserTest    : Starting UserTest on DESKTOP-N26M15P with PID 38596 (started by User in G:\laywer-springboot\edition)
+2020-11-06 13:54:21.471  INFO 38596 --- [main] com.laywerspringboot.edition.UserTest    : The following profiles are active: dev
+2020-11-06 13:54:22.328  WARN 38596 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+2020-11-06 13:54:22.610  INFO 38596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-06 13:54:22.616  INFO 38596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-06 13:54:22.681  INFO 38596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40ms. Found 0 Redis repository interfaces.
+2020-11-06 13:54:23.543  INFO 38596 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-11-06 13:54:23.742  INFO 38596 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-11-06 13:54:25.324  INFO 38596 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-06 13:54:25.850  INFO 38596 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-06 13:54:26.603  INFO 38596 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-06 13:54:26.647  INFO 38596 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-06 13:54:26.702  INFO 38596 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-06 13:54:27.068  INFO 38596 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchShowDetailUsingGET_1
+2020-11-06 13:54:27.156  INFO 38596 --- [main] com.laywerspringboot.edition.UserTest    : Started UserTest in 6.243 seconds (JVM running for 7.488)
+2020-11-06 13:54:27.458  INFO 38596 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.laywerspringboot.edition.UtilsTest], using SpringBootContextLoader
+2020-11-06 13:54:27.459  INFO 38596 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.laywerspringboot.edition.UtilsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-11-06 13:54:27.460  INFO 38596 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.laywerspringboot.edition.UtilsTest]: UtilsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-11-06 13:54:27.463  INFO 38596 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.laywerspringboot.edition.EditionApplication for test class com.laywerspringboot.edition.UtilsTest
+2020-11-06 13:54:27.468  INFO 38596 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-11-06 13:54:27.469  INFO 38596 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@dbc7e0a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@636fccb0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@28519bfb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@15914bb5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7b332b23, org.springframework.test.context.transaction.TransactionalTestExecutionListener@66a472b9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@428eb3d5, org.springframework.test.context.event.EventPublishingTestExecutionListener@5ddd84d2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3fd5d679, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7aa15a80, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4d065e1a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7c4ca87c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6dbbdf92, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1dbeedff]
+2020-11-06 13:54:27.866  INFO 38596 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-06 13:54:27.892  INFO 38596 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-11-06 13:54:37.330  WARN 24356 --- [http-nio-0.0.0.0-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.aliyun.oss.common.auth.InvalidCredentialsException: Access key id should not be null or empty.]
+2020-11-06 13:54:40.281  INFO 24356 --- [Thread-200] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-06 13:54:40.303  INFO 24356 --- [Thread-200] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-11-06 13:54:40.575  INFO 24356 --- [restartedMain] c.l.edition.EditionApplication           : Starting EditionApplication on DESKTOP-N26M15P with PID 24356 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+2020-11-06 13:54:40.575  INFO 24356 --- [restartedMain] c.l.edition.EditionApplication           : The following profiles are active: dev
+2020-11-06 13:54:41.042  INFO 24356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-06 13:54:41.042  INFO 24356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-06 13:54:41.054  INFO 24356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2020-11-06 13:54:41.267  INFO 24356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-06 13:54:41.268  INFO 24356 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-06 13:54:41.268  INFO 24356 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-11-06 13:54:41.309  INFO 24356 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-06 13:54:41.310  INFO 24356 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 730 ms
+2020-11-06 13:54:41.368  INFO 24356 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-11-06 13:54:41.409  INFO 24356 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2020-11-06 13:54:41.633  INFO 24356 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-06 13:54:41.670  INFO 24356 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-06 13:54:41.679  INFO 24356 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-06 13:54:41.791  INFO 24356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-06 13:54:41.792  INFO 24356 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-06 13:54:41.793  INFO 24356 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-06 13:54:41.799  INFO 24356 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-06 13:54:41.849  INFO 24356 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchShowDetailUsingGET_1
+2020-11-06 13:54:41.883  INFO 24356 --- [restartedMain] c.l.edition.EditionApplication           : Started EditionApplication in 1.377 seconds (JVM running for 151.433)
+2020-11-06 13:54:41.887  INFO 24356 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-06 13:54:50.006  INFO 24356 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-06 13:54:50.011  INFO 24356 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2020-11-06 13:55:08.282  INFO 31968 --- [main] com.laywerspringboot.edition.UserTest    : Starting UserTest on DESKTOP-N26M15P with PID 31968 (started by User in G:\laywer-springboot\edition)
+2020-11-06 13:55:08.284  INFO 31968 --- [main] com.laywerspringboot.edition.UserTest    : The following profiles are active: dev
+2020-11-06 13:55:09.172  WARN 31968 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+2020-11-06 13:55:09.422  INFO 31968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-06 13:55:09.427  INFO 31968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-06 13:55:09.475  INFO 31968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31ms. Found 0 Redis repository interfaces.
+2020-11-06 13:55:10.330  INFO 31968 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-11-06 13:55:10.534  INFO 31968 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-11-06 13:55:12.262  INFO 31968 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-06 13:55:12.754  INFO 31968 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-06 13:55:13.596  INFO 31968 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-06 13:55:13.658  INFO 31968 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-06 13:55:13.707  INFO 31968 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-06 13:55:14.024  INFO 31968 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchShowDetailUsingGET_1
+2020-11-06 13:55:14.085  INFO 31968 --- [main] com.laywerspringboot.edition.UserTest    : Started UserTest in 6.383 seconds (JVM running for 7.604)
+2020-11-06 13:55:14.330  INFO 31968 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.laywerspringboot.edition.UtilsTest], using SpringBootContextLoader
+2020-11-06 13:55:14.332  INFO 31968 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.laywerspringboot.edition.UtilsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-11-06 13:55:14.332  INFO 31968 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.laywerspringboot.edition.UtilsTest]: UtilsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-11-06 13:55:14.335  INFO 31968 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.laywerspringboot.edition.EditionApplication for test class com.laywerspringboot.edition.UtilsTest
+2020-11-06 13:55:14.337  INFO 31968 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-11-06 13:55:14.341  INFO 31968 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@dbc7e0a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@636fccb0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@28519bfb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@15914bb5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7b332b23, org.springframework.test.context.transaction.TransactionalTestExecutionListener@66a472b9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@428eb3d5, org.springframework.test.context.event.EventPublishingTestExecutionListener@5ddd84d2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3fd5d679, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7aa15a80, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4d065e1a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7c4ca87c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6dbbdf92, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1dbeedff]
+2020-11-06 13:55:14.458  INFO 31968 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-06 13:55:14.506  INFO 31968 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-11-06 13:55:20.857  INFO 20560 --- [restartedMain] c.l.edition.EditionApplication           : Starting EditionApplication on DESKTOP-N26M15P with PID 20560 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+2020-11-06 13:55:20.862  INFO 20560 --- [restartedMain] c.l.edition.EditionApplication           : The following profiles are active: dev
+2020-11-06 13:55:20.927  INFO 20560 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-06 13:55:20.928  INFO 20560 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-06 13:55:22.203  INFO 20560 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-06 13:55:22.206  INFO 20560 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-06 13:55:22.242  INFO 20560 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 Redis repository interfaces.
+2020-11-06 13:55:23.186  INFO 20560 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-06 13:55:23.199  INFO 20560 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-06 13:55:23.200  INFO 20560 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-11-06 13:55:23.347  INFO 20560 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-06 13:55:23.348  INFO 20560 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2420 ms
+2020-11-06 13:55:23.601  INFO 20560 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-11-06 13:55:23.876  INFO 20560 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-11-06 13:55:24.949  INFO 20560 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-06 13:55:25.079  INFO 20560 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-06 13:55:25.131  INFO 20560 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-06 13:55:25.556  INFO 20560 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-06 13:55:25.557  INFO 20560 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-06 13:55:25.588  INFO 20560 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-06 13:55:25.636  INFO 20560 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-06 13:55:25.882  INFO 20560 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchShowDetailUsingGET_1
+2020-11-06 13:55:25.938  INFO 20560 --- [restartedMain] c.l.edition.EditionApplication           : Started EditionApplication in 5.76 seconds (JVM running for 9.069)
+2020-11-06 13:55:33.331  INFO 20560 --- [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-06 13:55:33.332  INFO 20560 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-06 13:55:33.341  INFO 20560 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-11-06 13:55:33.455  WARN 20560 --- [http-nio-0.0.0.0-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.aliyun.oss.common.auth.InvalidCredentialsException: Access key id should not be null or empty.]
+2020-11-06 13:55:49.504  WARN 20560 --- [http-nio-0.0.0.0-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.aliyun.oss.common.auth.InvalidCredentialsException: Access key id should not be null or empty.]
+2020-11-06 14:08:37.276  WARN 20560 --- [http-nio-0.0.0.0-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.aliyun.oss.common.auth.InvalidCredentialsException: Access key id should not be null or empty.]
+2020-11-06 14:08:58.804  INFO 37452 --- [main] com.laywerspringboot.edition.UserTest    : Starting UserTest on DESKTOP-N26M15P with PID 37452 (started by User in G:\laywer-springboot\edition)
+2020-11-06 14:08:58.806  INFO 37452 --- [main] com.laywerspringboot.edition.UserTest    : The following profiles are active: dev
+2020-11-06 14:08:59.711  WARN 37452 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+2020-11-06 14:08:59.965  INFO 37452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-06 14:08:59.968  INFO 37452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-06 14:09:00.024  INFO 37452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39ms. Found 0 Redis repository interfaces.
+2020-11-06 14:09:00.950  INFO 37452 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-11-06 14:09:01.187  INFO 37452 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-11-06 14:09:03.082  INFO 37452 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-06 14:09:03.543  INFO 37452 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-06 14:09:04.272  INFO 37452 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-06 14:09:04.317  INFO 37452 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-06 14:09:04.366  INFO 37452 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-06 14:09:04.649  INFO 37452 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchShowDetailUsingGET_1
+2020-11-06 14:09:04.719  INFO 37452 --- [main] com.laywerspringboot.edition.UserTest    : Started UserTest in 6.481 seconds (JVM running for 7.717)
+2020-11-06 14:09:04.977  INFO 37452 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.laywerspringboot.edition.UtilsTest], using SpringBootContextLoader
+2020-11-06 14:09:04.978  INFO 37452 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.laywerspringboot.edition.UtilsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-11-06 14:09:04.979  INFO 37452 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.laywerspringboot.edition.UtilsTest]: UtilsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-11-06 14:09:04.984  INFO 37452 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.laywerspringboot.edition.EditionApplication for test class com.laywerspringboot.edition.UtilsTest
+2020-11-06 14:09:04.996  INFO 37452 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-11-06 14:09:04.997  INFO 37452 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7b332b23, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@66a472b9, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@428eb3d5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5ddd84d2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3fd5d679, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7aa15a80, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4d065e1a, org.springframework.test.context.event.EventPublishingTestExecutionListener@7c4ca87c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6dbbdf92, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1dbeedff, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@62b786dc, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7ba1cdbe, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@48d5ca17, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@226e07e7]
+2020-11-06 14:09:05.090  INFO 37452 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-06 14:09:05.113  INFO 37452 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-11-06 14:09:11.750  INFO 34144 --- [restartedMain] c.l.edition.EditionApplication           : Starting EditionApplication on DESKTOP-N26M15P with PID 34144 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+2020-11-06 14:09:11.753  INFO 34144 --- [restartedMain] c.l.edition.EditionApplication           : The following profiles are active: dev
+2020-11-06 14:09:11.816  INFO 34144 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-06 14:09:11.817  INFO 34144 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-06 14:09:13.375  INFO 34144 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-06 14:09:13.378  INFO 34144 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-06 14:09:13.419  INFO 34144 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 Redis repository interfaces.
+2020-11-06 14:09:14.190  INFO 34144 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-06 14:09:14.202  INFO 34144 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-06 14:09:14.203  INFO 34144 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-11-06 14:09:14.316  INFO 34144 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-06 14:09:14.317  INFO 34144 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2500 ms
+2020-11-06 14:09:14.649  INFO 34144 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-11-06 14:09:14.778  INFO 34144 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-11-06 14:09:15.676  INFO 34144 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-06 14:09:15.789  INFO 34144 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-06 14:09:15.834  INFO 34144 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-06 14:09:16.184  INFO 34144 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-06 14:09:16.186  INFO 34144 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-06 14:09:16.210  INFO 34144 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-06 14:09:16.251  INFO 34144 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-06 14:09:16.479  INFO 34144 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchShowDetailUsingGET_1
+2020-11-06 14:09:16.533  INFO 34144 --- [restartedMain] c.l.edition.EditionApplication           : Started EditionApplication in 5.423 seconds (JVM running for 9.076)
+2020-11-06 14:09:44.063  INFO 34144 --- [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-06 14:09:44.064  INFO 34144 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-06 14:09:44.073  INFO 34144 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms

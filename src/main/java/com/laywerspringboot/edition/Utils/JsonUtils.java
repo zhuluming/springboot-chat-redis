@@ -2,9 +2,11 @@ package com.laywerspringboot.edition.Utils;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.type.CollectionType;
 import com.laywerspringboot.edition.exception.JsonException;
 
 import java.io.IOException;
+import java.util.Collection;
 
 
 /**
@@ -14,6 +16,19 @@ import java.io.IOException;
 public class JsonUtils {
 
     private static ObjectMapper mapper = new ObjectMapper();
+
+    /**
+     * 转换集合类工具
+     * @param collectionClass 集合的类型
+     * @param elementClass 集合中的参数类型
+     * @return
+     */
+    private static CollectionType getCollectionType(Class<? extends Collection> collectionClass, Class<?> elementClass){
+        CollectionType collectionType = mapper.getTypeFactory().constructCollectionType(collectionClass, elementClass);
+        return collectionType;
+    }
+
+
 
     /**
      * 转json
@@ -46,5 +61,6 @@ public class JsonUtils {
             throw new JsonException();
         }
     }
+
 
 }

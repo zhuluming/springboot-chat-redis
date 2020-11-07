@@ -1,7 +1,13 @@
 spring:
   profiles:
-    active: dev
+    active: provider
 
+  rabbitmq:
+    host: 192.168.190.11
+    port: 5672
+    username: siqi
+    password: siqi
+    virtual-host: siqi
 
 #log
 logging:
@@ -24,5 +30,21 @@ mybatis:
   configuration:
     map-underscore-to-camel-case: true
   # mapper-locations: classpath:dao/*.xml
+tecent:
+  secretId: AKIDVjitnyOZpocIiscSuIPL2UfcIl6BYg39
+  secretKey: 1lAQPDl46tRm0zpQlqhHdolW0ECxVq0u
+  endPoint: sms.tencentcloudapi.com
+  TemplateID: 754870
+  SmsSdkAppid: 1400439638
+  Sign: 黄思琦的个人生活
+#驼峰命名
+oss:
+  endpoint: oss-accelerate.aliyuncs.com
 
+  accessKeyId: LTAI4G2Na3UUSWsFwELHTLVw
 
+  accessKeySecret: POoMOcqWfB4YgyLGAXcIRFveJycQ9j
+
+  bucketName: laywertest
+
+  filedir: image/

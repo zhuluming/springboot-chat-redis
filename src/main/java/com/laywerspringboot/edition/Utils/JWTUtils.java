@@ -26,7 +26,7 @@ public class JWTUtils {
             builder.withClaim(k,v);
         });
         Calendar instance = Calendar.getInstance();
-        instance.add(Calendar.MINUTE,30);
+        instance.add(Calendar.DAY_OF_WEEK,5);
         builder.withExpiresAt(instance.getTime());
         return builder.sign(Algorithm.HMAC256(TOKEN)).toString();
     }

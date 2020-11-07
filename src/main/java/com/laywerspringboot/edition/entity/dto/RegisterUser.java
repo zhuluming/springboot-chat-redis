@@ -45,6 +45,11 @@ public class RegisterUser implements Serializable {
     @ApiModelProperty(name="phoneid",example = "18279444776")
     private String phoneid;
     /**
+     * 手机号
+     */
+    @ApiModelProperty(name="newPhoneid",example = "修改手机号的新手机号")
+    private String newPhoneid;
+    /**
      * 身份证
      */
     @ApiModelProperty(name="idcard",example = "544645.....")
