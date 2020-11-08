@@ -34,7 +34,19 @@
         select
           cid, caseId, party, phone, idcard, court, region, lawyer, admin
         from myrhythm.cases
-        where party = #{party}
+              where party = #{party}
+    </select>
+    <select id="queryByLawyer" resultMap="CasesMap">
+        select
+        cid, caseId, party, phone, idcard, court, region, lawyer, admin
+        from myrhythm.cases
+        where lawyer = #{lawyer}
+    </select>
+    <select id="queryByAdmin" resultMap="CasesMap">
+        select
+        cid, caseId, party, phone, idcard, court, region, lawyer, admin
+        from myrhythm.cases
+        where admin = #{admin}
     </select>
 
     <!--查询指定行数据-->

@@ -24,6 +24,14 @@ public interface UserService {
     User queryById(Integer id);
 
     /**
+     * 通过用户名查询单条数据
+     *
+     * @param username 用户名
+     * @return 实例对象
+     */
+    User queryByUserName(String username);
+
+    /**
      * 根据信息查询
      * @param flag
      * 0代表查username 用户名称

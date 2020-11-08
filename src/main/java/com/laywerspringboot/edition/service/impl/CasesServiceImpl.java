@@ -90,4 +90,14 @@ public class CasesServiceImpl implements CasesService {
     public Cases queryByParty(String tokenRealName) {
         return this.casesDao.queryByParty(tokenRealName);
     }
+
+    @Override
+    public Cases queryByLawyer(String Lawyer) {
+        return this.casesDao.queryByLawyer(Lawyer);
+    }
+
+    @Override
+    public Cases queryByAdmin(String Admin) {
+        return this.casesDao.queryByAdmin(Admin);
+    }
 }

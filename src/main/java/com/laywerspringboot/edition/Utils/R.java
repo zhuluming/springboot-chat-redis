@@ -30,6 +30,10 @@ public class R extends HashMap<String ,Object> implements Serializable {
         return isOk(1,msg);
     }
 
+    public static R replyOk(String msg) {
+        return isOk(1,msg);
+    }
+
 
     /**
      * 往R中存放数据

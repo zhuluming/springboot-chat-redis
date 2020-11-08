@@ -1,5 +1,12 @@
 package com.laywerspringboot.edition.config;
 
+/*
+*
+ * @Author:小七
+ * @createTime:2020-10-31-14-34
+*/
+
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory;
@@ -8,13 +15,6 @@ import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSeriali
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 import java.io.Serializable;
-
-/*
-*
- * @Author:小七
- * @createTime:2020-10-31-14-34
-*/
-
 
 @Configuration
 public class LettuceRedisConfig {
@@ -26,4 +26,7 @@ public class LettuceRedisConfig {
         redisTemplate.setConnectionFactory(connectionFactory);
         return redisTemplate;
     }
+
+
 }
+

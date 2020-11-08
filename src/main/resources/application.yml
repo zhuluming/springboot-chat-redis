@@ -1,13 +1,8 @@
 spring:
   profiles:
-    active: provider
+    active: dev
 
-  rabbitmq:
-    host: 192.168.190.11
-    port: 5672
-    username: siqi
-    password: siqi
-    virtual-host: siqi
+
 
 #log
 logging:

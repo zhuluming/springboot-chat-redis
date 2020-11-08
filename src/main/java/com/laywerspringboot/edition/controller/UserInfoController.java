@@ -345,7 +345,7 @@ public class UserInfoController  {
         HashMap<String, String> map = new HashMap<>();
         map.put("id", token.getClaim("id").asString());
         map.put("username",token.getClaim("username").asString());
-        map.put("rolename",token.getClaim("username").asString());
+        map.put("rolename",token.getClaim("rolename").asString());
         map.put("msgflag",msgflag);
         return JWTUtils.getToken(map);
     }

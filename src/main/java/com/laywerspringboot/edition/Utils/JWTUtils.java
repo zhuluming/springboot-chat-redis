@@ -78,4 +78,13 @@ public class JWTUtils {
         String realname = decodedJWT.getClaim("realname").asString();
         return realname;
     }
+    public static String getTokenMsgFlag(HttpServletRequest request){
+        //从请求头中获取token
+        String token = request.getHeader("token");
+        //验证token
+        DecodedJWT decodedJWT = JWTUtils.verify(token);
+        //获取消息推送状态
+        String msgflag = decodedJWT.getClaim("msgflag").asString();
+        return msgflag;
+    }
 }

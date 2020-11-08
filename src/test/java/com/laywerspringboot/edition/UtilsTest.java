@@ -1,7 +1,6 @@
 package com.laywerspringboot.edition;
 
 import com.laywerspringboot.edition.Utils.ObjectUtils;
-import com.laywerspringboot.edition.Utils.RandomUtils;
 import com.laywerspringboot.edition.Utils.StringUtils;
 import com.laywerspringboot.edition.entity.User;
 import org.junit.jupiter.api.Test;
@@ -10,7 +9,6 @@ import org.springframework.util.Assert;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
 
 
 /**
@@ -47,27 +45,27 @@ public class UtilsTest extends UserTest {
         System.out.println(rightNum);
         System.out.println("====================");*/
         //8 9 -11
-        for (int i = 0; i < 100; i++) {
+       /* for (int i = 0; i < 100; i++) {
 
             System.out.println(RandomUtils.getPhoneUuid());
-        }
+        }*/
     }
     @Test
     public void testcurrentTime(){
-        long currentTimeMillis = System.currentTimeMillis();
+       /* long currentTimeMillis = System.currentTimeMillis();
         System.out.println(currentTimeMillis);
         int a = (int) currentTimeMillis;
-        System.out.println(a);
+        System.out.println(a);*/
     }
     @Test
     public void testAutomic(){
-        Integer flag = 0;
+     /*   Integer flag = 0;
         AtomicInteger atomicInteger = new AtomicInteger(flag);
         System.out.println(atomicInteger);
         for (int i = 0; i <10 ; i++) {
             atomicInteger.addAndGet(1);
         }
-        System.out.println(atomicInteger);
+        System.out.println(atomicInteger);*/
 
     }
     @Test

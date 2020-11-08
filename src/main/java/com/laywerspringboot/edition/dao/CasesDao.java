@@ -94,5 +94,8 @@ public interface CasesDao {
      */
     Cases queryByParty(String tokenRealName);
 
+    Cases queryByLawyer(String lawyer);
+    Cases queryByAdmin(String admin);
+
 
 }

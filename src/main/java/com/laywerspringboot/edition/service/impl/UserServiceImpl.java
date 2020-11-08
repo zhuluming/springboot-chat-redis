@@ -51,6 +51,11 @@ public class UserServiceImpl implements UserService {
         return this.userDao.queryById(id);
     }
 
+    @Override
+    public User queryByUserName(String username) {
+        return userDao.queryByUsername(username);
+    }
+
     /**
      * 根据信息查询
      *
@@ -325,6 +330,7 @@ public class UserServiceImpl implements UserService {
         payload.put("realname",user.getRealname());
         payload.put("rolename",role.getRolename());
         payload.put("msgflag","0");
+        //todo 改成放入redis
         String token = JWTUtils.getToken(payload);
 
         return token;

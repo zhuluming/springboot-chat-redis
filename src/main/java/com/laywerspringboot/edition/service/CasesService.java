@@ -69,4 +69,16 @@ public interface CasesService {
      * @return
      */
     Cases queryByParty(String tokenRealName);
+    /**
+     * 通过用户真名查询
+     * @param Lawyer
+     * @return
+     */
+    Cases queryByLawyer(String Lawyer);
+    /**
+     * 通过用户真名查询
+     * @param tokenRealName
+     * @return
+     */
+    Cases queryByAdmin(String Admin);
 }
