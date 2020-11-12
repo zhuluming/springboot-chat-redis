@@ -43,5 +43,5 @@ public interface SearchDtoDao {
      * @param name
      * @return
      */
-    List<SearchDto> SearchByName(String name);
+    List<UserSearchDto> SearchByName(String name);
 }

@@ -5,22 +5,28 @@ import com.laywerspringboot.edition.entity.Prices;
 import java.util.List;
 
 
-
 /**
  * (Prices)表服务接口
  *
  * @author makejava
- * @since 2020-10-24 11:09:24
+ * @since 2020-11-12 21:45:16
  */
 public interface PricesService {
 
     /**
      * 通过ID查询单条数据
      *
-     * @param page 主键
+     * @param priceid 主键
      * @return 实例对象
      */
-    Prices queryById(String page);
+    Prices queryById(Integer priceid);
+
+    /**
+     * 查询指定案号数据
+     * @param caseId 案号
+     * @return
+     */
+    Prices queryByCaseId(String caseId);
 
     /**
      * 查询多条数据
@@ -50,9 +56,9 @@ public interface PricesService {
     /**
      * 通过主键删除数据
      *
-     * @param page 主键
+     * @param priceid 主键
      * @return 是否成功
      */
-    boolean deleteById(String page);
+    boolean deleteById(Integer priceid);
 
 }

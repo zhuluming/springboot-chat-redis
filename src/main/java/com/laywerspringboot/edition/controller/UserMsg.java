@@ -30,7 +30,6 @@ public class UserMsg {
     private RestTemplate restTemplate;
     @Autowired
     private CasesService casesService;
-
     /**
      * 需要参数：
      * 1.是否开启消息推送，防止有消息返回时无小红点
@@ -45,6 +44,7 @@ public class UserMsg {
      * @param msg 用户每次发送的消息体，里面包用户信息，用户名字，用户身份，用户是否开启消息推送，发送对象的名字
      * @return 返回从消息接收方返回的消息
      */
+    //前端轮询
     @GetMapping("/sendMsg")
     public R sendMsg(@RequestBody MsgDto msg, HttpServletRequest request){
         //1.校验token，并获取用户信息
@@ -60,17 +60,77 @@ public class UserMsg {
         //设置key
         //前缀加用户真美+to+发送对象
         String key = MsgConstant.USER_PREFIX+tokenRealName+MsgConstant.CHAT_TO_PREFIX+msg.getToName();
-        //存信息
+        //定义时间
         long time = System.currentTimeMillis();
+        //存消息状态
         saveMsgToRedis(msg, key,time);
+        String key1 = MsgConstant.USER_PREFIX+msg.getToName()+MsgConstant.CHAT_TO_PREFIX+tokenRealName;
+        //存消息
+        redisTemplate.opsForHash().put(key,time,msg.getMsg());
+        redisTemplate.opsForHash().put(key1,time,msg.getMsg());
 
+        msg.setUserName(msg.getToName());
+        msg.setToName(tokenRealName);
+        //存状态
+        saveMsgToRedis(msg,key1,time);
+        //调一下前端的接口
 
         //再把消息发送给对面
-        String forObject = restTemplate.getForObject("http://127.0.0.1:8080/chat/reply/{msg}/name/{toName}/sendName/{tokenRealName}",
-                String.class, msg.getMsg(), msg.getToName(),tokenRealName);
-
-        return R.replyOk(forObject);
+     /*   String forObject = restTemplate.getForObject("http://127.0.0.1:8080/chat/reply/{msg}/name/{toName}/sendName/{tokenRealName}",
+                String.class, msg.getMsg(), msg.getToName(),tokenRealName);*/
+        /**
+         * 信息回显
+         */
+        return R.replyOk(msg.getMsg());
     }
+
+
+    /**
+     * 用户在线时
+     * @param toName 对方用户
+     * @param request
+     * @return
+     */
+    @GetMapping("pull/{toName}")
+    public R reply(@PathVariable("toName") String toName,HttpServletRequest request){
+        //本人名
+        String tokenRealName = JWTUtils.getTokenRealName(request);
+        //前缀加用户真名
+        String key = MsgConstant.USER_PREFIX+tokenRealName+MsgConstant.CHAT_TO_PREFIX+toName;
+        MsgFlag o = (MsgFlag) redisTemplate.opsForValue().get(key);
+        //如果在线
+        if (o.getStatus() == 1){
+            return getR(toName, tokenRealName);
+        }else {
+            //告诉前端，用户不在线，这时候前端去异步调用铃铛接口
+            return R.error("用户不在线");
+           /* //前缀+用户真名+to+发送过来的用户的名
+            String key1 = MsgConstant.USER_PREFIX+toName+MsgConstant.CHAT_TO_PREFIX+tokenRealName;
+            MsgDto msgDto = new MsgDto();
+            msgDto.setMsg(msg);
+            msgDto.setToName(tokenRealName);
+            msgDto.setUserName(toName);
+            long time = System.currentTimeMillis();
+            int status = 0;
+            saveMsgToRedis(msgDto, key1,time,status);
+            return R.replyOk("用户目前不在线，已将消息发送给对方");*/
+        }
+    }
+
+    /**
+     * 给铃铛传消息
+     * @return
+     */
+    @GetMapping("notice/{toName}")
+    public R notice(@PathVariable("toName") String toName,HttpServletRequest request){
+        //本人名
+        String tokenRealName = JWTUtils.getTokenRealName(request);
+        //前缀加用户真名
+        String key = MsgConstant.USER_PREFIX+tokenRealName+MsgConstant.CHAT_TO_PREFIX+toName;
+        MsgFlag o = (MsgFlag) redisTemplate.opsForValue().get(key);
+        return getR(toName, tokenRealName);
+    }
+
 
 
     /**
@@ -103,7 +163,6 @@ public class UserMsg {
     }
 
 
-
     /**
      * 用户退出界面时
      */
@@ -123,28 +182,6 @@ public class UserMsg {
 
 
 
-
-    @GetMapping("/reply/{msg}/name/{toName}/sendName/{tokenRealName}")
-    public R reply(@PathVariable("msg")String msg,@PathVariable("toName") String toName,@PathVariable("tokenRealName") String tokenRealName){
-        //前缀加用户真名
-        String key = MsgConstant.USER_PREFIX+toName+MsgConstant.CHAT_TO_PREFIX+tokenRealName;
-        MsgFlag o = (MsgFlag) redisTemplate.opsForValue().get(key);
-        if (o.getStatus() == 1){
-            //直接返回消息
-            return R.replyOk(msg);
-        }else {
-            //前缀+用户真名+to+发送过来的用户的名
-            String key1 = MsgConstant.USER_PREFIX+toName+MsgConstant.CHAT_TO_PREFIX+tokenRealName;
-            MsgDto msgDto = new MsgDto();
-            msgDto.setMsg(msg);
-            msgDto.setToName(tokenRealName);
-            msgDto.setUserName(toName);
-            long time = System.currentTimeMillis();
-            int status = 0;
-            saveMsgToRedis(msgDto, key1,time,status);
-            return R.replyOk("用户目前不在线，已将消息发送给对方");
-        }
-    }
 
     /**
      * 用户发消息之后存信息
@@ -188,8 +225,8 @@ public class UserMsg {
 
     /**
      * 给用户传记录
-     * @param name  用户
-     * @param tokenRealName 对方用户
+     * @param name  对方用户
+     * @param tokenRealName 用户
      * @return
      */
     private R getR( String name, String tokenRealName) {

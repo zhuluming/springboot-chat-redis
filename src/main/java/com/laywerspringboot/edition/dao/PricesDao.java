@@ -6,22 +6,28 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 
-
 /**
  * (Prices)表数据库访问层
  *
  * @author makejava
- * @since 2020-10-24 11:05:26
+ * @since 2020-11-12 21:43:57
  */
 public interface PricesDao {
 
     /**
      * 通过ID查询单条数据
      *
-     * @param page 主键
+     * @param priceid 主键
      * @return 实例对象
      */
-    Prices queryById(String page);
+    Prices queryById(Integer priceid);
+
+    /**
+     * 查询指定案号数据
+     * @param caseId 案号
+     * @return
+     */
+    Prices queryByCaseId(String caseId);
 
     /**
      * 查询指定行数据
@@ -76,9 +82,9 @@ public interface PricesDao {
     /**
      * 通过主键删除数据
      *
-     * @param page 主键
+     * @param priceid 主键
      * @return 影响行数
      */
-    int deleteById(String page);
+    int deleteById(Integer priceid);
 
 }

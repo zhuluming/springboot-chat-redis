@@ -1,24 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.laywerspringboot.edition.dao.PricesDao">
-
     <resultMap type="com.laywerspringboot.edition.entity.Prices" id="PricesMap">
         <result property="price" column="price" jdbcType="NUMERIC"/>
         <result property="page" column="page" jdbcType="VARCHAR"/>
+        <result property="state" column="state" jdbcType="VARCHAR"/>
+        <result property="priceid" column="priceId" jdbcType="INTEGER"/>
+        <result property="caseid" column="caseId" jdbcType="VARCHAR"/>
     </resultMap>
 
     <!--查询单个-->
     <select id="queryById" resultMap="PricesMap">
         select
-          price, page
+        price, page, state, priceId, caseId
         from myrhythm.prices
-        where page = #{page}
+        where priceId = #{priceid}
+    </select>
+    <!--查询单个-->
+    <select id="queryByCaseId" resultMap="PricesMap">
+        select
+        price, page, state, priceId, caseId
+        from myrhythm.prices
+        where caseId = #{caseId}
     </select>
 
     <!--查询指定行数据-->
     <select id="queryAllByLimit" resultMap="PricesMap">
         select
-          price, page
+        price, page, state, priceId, caseId
         from myrhythm.prices
         limit #{offset}, #{limit}
     </select>
@@ -26,7 +35,7 @@
     <!--通过实体作为筛选条件查询-->
     <select id="queryAll" resultMap="PricesMap">
         select
-        price, page
+        price, page, state, priceId, caseId
         from myrhythm.prices
         <where>
             <if test="price != null">
@@ -35,31 +44,40 @@
             <if test="page != null and page != ''">
                 and page = #{page}
             </if>
+            <if test="state != null and state != ''">
+                and state = #{state}
+            </if>
+            <if test="priceid != null">
+                and priceId = #{priceid}
+            </if>
+            <if test="caseid != null and caseid != ''">
+                and caseId = #{caseid}
+            </if>
         </where>
     </select>
 
     <!--新增所有列-->
-    <insert id="insert" keyProperty="page" useGeneratedKeys="true">
-        insert into myrhythm.prices(price)
-        values (#{price})
+    <insert id="insert" keyProperty="priceid" useGeneratedKeys="true">
+        insert into myrhythm.prices(price, page, state, caseId)
+        values (#{price}, #{page}, #{state}, #{caseid})
     </insert>
 
-    <insert id="insertBatch" keyProperty="page" useGeneratedKeys="true">
-        insert into myrhythm.prices(price)
+    <insert id="insertBatch" keyProperty="priceid" useGeneratedKeys="true">
+        insert into myrhythm.prices(price, page, state, caseId)
         values
         <foreach collection="entities" item="entity" separator=",">
-            (#{entity.price})
+            (#{entity.price}, #{entity.page}, #{entity.state}, #{entity.caseid})
         </foreach>
     </insert>
 
-    <insert id="insertOrUpdateBatch" keyProperty="page" useGeneratedKeys="true">
-        insert into myrhythm.prices(price)
+    <insert id="insertOrUpdateBatch" keyProperty="priceid" useGeneratedKeys="true">
+        insert into myrhythm.prices(price, page, state, caseId)
         values
         <foreach collection="entities" item="entity" separator=",">
-            (#{entity.price})
+            (#{entity.price}, #{entity.page}, #{entity.state}, #{entity.caseid})
         </foreach>
         on duplicate key update
-        price = values(price)
+        price = values(price) , page = values(page) , state = values(state) , caseId = values(caseId)
     </insert>
 
     <!--通过主键修改数据-->
@@ -69,13 +87,21 @@
             <if test="price != null">
                 price = #{price},
             </if>
+            <if test="page != null and page != ''">
+                page = #{page},
+            </if>
+            <if test="state != null and state != ''">
+                state = #{state},
+            </if>
+            <if test="caseid != null and caseid != ''">
+                caseId = #{caseid},
+            </if>
         </set>
-        where page = #{page}
+        where priceId = #{priceid}
     </update>
 
     <!--通过主键删除-->
     <delete id="deleteById">
-        delete from myrhythm.prices where page = #{page}
+        delete from myrhythm.prices where priceId = #{priceid}
     </delete>
-
 </mapper>

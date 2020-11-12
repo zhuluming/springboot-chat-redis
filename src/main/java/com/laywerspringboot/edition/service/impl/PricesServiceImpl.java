@@ -9,12 +9,11 @@ import javax.annotation.Resource;
 import java.util.List;
 
 
-
 /**
  * (Prices)表服务实现类
  *
  * @author makejava
- * @since 2020-10-24 11:09:24
+ * @since 2020-11-12 21:45:17
  */
 @Service("pricesService")
 public class PricesServiceImpl implements PricesService {
@@ -24,12 +23,17 @@ public class PricesServiceImpl implements PricesService {
     /**
      * 通过ID查询单条数据
      *
-     * @param page 主键
+     * @param priceid 主键
      * @return 实例对象
      */
     @Override
-    public Prices queryById(String page) {
-        return this.pricesDao.queryById(page);
+    public Prices queryById(Integer priceid) {
+        return this.pricesDao.queryById(priceid);
+    }
+
+    @Override
+    public Prices queryByCaseId(String caseId) {
+        return this.pricesDao.queryByCaseId(caseId);
     }
 
     /**
@@ -65,17 +69,17 @@ public class PricesServiceImpl implements PricesService {
     @Override
     public Prices update(Prices prices) {
         this.pricesDao.update(prices);
-        return this.queryById(prices.getPage());
+        return this.queryById(prices.getPriceid());
     }
 
     /**
      * 通过主键删除数据
      *
-     * @param page 主键
+     * @param priceid 主键
      * @return 是否成功
      */
     @Override
-    public boolean deleteById(String page) {
-        return this.pricesDao.deleteById(page) > 0;
+    public boolean deleteById(Integer priceid) {
+        return this.pricesDao.deleteById(priceid) > 0;
     }
 }
