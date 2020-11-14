@@ -1447,3 +1447,987 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No b
 17:31:21.431 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
 18:06:47.550 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
 18:07:09.119 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+09:38:28.926 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+10:02:21.302 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.UserInfoException: 密码错误]
+10:04:25.763 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.UserInfoException: 密码错误]
+10:08:16.529 WARN  [http-nio-0.0.0.0-8080-exec-10:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.auth0.jwt.exceptions.JWTDecodeException: The token was expected to have 3 parts, but got 1.]
+10:20:24.049 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.UserInfoException: 用户名不存在]
+10:45:16.009 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+10:46:33.023 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.UserInfoException: 用户名不存在]
+10:48:22.025 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+10:49:01.335 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+10:49:16.610 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+10:49:57.609 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+10:51:46.776 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+10:52:16.694 WARN  [http-nio-0.0.0.0-8080-exec-10:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+10:52:43.379 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+10:53:32.336 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+10:55:25.902 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `int` from String "fads": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String "fads": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 1, column: 312] (through reference chain: com.laywerspringboot.edition.entity.dto.UploadCaseNoticePriceDto["day"])]
+11:56:26.911 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+12:00:03.131 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+12:01:07.935 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+19:04:02.015 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+19:10:50.827 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:14:08.405 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:14:30.489 WARN  [http-nio-0.0.0.0-8080-exec-10:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:14:32.808 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:16:13.239 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:16:15.156 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:17:49.583 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:19:01.600 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:19:05.887 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:19:20.143 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:19:58.186 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:23:08.680 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:23:08.705 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:23:08.709 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:23:08.714 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:23:41.380 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+19:24:55.714 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:25:26.775 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:26:59.471 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `int` from String "asdf": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String "asdf": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 1, column: 303] (through reference chain: com.laywerspringboot.edition.entity.dto.UploadCaseNoticePriceDto["day"])]
+19:28:21.513 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:33:48.935 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:37:50.739 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+19:38:56.496 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:42:26.061 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:42:31.751 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:42:48.893 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:44:46.802 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:44:46.966 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:45:45.321 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:51:57.459 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:52:23.552 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:53:12.049 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:53:26.109 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:53:53.183 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:56:18.214 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:56:35.036 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:56:52.990 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:58:11.935 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+20:00:34.332 WARN  [http-nio-0.0.0.0-8080-exec-10:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+20:01:13.290 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+20:01:41.709 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+20:09:38.631 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+20:11:25.086 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+20:15:02.834 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+20:19:23.148 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+20:20:41.426 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:414] - Failure in @ExceptionHandler com.laywerspringboot.edition.exception.MyExceptionHandler#exception(Exception)
+org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:243)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:181)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:123)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:403)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+20:20:41.443 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.s.DefaultHandlerExceptionResolver:199] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Double` from String "金额": not a valid Double value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Double` from String "金额": not a valid Double value
+ at [Source: (PushbackInputStream); line: 10, column: 12] (through reference chain: com.laywerspringboot.edition.entity.dto.UserCheck["price"])]
+20:21:23.701 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.laywerspringboot.edition.controller.PayController.alipay(com.laywerspringboot.edition.entity.dto.UserCheck)]
+20:22:31.883 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.laywerspringboot.edition.controller.PayController.alipay(com.laywerspringboot.edition.entity.dto.UserCheck)]
+20:26:50.788 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+20:40:15.261 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+20:41:35.203 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+20:44:27.202 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+20:44:41.804 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+20:45:44.115 WARN  [http-nio-0.0.0.0-8080-exec-10:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+21:16:23.588 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+21:16:46.318 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+21:17:10.858 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: WRONGTYPE Operation against a key holding the wrong kind of value]
+21:17:10.940 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+21:17:29.205 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: WRONGTYPE Operation against a key holding the wrong kind of value]
+21:17:29.246 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+21:18:01.863 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: WRONGTYPE Operation against a key holding the wrong kind of value]
+21:21:16.384 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+21:23:15.110 WARN  [http-nio-0.0.0.0-8080-exec-10:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+21:23:29.220 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: WRONGTYPE Operation against a key holding the wrong kind of value]
+21:23:44.697 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: WRONGTYPE Operation against a key holding the wrong kind of value]
+21:25:48.058 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+21:27:01.768 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+21:28:19.088 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+21:28:44.471 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: WRONGTYPE Operation against a key holding the wrong kind of value]
+21:34:44.161 WARN  [http-nio-0.0.0.0-8080-exec-10:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]
+21:48:03.581 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]
+21:49:07.222 WARN  [http-nio-0.0.0.0-8080-exec-10:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+21:49:23.982 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+21:52:25.224 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+21:52:44.597 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:13:45.838 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+22:15:40.545 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:16:13.880 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:17:48.046 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:18:56.531 WARN  [http-nio-0.0.0.0-8080-exec-10:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:20:31.467 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:24:30.100 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:24:50.477 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:27:58.768 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:28:24.012 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+22:31:53.177 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:38:05.393 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:38:05.465 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:39:02.546 WARN  [http-nio-0.0.0.0-8080-exec-10:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:39:02.589 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:40:00.470 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:42:42.420 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:42:42.461 WARN  [http-nio-0.0.0.0-8080-exec-10:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:43:34.090 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:43:34.143 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:45:04.604 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:45:04.649 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:45:53.642 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:45:53.681 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:49:16.870 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:49:16.909 WARN  [http-nio-0.0.0.0-8080-exec-10:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:50:32.640 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:51:33.917 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:52:30.153 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `int` from String "asdf": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String "asdf": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 1, column: 303] (through reference chain: com.laywerspringboot.edition.entity.dto.UploadCaseNoticePriceDto["day"])]
+22:52:34.756 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:52:34.800 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:55:50.304 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+22:58:00.137 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+14:02:26.958 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+14:06:34.142 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+14:08:04.052 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+14:08:29.392 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+14:08:45.567 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+14:09:22.510 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+14:10:10.909 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+14:12:48.785 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+14:12:48.785 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 5]
+14:14:27.234 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+14:15:10.238 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 5]
+14:16:59.126 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: Could not set property 'noticestatus' of 'class com.laywerspringboot.edition.entity.Notice' with value '0' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'noticestatus' in 'class com.laywerspringboot.edition.entity.Notice']
+14:18:43.729 WARN  [restartedMain:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+14:18:43.785 WARN  [restartedMain:t.m.s.m.ClassPathMapperScanner:142] - No MyBatis mapper was found in '[com.laywerspringboot.edition]' package. Please check your configuration.
+14:18:43.792 WARN  [restartedMain:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition]' package. Please check your configuration.
+14:18:44.453 WARN  [restartedMain:o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.laywerspringboot.edition.entity.Cases'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.laywerspringboot.edition.entity.Cases
+14:18:44.497 WARN  [restartedMain:o.s.b.SpringApplication:819] - Unable to close ApplicationContext
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:245)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:197)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:134)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:81)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:67)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:814)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.laywerspringboot.edition.EditionApplication.main(EditionApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:94)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:76)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:347)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:299)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:814)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1282)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:297)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor.postProcessBeforeInitialization(ConfigurationClassPostProcessor.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 56 common frames omitted
+14:20:39.818 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `int` from String "vsdsvd": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String "vsdsvd": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 1, column: 320] (through reference chain: com.laywerspringboot.edition.entity.dto.UploadCaseNoticePriceDto["day"])]
+14:21:40.774 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: Could not set property 'noticestatus' of 'class com.laywerspringboot.edition.entity.Notice' with value '0' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'noticestatus' in 'class com.laywerspringboot.edition.entity.Notice']
+14:24:04.340 WARN  [restartedMain:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+14:24:04.390 WARN  [restartedMain:t.m.s.m.ClassPathMapperScanner:142] - No MyBatis mapper was found in '[com.laywerspringboot.edition]' package. Please check your configuration.
+14:24:04.397 WARN  [restartedMain:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition]' package. Please check your configuration.
+14:24:04.921 WARN  [restartedMain:o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.laywerspringboot.edition.entity.Cases'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.laywerspringboot.edition.entity.Cases
+14:24:04.937 WARN  [restartedMain:o.s.b.SpringApplication:819] - Unable to close ApplicationContext
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:245)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:197)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:134)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:81)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:67)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:814)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.laywerspringboot.edition.EditionApplication.main(EditionApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:94)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:76)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:347)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:299)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:814)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1282)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:297)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor.postProcessBeforeInitialization(ConfigurationClassPostProcessor.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 56 common frames omitted
+14:24:13.213 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+14:33:00.920 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `int` from String "fads": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String "fads": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 1, column: 302] (through reference chain: com.laywerspringboot.edition.entity.dto.UploadCaseNoticePriceDto["day"])]
+14:42:26.232 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 6]
+14:53:06.779 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+14:58:55.028 WARN  [restartedMain:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+14:58:55.092 WARN  [restartedMain:t.m.s.m.ClassPathMapperScanner:142] - No MyBatis mapper was found in '[com.laywerspringboot.edition]' package. Please check your configuration.
+14:58:55.099 WARN  [restartedMain:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition]' package. Please check your configuration.
+14:58:55.982 WARN  [restartedMain:o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.laywerspringboot.edition.entity.Cases'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.laywerspringboot.edition.entity.Cases
+14:58:56.021 WARN  [restartedMain:o.s.b.SpringApplication:819] - Unable to close ApplicationContext
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:245)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:197)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:134)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:81)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:67)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:814)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.laywerspringboot.edition.EditionApplication.main(EditionApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:94)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:76)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:347)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:299)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:814)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1282)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:297)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor.postProcessBeforeInitialization(ConfigurationClassPostProcessor.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 56 common frames omitted
+14:59:04.201 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+15:01:46.104 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]
+15:02:18.172 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]
+15:26:57.255 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.UserInfoException: 用户名不存在]
+15:34:42.812 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]
+15:35:01.594 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]
+15:41:26.216 WARN  [http-nio-0.0.0.0-8080-exec-10:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'photoaddress' at row 1
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into myrhythm.user(username, password, realname, phoneid, idcard, photoaddress, altertime, uuid, salt, count)         values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'photoaddress' at row 1
+; Data truncation: Data too long for column 'photoaddress' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'photoaddress' at row 1]
+15:54:31.124 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.SendMessageException: 不要重复接受验证码]
+15:55:04.441 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.SendMessageException: 不要重复接受验证码]
+15:55:15.037 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.SendMessageException: 不要重复接受验证码]
+15:58:17.422 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.SendMessageException: 不要重复接受验证码]
+15:59:22.833 WARN  [restartedMain:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+15:59:22.888 WARN  [restartedMain:t.m.s.m.ClassPathMapperScanner:142] - No MyBatis mapper was found in '[com.laywerspringboot.edition]' package. Please check your configuration.
+15:59:22.895 WARN  [restartedMain:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition]' package. Please check your configuration.
+15:59:23.468 WARN  [restartedMain:o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.laywerspringboot.edition.entity.Cases'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.laywerspringboot.edition.entity.Cases
+15:59:23.484 WARN  [restartedMain:o.s.b.SpringApplication:819] - Unable to close ApplicationContext
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:245)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:197)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:134)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:81)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:67)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:814)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.laywerspringboot.edition.EditionApplication.main(EditionApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:94)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:76)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:347)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:299)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:814)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1282)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:297)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor.postProcessBeforeInitialization(ConfigurationClassPostProcessor.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 56 common frames omitted
+15:59:28.794 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.SendMessageException: 不要重复接受验证码]
+15:59:32.559 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+16:01:57.873 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.SendMessageException: 不要重复接受验证码]
+16:02:17.169 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.SendMessageException: 不要重复接受验证码]
+16:05:02.983 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+16:05:03.005 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+16:06:17.512 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+16:06:17.534 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+16:08:07.183 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.SendMessageException: 不要重复接受验证码]
+16:08:23.101 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.UserInfoException: 用户名为空]
+16:08:55.775 WARN  [http-nio-0.0.0.0-8080-exec-10:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]
+16:09:04.392 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.auth0.jwt.exceptions.JWTDecodeException: The token was expected to have 3 parts, but got 1.]
+16:10:35.433 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.IndexOutOfBoundsException: Index: 0, Size: 0]
+16:10:40.178 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]
+16:11:08.768 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]
+16:11:10.575 WARN  [http-nio-0.0.0.0-8080-exec-10:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+16:11:10.596 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+16:12:38.305 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+16:14:14.542 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+16:14:35.294 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+16:17:11.288 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+16:17:11.494 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.SendMessageException: 不要重复接受验证码]
+16:17:11.496 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.SendMessageException: 不要重复接受验证码]
+16:17:11.501 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.SendMessageException: 不要重复接受验证码]
+16:17:11.505 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.SendMessageException: 不要重复接受验证码]
+16:17:11.645 WARN  [http-nio-0.0.0.0-8080-exec-10:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.SendMessageException: 不要重复接受验证码]
+16:18:46.640 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+16:19:39.102 WARN  [restartedMain:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+16:19:39.155 WARN  [restartedMain:t.m.s.m.ClassPathMapperScanner:142] - No MyBatis mapper was found in '[com.laywerspringboot.edition]' package. Please check your configuration.
+16:19:39.162 WARN  [restartedMain:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition]' package. Please check your configuration.
+16:19:39.843 WARN  [restartedMain:o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.laywerspringboot.edition.entity.Cases'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.laywerspringboot.edition.entity.Cases
+16:19:39.861 WARN  [restartedMain:o.s.b.SpringApplication:819] - Unable to close ApplicationContext
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:245)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:197)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:134)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:81)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:67)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:814)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.laywerspringboot.edition.EditionApplication.main(EditionApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:94)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:76)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:347)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:299)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:814)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1282)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:297)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor.postProcessBeforeInitialization(ConfigurationClassPostProcessor.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 56 common frames omitted
+16:19:48.973 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+16:20:38.278 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+16:20:44.367 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+16:22:29.947 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+16:25:53.793 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+16:27:06.364 WARN  [restartedMain:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+16:27:06.457 WARN  [restartedMain:t.m.s.m.ClassPathMapperScanner:142] - No MyBatis mapper was found in '[com.laywerspringboot.edition]' package. Please check your configuration.
+16:27:06.466 WARN  [restartedMain:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition]' package. Please check your configuration.
+16:27:07.211 WARN  [restartedMain:o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.laywerspringboot.edition.entity.Cases'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.laywerspringboot.edition.entity.Cases
+16:27:07.226 WARN  [restartedMain:o.s.b.SpringApplication:819] - Unable to close ApplicationContext
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:245)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:197)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:134)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:81)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:67)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:814)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.laywerspringboot.edition.EditionApplication.main(EditionApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:94)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:76)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:347)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:299)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:814)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1282)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:297)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor.postProcessBeforeInitialization(ConfigurationClassPostProcessor.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 56 common frames omitted
+16:27:45.589 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+16:28:42.539 WARN  [restartedMain:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+16:28:42.596 WARN  [restartedMain:t.m.s.m.ClassPathMapperScanner:142] - No MyBatis mapper was found in '[com.laywerspringboot.edition]' package. Please check your configuration.
+16:28:42.604 WARN  [restartedMain:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition]' package. Please check your configuration.
+16:28:43.331 WARN  [restartedMain:o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.laywerspringboot.edition.entity.Cases'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.laywerspringboot.edition.entity.Cases
+16:28:43.345 WARN  [restartedMain:o.s.b.SpringApplication:819] - Unable to close ApplicationContext
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:245)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:197)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:134)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:81)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:67)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:814)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.laywerspringboot.edition.EditionApplication.main(EditionApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:94)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:76)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:347)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:299)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:814)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1282)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:297)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor.postProcessBeforeInitialization(ConfigurationClassPostProcessor.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 56 common frames omitted
+16:33:13.660 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+16:34:54.520 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+16:36:38.367 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+16:40:46.143 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+16:44:34.901 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+16:44:54.122 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+16:47:38.236 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+16:51:42.052 WARN  [restartedMain:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+16:51:42.222 WARN  [restartedMain:t.m.s.m.ClassPathMapperScanner:142] - No MyBatis mapper was found in '[com.laywerspringboot.edition]' package. Please check your configuration.
+16:51:42.343 WARN  [restartedMain:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition]' package. Please check your configuration.
+16:51:43.055 WARN  [restartedMain:o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [G:\laywer-springboot\edition\target\classes\mapper\CasesDao.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.laywerspringboot.edition.entity.Cases'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.laywerspringboot.edition.entity.Cases
+16:51:43.069 WARN  [restartedMain:o.s.b.SpringApplication:819] - Unable to close ApplicationContext
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:245)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:197)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:134)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:81)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:67)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:814)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.laywerspringboot.edition.EditionApplication.main(EditionApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:94)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:76)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:347)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:299)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:814)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1282)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:297)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor.postProcessBeforeInitialization(ConfigurationClassPostProcessor.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 56 common frames omitted
+16:51:53.980 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+16:53:44.085 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+16:55:36.349 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+16:57:22.005 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+17:00:11.370 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.auth0.jwt.exceptions.JWTDecodeException: The token was expected to have 3 parts, but got 1.]
+17:00:34.852 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.UserInfoException: 用户名不存在]
+17:00:41.224 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.UserInfoException: 用户名不存在]
+17:00:44.200 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.UserInfoException: 用户名不存在]
+17:00:50.984 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.UserInfoException: 用户名不存在]
+17:02:37.998 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.UserInfoException: 图片没上传成功]
+17:05:45.658 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.SendMessageException: 不要重复接受验证码]
+17:05:55.770 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.SendMessageException: 不要重复接受验证码]
+17:08:20.624 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:08:41.520 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.SendMessageException: 不要重复接受验证码]
+17:12:19.046 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+17:13:22.491 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+17:15:13.550 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.c.a.ClassPathScanningCandidateComponentProvider:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+17:15:35.095 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.c.a.ClassPathScanningCandidateComponentProvider:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+17:15:37.556 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'party' not found. Available parameters are [tokenRealName, caseId, param1, param2]]
+17:17:22.302 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.c.a.ClassPathScanningCandidateComponentProvider:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+17:17:34.373 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+17:18:01.398 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.c.a.ClassPathScanningCandidateComponentProvider:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+17:18:04.462 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'party' not found. Available parameters are [tokenRealName, caseId, param1, param2]]
+17:37:23.842 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+17:42:17.225 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:42:58.975 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:43:09.530 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:43:13.573 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:43:22.076 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:43:28.837 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:43:36.231 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:43:48.666 WARN  [http-nio-0.0.0.0-8080-exec-10:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:44:00.365 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:44:05.590 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:44:13.939 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:45:44.538 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:45:58.298 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:46:10.083 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:46:35.024 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:46:49.338 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:47:02.510 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:47:03.424 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:48:31.698 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:49:02.245 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:49:32.777 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:50:07.952 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:51:29.326 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:52:27.887 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:53:00.317 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:53:17.326 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.auth0.jwt.exceptions.JWTDecodeException: The token was expected to have 3 parts, but got 1.]
+17:54:39.512 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:56:04.772 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:56:22.547 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+17:58:46.823 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:03:27.576 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:03:39.479 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:03:49.566 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:04:40.070 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:05:17.655 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:05:48.347 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:06:55.352 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.UserInfoException: 密码错误]
+18:07:37.940 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:08:10.375 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:08:18.528 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:08:25.446 WARN  [http-nio-0.0.0.0-8080-exec-10:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:09:57.829 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:11:11.978 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:11:21.252 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [com.laywerspringboot.edition.exception.UserInfoException: 密码错误]
+18:11:50.813 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:12:03.869 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:12:08.817 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:14:04.662 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:14:40.085 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:16:53.357 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:17:47.633 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:17:47.657 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:17:54.846 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:17:54.891 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:18:43.620 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:18:43.657 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:19:05.916 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:19:05.933 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:20:06.893 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:20:06.910 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:22:04.298 WARN  [http-nio-0.0.0.0-8080-exec-10:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:23:17.245 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:24:07.475 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:26:02.284 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]
+18:27:00.512 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]
+18:27:52.614 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]
+18:28:18.862 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]
+18:29:48.601 WARN  [http-nio-0.0.0.0-8080-exec-8:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:29:57.621 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:31:39.915 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:32:06.479 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:32:07.027 WARN  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:32:07.669 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:33:15.629 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+18:43:28.691 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+18:44:55.880 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.c.a.ClassPathScanningCandidateComponentProvider:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+18:50:30.541 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+18:50:58.575 WARN  [http-nio-0.0.0.0-8080-exec-1:o.s.c.a.ClassPathScanningCandidateComponentProvider:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+18:59:52.328 WARN  [http-nio-0.0.0.0-8080-exec-5:o.s.c.a.ClassPathScanningCandidateComponentProvider:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+19:11:33.207 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+19:24:09.874 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+19:24:56.144 WARN  [http-nio-0.0.0.0-8080-exec-4:o.s.c.a.ClassPathScanningCandidateComponentProvider:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.
+19:25:27.456 WARN  [http-nio-0.0.0.0-8080-exec-7:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:25:27.486 WARN  [http-nio-0.0.0.0-8080-exec-9:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+19:29:19.064 WARN  [http-nio-0.0.0.0-8080-exec-6:o.s.c.a.ClassPathScanningCandidateComponentProvider:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.

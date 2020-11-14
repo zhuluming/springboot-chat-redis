@@ -15,7 +15,7 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@ApiModel(value = "注册用户对象",description = "dto")
+@ApiModel(value = "注册用户对象",description = "RegisterUser")
 public class RegisterUser implements Serializable {
     private static final long serialVersionUID = -19045543L;
 
@@ -73,6 +73,9 @@ public class RegisterUser implements Serializable {
      * 用户验证码，每次验证完删除
      */
     private String uuid;
+
+
+
 
 
 

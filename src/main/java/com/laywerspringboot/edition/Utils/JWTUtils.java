@@ -62,6 +62,11 @@ public class JWTUtils {
         return Integer.valueOf(idStr);
     }
 
+    /**
+     * 获取角色
+     * @param request
+     * @return
+     */
     public static String getTokenRole(HttpServletRequest request) {
         //从请求头中获取token
         String token = request.getHeader("token");
@@ -70,6 +75,12 @@ public class JWTUtils {
         String rolename = decodedJWT.getClaim("rolename").asString();
         return rolename;
     }
+
+    /**
+     * 获取真名
+     * @param request
+     * @return
+     */
     public static String getTokenRealName(HttpServletRequest request) {
         //从请求头中获取token
         String token = request.getHeader("token");
@@ -78,6 +89,12 @@ public class JWTUtils {
         String realname = decodedJWT.getClaim("realname").asString();
         return realname;
     }
+
+    /**
+     * 获取消息推送状态
+     * @param request
+     * @return
+     */
     public static String getTokenMsgFlag(HttpServletRequest request){
         //从请求头中获取token
         String token = request.getHeader("token");

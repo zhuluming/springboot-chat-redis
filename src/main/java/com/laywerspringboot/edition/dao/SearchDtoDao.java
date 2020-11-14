@@ -37,11 +37,15 @@ public interface SearchDtoDao {
      * @param tokenRealName
      * @return
      */
-    UserSearchDto SearchByPartyAndCaseID(String tokenRealName, String caseId);
+    List<UserSearchDto> SearchByPartyAndCaseID(String tokenRealName, String caseId);
     /**
      * 通过用户真实姓名查所有
      * @param name
      * @return
      */
-    List<UserSearchDto> SearchByName(String name);
+    List<SearchDto> SearchByName(String name);
+
+    List<UserSearchDto> SearchByLaywerAndCaseID(String tokenRealName, String caseId);
+
+    List<UserSearchDto> SearchByAdminAndCaseID(String tokenRealName, String caseId);
 }

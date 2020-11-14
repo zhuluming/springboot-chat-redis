@@ -1,5 +1,6 @@
 package com.laywerspringboot.edition.entity.dto;
 
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,6 +15,7 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@ApiModel(value = "用户搜索",description = "UserSearchDto")
 public class UserSearchDto implements Serializable {
     private static final long serialVersionUID = 9376343454512173L;
     /**

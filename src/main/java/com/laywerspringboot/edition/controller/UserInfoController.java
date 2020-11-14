@@ -98,7 +98,7 @@ public class UserInfoController  {
         if (!flag) {
             return R.registerError("手机号已被注册，请直接登录");
         }
-        //todo 逻辑代验证
+
         //String uuid = YunPianMsgUtils.sendMsg(phoneid);
         String uuid = tecentUtils.sendMsg(phoneid);
 
@@ -119,7 +119,6 @@ public class UserInfoController  {
 
         boolean flag = userService.queryByMsg(3, phoneid);
 
-        //todo 逻辑代验证
         //String uuid = YunPianMsgUtils.sendMsg(phoneid);
         String uuid = tecentUtils.sendMsg(phoneid);
 
@@ -190,34 +189,102 @@ public class UserInfoController  {
         if (user == null){
             throw new UserInfoException("用户名不存在");
         }
-        //一次错误操作都没有
-        //可以成功登录
-        if (user.getCount() <= 5){
-            String token = userService.isPasswordTrue(LoginUser, user);
-            return R.loginOk("欢迎进入律动").put("token", token).put("jstatus", 0);
-        }
-        //传入状态的时间
-        long millis = System.currentTimeMillis();
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTime(user.getAltertime());
-        long timeInMillis = calendar.getTimeInMillis();
-        long time = millis - timeInMillis;
-        if (user.getCount() > 5 && user.getCount() < 7){
-            if (time < 900000 ){
-                return R.error("请于"+user.getAltertime()+"后的15分钟后尝试").put("jstatus", 1);
-            }else {
+        Userrole userrole = userroleService.queryByUId(user.getId());
+        Role role = roleService.queryById(userrole.getRId());
+        if (LoginUser.getStatus() == -1 && role.getRolename().equals("报社")){
+            //报社登录
+            //一次错误操作都没有
+            //可以成功登录
+            if (user.getCount() <= 5){
                 String token = userService.isPasswordTrue(LoginUser, user);
-                return R.loginOk("欢迎进入律动").put("token", token);
+                return R.loginOk("欢迎进入律动").put("token", token).put("jstatus", 0);
+            }
+            //传入状态的时间
+            long millis = System.currentTimeMillis();
+            Calendar calendar = Calendar.getInstance();
+            calendar.setTime(user.getAltertime());
+            long timeInMillis = calendar.getTimeInMillis();
+            long time = millis - timeInMillis;
+            if (user.getCount() > 5 && user.getCount() < 7){
+                if (time < 900000 ){
+                    return R.error("请于"+user.getAltertime()+"后的15分钟后尝试").put("jstatus", 1);
+                }else {
+                    String token = userService.isPasswordTrue(LoginUser, user);
+                    return R.loginOk("欢迎进入律动").put("token", token);
+                }
+            }
+            if (user.getCount()>=7 && user.getCount() < 8 ){
+                if (time < 1800000  ){
+                    return R.error("请于"+user.getAltertime()+"后的30分钟后尝试").put("jstatus", 1);
+                }else {
+                    String token = userService.isPasswordTrue(LoginUser, user);
+                    return R.loginOk("欢迎进入律动").put("token", token);
+                }
             }
         }
-        if (user.getCount()>=7 && user.getCount() < 8 ){
-            if (time < 1800000  ){
-                return R.error("请于"+user.getAltertime()+"后的30分钟后尝试").put("jstatus", 1);
-            }else {
+        if (LoginUser.getStatus() == 0 && role.getRolename().equals("用户")){
+            //用户登录
+            //一次错误操作都没有
+            //可以成功登录
+            if (user.getCount() <= 5){
                 String token = userService.isPasswordTrue(LoginUser, user);
-                return R.loginOk("欢迎进入律动").put("token", token);
+                return R.loginOk("欢迎进入律动").put("token", token).put("jstatus", 0);
+            }
+            //传入状态的时间
+            long millis = System.currentTimeMillis();
+            Calendar calendar = Calendar.getInstance();
+            calendar.setTime(user.getAltertime());
+            long timeInMillis = calendar.getTimeInMillis();
+            long time = millis - timeInMillis;
+            if (user.getCount() > 5 && user.getCount() < 7){
+                if (time < 900000 ){
+                    return R.error("请于"+user.getAltertime()+"后的15分钟后尝试").put("jstatus", 1);
+                }else {
+                    String token = userService.isPasswordTrue(LoginUser, user);
+                    return R.loginOk("欢迎进入律动").put("token", token);
+                }
+            }
+            if (user.getCount()>=7 && user.getCount() < 8 ){
+                if (time < 1800000  ){
+                    return R.error("请于"+user.getAltertime()+"后的30分钟后尝试").put("jstatus", 1);
+                }else {
+                    String token = userService.isPasswordTrue(LoginUser, user);
+                    return R.loginOk("欢迎进入律动").put("token", token);
+                }
             }
         }
+        if (LoginUser.getStatus() == 1 && role.getRolename().equals("法官")){
+            //法官登录
+            //一次错误操作都没有
+            //可以成功登录
+            if (user.getCount() <= 5){
+                String token = userService.isPasswordTrue(LoginUser, user);
+                return R.loginOk("欢迎进入律动").put("token", token).put("jstatus", 0);
+            }
+            //传入状态的时间
+            long millis = System.currentTimeMillis();
+            Calendar calendar = Calendar.getInstance();
+            calendar.setTime(user.getAltertime());
+            long timeInMillis = calendar.getTimeInMillis();
+            long time = millis - timeInMillis;
+            if (user.getCount() > 5 && user.getCount() < 7){
+                if (time < 900000 ){
+                    return R.error("请于"+user.getAltertime()+"后的15分钟后尝试").put("jstatus", 1);
+                }else {
+                    String token = userService.isPasswordTrue(LoginUser, user);
+                    return R.loginOk("欢迎进入律动").put("token", token);
+                }
+            }
+            if (user.getCount()>=7 && user.getCount() < 8 ){
+                if (time < 1800000  ){
+                    return R.error("请于"+user.getAltertime()+"后的30分钟后尝试").put("jstatus", 1);
+                }else {
+                    String token = userService.isPasswordTrue(LoginUser, user);
+                    return R.loginOk("欢迎进入律动").put("token", token);
+                }
+            }
+        }
+
 
         return R.error("请选择手机登录").put("jstatus", -1);
 
@@ -240,8 +307,22 @@ public class UserInfoController  {
             User user = userService.isUserExist(transferPhoneLoginUser);
             user.setCount(0);
             userService.update(user);
-            String token = userService.isPasswordTrue(LoginUser, user);
-            return R.loginOk("欢迎进入律动");
+            Userrole userrole = userroleService.queryByUId(user.getId());
+            Role role = roleService.queryById(userrole.getRId());
+            if (LoginUser.getStatus() == 0 && role.getRolename().equals("用户")){
+                String token = userService.isPasswordTrue(LoginUser, user);
+                return R.loginOk("欢迎进入律动");
+            }
+            if (LoginUser.getStatus() == -1 && role.getRolename().equals("报社")){
+                String token = userService.isPasswordTrue(LoginUser, user);
+                return R.loginOk("欢迎进入律动");
+            }
+            if (LoginUser.getStatus() == 1 && role.getRolename().equals("法官")){
+                String token = userService.isPasswordTrue(LoginUser, user);
+                return R.loginOk("欢迎进入律动");
+            }
+            return R.error("权限有误");
+
         }
         return R.error("验证码有误");
     }

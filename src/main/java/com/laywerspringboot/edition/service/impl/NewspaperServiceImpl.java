@@ -2,7 +2,11 @@ package com.laywerspringboot.edition.service.impl;
 
 import com.laywerspringboot.edition.dao.NewspaperDao;
 import com.laywerspringboot.edition.entity.Newspaper;
+import com.laywerspringboot.edition.entity.Notice;
+import com.laywerspringboot.edition.entity.dto.UserCheck;
+import com.laywerspringboot.edition.service.CasesService;
 import com.laywerspringboot.edition.service.NewspaperService;
+import com.laywerspringboot.edition.service.NoticeService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -18,6 +22,10 @@ import java.util.List;
 public class NewspaperServiceImpl implements NewspaperService {
     @Resource
     private NewspaperDao newspaperDao;
+    @Resource
+    private CasesService casesService;
+    @Resource
+    private NoticeService noticeService;
 
     /**
      * 通过ID查询单条数据
@@ -75,5 +83,20 @@ public class NewspaperServiceImpl implements NewspaperService {
     @Override
     public boolean deleteById(Integer pId) {
         return this.newspaperDao.deleteById(pId) > 0;
+    }
+
+    /**
+     * 根据传入的dto修改
+     * @param userCheck
+     * @return
+     */
+    @Override
+    public Newspaper updatePay(UserCheck userCheck) {
+        Notice notice = noticeService.queryByCaseAddress(userCheck.getCaseId());
+        Newspaper newspaper =  this.queryById(notice.getNId());
+        newspaper.setPlace(userCheck.getPlace());
+        newspaper.setAddress(userCheck.getAddress());
+        newspaper.setDetail(userCheck.getDetail());
+         return this.update(newspaper);
     }
 }

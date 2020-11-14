@@ -1,7 +1,11 @@
 package com.laywerspringboot.edition.service.impl;
 
 import com.laywerspringboot.edition.dao.PricesDao;
+import com.laywerspringboot.edition.entity.Newspaper;
+import com.laywerspringboot.edition.entity.Notice;
 import com.laywerspringboot.edition.entity.Prices;
+import com.laywerspringboot.edition.service.NewspaperService;
+import com.laywerspringboot.edition.service.NoticeService;
 import com.laywerspringboot.edition.service.PayService;
 import com.lly835.bestpay.enums.BestPayTypeEnum;
 import com.lly835.bestpay.model.PayRequest;
@@ -26,6 +30,10 @@ public class PayServiceImpl implements PayService {
 
     @Resource
     private PricesDao pricesDao;
+    @Resource
+    private NoticeService noticeService;
+    @Resource
+    private NewspaperService newspaperService;
 
     @Override
     public String wxPay(String orderId, BigDecimal money) {
@@ -81,7 +89,12 @@ public class PayServiceImpl implements PayService {
         payRequest.setOrderAmount(money.doubleValue());
         //查询数据库
         Prices prices = pricesDao.queryByCaseId(caseId);
-        prices.setPrice(money.doubleValue());
+        if (prices == null){
+            return "案号有误";
+        }
+        //todo 已解决 提交公告案号没入价格库
+        prices.setPrice(money);
+        prices.setState("1");
         //修改数据库
         pricesDao.update(prices);
 
@@ -105,8 +118,12 @@ public class PayServiceImpl implements PayService {
             // 支付成功
             // 修改订单状态
             Prices prices = pricesDao.queryByCaseId(caseId);
+            Notice notice = noticeService.queryByCaseAddress(caseId);
+            Newspaper newspaper =  newspaperService.queryById(notice.getNId());
             prices.setState("1");
+            newspaper.setState("1");
             pricesDao.update(prices);
+            newspaperService.update(newspaper);
             // 告诉支付宝,我知道了
             return "success";
         }else {

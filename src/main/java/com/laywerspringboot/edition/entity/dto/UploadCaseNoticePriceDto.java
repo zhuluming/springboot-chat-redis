@@ -1,5 +1,6 @@
 package com.laywerspringboot.edition.entity.dto;
 
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,6 +16,7 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@ApiModel(value = "上传案件",description = "UploadCaseNoticePriceDto")
 public class UploadCaseNoticePriceDto implements Serializable {
     private static final long serialVersionUID = 93723243244899873L;
     /**

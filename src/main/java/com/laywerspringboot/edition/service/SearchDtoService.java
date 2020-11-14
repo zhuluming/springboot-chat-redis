@@ -37,7 +37,7 @@ public interface SearchDtoService {
      * @param tokenRealName
      * @return
      */
-    UserSearchDto SearchByPartyAndCaseID(String tokenRealName, String caseId);
+    List<UserSearchDto> SearchByPartyAndCaseID(String tokenRole,String tokenRealName, String caseId);
     /**
      * 通过用户真实姓名查所有
      * @param name

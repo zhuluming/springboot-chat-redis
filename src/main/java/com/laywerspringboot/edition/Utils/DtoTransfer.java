@@ -7,6 +7,7 @@ import com.laywerspringboot.edition.entity.User;
 import com.laywerspringboot.edition.entity.dto.RegisterUser;
 import com.laywerspringboot.edition.entity.dto.SearchDetailDto;
 import com.laywerspringboot.edition.entity.dto.UploadCaseNoticePriceDto;
+import com.laywerspringboot.edition.entity.dto.UserCheck;
 
 import java.util.Date;
 
@@ -81,6 +82,13 @@ public class DtoTransfer {
                         notice.getNoticeStatus(), newspaper.getState());
 
         return searchDetailDto;
+    }
+    public static Newspaper transferUpDtoToNewspaper(UserCheck userCheck){
+        Newspaper newspaper = new Newspaper();
+        newspaper.setPlace(userCheck.getPlace());
+        newspaper.setAddress(userCheck.getAddress());
+        newspaper.setDetail(userCheck.getDetail());
+        return newspaper;
     }
 
 }

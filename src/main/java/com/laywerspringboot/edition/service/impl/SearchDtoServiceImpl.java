@@ -11,6 +11,7 @@ import com.laywerspringboot.edition.service.SearchDtoService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -60,16 +61,37 @@ public class SearchDtoServiceImpl implements SearchDtoService {
     }
 
     @Override
-    public UserSearchDto SearchByPartyAndCaseID(String tokenRealName, String caseId) {
-        UserSearchDto userSearchDto = searchDtoDao.SearchByPartyAndCaseID(tokenRealName, caseId);
-        Notice notice = noticeDao.queryByCaseAddress(caseId);
-        Newspaper newspaper = newspaperDao.queryById(notice.getNId());
-        userSearchDto.setState(newspaper.getState());
-        return userSearchDto;
+    public List<UserSearchDto>  SearchByPartyAndCaseID(String tokenRole,String tokenRealName, String caseId) {
+        List<UserSearchDto> userSearchDtoList = new ArrayList<UserSearchDto>();
+        if (tokenRole.equals("用户")){
+            userSearchDtoList = searchDtoDao.SearchByPartyAndCaseID(tokenRealName, caseId);
+        }
+        if (tokenRole.equals("法官")){
+            userSearchDtoList = searchDtoDao.SearchByLaywerAndCaseID(tokenRealName, caseId);
+        }
+        if (tokenRole.equals("报社")){
+            userSearchDtoList = searchDtoDao.SearchByAdminAndCaseID(tokenRealName, caseId);
+        }
+        if (userSearchDtoList.size() != 0){
+
+            for (UserSearchDto userSearchDto : userSearchDtoList) {
+                Notice notice = noticeDao.queryByCaseAddress(userSearchDto.getCaseid());
+                Newspaper newspaper = newspaperDao.queryById(notice.getNId());
+                userSearchDto.setState(newspaper.getState());
+            }
+        }
+
+        return userSearchDtoList;
     }
 
     @Override
     public List<SearchDto> SearchByParty(String name) {
-        return searchDtoDao.SearchByName(name);
+        List<SearchDto> searchDtos = searchDtoDao.SearchByName(name);
+        for (SearchDto searchDto : searchDtos) {
+            if (searchDto.getState() == null){
+                searchDto.setState("0");
+            }
+        }
+        return searchDtos;
     }
 }

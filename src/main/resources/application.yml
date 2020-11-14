@@ -50,7 +50,7 @@ ali:
   #支付成功返回的页面
   returnUrl: http://www.baidu.com
   #支付结果返回给的接口
-  notifyUrl: http://7g9jde.natappfree.cc/alisync
+  notifyUrl: http://qfbqks.nataappfree.cc/alisync
 
 wx:
   appId: wx632c8f211f8122c6

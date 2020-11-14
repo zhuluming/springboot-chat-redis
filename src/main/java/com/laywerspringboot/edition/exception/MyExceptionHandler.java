@@ -30,7 +30,7 @@ public class MyExceptionHandler {
     }
     @ExceptionHandler(Exception.class)
     public R exception(Exception e){
-        log.info(e.getMessage());
+       e.printStackTrace();
         return R.error(e.getMessage());
     }
 }

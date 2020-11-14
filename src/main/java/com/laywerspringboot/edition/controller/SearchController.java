@@ -129,6 +129,7 @@ public class SearchController {
             long add = newspaper.getDay() * 24 * 86400000;
             int res = (int) ((time + add - currentTimeMillis) / 3600000);
             searchDetailDto.setRemainingTime(res);
+            searchDetailDto.setAddress(notice.getPicture());
             return R.searchOk("以下是详细信息").put("SearchDetai", searchDetailDto);
         }
 
@@ -137,17 +138,17 @@ public class SearchController {
 
     @CrossOrigin()
     @GetMapping("/byCaseIdAndName/{caseId}")
-    @ApiOperation(value = "法官根据案号查询自身处理过的案子")
+    @ApiOperation(value = "当事人根据案号查询自身处理过的案子")
     public R searchByCaseIdAndName(@ApiParam("通过案号搜索") @PathVariable("caseId")String caseId, HttpServletRequest request){
 
         String tokenRealName = JWTUtils.getTokenRealName(request);
         Cases cases = casesService.queryByCaseId(caseId);
-
+        String tokenRole = JWTUtils.getTokenRole(request);
         //如果是本人
-        if (cases.getParty().equals(tokenRealName)){
+        if (cases.getParty().equals(tokenRealName)||cases.getLawyer().equals(tokenRealName)||cases.getAdmin().equals(tokenRealName)){
             //返回对应的案件粗略信息
-            UserSearchDto searchDto = searchDtoService.SearchByPartyAndCaseID(tokenRealName,caseId);
-            return searchDto == null? R.error("你无权查询次案件，请联系案件当事人查询")
+            List<UserSearchDto> searchDto = searchDtoService.SearchByPartyAndCaseID(tokenRole,tokenRealName,caseId);
+            return searchDto.size() == 0? R.error("你没有案件哦，请联系案件当事人查询")
                     :R.searchOk("1").put("SearchDto",searchDto);
         }
         return R.error("你无权查询次案件，请联系案件当事人查询");
@@ -155,21 +156,58 @@ public class SearchController {
 
     @CrossOrigin()
     @GetMapping("/byParty/{party}")
-    @ApiOperation(value = "法官根据案号查询自身处理过的案子")
+    @ApiOperation(value = "当事人根据案号查询自身处理过的案子")
     public R searchByUserParty( @ApiParam("通过当事人真实姓名搜索") @PathVariable("party")String party,HttpServletRequest request){
 
         String tokenRealName = JWTUtils.getTokenRealName(request);
         Cases cases = casesService.queryByParty(tokenRealName);
-
+        String tokenRole = JWTUtils.getTokenRole(request);
         //如果是本人
         if (cases.getParty().equals(tokenRealName)){
             //返回对应的案件粗略信息
-            UserSearchDto searchDto = searchDtoService.SearchByPartyAndCaseID(tokenRealName,cases.getCaseid());
-            return searchDto == null? R.error("你无权查询次案件，请联系案件当事人查询")
+            List<UserSearchDto> searchDto = searchDtoService.SearchByPartyAndCaseID(tokenRole,tokenRealName,cases.getCaseid());
+            return searchDto.size() == 0? R.error("你没有案件哦，请联系案件当事人查询")
                     :R.searchOk("1").put("SearchDto",searchDto);
         }
         return R.error("你无权查询次案件，请联系案件当事人查询");
     }
+
+    //todo 已解决，一个根据名字，根据名字查询searchByUserParty，一个根据案号searchByCaseIdAndName,
+
+
+    @CrossOrigin()
+    @GetMapping("/show")
+    @ApiOperation(value = "展示")
+    public R searchByUserParty(HttpServletRequest request){
+
+        String tokenRole = JWTUtils.getTokenRole(request);
+        String tokenRealName = JWTUtils.getTokenRealName(request);
+
+        //String tokenRole = "法官";
+        //如果是法官
+        if (tokenRole.equals("法官")){
+            //返回对应的案件粗略信息
+
+            List<SearchDto> searchDtos = searchDtoService.SearchByLaywerName(tokenRealName);
+            return searchDtos.size() == 0? R.error("未处理任何案件哦，加油")
+                    :R.searchOk("1").put("SearchDto",searchDtos);
+
+        }
+        if (tokenRole.equals("用户")){
+            List<SearchDto> searchDtos = searchDtoService.SearchByParty(tokenRealName);
+            return searchDtos.size() == 0? R.error("未碰见任何案件哦，很棒")
+                    :R.searchOk("1").put("SearchDto",searchDtos);
+        }
+        if (tokenRole.equals("报社")){
+            //todo 要改成变为名字
+            List<SearchDto> searchDtos = searchDtoService.SearchByParty(tokenRealName);
+            return searchDtos.size() == 0? R.error("未碰见任何案件哦，很棒")
+                    :R.searchOk("1").put("SearchDto",searchDtos);
+        }
+        return null;
+    }
+
+
 
 
 }

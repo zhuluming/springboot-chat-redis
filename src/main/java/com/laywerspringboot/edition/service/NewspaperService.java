@@ -1,6 +1,7 @@
 package com.laywerspringboot.edition.service;
 
 import com.laywerspringboot.edition.entity.Newspaper;
+import com.laywerspringboot.edition.entity.dto.UserCheck;
 
 import java.util.List;
 
@@ -55,4 +56,5 @@ public interface NewspaperService {
      */
     boolean deleteById(Integer pId);
 
+    Newspaper updatePay(UserCheck userCheck);
 }

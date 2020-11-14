@@ -1,5 +1,6 @@
 package com.laywerspringboot.edition.entity.dto;
 
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,6 +15,7 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@ApiModel(value = "搜索详情",description = "SearchDetailDto")
 public class SearchDetailDto implements Serializable {
     private static final long serialVersionUID = 937232326469899873L;
     /**
@@ -62,7 +64,11 @@ public class SearchDetailDto implements Serializable {
      */
     @ApiModelProperty(name="noticeStatus",example = "-1为过期，0为待公告1为公告")
     private String noticeStatus;
-
+    /**
+     * 是否公告，-1为过期，0为待公告1为公告
+     */
+    @ApiModelProperty(name="address",example = "案件URL")
+    private String address;
 
     /**
      * 支付状态 1是已支付，0是未支付

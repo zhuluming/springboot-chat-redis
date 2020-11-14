@@ -5,10 +5,12 @@ import com.laywerspringboot.edition.Utils.JWTUtils;
 import com.laywerspringboot.edition.Utils.R;
 import com.laywerspringboot.edition.entity.Newspaper;
 import com.laywerspringboot.edition.entity.Notice;
+import com.laywerspringboot.edition.entity.Prices;
 import com.laywerspringboot.edition.entity.dto.UploadCaseNoticePriceDto;
 import com.laywerspringboot.edition.service.CasesService;
 import com.laywerspringboot.edition.service.NewspaperService;
 import com.laywerspringboot.edition.service.NoticeService;
+import com.laywerspringboot.edition.service.PricesService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -33,6 +35,8 @@ public class LayWerUpload {
     private NoticeService noticeService;
     @Resource
     private NewspaperService newspaperService;
+    @Resource
+    private PricesService pricesService;
     /**
      * 查询案号是否
      * @param caseID
@@ -53,7 +57,7 @@ public class LayWerUpload {
     public R noticeUpload(@RequestBody UploadCaseNoticePriceDto upDto, HttpServletRequest request){
         String tokenRole = JWTUtils.getTokenRole(request);
         String tokenRealName = JWTUtils.getTokenRealName(request);
-
+        //todo 已解决 发布公告时候案件id没入库，案号没入库是对的，但是不应该让重复更改
         //如果是法官
         if (tokenRole.equals("法官")){
             upDto.setLawyer(tokenRealName);
@@ -64,6 +68,12 @@ public class LayWerUpload {
             //最后用notice的主键插入newspaper
             Newspaper newspaper = DtoTransfer.transferUpDtoToNewspaper(upDto);
             newspaper.setPId(notice.getNId());
+
+            Prices prices = new Prices();
+            prices.setCaseid(upDto.getCaseid());
+                pricesService.insert(prices);
+
+
             //System.out.println(newspaper.getPId());
            return newspaperService.insert(newspaper) == null? R.error("请重试"):R.updateOk("成功上传") ;
         }

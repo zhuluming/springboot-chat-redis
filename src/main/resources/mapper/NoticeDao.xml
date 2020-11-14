@@ -10,7 +10,7 @@
         <result property="picture" column="picture" jdbcType="VARCHAR"/>
         <result property="category" column="category" jdbcType="VARCHAR"/>
         <result property="releasetime" column="releasetime" jdbcType="OTHER"/>
-        <result property="noticestatus" column="noticeStatus" jdbcType="VARCHAR"/>
+        <result property="noticeStatus" column="noticeStatus" jdbcType="VARCHAR"/>
         <result property="finished" column="finished" jdbcType="VARCHAR"/>
     </resultMap>
 
@@ -63,8 +63,8 @@
             <if test="releasetime != null">
                 and releasetime = #{releasetime}
             </if>
-            <if test="noticestatus != null and noticestatus != ''">
-                and noticeStatus = #{noticestatus}
+            <if test="noticeStatus != null and noticeStatus != ''">
+                and noticeStatus = #{noticeStatus}
             </if>
             <if test="finished != null and finished != ''">
                 and finished = #{finished}
@@ -74,16 +74,16 @@
 
     <!--新增所有列-->
     <insert id="insert" keyProperty="nId" useGeneratedKeys="true">
-        insert into myrhythm.notice(noticename, type, caseaddress, picture, category, releasetime)
-        values (#{noticename}, #{type}, #{caseaddress}, #{picture}, #{category}, #{releasetime})
+        insert into myrhythm.notice(noticename, type, caseaddress, picture, category, releasetime,noticeStatus,finished)
+        values (#{noticename}, #{type}, #{caseaddress}, #{picture}, #{category}, #{releasetime}, #{noticeStatus}, #{finished})
     </insert>
 
     <insert id="insertBatch" keyProperty="nId" useGeneratedKeys="true">
-        insert into myrhythm.notice(noticename, type, caseaddress, picture, category, releasetime)
+        insert into myrhythm.notice(noticename, type, caseaddress, picture, category, releasetime,noticeStatus,finished)
         values
         <foreach collection="entities" item="entity" separator=",">
             (#{entity.noticename}, #{entity.type}, #{entity.caseaddress}, #{entity.picture}, #{entity.category},
-            #{entity.releasetime})
+            #{entity.releasetime}, #{entity.noticeStatus},#{entity.finished})
         </foreach>
     </insert>
 
@@ -120,6 +120,12 @@
             </if>
             <if test="releasetime != null">
                 releasetime = #{releasetime},
+            </if>
+            <if test="noticeStatus != null">
+                noticeStatus = #{noticeStatus},
+            </if>
+            <if test="finished != null">
+                finished = #{finished},
             </if>
         </set>
         where n_id = #{nId}
