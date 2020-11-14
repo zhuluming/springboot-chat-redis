@@ -1,12 +1,15 @@
+
 package com.laywerspringboot.edition.controller;
 
 import com.laywerspringboot.edition.Utils.JWTUtils;
 import com.laywerspringboot.edition.Utils.R;
 import com.laywerspringboot.edition.constant.MsgConstant;
 import com.laywerspringboot.edition.entity.Cases;
+import com.laywerspringboot.edition.entity.Msg;
 import com.laywerspringboot.edition.entity.dto.MsgDto;
 import com.laywerspringboot.edition.entity.dto.MsgFlag;
 import com.laywerspringboot.edition.service.CasesService;
+import com.laywerspringboot.edition.service.MsgService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -35,6 +38,8 @@ public class UserMsg {
     private RestTemplate restTemplate;
     @Autowired
     private CasesService casesService;
+    @Autowired
+    private MsgService msgService;
     /**
      * 需要参数：
      * 1.是否开启消息推送，防止有消息返回时无小红点
@@ -76,7 +81,7 @@ public class UserMsg {
         Long time = System.currentTimeMillis();
         //存消息状态
         //todo 这里有问题，不能连发
-       // System.out.println(msg.getMsg());
+        // System.out.println(msg.getMsg());
         //System.out.println(msg.getToName());
         //System.out.println(key1flag);
         //System.out.println("==================");
@@ -95,11 +100,30 @@ public class UserMsg {
         //再把消息发送给对面
      /*   String forObject = restTemplate.getForObject("http://127.0.0.1:8080/chat/reply/{msg}/name/{toName}/sendName/{tokenRealName}",
                 String.class, msg.getMsg(), msg.getToName(),tokenRealName);*/
+
+
+
         /**
          * 信息回显
          */
         return R.replyOk(msg.getMsg());
     }
+    @CrossOrigin()
+    @GetMapping("/login")
+    @ApiOperation(value = "登录")
+    public void login(HttpServletRequest request){
+        String tokenRealName = JWTUtils.getTokenRealName(request);
+        Msg msg = msgService.queryByName(tokenRealName);
+        if (msg == null){
+            Msg msg1 = new Msg();
+            msg1.setName(tokenRealName);
+            msg1.setState("1");
+            msgService.insert(msg1);
+        }
+
+    }
+
+
 
 
     /**
@@ -109,7 +133,7 @@ public class UserMsg {
      * @return
      */
     @CrossOrigin()
-    @GetMapping("pull/{toName}")
+    @GetMapping("/pull/{toName}")
     @ApiOperation(value = "拉取消息")
     public R reply(@ApiParam("对方名字")@PathVariable("toName") String toName, HttpServletRequest request){
         //本人名
@@ -145,7 +169,7 @@ public class UserMsg {
      * @return
      */
     @CrossOrigin()
-    @GetMapping("notice/{toName}")
+    @GetMapping("/notice/{toName}")
     @ApiOperation(value = "铃铛接口")
     public R notice(@ApiParam("对方名字")@PathVariable("toName") String toName,HttpServletRequest request){
         //本人名
@@ -171,7 +195,10 @@ public class UserMsg {
     public R search(@ApiParam("对方名字")@PathVariable("name")String name,HttpServletRequest request){
         //获取用户的名字
         String tokenRealName = JWTUtils.getTokenRealName(request);
-       // System.out.println(name);
+        //生成状态
+
+        Msg msg2 = msgService.queryByName(name);
+        // System.out.println(name);
         if (tokenRealName.equals(name)){
             return R.error("请不要自己找自己聊天");
         }
@@ -184,18 +211,18 @@ public class UserMsg {
          */
         if (tokenRole.equals("用户")){
             if (cases.getAdmin().equals(name)){
-                return getR(name, tokenRealName);
+                return getR(name, tokenRealName).put("state", msg2.getState());
 
             }
             else if (cases.getLawyer().equals(name)){
-                return getR(name, tokenRealName);
+                return getR(name, tokenRealName).put("state", msg2.getState());
             }
             else {
                 return R.isError(0,"请不要骚扰其他无关用户哦");
             }
         }
 
-     return getR(name, tokenRealName);
+        return getR(name, tokenRealName).put("state", msg2.getState());
     }
 
 
@@ -214,7 +241,9 @@ public class UserMsg {
             o.setStatus(0);
             redisTemplate.opsForValue().set(key, o);
         }
-
+        Msg msg = msgService.queryByName(tokenRealName);
+        msg.setState("0");
+        msgService.update(msg);
     }
 
 
@@ -318,16 +347,16 @@ public class UserMsg {
     private ArrayList<String> getMsgs(String name, String tokenRealName) {
         MsgFlag msg = (MsgFlag) redisTemplate.opsForValue().get(MsgConstant.USER_PREFIX + tokenRealName+name );
         //todo 测试
-       // System.out.println(MsgConstant.USER_PREFIX + tokenRealName+name);
+        // System.out.println(MsgConstant.USER_PREFIX + tokenRealName+name);
         ArrayList<String> list = new ArrayList<>();
         for (int i = 0; i < msg.getTimes().size(); i++) {
             Long time = msg.getTimes().get(i);
             String message = (String) redisTemplate.opsForHash().get(MsgConstant.USER_PREFIX + tokenRealName + MsgConstant.CHAT_TO_PREFIX + name, time);
-           // System.out.println(MsgConstant.USER_PREFIX + tokenRealName + MsgConstant.CHAT_TO_PREFIX + name);
+            // System.out.println(MsgConstant.USER_PREFIX + tokenRealName + MsgConstant.CHAT_TO_PREFIX + name);
             msg.getFlag().set(i, 0);
             //todo 测试
-          //  System.out.println("===============");
-           // System.out.println(message);
+            //  System.out.println("===============");
+            // System.out.println(message);
             list.add(message);
         }
         redisTemplate.opsForValue().set(MsgConstant.USER_PREFIX + tokenRealName+name, msg);
