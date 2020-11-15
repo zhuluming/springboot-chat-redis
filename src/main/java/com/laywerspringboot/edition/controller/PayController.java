@@ -6,6 +6,7 @@ import com.laywerspringboot.edition.service.NewspaperService;
 import com.laywerspringboot.edition.service.PayService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,7 +22,9 @@ import java.math.BigDecimal;
 @CrossOrigin()
 @RestController
 @Api(description = "支付模块api",value = "支付")
+@Slf4j
 public class PayController {
+
     @Autowired
     private PayService payService;
     @Autowired
@@ -31,6 +34,7 @@ public class PayController {
     @CrossOrigin()
     @RequestMapping("/wxsync")
     public String wxNotify(@RequestBody String s){
+        log.isTraceEnabled();
         return payService.wxNotify(s);
     }
 
@@ -40,6 +44,7 @@ public class PayController {
     @RequestMapping(value = "alipay",produces = "text/html;charset=utf-8")
     @ApiOperation(value = "阿里支付接口")
     public String alipay(@RequestBody UserCheck userCheck){
+        log.isTraceEnabled();
         //todo  没改版面，然后支付状态好像也有问题
         //todo 支付的时候把案号改了
         Newspaper update = newspaperService.updatePay(userCheck);
@@ -49,6 +54,7 @@ public class PayController {
     @CrossOrigin()
     @RequestMapping("/alisync")
     public String aliSycn(@RequestBody String s){
+        log.isTraceEnabled();
         return payService.aliNotify(s);
     }
 }

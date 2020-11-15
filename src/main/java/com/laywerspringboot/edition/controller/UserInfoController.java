@@ -54,6 +54,7 @@ public class UserInfoController  {
     @ApiOperation(value = "验证用户名")
     @GetMapping("/register/isUsername/{username}")
     public R isUsernameEmpty(@ApiParam(value = "用户名")@PathVariable("username")String username){
+        log.isTraceEnabled();
         boolean flag = userService.queryByMsg(0, username);
         return flag?R.registerOk("用户名可用"):R.registerError("用户名重复");
     }
@@ -67,6 +68,7 @@ public class UserInfoController  {
     @ApiOperation(value = "验证真实姓名")
     @GetMapping("/register/isRealName/{realname}")
     public R isRealNameEmpty(@ApiParam(value = "真实姓名")@PathVariable("realname")String realname){
+        log.isTraceEnabled();
         boolean flag = userService.queryByMsg(1, realname);
         return flag?R.registerOk("姓名可用"):R.registerError("姓名已存在，忘记请找回");
     }
@@ -80,6 +82,7 @@ public class UserInfoController  {
     @ApiOperation(value = "验证身份证号")
     @GetMapping("/register/isIdCardEmpty/{idcard}")
     public R isIdCardEmpty(@ApiParam(value = "身份证号")@PathVariable("idcard")String idcard){
+        log.isTraceEnabled();
         boolean flag = userService.queryByMsg(2, idcard);
         return flag?R.registerOk("身份证可用"):R.registerError("身份证已存在，忘记请找回");
     }
@@ -93,6 +96,7 @@ public class UserInfoController  {
     @ApiOperation(value = "验证手机号和验证码")
     @GetMapping("/register/phone/{phoneid}")
     public R isUuid(@ApiParam(value = "手机号")@PathVariable("phoneid")String phoneid) {
+        log.isTraceEnabled();
 
         boolean flag = userService.queryByMsg(3, phoneid);
         if (!flag) {
@@ -116,7 +120,7 @@ public class UserInfoController  {
     @ApiOperation(value = "修改时验证手机号和验证码")
     @GetMapping("/register/resetPwd/{phoneid}")
     public R isUuid1(@ApiParam(value = "手机号")@PathVariable("phoneid")String phoneid) {
-
+        log.isTraceEnabled();
         boolean flag = userService.queryByMsg(3, phoneid);
 
         //String uuid = YunPianMsgUtils.sendMsg(phoneid);
@@ -136,6 +140,8 @@ public class UserInfoController  {
     @ApiOperation(value = "用户注册功能,并把图片上传ajax的地址一起传输")
     @PostMapping("/register")
     public R register(@ApiParam(value = "注册用户对象")@RequestBody RegisterUser user){
+        log.isTraceEnabled();
+
         User insertUser = new User();
         Role role = new Role();
         Userrole userrole = new Userrole();
@@ -182,6 +188,8 @@ public class UserInfoController  {
     @ApiOperation(value = "用户登录功能")
     @PostMapping("/userLogin")
     public R userLogin(@ApiParam(value = "登录用户对象")@RequestBody RegisterUser LoginUser){
+        log.isTraceEnabled();
+
         isUserTrue(LoginUser.getUsername(), "用户名为空");
         isUserTrue(LoginUser.getPassword(), "密码为空");
         User transferLoginUser = DtoTransfer.transferLoginUser(LoginUser);
@@ -299,6 +307,7 @@ public class UserInfoController  {
     @ApiOperation(value = "手机登录功能")
     @PostMapping("/phoneLogin")
     public R phoneLogin( @ApiParam(value = "手机登录对象")@RequestBody RegisterUser LoginUser){
+        log.isTraceEnabled();
         isUserTrue(LoginUser.getPhoneid(), "手机号为空");
         isUserTrue(LoginUser.getUuid(), "验证码为空");
         String uuid = tecentUtils.sendMsg(LoginUser.getPhoneid());
@@ -337,6 +346,7 @@ public class UserInfoController  {
     @ApiOperation(value = "重置密码")
     @PostMapping("/pwdReset")
     public R pwdReset(@ApiParam(value = "重置密码对象")@RequestBody RegisterUser updateUser, HttpServletRequest request){
+        log.isTraceEnabled();
         Integer id = JWTUtils.getTokenId(request);
         User user = userService.queryById(id);
         if (updateUser.getPhoneid().equals(user.getPhoneid())){
@@ -375,6 +385,7 @@ public class UserInfoController  {
     @ApiOperation(value = "查询手机号并返回给前端，前端做模糊处理")
     @GetMapping("/findPhone")
     public R findPhone(HttpServletRequest request){
+        log.isTraceEnabled();
         Integer tokenId = JWTUtils.getTokenId(request);
         User user = userService.queryById(tokenId);
         return R.findPhoneOK(user.getPhoneid());
@@ -392,6 +403,7 @@ public class UserInfoController  {
     @ApiOperation(value = "重置手机号")
     @PostMapping("/phoneUpdate")
     public R phoneUpdate(@ApiParam(value = "重置手机号对象")@RequestBody RegisterUser updateUser, HttpServletRequest request) {
+        log.isTraceEnabled();
         Integer id = JWTUtils.getTokenId(request);
         User user = userService.queryById(id);
         if (updateUser.getPhoneid().equals(user.getPhoneid())){
@@ -422,6 +434,9 @@ public class UserInfoController  {
     @ApiOperation(value = "返回开启消息推送后的token")
     @GetMapping("/InfoPush/{msgflag}")
     public String InfoPush(@ApiParam(value = "是否允许推送，0为允许，1不允许")@PathVariable("msgflag") String msgflag,HttpServletRequest request){
+
+        log.isTraceEnabled();
+
         DecodedJWT token = JWTUtils.verify(request.getHeader("token"));
         HashMap<String, String> map = new HashMap<>();
         map.put("id", token.getClaim("id").asString());
@@ -441,6 +456,8 @@ public class UserInfoController  {
     @ApiOperation(value = "查询用户名是否存在")
     @GetMapping("/findName/{username}")
     public R findName(@ApiParam(value = "用户填的原始用户名")@PathVariable("username") String username,HttpServletRequest request){
+        log.isTraceEnabled();
+
         Integer id = JWTUtils.getTokenId(request);
         User user = userService.queryById(id);
         return user == null?R.error("用户名不存在"):R.findOk("用户名存在");
@@ -457,6 +474,8 @@ public class UserInfoController  {
     @ApiOperation(value = "修改用户名是否存在")
     @GetMapping("/nameUpdate/{newUsername}")
     public R nameUpdate(@ApiParam(value = "用户填的新的用户名")@PathVariable("newUsername") String newUsername,HttpServletRequest request){
+        log.isTraceEnabled();
+
         Integer id = JWTUtils.getTokenId(request);
         User user = userService.queryById(id);
         user.setUsername(newUsername);

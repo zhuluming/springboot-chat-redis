@@ -3062,3 +3062,4 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No b
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
 	... 56 common frames omitted
 22:37:06.930 WARN  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:199] - Resolved [java.lang.NullPointerException]
+11:35:21.830 WARN  [main:o.m.s.m.ClassPathMapperScanner:166] - No MyBatis mapper was found in '[com.laywerspringboot.edition.dao]' package. Please check your configuration.

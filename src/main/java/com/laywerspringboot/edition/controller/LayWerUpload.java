@@ -55,6 +55,7 @@ public class LayWerUpload {
     @PostMapping("/noticeUpload")
     @ApiOperation(value = "发布公告")
     public R noticeUpload(@RequestBody UploadCaseNoticePriceDto upDto, HttpServletRequest request){
+        log.isTraceEnabled();
         String tokenRole = JWTUtils.getTokenRole(request);
         String tokenRealName = JWTUtils.getTokenRealName(request);
         //todo 已解决 发布公告时候案件id没入库，案号没入库是对的，但是不应该让重复更改

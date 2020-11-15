@@ -13,6 +13,7 @@ import com.laywerspringboot.edition.service.MsgService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
@@ -30,6 +31,7 @@ import java.util.Set;
 @RestController
 @RequestMapping("userChat")
 @Api(description = "聊天模块api",value = "聊天")
+@Slf4j
 public class UserMsg {
 
     @Autowired
@@ -59,6 +61,8 @@ public class UserMsg {
     @CrossOrigin()
     @ApiOperation(value = "发送消息")
     public R sendMsg(@RequestBody MsgDto msg, HttpServletRequest request){
+
+        log.isTraceEnabled();
         //1.校验token，并获取用户信息
         //获取用户的消息推送状态
         String tokenMsgFlag = JWTUtils.getTokenMsgFlag(request);
@@ -112,6 +116,7 @@ public class UserMsg {
     @GetMapping("/login")
     @ApiOperation(value = "登录")
     public void login(HttpServletRequest request){
+        log.isTraceEnabled();
         String tokenRealName = JWTUtils.getTokenRealName(request);
         Msg msg = msgService.queryByName(tokenRealName);
         if (msg == null){
@@ -136,6 +141,8 @@ public class UserMsg {
     @GetMapping("/pull/{toName}")
     @ApiOperation(value = "拉取消息")
     public R reply(@ApiParam("对方名字")@PathVariable("toName") String toName, HttpServletRequest request){
+        log.isTraceEnabled();
+
         //本人名
         String tokenRealName = JWTUtils.getTokenRealName(request);
         //前缀加用户真名
@@ -172,6 +179,8 @@ public class UserMsg {
     @GetMapping("/notice/{toName}")
     @ApiOperation(value = "铃铛接口")
     public R notice(@ApiParam("对方名字")@PathVariable("toName") String toName,HttpServletRequest request){
+        log.isTraceEnabled();
+
         //本人名
         String tokenRealName = JWTUtils.getTokenRealName(request);
         //前缀加用户真名
@@ -193,6 +202,8 @@ public class UserMsg {
     @GetMapping("/search/{name}")
     @ApiOperation(value = "搜索用户")
     public R search(@ApiParam("对方名字")@PathVariable("name")String name,HttpServletRequest request){
+        log.isTraceEnabled();
+
         //获取用户的名字
         String tokenRealName = JWTUtils.getTokenRealName(request);
         //生成状态
@@ -233,6 +244,8 @@ public class UserMsg {
     @GetMapping("/exit")
     @ApiOperation(value = "用户退出")
     public void exit( HttpServletRequest request){
+        log.isTraceEnabled();
+
         String tokenRealName = JWTUtils.getTokenRealName(request);
         String key1 = MsgConstant.USER_PREFIX+tokenRealName+MsgConstant.REDIS_MATCH_PREFIX;
         Set<String> keys = redisTemplate.keys(key1);
@@ -256,6 +269,8 @@ public class UserMsg {
      * @param key
      */
     private void saveMsgToRedis(MsgDto msg, String key,String keyflag,Long time) {
+        log.isTraceEnabled();
+
         //存信息和信息表示状态
         redisTemplate.opsForHash().put(key,time,msg.getMsg());
 
@@ -287,6 +302,9 @@ public class UserMsg {
      * @param status
      */
     private void saveMsgToRedis(MsgDto msg, String key,String keyflag,Long time,int status) {
+
+        log.isTraceEnabled();
+
         //存信息和信息表示状态
         redisTemplate.opsForHash().put(key,time,msg.getMsg());
 
