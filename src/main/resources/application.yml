@@ -11,8 +11,8 @@ logging:
     com:
       laywerspringboot:
         edition:
-          dao: info
-          controller: info
+          dao: debug
+          controller: debug
 
   file:
     path: \G:\log

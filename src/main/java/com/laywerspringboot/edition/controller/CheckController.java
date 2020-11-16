@@ -10,7 +10,6 @@ import com.laywerspringboot.edition.service.NoticeService;
 import com.laywerspringboot.edition.service.PricesService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,7 +25,6 @@ import javax.servlet.http.HttpServletRequest;
 @CrossOrigin
 @RestController
 @RequestMapping("admin")
-@Slf4j
 public class CheckController {
     @Resource
     private CasesService casesService;
@@ -46,7 +44,6 @@ public class CheckController {
     @RequestMapping("/update/{caseId}")
     @ApiOperation(value = "更改公告状态，把已发布改成未发布")
     public R checker(@ApiParam("案号")@PathVariable("caseId") String caseId, HttpServletRequest request){
-        log.isTraceEnabled();
         String tokenRole = JWTUtils.getTokenRole(request);
         if (tokenRole.equals("报社")){
             //todo  已解决，初步认为SQL语句问题,把公告状态改为发布

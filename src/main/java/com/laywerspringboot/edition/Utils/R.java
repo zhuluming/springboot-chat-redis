@@ -1,13 +1,15 @@
 package com.laywerspringboot.edition.Utils;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @Author:小七
  * @createTime:2020-10-23-19-59
  */
-public class R extends HashMap<String ,Object> implements Serializable {
+public class R extends HashMap<Object ,Object> implements Serializable {
     public static final long serialVersionUid = 1L;
 
     /**
@@ -66,6 +68,14 @@ public class R extends HashMap<String ,Object> implements Serializable {
         r.put("msg", msg);
         return r;
     }
+
+
+    public static R notice(HashMap<String, ArrayList<Map<Object, Object>>> hashMap, HashMap<String, ArrayList<Map<Object, Object>>> hashMap1) {
+        R r = new R();
+        r.put(hashMap, hashMap1);
+        return r;
+    }
+
 
     /**
      * 可以登录返回

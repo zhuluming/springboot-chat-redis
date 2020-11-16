@@ -52,7 +52,6 @@ public class SearchController {
     @GetMapping("/byCaseId/{caseId}")
     @ApiOperation(value = "法官根据案号查询自身处理过的案子")
     public R searchByCaseId(@ApiParam("通过案号搜索") @PathVariable("caseId")String caseId, HttpServletRequest request){
-        log.isTraceEnabled();
         String tokenRole = JWTUtils.getTokenRole(request);
         String tokenRealName = JWTUtils.getTokenRealName(request);
 
@@ -69,7 +68,6 @@ public class SearchController {
     @GetMapping("/byRealname/{party}")
     @ApiOperation(value = "法官根据当事人姓名查询自身处理过的案子")
     public R searchByParty(@ApiParam("通过当事人姓名搜索") @PathVariable("party")String party, HttpServletRequest request) {
-        log.isTraceEnabled();
         String tokenRole = JWTUtils.getTokenRole(request);
         String tokenRealName = JWTUtils.getTokenRealName(request);
 
@@ -88,7 +86,6 @@ public class SearchController {
     @GetMapping("/ByLawyer/{name}")
     @ApiOperation(value = "法官根据当事人姓名查询自身处理过的所有案子或者是当事人查询自身案件的详细信息")
     public R searchByLaywer(@ApiParam("通过法官或者当事人姓名搜索") @PathVariable("name")String name, HttpServletRequest request) {
-        log.isTraceEnabled();
         String tokenRole = JWTUtils.getTokenRole(request);
         String tokenRealName = JWTUtils.getTokenRealName(request);
         if (!name.equals(tokenRealName) ){
@@ -117,7 +114,6 @@ public class SearchController {
     @GetMapping("/showDetail/{caseId}")
     @ApiOperation(value = "法官展示案件详情或者用户展示案件详情")
     public R searchShowDetail(@PathVariable("caseId")String caseId, HttpServletRequest request) {
-        log.isTraceEnabled();
         String tokenRole = JWTUtils.getTokenRole(request);
         String tokenRealName = JWTUtils.getTokenRealName(request);
         //String tokenRole = "法官";
@@ -144,7 +140,6 @@ public class SearchController {
     @GetMapping("/byCaseIdAndName/{caseId}")
     @ApiOperation(value = "当事人根据案号查询自身处理过的案子")
     public R searchByCaseIdAndName(@ApiParam("通过案号搜索") @PathVariable("caseId")String caseId, HttpServletRequest request){
-        log.isTraceEnabled();
 
         String tokenRealName = JWTUtils.getTokenRealName(request);
         Cases cases = casesService.queryByCaseId(caseId);
@@ -163,7 +158,6 @@ public class SearchController {
     @GetMapping("/byParty/{party}")
     @ApiOperation(value = "当事人根据案号查询自身处理过的案子")
     public R searchByUserParty( @ApiParam("通过当事人真实姓名搜索") @PathVariable("party")String party,HttpServletRequest request){
-        log.isTraceEnabled();
 
         String tokenRealName = JWTUtils.getTokenRealName(request);
         Cases cases = casesService.queryByParty(tokenRealName);
@@ -185,7 +179,6 @@ public class SearchController {
     @GetMapping("/show")
     @ApiOperation(value = "展示")
     public R searchByUserParty(HttpServletRequest request){
-        log.isTraceEnabled();
 
         String tokenRole = JWTUtils.getTokenRole(request);
         String tokenRealName = JWTUtils.getTokenRealName(request);

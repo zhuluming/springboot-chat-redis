@@ -5420,81 +5420,953 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 22:35:53.618 INFO  [restartedMain:o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-22:36:15.766 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 13656 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
-22:36:15.849 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
-22:36:19.900 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
-22:36:19.901 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-22:36:19.912 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
-22:36:20.138 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
-22:36:20.139 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
-22:36:20.139 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
-22:36:20.174 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
-22:36:20.174 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 3380 ms
-22:36:20.229 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
-22:36:20.256 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-15} inited
-22:36:20.500 INFO  [restartedMain:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-22:36:20.539 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
-22:36:20.547 INFO  [restartedMain:o.s.b.d.a.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
-22:36:20.654 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
-22:36:20.655 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
-22:36:20.656 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
-22:36:20.661 INFO  [restartedMain:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
-22:36:20.712 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
-22:36:20.713 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
-22:36:20.737 INFO  [restartedMain:c.l.e.EditionApplication:61] - Started EditionApplication in 21.035 seconds (JVM running for 2179.041)
-22:36:20.739 INFO  [restartedMain:o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63] - Condition evaluation unchanged
-22:36:37.749 INFO  [http-nio-0.0.0.0-8080-exec-1:o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-22:36:37.760 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
-22:36:37.765 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:547] - Completed initialization in 4 ms
-22:50:07.252 INFO  [SpringContextShutdownHook:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
-22:50:07.362 INFO  [SpringContextShutdownHook:c.a.d.p.DruidDataSource:1825] - {dataSource-15} closed
-11:35:19.797 INFO  [main:c.l.e.UserTest:55] - Starting UserTest on DESKTOP-N26M15P with PID 3040 (started by User in G:\laywer-springboot\edition)
-11:35:19.822 INFO  [main:c.l.e.UserTest:655] - The following profiles are active: dev
-11:35:22.321 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
-11:35:22.335 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-11:35:22.449 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 79ms. Found 0 Redis repository interfaces.
-11:35:24.247 INFO  [main:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
-11:35:24.572 INFO  [main:c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
-11:35:27.595 INFO  [main:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-11:35:28.387 INFO  [main:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
-11:35:29.625 INFO  [main:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
-11:35:29.698 INFO  [main:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
-11:35:29.782 INFO  [main:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
-11:35:30.291 INFO  [main:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
-11:35:30.296 INFO  [main:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
-11:35:30.404 INFO  [main:c.l.e.UserTest:61] - Started UserTest in 11.686 seconds (JVM running for 13.972)
-11:35:39.261 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:308] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.laywerspringboot.edition.UtilsTest], using SpringBootContextLoader
-11:35:39.262 INFO  [main:o.s.t.c.s.AbstractContextLoader:264] - Could not detect default resource locations for test class [com.laywerspringboot.edition.UtilsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-11:35:39.263 INFO  [main:o.s.t.c.s.AnnotationConfigContextLoaderUtils:83] - Could not detect default configuration classes for test class [com.laywerspringboot.edition.UtilsTest]: UtilsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-11:35:39.267 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:237] - Found @SpringBootConfiguration com.laywerspringboot.edition.EditionApplication for test class com.laywerspringboot.edition.UtilsTest
-11:35:39.271 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:248] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-11:35:39.272 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:177] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@16944b58, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1dbc607d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@62b42406, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@a0e33db, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3ef46749, org.springframework.test.context.transaction.TransactionalTestExecutionListener@40b54762, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@362cf66, org.springframework.test.context.event.EventPublishingTestExecutionListener@7809b43a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@65da4a5d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@fbe8fd3, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1ab268bd, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2fafa7b5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@181098bf, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@632b5c79]
-11:35:39.411 INFO  [SpringContextShutdownHook:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
-11:35:39.571 INFO  [SpringContextShutdownHook:c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
-11:35:55.772 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 4244 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
-11:35:55.778 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
-11:35:55.855 INFO  [restartedMain:o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-11:35:55.856 INFO  [restartedMain:o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-11:35:57.933 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
-11:35:57.939 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-11:35:58.016 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 44ms. Found 0 Redis repository interfaces.
-11:36:00.000 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
-11:36:00.018 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
-11:36:00.019 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
-11:36:00.224 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
-11:36:00.225 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 4368 ms
-11:36:00.591 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
-11:36:00.732 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
-11:36:01.939 INFO  [restartedMain:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-11:36:02.096 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
-11:36:02.158 INFO  [restartedMain:o.s.b.d.a.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
-11:36:02.622 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
-11:36:02.624 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
-11:36:02.652 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
-11:36:02.699 INFO  [restartedMain:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
-11:36:03.009 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
-11:36:03.011 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
-11:36:03.093 INFO  [restartedMain:c.l.e.EditionApplication:61] - Started EditionApplication in 8.335 seconds (JVM running for 16.764)
-11:44:03.811 INFO  [http-nio-0.0.0.0-8080-exec-1:o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-11:44:03.812 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
-11:44:03.826 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:547] - Completed initialization in 13 ms
+17:40:59.694 INFO  [main:c.l.e.UserTest:55] - Starting UserTest on DESKTOP-N26M15P with PID 22316 (started by User in G:\laywer-springboot\edition)
+17:40:59.696 INFO  [main:c.l.e.UserTest:655] - The following profiles are active: dev
+17:41:00.838 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:41:00.843 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+17:41:00.892 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 29ms. Found 0 Redis repository interfaces.
+17:41:01.838 INFO  [main:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+17:41:02.085 INFO  [main:c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+17:41:03.697 INFO  [main:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+17:41:04.125 INFO  [main:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+17:41:04.828 INFO  [main:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+17:41:04.860 INFO  [main:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+17:41:04.908 INFO  [main:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+17:41:05.170 INFO  [main:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+17:41:05.173 INFO  [main:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+17:41:05.239 INFO  [main:c.l.e.UserTest:61] - Started UserTest in 6.31 seconds (JVM running for 7.852)
+17:41:12.182 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:308] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.laywerspringboot.edition.UtilsTest], using SpringBootContextLoader
+17:41:12.184 INFO  [main:o.s.t.c.s.AbstractContextLoader:264] - Could not detect default resource locations for test class [com.laywerspringboot.edition.UtilsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:41:12.185 INFO  [main:o.s.t.c.s.AnnotationConfigContextLoaderUtils:83] - Could not detect default configuration classes for test class [com.laywerspringboot.edition.UtilsTest]: UtilsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:41:12.188 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:237] - Found @SpringBootConfiguration com.laywerspringboot.edition.EditionApplication for test class com.laywerspringboot.edition.UtilsTest
+17:41:12.191 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:248] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+17:41:12.192 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:177] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1ab268bd, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2fafa7b5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@181098bf, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@632b5c79, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6a552721, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3815a7d1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@24dc150c, org.springframework.test.context.event.EventPublishingTestExecutionListener@1d2d4d7a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5e020dd1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4bbc02ef, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@f0c1ae1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@783dc0e7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@361f26b4, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1d9ff1e2]
+17:41:12.291 INFO  [SpringContextShutdownHook:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+17:41:12.425 INFO  [SpringContextShutdownHook:c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+17:41:19.028 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 15768 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+17:41:19.032 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+17:41:19.078 INFO  [restartedMain:o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17:41:19.078 INFO  [restartedMain:o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17:41:20.541 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:41:20.545 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+17:41:20.586 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
+17:41:21.354 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+17:41:21.363 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+17:41:21.364 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+17:41:21.488 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+17:41:21.489 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 2410 ms
+17:41:21.680 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+17:41:21.864 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+17:41:22.711 INFO  [restartedMain:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+17:41:22.809 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+17:41:22.845 INFO  [restartedMain:o.s.b.d.a.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+17:41:23.147 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+17:41:23.149 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+17:41:23.164 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+17:41:23.193 INFO  [restartedMain:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+17:41:23.398 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+17:41:23.400 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+17:41:23.446 INFO  [restartedMain:c.l.e.EditionApplication:61] - Started EditionApplication in 4.927 seconds (JVM running for 8.666)
+17:42:55.393 INFO  [http-nio-0.0.0.0-8080-exec-2:o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:42:55.393 INFO  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+17:42:55.402 INFO  [http-nio-0.0.0.0-8080-exec-2:o.s.w.s.DispatcherServlet:547] - Completed initialization in 9 ms
+19:02:06.980 INFO  [main:c.l.e.UserTest:55] - Starting UserTest on DESKTOP-N26M15P with PID 28484 (started by User in G:\laywer-springboot\edition)
+19:02:06.981 INFO  [main:c.l.e.UserTest:655] - The following profiles are active: dev
+19:02:08.250 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:02:08.256 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+19:02:08.310 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+19:02:09.311 INFO  [main:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+19:02:09.595 INFO  [main:c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+19:02:11.351 INFO  [main:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+19:02:11.811 INFO  [main:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+19:02:12.582 INFO  [main:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+19:02:12.625 INFO  [main:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+19:02:12.687 INFO  [main:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+19:02:12.967 INFO  [main:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+19:02:12.970 INFO  [main:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+19:02:13.029 INFO  [main:c.l.e.UserTest:61] - Started UserTest in 6.675 seconds (JVM running for 7.965)
+19:02:20.076 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:308] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.laywerspringboot.edition.UtilsTest], using SpringBootContextLoader
+19:02:20.078 INFO  [main:o.s.t.c.s.AbstractContextLoader:264] - Could not detect default resource locations for test class [com.laywerspringboot.edition.UtilsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:02:20.079 INFO  [main:o.s.t.c.s.AnnotationConfigContextLoaderUtils:83] - Could not detect default configuration classes for test class [com.laywerspringboot.edition.UtilsTest]: UtilsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:02:20.083 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:237] - Found @SpringBootConfiguration com.laywerspringboot.edition.EditionApplication for test class com.laywerspringboot.edition.UtilsTest
+19:02:20.086 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:248] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+19:02:20.087 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:177] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@74e4be21, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4d174189, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@628bd77e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@c30f26d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5d74507c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2a984952, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@16944b58, org.springframework.test.context.event.EventPublishingTestExecutionListener@1dbc607d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@62b42406, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@a0e33db, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3ef46749, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@40b54762, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@362cf66, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7809b43a]
+19:02:20.184 INFO  [SpringContextShutdownHook:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+19:02:20.314 INFO  [SpringContextShutdownHook:c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+19:02:27.384 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 25032 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+19:02:27.390 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+19:02:27.459 INFO  [restartedMain:o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+19:02:27.460 INFO  [restartedMain:o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+19:02:28.815 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:02:28.817 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+19:02:28.868 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+19:02:29.633 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+19:02:29.642 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+19:02:29.643 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+19:02:29.761 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+19:02:29.762 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 2301 ms
+19:02:29.945 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+19:02:30.142 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+19:02:30.915 INFO  [restartedMain:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+19:02:31.016 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+19:02:31.049 INFO  [restartedMain:o.s.b.d.a.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+19:02:31.331 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+19:02:31.332 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+19:02:31.347 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+19:02:31.377 INFO  [restartedMain:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+19:02:31.585 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+19:02:31.587 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+19:02:31.636 INFO  [restartedMain:c.l.e.EditionApplication:61] - Started EditionApplication in 4.831 seconds (JVM running for 8.759)
+19:02:37.064 INFO  [http-nio-0.0.0.0-8080-exec-1:o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:02:37.064 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+19:02:37.072 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:547] - Completed initialization in 8 ms
+19:38:53.206 INFO  [Thread-199:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+19:38:53.362 INFO  [Thread-199:c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+19:38:53.990 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 25032 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+19:38:53.991 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+19:38:54.898 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:38:54.898 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+19:38:54.903 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 3ms. Found 0 Redis repository interfaces.
+19:38:55.244 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+19:38:55.247 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+19:38:55.247 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+19:38:55.311 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+19:38:55.311 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 1315 ms
+19:38:55.443 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+19:38:55.516 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+19:38:55.536 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-2} inited
+19:38:55.608 INFO  [restartedMain:c.a.d.p.DruidDataSource:1825] - {dataSource-2} closed
+19:38:55.609 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+19:38:55.610 INFO  [restartedMain:o.a.c.c.StandardService:173] - Stopping service [Tomcat]
+19:38:55.618 INFO  [restartedMain:o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+19:39:03.377 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 25032 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+19:39:03.377 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+19:39:04.072 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:39:04.072 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+19:39:04.086 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+19:39:04.359 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+19:39:04.360 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+19:39:04.361 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+19:39:04.405 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+19:39:04.405 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 1025 ms
+19:39:04.465 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+19:39:04.506 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-3} inited
+19:39:05.068 INFO  [restartedMain:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+19:39:05.156 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+19:39:05.189 INFO  [restartedMain:o.s.b.d.a.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+19:39:05.522 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+19:39:05.523 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+19:39:05.524 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+19:39:05.534 INFO  [restartedMain:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+19:39:05.694 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+19:39:05.697 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+19:39:05.985 INFO  [restartedMain:c.l.e.EditionApplication:61] - Started EditionApplication in 2.664 seconds (JVM running for 2203.108)
+19:39:05.989 INFO  [restartedMain:o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63] - Condition evaluation unchanged
+19:39:13.743 INFO  [main:c.l.e.UserTest:55] - Starting UserTest on DESKTOP-N26M15P with PID 23420 (started by User in G:\laywer-springboot\edition)
+19:39:13.745 INFO  [main:c.l.e.UserTest:655] - The following profiles are active: dev
+19:39:15.136 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:39:15.140 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+19:39:15.213 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 43ms. Found 0 Redis repository interfaces.
+19:39:16.645 INFO  [main:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+19:39:17.963 INFO  [main:c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+19:39:21.008 INFO  [main:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+19:39:21.664 INFO  [main:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+19:39:22.787 INFO  [main:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+19:39:22.841 INFO  [main:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+19:39:22.904 INFO  [main:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+19:39:23.310 INFO  [main:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+19:39:23.315 INFO  [main:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+19:39:23.409 INFO  [main:c.l.e.UserTest:61] - Started UserTest in 10.395 seconds (JVM running for 12.966)
+19:39:24.334 INFO  [http-nio-0.0.0.0-8080-exec-3:o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:39:24.340 INFO  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+19:39:24.349 INFO  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.DispatcherServlet:547] - Completed initialization in 8 ms
+19:39:31.802 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:308] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.laywerspringboot.edition.UtilsTest], using SpringBootContextLoader
+19:39:31.804 INFO  [main:o.s.t.c.s.AbstractContextLoader:264] - Could not detect default resource locations for test class [com.laywerspringboot.edition.UtilsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:39:31.804 INFO  [main:o.s.t.c.s.AnnotationConfigContextLoaderUtils:83] - Could not detect default configuration classes for test class [com.laywerspringboot.edition.UtilsTest]: UtilsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:39:31.806 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:237] - Found @SpringBootConfiguration com.laywerspringboot.edition.EditionApplication for test class com.laywerspringboot.edition.UtilsTest
+19:39:31.809 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:248] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+19:39:31.810 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:177] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@722b3ba2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6487f7f8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2b62475a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4990b335, org.springframework.test.context.support.DirtiesContextTestExecutionListener@624d778e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@39ae6408, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@cfacf0, org.springframework.test.context.event.EventPublishingTestExecutionListener@4c8abec7, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@45f241df, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@f36f34d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@72e36677, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6b86826a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3c2dda7c, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4b9fa2f]
+19:39:31.898 INFO  [SpringContextShutdownHook:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+19:39:32.027 INFO  [SpringContextShutdownHook:c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+19:59:02.285 INFO  [Thread-209:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+19:59:02.397 INFO  [Thread-209:c.a.d.p.DruidDataSource:1825] - {dataSource-3} closed
+19:59:02.683 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 25032 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+19:59:02.684 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+19:59:03.025 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:59:03.025 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+19:59:03.029 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 3ms. Found 0 Redis repository interfaces.
+19:59:03.254 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+19:59:03.255 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+19:59:03.255 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+19:59:03.301 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+19:59:03.301 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 614 ms
+19:59:03.371 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+19:59:03.428 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+19:59:03.444 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-4} inited
+19:59:03.475 INFO  [restartedMain:c.a.d.p.DruidDataSource:1825] - {dataSource-4} closed
+19:59:03.475 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+19:59:03.476 INFO  [restartedMain:o.a.c.c.StandardService:173] - Stopping service [Tomcat]
+19:59:03.482 INFO  [restartedMain:o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+19:59:06.811 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 25032 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+19:59:06.811 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+19:59:07.201 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:59:07.202 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+19:59:07.212 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+19:59:07.436 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+19:59:07.437 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+19:59:07.438 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+19:59:07.476 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+19:59:07.477 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 664 ms
+19:59:07.550 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+19:59:07.586 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-5} inited
+19:59:07.844 INFO  [restartedMain:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+19:59:07.883 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+19:59:07.894 INFO  [restartedMain:o.s.b.d.a.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+19:59:08.030 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+19:59:08.031 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+19:59:08.032 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+19:59:08.038 INFO  [restartedMain:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+19:59:08.102 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+19:59:08.103 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+19:59:08.132 INFO  [restartedMain:c.l.e.EditionApplication:61] - Started EditionApplication in 1.368 seconds (JVM running for 3405.255)
+19:59:08.134 INFO  [restartedMain:o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63] - Condition evaluation unchanged
+19:59:10.843 INFO  [main:c.l.e.UserTest:55] - Starting UserTest on DESKTOP-N26M15P with PID 21364 (started by User in G:\laywer-springboot\edition)
+19:59:10.845 INFO  [main:c.l.e.UserTest:655] - The following profiles are active: dev
+19:59:12.131 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:59:12.136 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+19:59:12.191 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 34ms. Found 0 Redis repository interfaces.
+19:59:13.117 INFO  [main:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+19:59:13.386 INFO  [main:c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+19:59:15.263 INFO  [main:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+19:59:15.781 INFO  [main:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+19:59:16.772 INFO  [main:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+19:59:16.822 INFO  [main:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+19:59:16.882 INFO  [main:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+19:59:17.560 INFO  [main:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+19:59:17.583 INFO  [main:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+19:59:17.914 INFO  [main:c.l.e.UserTest:61] - Started UserTest in 7.636 seconds (JVM running for 8.967)
+19:59:26.874 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:308] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.laywerspringboot.edition.UtilsTest], using SpringBootContextLoader
+19:59:26.875 INFO  [main:o.s.t.c.s.AbstractContextLoader:264] - Could not detect default resource locations for test class [com.laywerspringboot.edition.UtilsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:59:26.876 INFO  [main:o.s.t.c.s.AnnotationConfigContextLoaderUtils:83] - Could not detect default configuration classes for test class [com.laywerspringboot.edition.UtilsTest]: UtilsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:59:26.880 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:237] - Found @SpringBootConfiguration com.laywerspringboot.edition.EditionApplication for test class com.laywerspringboot.edition.UtilsTest
+19:59:26.883 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:248] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+19:59:26.884 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:177] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6487f7f8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2b62475a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4990b335, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@624d778e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@39ae6408, org.springframework.test.context.transaction.TransactionalTestExecutionListener@cfacf0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4c8abec7, org.springframework.test.context.event.EventPublishingTestExecutionListener@45f241df, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@f36f34d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@72e36677, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6b86826a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3c2dda7c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4b9fa2f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6d80e411]
+19:59:26.996 INFO  [SpringContextShutdownHook:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+19:59:27.131 INFO  [SpringContextShutdownHook:c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+20:07:26.051 INFO  [http-nio-0.0.0.0-8080-exec-1:o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:07:26.054 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+20:07:26.058 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:547] - Completed initialization in 3 ms
+20:08:59.491 INFO  [Thread-597:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+20:08:59.496 INFO  [Thread-597:c.a.d.p.DruidDataSource:1825] - {dataSource-5} closed
+20:08:59.796 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 25032 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+20:08:59.797 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+20:09:00.104 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+20:09:00.104 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20:09:00.108 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 3ms. Found 0 Redis repository interfaces.
+20:09:00.329 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+20:09:00.331 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+20:09:00.331 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+20:09:00.367 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+20:09:00.368 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 569 ms
+20:09:00.440 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+20:09:00.495 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+20:09:00.510 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-6} inited
+20:09:00.547 INFO  [restartedMain:c.a.d.p.DruidDataSource:1825] - {dataSource-6} closed
+20:09:00.547 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+20:09:00.548 INFO  [restartedMain:o.a.c.c.StandardService:173] - Stopping service [Tomcat]
+20:09:00.552 INFO  [restartedMain:o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+20:09:03.035 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 25032 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+20:09:03.035 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+20:09:03.401 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+20:09:03.401 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20:09:03.407 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 5ms. Found 0 Redis repository interfaces.
+20:09:03.710 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+20:09:03.711 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+20:09:03.712 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+20:09:03.756 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+20:09:03.757 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 720 ms
+20:09:03.852 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+20:09:03.901 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+20:09:03.916 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-7} inited
+20:09:03.975 INFO  [restartedMain:c.a.d.p.DruidDataSource:1825] - {dataSource-7} closed
+20:09:03.976 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+20:09:03.976 INFO  [restartedMain:o.a.c.c.StandardService:173] - Stopping service [Tomcat]
+20:09:03.993 INFO  [restartedMain:o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+20:09:53.380 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 25032 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+20:09:53.380 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+20:09:53.693 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+20:09:53.694 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20:09:53.697 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+20:09:53.912 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+20:09:53.913 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+20:09:53.913 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+20:09:53.951 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+20:09:53.952 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 569 ms
+20:09:54.029 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+20:09:54.086 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+20:09:54.109 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-8} inited
+20:09:54.158 INFO  [restartedMain:c.a.d.p.DruidDataSource:1825] - {dataSource-8} closed
+20:09:54.159 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+20:09:54.160 INFO  [restartedMain:o.a.c.c.StandardService:173] - Stopping service [Tomcat]
+20:09:54.167 INFO  [restartedMain:o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+20:09:59.923 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 25032 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+20:09:59.923 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+20:10:00.379 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+20:10:00.379 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20:10:00.391 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+20:10:00.659 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+20:10:00.661 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+20:10:00.661 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+20:10:00.692 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+20:10:00.692 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 766 ms
+20:10:00.739 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+20:10:00.768 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-9} inited
+20:10:00.994 INFO  [restartedMain:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+20:10:01.037 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+20:10:01.048 INFO  [restartedMain:o.s.b.d.a.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+20:10:01.181 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+20:10:01.182 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+20:10:01.183 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+20:10:01.188 INFO  [restartedMain:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+20:10:01.269 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+20:10:01.271 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+20:10:01.316 INFO  [restartedMain:c.l.e.EditionApplication:61] - Started EditionApplication in 1.432 seconds (JVM running for 4058.44)
+20:10:01.319 INFO  [restartedMain:o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63] - Condition evaluation unchanged
+20:10:04.264 INFO  [main:c.l.e.UserTest:55] - Starting UserTest on DESKTOP-N26M15P with PID 23120 (started by User in G:\laywer-springboot\edition)
+20:10:04.266 INFO  [main:c.l.e.UserTest:655] - The following profiles are active: dev
+20:10:05.351 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+20:10:05.356 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20:10:05.419 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 37ms. Found 0 Redis repository interfaces.
+20:10:06.450 INFO  [main:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+20:10:06.668 INFO  [main:c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+20:10:08.348 INFO  [main:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+20:10:08.813 INFO  [main:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+20:10:09.466 INFO  [main:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+20:10:09.516 INFO  [main:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+20:10:09.574 INFO  [main:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+20:10:09.904 INFO  [main:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+20:10:09.907 INFO  [main:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+20:10:09.990 INFO  [main:c.l.e.UserTest:61] - Started UserTest in 6.358 seconds (JVM running for 7.656)
+20:10:17.078 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:308] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.laywerspringboot.edition.UtilsTest], using SpringBootContextLoader
+20:10:17.080 INFO  [main:o.s.t.c.s.AbstractContextLoader:264] - Could not detect default resource locations for test class [com.laywerspringboot.edition.UtilsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+20:10:17.081 INFO  [main:o.s.t.c.s.AnnotationConfigContextLoaderUtils:83] - Could not detect default configuration classes for test class [com.laywerspringboot.edition.UtilsTest]: UtilsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:10:17.084 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:237] - Found @SpringBootConfiguration com.laywerspringboot.edition.EditionApplication for test class com.laywerspringboot.edition.UtilsTest
+20:10:17.088 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:248] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+20:10:17.089 INFO  [main:o.s.b.t.c.SpringBootTestContextBootstrapper:177] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@74e4be21, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4d174189, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@628bd77e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@c30f26d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5d74507c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2a984952, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@16944b58, org.springframework.test.context.event.EventPublishingTestExecutionListener@1dbc607d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@62b42406, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@a0e33db, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3ef46749, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@40b54762, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@362cf66, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7809b43a]
+20:10:17.172 INFO  [SpringContextShutdownHook:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+20:10:17.399 INFO  [SpringContextShutdownHook:c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+20:13:39.402 INFO  [http-nio-0.0.0.0-8080-exec-1:o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:13:39.404 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+20:13:39.406 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:547] - Completed initialization in 2 ms
+20:20:57.573 INFO  [Thread-985:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+20:20:57.713 INFO  [Thread-985:c.a.d.p.DruidDataSource:1825] - {dataSource-9} closed
+20:20:58.358 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 25032 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+20:20:58.359 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+20:20:59.063 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+20:20:59.064 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20:20:59.067 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 3ms. Found 0 Redis repository interfaces.
+20:20:59.290 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+20:20:59.290 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+20:20:59.291 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+20:20:59.332 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+20:20:59.332 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 971 ms
+20:20:59.397 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+20:20:59.444 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+20:20:59.456 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-10} inited
+20:20:59.489 INFO  [restartedMain:c.a.d.p.DruidDataSource:1825] - {dataSource-10} closed
+20:20:59.489 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+20:20:59.490 INFO  [restartedMain:o.a.c.c.StandardService:173] - Stopping service [Tomcat]
+20:20:59.497 INFO  [restartedMain:o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+20:21:02.421 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 25032 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+20:21:02.421 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+20:21:02.819 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+20:21:02.819 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20:21:02.829 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+20:21:03.069 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+20:21:03.070 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+20:21:03.070 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+20:21:03.121 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+20:21:03.122 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 699 ms
+20:21:03.185 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+20:21:03.215 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-11} inited
+20:21:03.465 INFO  [restartedMain:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+20:21:03.510 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+20:21:03.517 INFO  [restartedMain:o.s.b.d.a.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+20:21:03.651 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+20:21:03.652 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+20:21:03.654 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+20:21:03.658 INFO  [restartedMain:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+20:21:03.715 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+20:21:03.717 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+20:21:03.744 INFO  [restartedMain:c.l.e.EditionApplication:61] - Started EditionApplication in 1.36 seconds (JVM running for 4720.867)
+20:21:03.745 INFO  [restartedMain:o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63] - Condition evaluation unchanged
+20:21:06.463 INFO  [main:c.l.e.UserTest:55] - Starting UserTest on DESKTOP-N26M15P with PID 28932 (started by User in G:\laywer-springboot\edition)
+20:21:06.465 INFO  [main:c.l.e.UserTest:655] - The following profiles are active: dev
+20:21:07.626 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+20:21:07.632 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20:21:07.694 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 36ms. Found 0 Redis repository interfaces.
+20:21:08.735 INFO  [main:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+20:21:08.981 INFO  [main:c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+20:21:10.780 INFO  [main:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+20:21:11.229 INFO  [main:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+20:21:11.889 INFO  [main:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+20:21:11.928 INFO  [main:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+20:21:11.989 INFO  [main:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+20:21:12.266 INFO  [main:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+20:21:12.270 INFO  [main:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+20:21:12.354 INFO  [main:c.l.e.UserTest:61] - Started UserTest in 6.519 seconds (JVM running for 7.81)
+22:35:12.051 INFO  [main:c.l.e.UserTest:55] - Starting UserTest on DESKTOP-N26M15P with PID 23352 (started by User in G:\laywer-springboot\edition)
+22:35:12.053 INFO  [main:c.l.e.UserTest:655] - The following profiles are active: dev
+22:35:13.313 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+22:35:13.318 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+22:35:13.400 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 47ms. Found 0 Redis repository interfaces.
+22:35:14.583 INFO  [main:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+22:35:14.918 INFO  [main:c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+22:35:57.298 INFO  [main:c.l.e.UserTest:55] - Starting UserTest on DESKTOP-N26M15P with PID 30732 (started by User in G:\laywer-springboot\edition)
+22:35:57.300 INFO  [main:c.l.e.UserTest:655] - The following profiles are active: dev
+22:35:58.408 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+22:35:58.413 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+22:35:58.475 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 37ms. Found 0 Redis repository interfaces.
+22:35:59.441 INFO  [main:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+22:35:59.629 INFO  [main:c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+22:36:01.392 INFO  [main:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+22:36:50.249 INFO  [main:c.l.e.UserTest:55] - Starting UserTest on DESKTOP-N26M15P with PID 18028 (started by User in G:\laywer-springboot\edition)
+22:36:50.251 INFO  [main:c.l.e.UserTest:655] - The following profiles are active: dev
+22:36:51.402 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+22:36:51.409 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+22:36:51.474 INFO  [main:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 37ms. Found 0 Redis repository interfaces.
+22:36:52.487 INFO  [main:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+22:36:52.674 INFO  [main:c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+22:36:54.493 INFO  [main:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+22:36:54.970 INFO  [main:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+22:36:55.640 INFO  [main:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+22:36:55.680 INFO  [main:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+22:36:55.729 INFO  [main:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+22:36:56.009 INFO  [main:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+22:36:56.012 INFO  [main:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+22:36:56.094 INFO  [main:c.l.e.UserTest:61] - Started UserTest in 6.434 seconds (JVM running for 7.685)
+22:37:30.636 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 19144 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+22:37:30.639 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+22:37:30.714 INFO  [restartedMain:o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+22:37:30.715 INFO  [restartedMain:o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+22:37:32.130 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+22:37:32.133 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+22:37:32.180 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+22:37:33.058 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+22:37:33.074 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+22:37:33.074 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+22:37:33.229 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+22:37:33.230 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 2514 ms
+22:37:33.531 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+22:37:33.666 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+22:37:34.557 INFO  [restartedMain:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+22:37:34.673 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+22:37:34.712 INFO  [restartedMain:o.s.b.d.a.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+22:37:35.041 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+22:37:35.043 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+22:37:35.062 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+22:37:35.099 INFO  [restartedMain:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+22:37:35.330 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+22:37:35.332 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+22:37:35.391 INFO  [restartedMain:c.l.e.EditionApplication:61] - Started EditionApplication in 5.458 seconds (JVM running for 9.347)
+22:38:39.904 INFO  [http-nio-0.0.0.0-8080-exec-1:o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:38:39.904 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+22:38:39.911 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:547] - Completed initialization in 6 ms
+22:46:21.036 INFO  [Thread-200:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+22:46:21.174 INFO  [Thread-200:c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+22:46:21.542 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 19144 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+22:46:21.543 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+22:46:22.129 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+22:46:22.129 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+22:46:22.132 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 3ms. Found 0 Redis repository interfaces.
+22:46:22.409 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+22:46:22.410 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+22:46:22.411 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+22:46:22.528 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+22:46:22.529 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 981 ms
+22:46:22.660 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+22:46:22.762 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+22:46:22.813 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-2} inited
+22:46:22.897 INFO  [restartedMain:c.a.d.p.DruidDataSource:1825] - {dataSource-2} closed
+22:46:22.900 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+22:46:22.901 INFO  [restartedMain:o.a.c.c.StandardService:173] - Stopping service [Tomcat]
+22:46:22.911 INFO  [restartedMain:o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+22:47:36.710 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 16452 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+22:47:36.715 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+22:47:36.786 INFO  [restartedMain:o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+22:47:36.786 INFO  [restartedMain:o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+22:47:38.229 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+22:47:38.233 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+22:47:38.273 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 22ms. Found 0 Redis repository interfaces.
+22:47:39.075 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+22:47:39.086 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+22:47:39.086 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+22:47:39.214 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+22:47:39.215 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 2428 ms
+22:47:39.541 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+22:47:39.660 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+22:47:40.590 INFO  [restartedMain:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+22:47:40.707 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+22:47:40.746 INFO  [restartedMain:o.s.b.d.a.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+22:47:41.092 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+22:47:41.093 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+22:47:41.113 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+22:47:41.149 INFO  [restartedMain:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+22:47:41.373 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+22:47:41.375 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+22:47:41.425 INFO  [restartedMain:c.l.e.EditionApplication:61] - Started EditionApplication in 5.44 seconds (JVM running for 9.309)
+22:48:06.481 INFO  [http-nio-0.0.0.0-8080-exec-1:o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:48:06.481 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+22:48:06.489 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:547] - Completed initialization in 8 ms
+22:56:20.671 INFO  [Thread-200:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+22:56:20.809 INFO  [Thread-200:c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+22:56:21.141 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 16452 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+22:56:21.142 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+22:56:21.544 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+22:56:21.545 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+22:56:21.549 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+22:56:21.782 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+22:56:21.783 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+22:56:21.783 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+22:56:21.825 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+22:56:21.825 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 680 ms
+22:56:21.926 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+22:56:21.993 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+22:56:22.011 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-2} inited
+22:56:22.065 INFO  [restartedMain:c.a.d.p.DruidDataSource:1825] - {dataSource-2} closed
+22:56:22.066 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+22:56:22.067 INFO  [restartedMain:o.a.c.c.StandardService:173] - Stopping service [Tomcat]
+22:56:22.076 INFO  [restartedMain:o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+22:56:25.446 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 16452 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+22:56:25.446 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+22:56:26.078 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+22:56:26.078 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+22:56:26.092 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+22:56:26.373 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+22:56:26.373 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+22:56:26.374 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+22:56:26.408 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+22:56:26.408 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 958 ms
+22:56:26.474 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+22:56:26.508 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-3} inited
+22:56:26.885 INFO  [restartedMain:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+22:56:26.944 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+22:56:26.953 INFO  [restartedMain:o.s.b.d.a.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+22:56:27.084 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+22:56:27.085 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+22:56:27.086 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+22:56:27.092 INFO  [restartedMain:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+22:56:27.161 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+22:56:27.163 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+22:56:27.200 INFO  [restartedMain:c.l.e.EditionApplication:61] - Started EditionApplication in 1.814 seconds (JVM running for 535.085)
+22:56:27.203 INFO  [restartedMain:o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63] - Condition evaluation unchanged
+22:56:35.913 INFO  [http-nio-0.0.0.0-8080-exec-1:o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:56:35.915 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+22:56:35.917 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:547] - Completed initialization in 2 ms
+22:57:35.021 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 27184 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+22:57:35.026 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+22:57:35.103 INFO  [restartedMain:o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+22:57:35.103 INFO  [restartedMain:o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+22:57:36.496 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+22:57:36.499 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+22:57:36.538 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 23ms. Found 0 Redis repository interfaces.
+22:57:37.327 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+22:57:37.337 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+22:57:37.337 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+22:57:37.467 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+22:57:37.468 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 2364 ms
+22:57:37.778 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+22:57:37.915 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+22:57:38.838 INFO  [restartedMain:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+22:57:38.981 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+22:57:39.021 INFO  [restartedMain:o.s.b.d.a.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+22:57:39.333 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+22:57:39.335 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+22:57:39.355 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+22:57:39.391 INFO  [restartedMain:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+22:57:39.610 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+22:57:39.612 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+22:57:39.663 INFO  [restartedMain:c.l.e.EditionApplication:61] - Started EditionApplication in 5.368 seconds (JVM running for 9.046)
+23:00:03.438 INFO  [http-nio-0.0.0.0-8080-exec-1:o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:00:03.439 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+23:00:03.447 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:547] - Completed initialization in 8 ms
+12:30:27.041 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 19096 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+12:30:27.087 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+12:30:27.183 INFO  [restartedMain:o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12:30:27.184 INFO  [restartedMain:o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12:30:28.553 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+12:30:28.557 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+12:30:28.620 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 34ms. Found 0 Redis repository interfaces.
+12:30:30.003 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+12:30:30.022 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+12:30:30.023 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+12:30:30.267 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+12:30:30.267 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 3082 ms
+12:30:30.932 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+12:30:31.083 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+12:30:32.149 INFO  [restartedMain:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+12:30:32.272 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+12:30:32.309 INFO  [restartedMain:o.s.b.d.a.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+12:30:32.726 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+12:30:32.728 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+12:30:32.757 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+12:30:32.816 INFO  [restartedMain:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+12:30:33.129 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+12:30:33.132 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+12:30:33.202 INFO  [restartedMain:c.l.e.EditionApplication:61] - Started EditionApplication in 7.599 seconds (JVM running for 13.021)
+12:36:28.923 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 18144 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+12:36:28.930 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+12:36:29.015 INFO  [restartedMain:o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12:36:29.016 INFO  [restartedMain:o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12:36:30.342 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+12:36:30.345 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+12:36:30.389 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+12:36:31.204 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+12:36:31.215 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+12:36:31.216 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+12:36:31.344 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+12:36:31.345 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 2329 ms
+12:36:31.662 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+12:36:31.812 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+12:36:32.710 INFO  [restartedMain:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+12:36:32.841 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+12:36:32.893 INFO  [restartedMain:o.s.b.d.a.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+12:36:33.254 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+12:36:33.256 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+12:36:33.275 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+12:36:33.310 INFO  [restartedMain:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+12:36:33.555 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+12:36:33.557 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+12:36:33.612 INFO  [restartedMain:c.l.e.EditionApplication:61] - Started EditionApplication in 5.559 seconds (JVM running for 9.121)
+12:52:11.890 INFO  [http-nio-0.0.0.0-8080-exec-1:o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:52:11.893 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+12:52:11.921 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:547] - Completed initialization in 27 ms
+13:05:29.502 INFO  [http-nio-0.0.0.0-8080-exec-5:c.l.e.e.MyExceptionHandler:23] - 密码错误
+13:06:41.647 INFO  [SpringContextShutdownHook:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+13:06:41.884 INFO  [SpringContextShutdownHook:c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+13:07:10.374 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 17700 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+13:07:10.379 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+13:07:10.507 INFO  [restartedMain:o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13:07:10.508 INFO  [restartedMain:o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13:07:11.967 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+13:07:11.971 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+13:07:12.022 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+13:07:12.866 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+13:07:12.878 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+13:07:12.879 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+13:07:13.020 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+13:07:13.020 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 2512 ms
+13:07:13.332 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+13:07:13.445 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+13:07:14.326 INFO  [restartedMain:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+13:07:14.438 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+13:07:14.478 INFO  [restartedMain:o.s.b.d.a.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+13:07:14.793 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+13:07:14.795 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+13:07:14.814 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+13:07:14.848 INFO  [restartedMain:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+13:07:15.089 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+13:07:15.091 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+13:07:15.138 INFO  [restartedMain:c.l.e.EditionApplication:61] - Started EditionApplication in 5.59 seconds (JVM running for 9.178)
+13:08:43.600 INFO  [http-nio-0.0.0.0-8080-exec-1:o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:08:43.600 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+13:08:43.608 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:547] - Completed initialization in 7 ms
+13:09:40.236 INFO  [http-nio-0.0.0.0-8080-exec-9:c.l.e.e.MyExceptionHandler:23] - 密码错误
+13:45:29.860 INFO  [SpringContextShutdownHook:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+13:45:29.990 INFO  [SpringContextShutdownHook:c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+13:46:05.971 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 23732 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+13:46:05.976 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+13:46:06.058 INFO  [restartedMain:o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13:46:06.059 INFO  [restartedMain:o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13:46:08.188 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+13:46:08.191 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+13:46:08.237 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
+13:46:09.159 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+13:46:09.171 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+13:46:09.171 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+13:46:09.307 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+13:46:09.308 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 3248 ms
+13:46:09.632 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+13:46:09.757 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+13:46:10.696 INFO  [restartedMain:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+13:46:10.810 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+13:46:10.846 INFO  [restartedMain:o.s.b.d.a.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+13:46:11.296 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+13:46:11.297 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+13:46:11.317 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+13:46:11.355 INFO  [restartedMain:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+13:46:11.609 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+13:46:11.611 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+13:46:11.663 INFO  [restartedMain:c.l.e.EditionApplication:61] - Started EditionApplication in 6.438 seconds (JVM running for 9.85)
+13:46:32.313 INFO  [http-nio-0.0.0.0-8080-exec-1:o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:46:32.313 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+13:46:32.321 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:547] - Completed initialization in 8 ms
+13:56:53.461 INFO  [Thread-201:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+13:56:53.601 INFO  [Thread-201:c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+13:56:53.947 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 23732 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+13:56:53.948 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+13:56:54.392 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+13:56:54.393 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+13:56:54.397 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 3ms. Found 0 Redis repository interfaces.
+13:56:54.768 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+13:56:54.770 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+13:56:54.771 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+13:56:54.820 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+13:56:54.821 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 868 ms
+13:56:54.930 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+13:56:55.020 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+13:56:55.072 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-2} inited
+13:56:55.174 INFO  [restartedMain:c.a.d.p.DruidDataSource:1825] - {dataSource-2} closed
+13:56:55.175 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+13:56:55.176 INFO  [restartedMain:o.a.c.c.StandardService:173] - Stopping service [Tomcat]
+13:56:55.196 INFO  [restartedMain:o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+13:56:56.924 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 23732 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+13:56:56.925 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+13:56:57.643 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+13:56:57.644 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+13:56:57.673 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+13:56:57.987 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+13:56:57.988 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+13:56:57.988 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+13:56:58.027 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+13:56:58.027 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 1096 ms
+13:56:58.070 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+13:56:58.097 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-3} inited
+13:56:58.208 INFO  [restartedMain:c.a.d.p.DruidDataSource:1825] - {dataSource-3} closed
+13:56:58.209 INFO  [restartedMain:o.a.c.c.StandardService:173] - Stopping service [Tomcat]
+13:56:58.218 INFO  [restartedMain:o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+13:57:57.212 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 22968 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+13:57:57.216 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+13:57:57.287 INFO  [restartedMain:o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13:57:57.288 INFO  [restartedMain:o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13:57:58.938 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+13:57:58.940 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+13:57:58.985 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
+13:57:59.820 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+13:57:59.830 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+13:57:59.831 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+13:57:59.956 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+13:57:59.957 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 2668 ms
+13:58:00.284 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+13:58:00.395 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+13:58:01.369 INFO  [restartedMain:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+13:58:01.490 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+13:58:01.530 INFO  [restartedMain:o.s.b.d.a.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+13:58:01.917 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+13:58:01.919 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+13:58:01.941 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+13:58:01.983 INFO  [restartedMain:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+13:58:02.273 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+13:58:02.276 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+13:58:02.342 INFO  [restartedMain:c.l.e.EditionApplication:61] - Started EditionApplication in 5.9 seconds (JVM running for 9.229)
+13:58:14.973 INFO  [http-nio-0.0.0.0-8080-exec-1:o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:58:14.974 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+13:58:14.982 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:547] - Completed initialization in 7 ms
+14:18:00.475 INFO  [Thread-201:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+14:18:00.622 INFO  [Thread-201:c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+14:18:01.086 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 22968 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+14:18:01.087 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+14:18:01.618 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+14:18:01.618 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+14:18:01.623 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 3ms. Found 0 Redis repository interfaces.
+14:18:01.931 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+14:18:01.933 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+14:18:01.933 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+14:18:01.982 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+14:18:01.982 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 889 ms
+14:18:02.089 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+14:18:02.297 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+14:18:02.330 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-2} inited
+14:18:02.427 INFO  [restartedMain:c.a.d.p.DruidDataSource:1825] - {dataSource-2} closed
+14:18:02.428 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+14:18:02.430 INFO  [restartedMain:o.a.c.c.StandardService:173] - Stopping service [Tomcat]
+14:18:02.441 INFO  [restartedMain:o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+14:18:06.380 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 22968 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+14:18:06.380 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+14:18:07.272 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+14:18:07.272 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+14:18:07.283 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+14:18:07.556 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+14:18:07.557 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+14:18:07.558 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+14:18:07.749 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+14:18:07.749 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 1362 ms
+14:18:07.855 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+14:18:07.906 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-3} inited
+14:18:08.307 INFO  [restartedMain:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+14:18:08.383 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+14:18:08.395 INFO  [restartedMain:o.s.b.d.a.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+14:18:08.613 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+14:18:08.614 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+14:18:08.615 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+14:18:08.622 INFO  [restartedMain:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+14:18:08.702 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+14:18:08.704 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+14:18:08.746 INFO  [restartedMain:c.l.e.EditionApplication:61] - Started EditionApplication in 2.474 seconds (JVM running for 1215.633)
+14:18:08.749 INFO  [restartedMain:o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63] - Condition evaluation unchanged
+14:18:20.110 INFO  [http-nio-0.0.0.0-8080-exec-1:o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:18:20.114 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+14:18:20.124 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:547] - Completed initialization in 10 ms
+14:19:47.929 INFO  [Thread-210:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+14:19:48.089 INFO  [Thread-210:c.a.d.p.DruidDataSource:1825] - {dataSource-3} closed
+14:19:48.498 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 22968 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+14:19:48.499 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+14:19:48.963 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+14:19:48.964 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+14:19:48.968 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 3ms. Found 0 Redis repository interfaces.
+14:19:49.248 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+14:19:49.249 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+14:19:49.250 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+14:19:49.294 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+14:19:49.295 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 790 ms
+14:19:49.377 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+14:19:49.447 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+14:19:49.470 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-4} inited
+14:19:49.525 INFO  [restartedMain:c.a.d.p.DruidDataSource:1825] - {dataSource-4} closed
+14:19:49.526 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+14:19:49.526 INFO  [restartedMain:o.a.c.c.StandardService:173] - Stopping service [Tomcat]
+14:19:49.534 INFO  [restartedMain:o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+14:19:52.479 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 22968 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+14:19:52.479 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+14:19:53.096 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+14:19:53.097 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+14:19:53.110 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+14:19:53.420 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+14:19:53.421 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+14:19:53.422 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+14:19:53.471 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+14:19:53.471 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 988 ms
+14:19:53.547 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+14:19:53.582 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-5} inited
+14:19:54.003 INFO  [restartedMain:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+14:19:54.085 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+14:19:54.102 INFO  [restartedMain:o.s.b.d.a.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+14:19:54.322 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+14:19:54.323 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+14:19:54.325 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+14:19:54.339 INFO  [restartedMain:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+14:19:54.467 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+14:19:54.469 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+14:19:54.559 INFO  [restartedMain:c.l.e.EditionApplication:61] - Started EditionApplication in 2.135 seconds (JVM running for 1321.445)
+14:19:54.563 INFO  [restartedMain:o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63] - Condition evaluation unchanged
+14:22:17.746 INFO  [http-nio-0.0.0.0-8080-exec-3:o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:22:17.750 INFO  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+14:22:17.760 INFO  [http-nio-0.0.0.0-8080-exec-3:o.s.w.s.DispatcherServlet:547] - Completed initialization in 9 ms
+14:22:57.561 INFO  [Thread-598:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+14:22:57.672 INFO  [Thread-598:c.a.d.p.DruidDataSource:1825] - {dataSource-5} closed
+14:22:58.170 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 22968 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+14:22:58.170 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+14:22:58.647 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+14:22:58.648 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+14:22:58.654 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+14:22:58.910 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+14:22:58.911 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+14:22:58.912 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+14:22:58.945 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+14:22:58.946 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 769 ms
+14:22:59.076 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+14:22:59.213 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+14:22:59.248 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-6} inited
+14:22:59.328 INFO  [restartedMain:c.a.d.p.DruidDataSource:1825] - {dataSource-6} closed
+14:22:59.328 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+14:22:59.329 INFO  [restartedMain:o.a.c.c.StandardService:173] - Stopping service [Tomcat]
+14:22:59.338 INFO  [restartedMain:o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+14:23:03.103 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 22968 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+14:23:03.104 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+14:23:03.732 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+14:23:03.733 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+14:23:03.761 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+14:23:04.058 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+14:23:04.060 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+14:23:04.060 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+14:23:04.111 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+14:23:04.112 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 1006 ms
+14:23:04.180 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+14:23:04.214 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-7} inited
+14:23:04.518 INFO  [restartedMain:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+14:23:04.590 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+14:23:04.603 INFO  [restartedMain:o.s.b.d.a.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+14:23:04.753 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+14:23:04.754 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+14:23:04.755 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+14:23:04.761 INFO  [restartedMain:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+14:23:04.824 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+14:23:04.825 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+14:23:04.861 INFO  [restartedMain:c.l.e.EditionApplication:61] - Started EditionApplication in 1.816 seconds (JVM running for 1511.748)
+14:23:04.863 INFO  [restartedMain:o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63] - Condition evaluation unchanged
+14:23:22.419 INFO  [http-nio-0.0.0.0-8080-exec-1:o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:23:22.424 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+14:23:22.429 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:547] - Completed initialization in 5 ms
+14:29:53.338 INFO  [Thread-986:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+14:29:53.546 INFO  [Thread-986:c.a.d.p.DruidDataSource:1825] - {dataSource-7} closed
+14:29:53.866 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 22968 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+14:29:53.867 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+14:29:54.285 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+14:29:54.285 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+14:29:54.288 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+14:29:54.581 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+14:29:54.582 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+14:29:54.583 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+14:29:54.628 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+14:29:54.628 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 755 ms
+14:29:54.715 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+14:29:54.774 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+14:29:54.793 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-8} inited
+14:29:54.843 INFO  [restartedMain:c.a.d.p.DruidDataSource:1825] - {dataSource-8} closed
+14:29:54.843 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+14:29:54.844 INFO  [restartedMain:o.a.c.c.StandardService:173] - Stopping service [Tomcat]
+14:29:54.850 INFO  [restartedMain:o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+14:29:59.077 INFO  [restartedMain:c.l.e.EditionApplication:55] - Starting EditionApplication on DESKTOP-N26M15P with PID 22968 (G:\laywer-springboot\edition\target\classes started by User in G:\laywer-springboot\edition)
+14:29:59.077 INFO  [restartedMain:c.l.e.EditionApplication:655] - The following profiles are active: dev
+14:29:59.688 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+14:29:59.689 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+14:29:59.701 INFO  [restartedMain:o.s.d.r.c.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+14:29:59.981 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+14:29:59.981 INFO  [restartedMain:o.a.c.c.StandardService:173] - Starting service [Tomcat]
+14:29:59.982 INFO  [restartedMain:o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+14:30:00.023 INFO  [restartedMain:o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+14:30:00.024 INFO  [restartedMain:o.s.w.c.ContextLoader:284] - Root WebApplicationContext: initialization completed in 944 ms
+14:30:00.100 INFO  [restartedMain:c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+14:30:00.137 INFO  [restartedMain:c.a.d.p.DruidDataSource:930] - {dataSource-9} inited
+14:30:00.537 INFO  [restartedMain:s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+14:30:00.582 INFO  [restartedMain:o.s.s.c.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+14:30:00.593 INFO  [restartedMain:o.s.b.d.a.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+14:30:00.735 INFO  [restartedMain:o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+14:30:00.736 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:160] - Context refreshed
+14:30:00.737 INFO  [restartedMain:s.d.s.w.p.DocumentationPluginsBootstrapper:163] - Found 1 custom documentation plugin(s)
+14:30:00.745 INFO  [restartedMain:s.d.s.w.s.ApiListingReferenceScanner:41] - Scanning for api listing references
+14:30:00.808 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchByUserPartyUsingGET_1
+14:30:00.809 INFO  [restartedMain:s.d.s.w.r.o.CachingOperationNameGenerator:40] - Generating unique operation named: searchShowDetailUsingGET_1
+14:30:00.841 INFO  [restartedMain:c.l.e.EditionApplication:61] - Started EditionApplication in 1.811 seconds (JVM running for 1927.728)
+14:30:00.843 INFO  [restartedMain:o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63] - Condition evaluation unchanged
+14:30:31.136 INFO  [http-nio-0.0.0.0-8080-exec-1:o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:30:31.140 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+14:30:31.146 INFO  [http-nio-0.0.0.0-8080-exec-1:o.s.w.s.DispatcherServlet:547] - Completed initialization in 6 ms

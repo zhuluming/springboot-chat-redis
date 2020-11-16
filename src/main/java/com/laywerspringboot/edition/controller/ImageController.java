@@ -30,7 +30,6 @@ public class ImageController {
     @ApiOperation(value = "上传图片到oss")
     @PostMapping(value="/uploadImgToOSS")
     public String uploadImgToOSS(MultipartFile imgFile) {
-        log.isTraceEnabled();
         return ossUtils.uploadImg(imgFile);
     }
 

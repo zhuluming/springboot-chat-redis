@@ -18,8 +18,7 @@
               class="ch.qos.logback.core.rolling.RollingFileAppender">
         <File>${LOG_PATH}rootstdout.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <!--<FileNamePattern>${LOG_PATH}rootstdout.%i.log.zip</FileNamePattern>-->
-            <FileNamePattern>${LOG_PATH}rootstdout.%i.log</FileNamePattern>
+            <FileNamePattern>${LOG_PATH}rootstdout.%i.log.zip</FileNamePattern>
             <MinIndex>1</MinIndex>
             <MaxIndex>20</MaxIndex>
         </rollingPolicy>
@@ -36,8 +35,7 @@
     <appender name="rootDebug" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <File>${LOG_PATH}root-debug.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <!--<FileNamePattern>${LOG_PATH}root-debug.%i.log.zip</FileNamePattern>-->
-            <FileNamePattern>${LOG_PATH}root-debug.%i.log</FileNamePattern>
+            <FileNamePattern>${LOG_PATH}root-debug.%i.log.zip</FileNamePattern>
             <MinIndex>1</MinIndex>
             <MaxIndex>10</MaxIndex>
         </rollingPolicy>
@@ -58,10 +56,7 @@
     <appender name="rootInfo" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <File>${LOG_PATH}root-info.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-<!--
             <FileNamePattern>${LOG_PATH}root-info.%i.log.zip</FileNamePattern>
--->
-            <FileNamePattern>${LOG_PATH}root-info.%i.log</FileNamePattern>
             <MinIndex>1</MinIndex>
             <MaxIndex>10</MaxIndex>
         </rollingPolicy>
@@ -82,8 +77,7 @@
     <appender name="rootWarn" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <File>${LOG_PATH}root-warn.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-<!--            <FileNamePattern>${LOG_PATH}root-warn.%i.log.zip</FileNamePattern>-->
-            <FileNamePattern>${LOG_PATH}root-warn.%i.log</FileNamePattern>
+            <FileNamePattern>${LOG_PATH}root-warn.%i.log.zip</FileNamePattern>
             <MinIndex>1</MinIndex>
             <MaxIndex>10</MaxIndex>
         </rollingPolicy>
@@ -120,34 +114,34 @@
     <springProfile name="local">
         <root level="info">
             <!-- 本地测试时使用，将日志打印到控制台,实际部署时请注释掉 -->
-      <!--      <appender-ref ref="STDOUT"/>
+            <appender-ref ref="STDOUT"/>
             <appender-ref ref="rootstdout"/>
             <appender-ref ref="rootDebug"/>
             <appender-ref ref="rootInfo"/>
             <appender-ref ref="rootWarn"/>
-            <appender-ref ref="rootError"/>-->
+            <appender-ref ref="rootError"/>
         </root>
     </springProfile>
 
     <springProfile name="dev">
         <root level="info">
             <!-- 本地测试时使用，将日志打印到控制台,实际部署时请注释掉 -->
-          <!--  <appender-ref ref="rootstdout"/>
+            <appender-ref ref="rootstdout"/>
             <appender-ref ref="rootDebug"/>
             <appender-ref ref="rootInfo"/>
             <appender-ref ref="rootWarn"/>
-            <appender-ref ref="rootError"/>-->
+            <appender-ref ref="rootError"/>
         </root>
     </springProfile>
 
     <springProfile name="prod">
         <root level="info">
             <!-- 本地测试时使用，将日志打印到控制台,实际部署时请注释掉 -->
-     <!--       <appender-ref ref="rootstdout"/>
+            <appender-ref ref="rootstdout"/>
             <appender-ref ref="rootDebug"/>
             <appender-ref ref="rootInfo"/>
             <appender-ref ref="rootWarn"/>
-            <appender-ref ref="rootError"/>-->
+            <appender-ref ref="rootError"/>
         </root>
     </springProfile>
     <include resource="org/springframework/boot/logging/logback/base.xml"/>

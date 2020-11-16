@@ -14,24 +14,23 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 public class MyExceptionHandler {
     @ExceptionHandler(JsonException.class)
     public R jsonException(Exception e){
-        log.debug(e.getMessage());
-        return R.error("格式有误哦");
+        log.info(e.getMessage());
+        return R.error(e.getMessage());
     }
     @ExceptionHandler(UserInfoException.class)
     public R userInfoException(Exception e){
 
-        log.debug(e.getMessage());
-        return R.error("用户信息有误");
+        log.info(e.getMessage());return R.error(e.getMessage());
     }
     @ExceptionHandler(SendMessageException.class)
     public R sendMessageException(Exception e){
 
-        log.debug(e.getMessage());
-        return R.error("发消息有误");
+        log.info(e.getMessage());
+        return R.error(e.getMessage());
     }
     @ExceptionHandler(Exception.class)
     public R exception(Exception e){
-        log.debug(e.getMessage());
-        return R.error("出错了哦，请联系管理员");
+       e.printStackTrace();
+        return R.error(e.getMessage());
     }
 }
