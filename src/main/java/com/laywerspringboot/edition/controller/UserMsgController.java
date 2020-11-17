@@ -249,6 +249,7 @@ public class UserMsgController {
     /**
      * 用户退出界面时
      */
+
     @CrossOrigin()
     @GetMapping("/exit")
     @ApiOperation(value = "用户退出")
@@ -257,17 +258,22 @@ public class UserMsgController {
         String key1 = MsgConstant.USER_PREFIX+tokenRealName+MsgConstant.REDIS_MATCH_PREFIX;
         Set<String> keys = redisTemplate.keys(key1);
         for (String key : keys) {
-            MsgFlag o = (MsgFlag) redisTemplate.opsForValue().get(key);
-            o.setStatus(0);
-            redisTemplate.opsForValue().set(key, o);
+            if (key.indexOf(MsgConstant.CHAT_TO_PREFIX) == -1){
+
+                MsgFlag o = (MsgFlag) redisTemplate.opsForValue().get(key);
+                o.setStatus(0);
+                redisTemplate.opsForValue().set(key, o);
+            }
         }
+
         Msg msg = msgService.queryByName(tokenRealName);
         msg.setState("0");
         msgService.update(msg);
     }
 
+
     /**
-     * 用户退出界面时
+     * 更改消息状态
      */
     @CrossOrigin()
     @GetMapping("/updateMagFlag/{time}/toName/{toName}")

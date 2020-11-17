@@ -265,7 +265,8 @@ public class MsgServiceImpl implements MsgService {
             //System.out.println("=--------------------"+time);
             String message = (String) redisTemplate.opsForHash().get(MsgConstant.USER_PREFIX + tokenRealName + MsgConstant.CHAT_TO_PREFIX + name, time);
             // System.out.println(MsgConstant.USER_PREFIX + tokenRealName + MsgConstant.CHAT_TO_PREFIX + name);
-            msg.getFlag().set(i, 0);
+           //todo 测试
+            //msg.getFlag().set(i, 0);
             //Date date = new Date(time);
             //System.out.println("----------------"+date);
             //SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd:HH-mm-ss");
@@ -292,16 +293,16 @@ public class MsgServiceImpl implements MsgService {
      */
     public void updateFlag(String name, String tokenRealName,String time)  {
         try {
-            MsgFlag msg = (MsgFlag) redisTemplate.opsForValue().get(MsgConstant.USER_PREFIX + tokenRealName+name );
+            MsgFlag msg = (MsgFlag) redisTemplate.opsForValue().get(MsgConstant.USER_PREFIX + name+tokenRealName );
             //SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd:HH-mm-ss");
             //Date parse = simpleDateFormat.parse(time);
             //long time1 = parse.getTime();
-
-           // System.out.println("========="+time1);
+            Long aLong = new Long(time);
+            // System.out.println("========="+time1);
             //System.out.println("========="+parse);
-            int flag = msg.getTimes().indexOf(time);
+            int flag = msg.getTimes().indexOf(aLong);
             msg.getFlag().set(flag, 1);
-            redisTemplate.opsForValue().set(MsgConstant.USER_PREFIX + tokenRealName+name, msg);
+            redisTemplate.opsForValue().set(MsgConstant.USER_PREFIX + name+tokenRealName, msg);
         } catch (Exception e) {
             throw new RuntimeException(e.getMessage(), e);
         }

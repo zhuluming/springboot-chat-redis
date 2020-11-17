@@ -18,8 +18,8 @@
 //     */
 //    public static String sendMsg(String phoneid){
 //        //初始化clnt,使用单例方式
-//         YunpianClient clnt = new YunpianClient("ec25476854026e1867ea17123f335888").init();
-//        YunpianClient clnt = new YunpianClient("e864a2a3bb00b4b426435f85d75ebccd").init();
+//         YunpianClient clnt = new YunpianClient("appid").init();
+//        YunpianClient clnt = new YunpianClient("appid").init();
 //        //定义验证码
 //       Integer phoneUuid = RandomUtils.getPhoneUuid();
 //        //发送短信API
